@@ -1,4 +1,4 @@
-#NarraNG Project
+# NarraNG Project
 
 The idea of this tiny project is to be able to generate randomly based contexts and narrative backgrounds
 
@@ -15,6 +15,7 @@ Once `wizard()` is called, user can manually select, or leave empty for a `rando
 
 The following example is included within projects (-> denote text file content, or `final_selection`):
 
+```
 * Xcom
   * Class
     * -> Sniper
@@ -36,7 +37,7 @@ The following example is included within projects (-> denote text file content, 
       * Snipers
         * -> AWP-4
         * -> Dorsa
-        
+```        
 # Example usage and results
 ```python
 from NarraNG import Narrator
