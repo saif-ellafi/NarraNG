@@ -138,4 +138,9 @@ Xcom has Weapon Rifles Automatics AK97
 '''
 ```
 
+## To Do
+1. Make wizard capable of going through each of all sections instead of manual selection
+2. Export result to file
+3. Improve print modularity and story-telling
+
 Author: Saif Ellafi
