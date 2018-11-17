@@ -55,7 +55,6 @@ class Narrator:
                 name = (callback_name + ' ' + section if callback_name else section).strip()
                 logging.debug("Generated entry with name: " + str(name) + " at path: " + str(path))
                 self.selections.append(Narrator.Selection(name, path, state=1 if is_leaf else 0))
-                print(str(len(self.selections)) + '. ' + name + '*')
 
     class LeafWizard(Wizard):
         def __init__(self):
@@ -66,7 +65,6 @@ class Narrator:
                 for line in file:
                     name = (callback_name + ' ' + line if callback_name else line).strip()
                     self.selections.append(Narrator.Selection(name, path, state=2))
-                    print(str(len(self.selections)) + '. ' + name)
 
     @staticmethod
     def input_callback(max_index):
@@ -94,13 +92,13 @@ class Narrator:
     def delete(self, index):
         del self.build[index-1]
 
-    def resolve(self, selection):
+    def resolve(self, selection, auto=False):
         if selection.state == Narrator.ROOT:
             logging.debug("Go back to wizard, since selection is not final")
-            self.gen(Narrator.Wizard, selection.path, selection.name)
+            self.gen(Narrator.Wizard, selection.path, selection.name, auto)
         elif selection.state == Narrator.LAST_NODE:  # Selection is last root. Call leaf wizard.
             logging.debug("selection identified as last root. Go to leaf wizard")
-            self.gen(Narrator.LeafWizard, selection.path, selection.name)
+            self.gen(Narrator.LeafWizard, selection.path, selection.name, auto)
         elif selection.state == Narrator.LEAF:  # Selection is leaf. stop here
             logging.debug("selection identified as leaf. printing.")
             self.build.append(selection)
@@ -108,20 +106,32 @@ class Narrator:
             logging.debug("result is set from standard input")
             self.build.append(selection)
 
-    def gen(self, wizard=Wizard, root_path=None, callback_name=None):
-        print('\n')
+    def gen(self, wizard=Wizard, root_path=None, callback_name=None, auto=False):
         wiz = wizard()
         path = root_path if root_path else self.project_path
         logging.debug("Created wizard. Building from " + str(path) + ' ...')
         wiz.build_selections(path, callback_name)
         logging.debug("successfully built " + str(len(wiz.selections)) + ' selections')
-        user_choice = Narrator.input_callback(len(wiz.selections))
+        if auto:
+            user_choice = random.randint(1, len(wiz.selections))
+        else:
+            print('\n'.join([str(index+1) + '. ' + selection.name +
+                             ('*' if selection.state in [Narrator.ROOT, Narrator.LAST_NODE] else '')
+                             for index, selection in enumerate(wiz.selections)])
+                  )
+            user_choice = Narrator.input_callback(len(wiz.selections))
         if user_choice == 0:
             return
         elif type(user_choice) == str:
-            self.resolve(self.Selection(user_choice, '', self.LEAF))
+            self.resolve(self.Selection(user_choice, '', self.LEAF), auto=auto)
         else:
-            self.resolve(wiz.selections[user_choice-1])
+            self.resolve(wiz.selections[user_choice-1], auto=auto)
+
+    def mgen(self, n, wizard=Wizard, root_path=None, callback_name=None):
+        i = 0
+        while i < n:
+            self.gen(wizard, root_path, callback_name, auto=True)
+            i += 1
 
     def __repr__(self):
         return '''--------------------\nProject {} has:\n--------------------\n{}'''. \
