@@ -11,21 +11,17 @@ Standing in the project's directory, inside `project` folder, create any one fol
 
 Such file structure will be utilized as a hierarchy generation tree.
 
-Once `wizard()` is called, user can manually select, or leave empty for a `random` selection
-
-The following example is included within projects (-> denote text file content, or `final_selection`):
-
 ```
-* Xcom
-  * Class
-    * -> Sniper
-    * -> Assault
-  * Spaceship
+* Xcom (Root folder, project name)
+  * Class (File called 'Class')
+    * -> Medic (File content)
+    * -> Grenadier (File content)
+  * Spaceship (Another File)
     * -> Abductor
     * -> Overseer
-  * Weapon
-    * Pistols
-      * -> Ares3
+  * Weapon (A subfolder)
+    * Pistols (File inside subfolder)
+      * -> Ares3 (content)
       * -> Viper
     * Heavy
       * -> Bazooka
@@ -37,110 +33,87 @@ The following example is included within projects (-> denote text file content, 
       * Snipers
         * -> AWP-4
         * -> Dorsa
-```        
+```
+
+Import and start a narrator, indicating the name of the project you want to use (folder under project) and the target name (this is made up by user). Just as follows:
+
+```python
+from narrator.narrang import Narrator
+narrator = Narrator("Xcom", "Robert Baratheon")
+```
+
+then call `gen()` to get it kicked. At any time of the wizard you can either:
+
+1. Leave empty for random selection
+2. Enter the index choice you decide
+3. Enter a custom input you'd like to have
+
+or call `mgen(n=3)` to generate #n random choices
+
+print the narrator any time to show selections content
+        
 # Example usage and results
 ```python
-from NarraNG import Narrator
-
-narrator = Narrator('Xcom')
-narrator.wizard()
-
+from narrator.narrang import Narrator
+narrator = Narrator("Xcom", "Robert Baratheon")
 '''
-1. Spaceship Battleship
-2. Spaceship Overseer
-3. Spaceship Abductor
-4. Spaceship Temple Ship
-5. Spaceship Supply Barge
-6. Spaceship Small Scout
-7. Spaceship Large Scout
-8. Class MEC Trooper
-9. Class Psionic
-10. Class Assault
-11. Class XCOM Hero
-12. Class Heavy
-13. Class Sniper
-14. Class Support
-15. Weapon*
+            Narrator initialized. On wizard, use the following inputs:
+                - Number selection
+                - Empty For random selection
+                - Any text for customized entry
+                - 0 to return and do nothing
+'''
+                
+narrator.gen()
+'''
+1. Spaceship*
+2. Class*
+3. Weapon*
+>> 2
 
-Choose your destiny (empty for random): 
-> 3
-
---------------------
-Project Xcom
---------------------
-Xcom has Spaceship Abductor
+1. Class MEC Trooper
+2. Class Psionic
+3. Class Assault
+4. Class XCOM Hero
+5. Class Heavy
+6. Class Sniper
+7. Class Support
+>>3
 '''
 
-narrator.wizard()
-
+narrator.gen()
 '''
-1. Spaceship Battleship
-2. Spaceship Overseer
-3. Spaceship Abductor
-4. Spaceship Temple Ship
-5. Spaceship Supply Barge
-6. Spaceship Small Scout
-7. Spaceship Large Scout
-8. Class MEC Trooper
-9. Class Psionic
-10. Class Assault
-11. Class XCOM Hero
-12. Class Heavy
-13. Class Sniper
-14. Class Support
-15. Weapon*
+1. Spaceship*
+2. Class*
+3. Weapon*
+>> 3
 
-Choose your destiny (empty for random):
->
+1. Weapon Pistols*
+2. Weapon Heavy*
+3. Weapon Rifles*
+>> 3
 
---------------------
-Project Xcom
---------------------
-Xcom has Spaceship Abductor
-Xcom has Class Sniper
-'''
+1. Weapon Rifles Snipers*
+2. Weapon Rifles Automatics*
+>> 1
 
-narrator.wizard()
-'''
-1. Spaceship Battleship
-2. Spaceship Overseer
-3. Spaceship Abductor
-4. Spaceship Temple Ship
-5. Spaceship Supply Barge
-6. Spaceship Small Scout
-7. Spaceship Large Scout
-8. Class MEC Trooper
-9. Class Psionic
-10. Class Assault
-11. Class XCOM Hero
-12. Class Heavy
-13. Class Sniper
-14. Class Support
-15. Weapon*
-Choose your destiny (empty for random): >? 15
-1. Weapon Pistols Ares3
-2. Weapon Pistols Piper
-3. Weapon Heavy Bazooka
-4. Weapon Heavy Pak81
-5. Weapon Rifles*
-Choose your destiny (empty for random): >? 5
 1. Weapon Rifles Snipers AWP-4
 2. Weapon Rifles Snipers Dorsa
-3. Weapon Rifles Automatics AK97
-4. Weapon Rifles Automatics Nendra11
-Choose your destiny (empty for random): >? 3
+>> 1
+'''
+print(narrator)
+'''
 --------------------
-Project Xcom
+Project Robert Baratheon has:
 --------------------
-Xcom has Spaceship Abductor
-Xcom has Class Sniper
-Xcom has Weapon Rifles Automatics AK97
+1. Class Assault
+2. Weapon Rifles Snipers AWP-4
 '''
 ```
 
 ## To Do
-1. Make wizard capable of going through each of all sections instead of manual selection
-2. Export result to file
-3. Improve print modularity and story-telling
+1. Export result to file with format
+2. Add weights or strategies for random choices
+3. Improve story-telling
 
 Author: Saif Ellafi
