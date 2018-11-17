@@ -31,6 +31,7 @@ class Narrator:
             Narrator initialized. On wizard, use the following inputs:
                 - Number selection
                 - Empty For random selection
+                - #n to generate n of each possible selection
                 - Any text for customized entry
                 - 0 to return and do nothing
                 """)

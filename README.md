@@ -46,7 +46,8 @@ then call `gen()` to get it kicked. At any time of the wizard you can either:
 
 1. Leave empty for random selection
 2. Enter the index choice you decide
-3. Enter a custom input you'd like to have
+3. Enter #n to generate n of each of the possible selections
+4. Enter a custom input you'd like to have
 
 or call `mgen(n=3)` to generate #n random choices
 
@@ -60,6 +61,7 @@ narrator = Narrator("Xcom", "Robert Baratheon")
             Narrator initialized. On wizard, use the following inputs:
                 - Number selection
                 - Empty For random selection
+                - #n to generate n of each possible selection
                 - Any text for customized entry
                 - 0 to return and do nothing
 '''
