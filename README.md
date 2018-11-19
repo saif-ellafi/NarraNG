@@ -7,56 +7,50 @@ May be used for tabletop gaming or random creativity projects.
 ## Narrator
 The narrator is a background generator
 ### Usage
-Standing in the project's directory, inside `project` folder, create any one folder with a given name, with any amount of subfolders or text files (without any extension).
-
-Such file structure will be utilized as a hierarchy generation tree.
-
-```
-* Xcom (Root folder, project name)
-  * Class (File called 'Class')
-    * -> Medic (File content)
-    * -> Grenadier (File content)
-  * Spaceship (Another File)
-    * -> Abductor
-    * -> Overseer
-  * Weapon (A subfolder)
-    * Pistols (File inside subfolder)
-      * -> Ares3 (content)
-      * -> Viper
-    * Heavy
-      * -> Bazooka
-      * -> Pak81
-    * Rifles
-      * Automatics
-        * -> AK97
-        * -> Nendra11
-      * Snipers
-        * -> AWP-4
-        * -> Dorsa
-```
+Put json in `/project` and pass it's name (without `.json`) as project argument to narrator.
 
 Import and start a narrator, indicating the name of the project you want to use (folder under project) and the target name (this is made up by user). Just as follows:
 
 ```python
 from narrator.narrang import Narrator
-narrator = Narrator("Xcom", "Robert Baratheon")
+narrator = Narrator("XCOM", "Robert Baratheon")
 ```
 
-then call `gen()` to get it kicked. At any time of the wizard you can either:
+Such project structure will be utilized as a hierarchy generation tree.
+
+Example `XCOM.json`
+
+```json
+{
+  "Weapon": {
+    "Rifles": {
+      "Automatics": ["AK47", "Manning71"],
+      "Snipers": ["AWP-4", "SNEAK1"]
+    },
+    "Heavy": ["Desert", "LOGGA"],
+    "Pistols": ["Ares", "NogaPIP"]
+  },
+  "Class": ["Grenadier", "Medic"],
+  "Spaceship": ["Destroyer", "Warship"]
+}
+```
+
+then call `narrator.gen()` to get it kicked. At any time of the wizard you can either:
 
 1. Leave empty for random selection
-2. Enter the index choice you decide
+2. Enter the index choice
 3. Enter #n to generate n of each of the possible selections
 4. Enter a custom input you'd like to have
+5. 0 to return and do nothing
 
-or call `mgen(n=3)` to generate #n random choices
+or call `narrator.mgen(n=3)` to generate #n random choices
 
 print the narrator any time to show selections content
         
 # Example usage and results
 ```python
 from narrator.narrang import Narrator
-narrator = Narrator("Xcom", "Robert Baratheon")
+narrator = Narrator("XCOM", "Robert Baratheon")
 '''
             Narrator initialized. On wizard, use the following inputs:
                 - Number selection

@@ -1,0 +1,12 @@
+{
+  "Weapon": {
+    "Rifles": {
+      "Automatics": ["AK47", "Manning71"],
+      "Snipers": ["AWP-4", "SNEAK1"]
+    },
+    "Heavy": ["Desert", "LOGGA"],
+    "Pistols": ["Ares", "NogaPIP"]
+  },
+  "Class": ["Grenadier", "Medic"],
+  "Spaceship": ["Destroyer", "Warship"]
+}
