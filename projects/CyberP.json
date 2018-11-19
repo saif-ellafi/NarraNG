@@ -1,0 +1,306 @@
+{
+  "Origins and Style": {
+    "Clothes": [
+      "Biker leathers",
+      "Blue jeans",
+      "Corporate suits",
+      "Jumpsuits",
+      "Miniskirts",
+      "High Fashion",
+      "Cammos",
+      "Normal clothes",
+      "Nude",
+      "Bag Lady chic"
+    ],
+    "Hairstyle": [
+      "Mohawk",
+      "Long & Ratty",
+      "Short & Spiked",
+      "Wild & all over",
+      "Bald",
+      "Striped",
+      "Tinted",
+      "Neat, short",
+      "Short, curly",
+      "Long, straight"
+    ],
+    "Affectations": [
+      "Tatoos",
+      "Mirrorshades",
+      "Ritual scars",
+      "Spiked gloves",
+      "Nose rings",
+      "Earrings",
+      "Long fingernails",
+      "Spike heeled boots",
+      "Weird contact lenses",
+      "Fingerless gloves"
+    ],
+    "Origins": [
+      "Anglo american",
+      "African",
+      "Japanese or Korean",
+      "Central European or Soviet",
+      "Pacific Islander",
+      "Chinese or Southeastern asian",
+      "Black american",
+      "Hispanic American",
+      "Central or South American",
+      "European"
+    ]
+  },
+  "Family and background": {
+    "Ranking": [
+      "Corporate executive",
+      "Corporate manager",
+      "Corporate technician",
+      "Nomad pack",
+      "Pirate fleet",
+      "Gang Family",
+      "Crime Lord",
+      "Combat Zone Poor",
+      "Urban Homeless",
+      "Arcology family"
+    ],
+    "Parents": {
+      "Present": [
+        "Family lost everything on betrayal",
+        "Family lost everything through bad management",
+        "Family exiled or driven from original nation or corporation",
+        "Family is imprisoned and you escaped",
+        "Family involved in longterm conspiracy, organization or association",
+        "Family cursed with hereditary feud",
+        "Inheritor of family debt, must honor it's debt",
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "Trouble": {
+        "Reason": [
+          "Died in warfare",
+          "Died in accidente",
+          "Murdered",
+          "Amensia",
+          "Never knew them",
+          "In hiding to protect you",
+          "Left with relatives for safekeeping",
+          "Grew up on the streets, no parents",
+          "Gave you in adoption",
+          "Sold you for money"
+        ],
+        "Childhood": [
+          "Spent on the street, no adults",
+          "Spent in a safe corporate suburb",
+          "Nomad pack",
+          "In a decaying neighborhood",
+          "Defended corporate zone in central",
+          "Heart of combat",
+          "Small village or town",
+          "Large arcology city",
+          "Aquatic pirate pack",
+          "Corporate controlled farm or research lab"
+        ]
+      }
+    },
+    "Siblings": {
+      "Genre": [
+        "Male",
+        "Female"
+      ],
+      "Feelings": [
+        "Dislikes you",
+        "likes you",
+        "neutral",
+        "worship you",
+        "hate you"
+      ]
+    }
+  },
+  "Motivations": {
+    "Personality traits": [
+      "Shy and secretive",
+      "Rebellious antisocial",
+      "Arrogant, proud",
+      "Moody, rash and headstrong",
+      "Picky, fussy and nervous",
+      "Stable and serious",
+      "Silly and fluffhead",
+      "Sneaky and deceptive",
+      "Intellectual and detached",
+      "Friendly and outgoing"
+    ],
+    "Most valued person": [
+      "a parent",
+      "sibling",
+      "lover",
+      "Friend",
+      "yourself",
+      "pet",
+      "teacher or mentor",
+      "public figure",
+      "Personal hero",
+      "No one"
+    ],
+    "Most valued feeling": [
+      "Money",
+      "Honor", "Your word",
+      "Honesty",
+      "Knowledge",
+      "Vengeance",
+      "Love",
+      "Power",
+      "Haaving a good time",
+      "Friendship"
+    ],
+    "Most valued posession": [
+      "Weapon",
+      "Tool",
+      "Piece of clothing",
+      "Photograph",
+      "Book or diary",
+      "Recording",
+      "Musical instrument",
+      "Piece of jewelry",
+      "Toy",
+      "Letter"
+    ],
+    "Feeling about people": [
+      "Neutral",
+      "Neutral",
+      "Like almost everyone",
+      "Hate almost everyone",
+      "People are tools, discard then",
+      "Every person has a valuable individual",
+      "People are obstaciles to be destroyed",
+      "People are untrustworthy",
+      "Wipe'em all out and give the place to the cockroaches",
+      "People are wonderful"
+    ]
+  },
+  "Life events": {
+    "Big problems, big wins": {
+      "Disaster": [
+        "Financial loss or Debit",
+        "Imprisonment",
+        "Illness or addiction",
+        "Betrayal",
+        "Accidente",
+        "Love, friend or relative killed",
+        "False accusations",
+        "Hunted by the law",
+        "Hunted by a corpo",
+        "Mental or physical incapacitacion"
+      ],
+      "Lucky": [
+        "Make a powerful connection",
+        "Financial windfall",
+        "Big score",
+        "Find a sensei",
+        "Find a teacher",
+        "Powerful corporate exec contact",
+        "Befriended local nomad pack",
+        "Friend on the police",
+        "Local gangster likes you",
+        "Find a combat teacher"
+      ]
+    },
+    "Friends & Enemis": {
+      "Friend": [
+        "Like a big brother or sister",
+        "Like a kid brother or sister",
+        "Teacher or mentor",
+        "Partner or co-worker",
+        "Old lover",
+        "Old enemy",
+        "Like foster parent",
+        "A Relative",
+        "Old childhood friend",
+        "Met through common interest"
+      ],
+      "Enemy": {
+        "Who": [
+          "Ex friend",
+          "Ex lover",
+          "Relative",
+          "Childhood enemy",
+          "Person working for you",
+          "Partner or coworker",
+          "Booster gang member",
+          "Corporate exec",
+          "Government official"
+        ],
+        "Reason": [
+          "Caused other to lose face or status",
+          "Caused loss of friend, lover or relative",
+          "Caused humiliation",
+          "Accused of cowardice or personal flaw",
+          "Caused physical disability",
+          "Deserted or betrayed",
+          "Turned down offer for job or relationship",
+          "Didn't like each other",
+          "Foiled other's plans"
+        ],
+        "Direction": [
+          "Hates you",
+          "Hates you",
+          "Hates you",
+          "Hates you",
+          "You hate him",
+          "You hate him",
+          "You hate him",
+          "Mutual",
+          "Mutual",
+          "Mutual"
+        ],
+        "What you do about it": [
+          "Going to kill him",
+          "Avoid him",
+          "Backstab him someday",
+          "Ignore him",
+          "Rip into him verbally"
+        ],
+        "What he does about it": [
+          "Himself",
+          "Himself",
+          "Himself",
+          "Himself and friends",
+          "Himself and friends",
+          "Entire gang",
+          "Entire gang",
+          "Small corpo",
+          "Large corpo",
+          "Entire government agency"
+        ]
+      }
+    },
+    "Romantic Envolvement": {
+      "How it worked out": {
+        "Happy affair": ["Just fine"],
+        "Tragic affair": [
+          "Lover died in accidente",
+          "Mysteriously vanished",
+          "Didn't work out",
+          "Personal goal or vendetta separated you",
+          "Lover kidnapped",
+          "Lover went insane",
+          "Lover suicided",
+          "Lover killed in a fight",
+          "Rival cut you out",
+          "Lover imprisoned or exiled"
+        ],
+        "Affair with problems": [
+          "Lovers friend or family hate you",
+          "Lover friends use any means to get rid of you",
+          "Your friends or family hate your lover",
+          "One of you with romantic rival",
+          "Separated in some way",
+          "Fight constantly",
+          "Professional rivals",
+          "One is very jealous",
+          "One is messing around",
+          "Conflicting backgrounds and families"
+        ]
+      }
+    }
+  }
+}
