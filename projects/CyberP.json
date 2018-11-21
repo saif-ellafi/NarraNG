@@ -274,33 +274,31 @@
       }
     },
     "Romantic Envolvement": {
-      "How it worked out": {
-        "Happy affair": ["Just fine"],
-        "Tragic affair": [
-          "Lover died in accidente",
-          "Mysteriously vanished",
-          "Didn't work out",
-          "Personal goal or vendetta separated you",
-          "Lover kidnapped",
-          "Lover went insane",
-          "Lover suicided",
-          "Lover killed in a fight",
-          "Rival cut you out",
-          "Lover imprisoned or exiled"
-        ],
-        "Affair with problems": [
-          "Lovers friend or family hate you",
-          "Lover friends use any means to get rid of you",
-          "Your friends or family hate your lover",
-          "One of you with romantic rival",
-          "Separated in some way",
-          "Fight constantly",
-          "Professional rivals",
-          "One is very jealous",
-          "One is messing around",
-          "Conflicting backgrounds and families"
-        ]
-      }
+      "Happy affair": ["Just fine"],
+      "Tragic affair": [
+        "Lover died in accidente",
+        "Mysteriously vanished",
+        "Didn't work out",
+        "Personal goal or vendetta separated you",
+        "Lover kidnapped",
+        "Lover went insane",
+        "Lover suicided",
+        "Lover killed in a fight",
+        "Rival cut you out",
+        "Lover imprisoned or exiled"
+      ],
+      "Affair with problems": [
+        "Lovers friend or family hate you",
+        "Lover friends use any means to get rid of you",
+        "Your friends or family hate your lover",
+        "One of you with romantic rival",
+        "Separated in some way",
+        "Fight constantly",
+        "Professional rivals",
+        "One is very jealous",
+        "One is messing around",
+        "Conflicting backgrounds and families"
+      ]
     }
   }
 }

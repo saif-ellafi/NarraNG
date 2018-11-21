@@ -12,6 +12,13 @@ class Narrator:
     SELECTION_CHAR = '-'
     COMMENT_CHAR = '#'
 
+    @staticmethod
+    def projects():
+        path = os.path.join(Narrator.PROJECTS_FOLDER)
+        prjs = [f[:-5] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
+        return ', '.join(prjs)
+
+
     # Initializes project, path recognition and user input
     def __init__(self, project, name=None):
         self.name = name if name else project
