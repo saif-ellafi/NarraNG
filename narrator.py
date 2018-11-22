@@ -134,7 +134,6 @@ class Narrator:
     # How is Narrative represented in console
     def __repr__(self):
         if self.build:
-            self.build = sorted(self.build, key=lambda x: [x.history, x.name])
             content = '''--------------------\n{} has:\n--------------------\n{}'''. \
                 format(self.name, '\n'.join([str(index+1) + '. ' + ' '.join(selection.history) + ' ' +
                                              selection.name for index, selection in enumerate(self.build)]))

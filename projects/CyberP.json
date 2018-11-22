@@ -1,6 +1,6 @@
 {
-  "Origins and Style": {
-    "Clothes": [
+  "Style is": {
+    "wearing clothes like": [
       "Biker leathers",
       "Blue jeans",
       "Corporate suits",
@@ -12,7 +12,7 @@
       "Nude",
       "Bag Lady chic"
     ],
-    "Hairstyle": [
+    "with a hairstyle like": [
       "Mohawk",
       "Long & Ratty",
       "Short & Spiked",
@@ -24,7 +24,7 @@
       "Short, curly",
       "Long, straight"
     ],
-    "Affectations": [
+    "wearing some": [
       "Tatoos",
       "Mirrorshades",
       "Ritual scars",
@@ -36,7 +36,7 @@
       "Weird contact lenses",
       "Fingerless gloves"
     ],
-    "Origins": [
+    "looking like a": [
       "Anglo american",
       "African",
       "Japanese or Korean",
@@ -49,8 +49,8 @@
       "European"
     ]
   },
-  "Family and background": {
-    "Ranking": [
+  "Family": {
+    "is from a class of": [
       "Corporate executive",
       "Corporate manager",
       "Corporate technician",
@@ -62,62 +62,62 @@
       "Urban Homeless",
       "Arcology family"
     ],
-    "Parents": {
-      "Present": [
-        "Family lost everything on betrayal",
-        "Family lost everything through bad management",
-        "Family exiled or driven from original nation or corporation",
-        "Family is imprisoned and you escaped",
-        "Family involved in longterm conspiracy, organization or association",
-        "Family cursed with hereditary feud",
-        "Inheritor of family debt, must honor it's debt",
+    "while parents mostly": {
+      "live but": [
+        "lost everything on betrayal",
+        "lost everything through bad management",
+        "exiled or driven from original nation or corporation",
+        "is imprisoned and you escaped",
+        "involved in longterm conspiracy, organization or association",
+        "cursed with hereditary feud",
+        "while being an inheritor of family debt, must honor it's debt",
         "OK",
         "OK",
         "OK"
       ],
-      "Trouble": {
-        "Reason": [
-          "Died in warfare",
-          "Died in accidente",
-          "Murdered",
-          "Amensia",
-          "Never knew them",
-          "In hiding to protect you",
-          "Left with relatives for safekeeping",
-          "Grew up on the streets, no parents",
-          "Gave you in adoption",
-          "Sold you for money"
+      "things went south when": {
+        "they basically": [
+          "died in warfare",
+          "died in accidente",
+          "were murdered",
+          "were treated of amensia",
+          "never knew them",
+          "went in hiding to protect you",
+          "left with relatives for safekeeping",
+          "never showed up",
+          "gave you in adoption",
+          "sold you for money"
         ],
-        "Childhood": [
-          "Spent on the street, no adults",
-          "Spent in a safe corporate suburb",
-          "Nomad pack",
-          "In a decaying neighborhood",
-          "Defended corporate zone in central",
-          "Heart of combat",
-          "Small village or town",
-          "Large arcology city",
-          "Aquatic pirate pack",
-          "Corporate controlled farm or research lab"
+        "so childhood": [
+          "was spent on the street, no adults",
+          "was spent in a safe corporate suburb",
+          "spent being on a nomad pack",
+          "happened in a decaying neighborhood",
+          "was in a defended corporate zone in central",
+          "happened in the middle of heart of combat",
+          "raised on a small village or town",
+          "was in a large arcology city",
+          "became with an aquatic pirate pack",
+          "grew up on a corporate controlled farm or research lab"
         ]
       }
     },
-    "Siblings": {
-      "Genre": [
+    "Sibling": {
+      "is": [
         "Male",
         "Female"
       ],
-      "Feelings": [
-        "Dislikes you",
+      "who mostly": [
+        "dislikes you",
         "likes you",
-        "neutral",
-        "worship you",
-        "hate you"
+        "is neutral",
+        "worships you",
+        "hates you"
       ]
     }
   },
-  "Motivations": {
-    "Personality traits": [
+  "Your motivations": {
+    "defines you as": [
       "Shy and secretive",
       "Rebellious antisocial",
       "Arrogant, proud",
@@ -129,30 +129,31 @@
       "Intellectual and detached",
       "Friendly and outgoing"
     ],
-    "Most valued person": [
+    "Being your most valued person": [
       "a parent",
-      "sibling",
-      "lover",
-      "Friend",
+      "a sibling",
+      "a lover",
+      "a friend",
       "yourself",
-      "pet",
-      "teacher or mentor",
-      "public figure",
-      "Personal hero",
-      "No one"
+      "a pet",
+      "a teacher or mentor",
+      "a public figure",
+      "a personal hero",
+      "no one really"
     ],
-    "Most valued feeling": [
+    "And your most valued feeling is": [
       "Money",
-      "Honor", "Your word",
+      "Honor",
+      "Your word",
       "Honesty",
       "Knowledge",
       "Vengeance",
       "Love",
       "Power",
-      "Haaving a good time",
+      "Having a good time",
       "Friendship"
     ],
-    "Most valued posession": [
+    "with a most valued possession being a": [
       "Weapon",
       "Tool",
       "Piece of clothing",
@@ -164,34 +165,34 @@
       "Toy",
       "Letter"
     ],
-    "Feeling about people": [
+    "Your feeling about people is": [
       "Neutral",
       "Neutral",
       "Like almost everyone",
-      "Hate almost everyone",
-      "People are tools, discard then",
-      "Every person has a valuable individual",
-      "People are obstaciles to be destroyed",
+      "To hate almost everyone",
+      "That People are tools, discard then",
+      "Basically Every person has a valuable individual",
+      "People are obstacles to be destroyed",
       "People are untrustworthy",
       "Wipe'em all out and give the place to the cockroaches",
-      "People are wonderful"
+      "That People are wonderful"
     ]
   },
-  "Life events": {
-    "Big problems, big wins": {
-      "Disaster": [
+  "During my life I had": {
+    "Big problems and big wins": {
+      "For example a disaster was to get": [
         "Financial loss or Debit",
         "Imprisonment",
         "Illness or addiction",
         "Betrayal",
-        "Accidente",
+        "Accident",
         "Love, friend or relative killed",
         "False accusations",
         "Hunted by the law",
         "Hunted by a corpo",
         "Mental or physical incapacitacion"
       ],
-      "Lucky": [
+      "When I was lucky by getting to": [
         "Make a powerful connection",
         "Financial windfall",
         "Big score",
@@ -204,8 +205,8 @@
         "Find a combat teacher"
       ]
     },
-    "Friends & Enemis": {
-      "Friend": [
+    "Made Friends & Enemies": {
+      "Such as a Friend who is": [
         "Like a big brother or sister",
         "Like a kid brother or sister",
         "Teacher or mentor",
@@ -217,8 +218,8 @@
         "Old childhood friend",
         "Met through common interest"
       ],
-      "Enemy": {
-        "Who": [
+      "An enemy made": {
+        "Which is a": [
           "Ex friend",
           "Ex lover",
           "Relative",
@@ -229,7 +230,7 @@
           "Corporate exec",
           "Government official"
         ],
-        "Reason": [
+        "Because": [
           "Caused other to lose face or status",
           "Caused loss of friend, lover or relative",
           "Caused humiliation",
@@ -240,64 +241,64 @@
           "Didn't like each other",
           "Foiled other's plans"
         ],
-        "Direction": [
+        "In the sense that the feeling is": [
           "Hates you",
           "Hates you",
           "Hates you",
           "Hates you",
-          "You hate him",
-          "You hate him",
-          "You hate him",
+          "hate him",
+          "hate him",
+          "hate him",
           "Mutual",
           "Mutual",
           "Mutual"
         ],
-        "What you do about it": [
+        "And what I'm doing about it is": [
           "Going to kill him",
           "Avoid him",
           "Backstab him someday",
           "Ignore him",
           "Rip into him verbally"
         ],
-        "What he does about it": [
+        "While he is by": [
           "Himself",
           "Himself",
           "Himself",
           "Himself and friends",
           "Himself and friends",
-          "Entire gang",
-          "Entire gang",
-          "Small corpo",
-          "Large corpo",
-          "Entire government agency"
+          "His Entire gang",
+          "His Entire gang",
+          "a Small corpo",
+          "a backup of a Large corpo",
+          "an entire government agency"
         ]
       }
     },
-    "Romantic Envolvement": {
-      "Happy affair": ["Just fine"],
-      "Tragic affair": [
+    "Romantic Relationship": {
+      "is a Happy affair": ["Just fine"],
+      "Was a Tragic one where": [
         "Lover died in accidente",
         "Mysteriously vanished",
         "Didn't work out",
         "Personal goal or vendetta separated you",
-        "Lover kidnapped",
+        "Lover was kidnapped",
         "Lover went insane",
         "Lover suicided",
-        "Lover killed in a fight",
-        "Rival cut you out",
-        "Lover imprisoned or exiled"
+        "Lover was killed in a fight",
+        "A Rival cut you out",
+        "Lover got imprisoned or exiled"
       ],
-      "Affair with problems": [
+      "Was not perfect because": [
         "Lovers friend or family hate you",
         "Lover friends use any means to get rid of you",
         "Your friends or family hate your lover",
         "One of you with romantic rival",
-        "Separated in some way",
-        "Fight constantly",
-        "Professional rivals",
-        "One is very jealous",
-        "One is messing around",
-        "Conflicting backgrounds and families"
+        "Got separated in some way",
+        "We Fight constantly",
+        "Are professional rivals",
+        "One of us is very jealous",
+        "One of us is messing around",
+        "We've got a conflicting backgrounds and families"
       ]
     }
   }
