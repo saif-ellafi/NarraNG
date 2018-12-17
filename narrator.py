@@ -2,6 +2,7 @@ import os
 import random
 import logging
 import json
+import pprint
 logging.getLogger().setLevel(logging.ERROR)
 
 
@@ -12,22 +13,21 @@ class Narrator:
     SELECTION_CHAR = '-'
     COMMENT_CHAR = '#'
 
-    @staticmethod
-    def projects():
-        path = os.path.join(Narrator.PROJECTS_FOLDER)
-        prjs = [f[:-5] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
-        return ', '.join(prjs)
-
+    # Represents a narrative selection
+    class Selection:
+        def __init__(self, name, history):
+            self.name = name
+            self.history = history
 
     # Initializes project, path recognition and user input
     def __init__(self, project, name=None):
         self.name = name if name else project
         path = os.path.join(Narrator.PROJECTS_FOLDER, project+'.json')
         if type(project) == dict:
-            self.selections = project
+            self.selection_tree = project
         elif type(project) == str:
             with open(path) as file:
-                self.selections = json.load(file)
+                self.selection_tree = json.load(file)
         else:
             raise Exception("Invalid project type")
         self.build = []
@@ -41,22 +41,24 @@ class Narrator:
                 """)
         logging.debug("DEBUG MODE ON")
 
-    # Represents a narrative selection
-    class Selection:
-        def __init__(self, name, history):
-            self.name = name
-            self.history = history
+    # How is Narrative represented in console
+    def __repr__(self):
+        if self.build:
+            content = '''--------------------\n{} has:\n--------------------\n{}'''. \
+                format(self.name, '\n'.join([str(index+1) + '. ' + ' '.join(selection.history) + ' ' +
+                                             selection.name for index, selection in enumerate(self.build)]))
+        else:
+            content = '''--------------------\n{} is empty\n--------------------'''. \
+                format(self.name)
+        return content
 
-    # Clears current selections
-    def clear(self):
-        logging.debug("Clearing build")
-        self.build = []
+    @staticmethod
+    def projects():
+        path = os.path.join(Narrator.PROJECTS_FOLDER)
+        prjs = [f[:-5] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
+        return ', '.join(prjs)
 
-    # Deletes a specific selection
-    def delete(self, index):
-        del self.build[index-1]
-
-    # Handles user's input and validations
+        # Handles user's input and validations
     @staticmethod
     def input_callback(max_index):
         while True:
@@ -83,9 +85,21 @@ class Narrator:
                     if choice:
                         return choice
 
+    def show_tree(self):
+        pprint.pprint(self.selection_tree)
+
+    # Clears current selections
+    def clear(self):
+        logging.debug("Clearing build")
+        self.build = []
+
+    # Deletes a specific selection
+    def delete(self, index):
+        del self.build[index-1]
+
     # Internal recursive value choice generator
     def _gen(self, level=None, history=None, auto=False):
-        level = level if level else self.selections
+        level = level if level else self.selection_tree
         level_keys = list(level.keys()) if type(level) == dict else level
         history = history if history else []
         logging.debug("successfully built " + str(len(level_keys)) + ' selections')
@@ -130,14 +144,3 @@ class Narrator:
             self._gen(level, auto=True)
             i += 1
         print(self)
-
-    # How is Narrative represented in console
-    def __repr__(self):
-        if self.build:
-            content = '''--------------------\n{} has:\n--------------------\n{}'''. \
-                format(self.name, '\n'.join([str(index+1) + '. ' + ' '.join(selection.history) + ' ' +
-                                             selection.name for index, selection in enumerate(self.build)]))
-        else:
-            content = '''--------------------\n{} is empty\n--------------------'''. \
-                format(self.name)
-        return content

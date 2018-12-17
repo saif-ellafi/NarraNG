@@ -1,0 +1,24 @@
+{
+  "name": "Jupyter",
+  "bound": "many",
+  "links": [
+    {
+      "name": "section1",
+      "bound": "many",
+      "links": [
+        {
+          "name": "stuff1",
+          "weight": 1.0
+        },
+        {
+          "name": "stuff2",
+          "weight": 1.4
+        }
+      ]
+    },
+    {
+      "name": "stuff1",
+      "weight": 1.0
+    }
+  ]
+}
