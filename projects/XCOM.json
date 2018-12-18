@@ -40,6 +40,10 @@
         {
           "name": "Magnum Laser",
           "weight": 1.0
+        },
+        {
+          "name": "AWP 2015",
+          "weight": 1.0
         }
       ],
       "weight": 1.0
@@ -77,6 +81,21 @@
             }
           ],
           "weight": 1.0
+        }
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Armor",
+      "bound": "many",
+      "links": [
+        {
+          "name": "Heavy Suit Armored Jacket",
+          "weight": 1.0
+        },
+        {
+          "name": "Platinum Heavy Armor",
+          "weight": 0.6
         }
       ],
       "weight": 1.0
