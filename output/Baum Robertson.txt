@@ -1,8 +1,8 @@
 --------------------
 Baum Robertson (XCOM) has:
 --------------------
-1. Class Heavy
-2. Weapon Colt 2071
-3. Weapon Mauzer 95
-4. Appearance Hair Color Black
-5. Appearance Eye Color Blue
+1. Appearance Hair Color Blonde
+2. Appearance Hair Color Black
+3. Appearance Hair Color Green
+4. Appearance Skin Fair
+5. Main Weapon Magnum Revolver

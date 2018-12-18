@@ -3,61 +3,23 @@
   "bound": "many",
   "links": [
     {
-      "name": "Class",
-      "bound": "single",
-      "links": [
-        {
-          "name": "Assault",
-          "weight": 1.4
-        },
-        {
-          "name": "Sniper",
-          "weight": 1.0
-        },
-        {
-          "name": "Support",
-          "weight": 1.0
-        },
-        {
-          "name": "Heavy",
-          "weight": 1.0
-        }
-      ],
-      "weight": 1.0
-    },
-    {
-      "name": "Weapon",
-      "bound": "many",
-      "links": [
-        {
-          "name": "Mauzer 95",
-          "weight": 1.0
-        },
-        {
-          "name": "Colt 2071",
-          "weight": 1.0
-        },
-        {
-          "name": "Magnum Laser",
-          "weight": 1.0
-        },
-        {
-          "name": "AWP 2015",
-          "weight": 1.0
-        }
-      ],
-      "weight": 1.0
-    },
-    {
       "name": "Appearance",
       "bound": "all",
       "links": [
         {
           "name": "Hair Color",
-          "bound": "single",
+          "bound": "many",
           "links": [
             {
               "name": "Black",
+              "weight": 1.4
+            },
+            {
+              "name": "Red",
+              "weight": 1.0
+            },
+            {
+              "name": "Green",
               "weight": 1.0
             },
             {
@@ -65,41 +27,102 @@
               "weight": 1.0
             }
           ],
-          "weight": 1.0
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "dist": "u"
+          }
         },
         {
-          "name": "Eye Color",
+          "name": "Skin",
           "bound": "single",
           "links": [
             {
-              "name": "Green",
+              "name": "Fair",
               "weight": 1.0
             },
             {
-              "name": "Blue",
+              "name": "Dark",
               "weight": 1.0
+            },
+            {
+              "name": "White",
+              "weight": 0.3
             }
           ],
-          "weight": 1.0
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "dist": "u"
+          }
         }
       ],
-      "weight": 1.0
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "dist": "u"
+      }
     },
     {
-      "name": "Armor",
-      "bound": "many",
+      "name": "Main Weapon",
+      "bound": "single",
       "links": [
         {
-          "name": "Heavy Suit Armored Jacket",
+          "name": "AWP 2018",
           "weight": 1.0
         },
         {
-          "name": "Platinum Heavy Armor",
-          "weight": 0.6
+          "name": "Magnum Revolver",
+          "weight": 1.0
+        },
+        {
+          "name": "Swapfire Custom",
+          "bound": "many",
+          "links": [
+            {
+              "name": "Thermal scope",
+              "weight": 1.0
+            },
+            {
+              "name": "Dragonfire Smartgun",
+              "weight": 0.3
+            },
+            {
+              "name": "Lasersight",
+              "weight": 1.0
+            },
+            {
+              "name": "Forward Grip",
+              "weight": 1.0
+            },
+            {
+              "name": "Muzzlebreak",
+              "weight": 1.5
+            }
+          ],
+          "weight": 1.5,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "dist": "t"
+          }
         }
       ],
-      "weight": 1.0
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "dist": "u"
+      }
     }
   ],
-  "weight": 1.0
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "dist": "u"
+  }
 }
