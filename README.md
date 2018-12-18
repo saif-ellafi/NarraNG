@@ -62,4 +62,14 @@ On the other hand *Heavy* is a *Class* _LeafNode_ as *Mauzer 95* is a *Weapon* _
     5. Appearance Eye Color Blue
 ```
 
+### To do
+* agregar delete en generator
+* mejorar textos y tabulacion
+* decoder poner leaves al final
+* si es single o all, no pedir qrange
+* si es many, tomar el qrange. generar entre min-max
+* many choices, combinarlas por el history
+* anidar node arboles 
+* poder cancelar
+
 Author: Saif Addin Ellafi
