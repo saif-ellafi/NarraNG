@@ -4,7 +4,7 @@ import json
 class NodeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, LinkNode):
-            return {'name': o.name, 'bound': o.bound, 'links': o.links}
+            return {'name': o.name, 'bound': o.bound, 'links': o.links, 'weight': o.weight}
         elif isinstance(o, LeafNode):
             return {'name': o.name, 'weight': o.weight}
         else:
@@ -17,7 +17,7 @@ class NodeDecoder:
     def node_generator(links, root):
         for link in links:
             if 'bound' in link:
-                node = LinkNode(root, link['name'], link['bound'])
+                node = LinkNode(root, link['name'], link['bound'], link['weight'])
                 sublinks = NodeDecoder.node_generator(link['links'], node)
                 node.links = list(sublinks)
                 yield node
@@ -29,7 +29,8 @@ class NodeDecoder:
         root_node = json.load(file)
         name = root_node['name']
         bound = root_node['bound']
-        root = LinkNode(None, name, bound)
+        weight = root_node['weight']
+        root = LinkNode(None, name, bound, weight)
         root.root = root
         root_links = list(NodeDecoder.node_generator(root_node['links'], root))
         root.links = root_links
@@ -37,10 +38,13 @@ class NodeDecoder:
 
 
 class Node:
-    def __init__(self, root, name):
+    def __init__(self, root, name, weight):
         super(Node, self).__init__()
         self.root = root
         self.name = name
+        if type(weight) != float:
+            raise Exception('Node weight must be float')
+        self.weight = weight
 
 
 class LinkNode(Node):
@@ -50,18 +54,16 @@ class LinkNode(Node):
         'a': 'all'
     }
 
-    def __init__(self, root, name, bound):
+    def __init__(self, root, name, bound, weight):
         lb = bound.lower()
         if lb not in list(LinkNode.MAPPER.keys()) + list(LinkNode.MAPPER.values()):
             raise Exception('LinkNode bound must be either single(s), many(m) or all(a)')
-        super(LinkNode, self).__init__(root, name)
+        super(LinkNode, self).__init__(root, name, weight)
         self.bound = LinkNode.MAPPER[lb] if lb in LinkNode.MAPPER.keys() else lb
         self.links = []
+        self.locked = False
 
 
 class LeafNode(Node):
     def __init__(self, root, name, weight):
-        if type(weight) != float:
-            raise Exception('LeafNode weight must be float')
-        self.weight = weight
-        super(LeafNode, self).__init__(root, name)
+        super(LeafNode, self).__init__(root, name, weight)

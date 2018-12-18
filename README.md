@@ -4,112 +4,61 @@ The idea of this tiny project is to be able to generate randomly based contexts 
 
 May be used for tabletop gaming or random creativity projects.
 
-## Narrator
-The narrator is a background generator
+## NarraNG
+The narrator is a background inventor. The generator creates a structure for the narrator to use.
+The structure is made of Nodes with particular properties in order to make sense for a given narration.
+
+These tools work under command-line only. No plans for a GUI yet.
+
 ### Usage
-Put json in `/project` and pass it's name (without `.json`) as project argument to narrator.
+Use the Generator to build node structures (*Projects*). Then, the narrator will use these projects to create narrations.
 
-Import and start a narrator, indicating the name of the project you want to use (folder under project) and the target name (this is made up by user). Just as follows:
+The following scripts are wizards that will guide you through the process.
 
-```python
-from narrator.narrang import Narrator
-narrator = Narrator("XCOM", "Robert Baratheon")
+Run `python run_generator.py` and follow instructions to generate a `.json` structure
+Run `python run_narrator.py` and follow instructions to generate content
+
+### Generator
+The generator allows you to create and edit `.json` structures in a very easy way to use it on the Narrator later.
+You can create LinkNodes (which contain sub-nodes) or LeafNodes which are end-point contents.
+It allows you to easily load and continue your work later as well, and focuses on ease-of-use and fast data-entry.
+
+### Narrator
+The narrator will use a generated `.json` project and will allow the user to manually or automatically generate a target narration.
+The wizard allows you to test and generate multiple aspect combinations of your target narration.
+It focuses on customization and ease of use.
+
+### Details
+### Node
+Node represents a data structure similar to a graph
+* root: it points to the upper level node (for root, it is itself)
+* name: text representation
+* weight: random probability weight. Defaults to 1.0
+### LinkNode (Node)
+LinkNode is a structure that contains multiple nodes within
+* links: points to all sub-nodes
+* bound: a property that applies only when generating randomly
+  * `single` when the LinkNode allows only one sub-node
+  * `many` when the LinkNode may have more than one sub-node
+  * `all` when the LinkNode must have all sub-nodes
+### LeafNode (Node)
+LeafNode represents the endpoint of a node structure. Also called a Selection.
+
+### Example output
+The following example shows an XCOM like character.
+
+*Class* is a `single` _LinkNode_. *Weapon* is a `many` _LinkNode_. *Appearance* is a `all` _LinkNode_.
+
+On the other hand *Heavy* is a *Class* _LeafNode_ as *Mauzer 95* is a *Weapon* _LeafNode_
+```
+    --------------------
+    Baum Robertson (XCOM) has:
+    --------------------
+    1. Class Heavy
+    2. Weapon Colt 2071
+    3. Weapon Mauzer 95
+    4. Appearance Hair Color Black
+    5. Appearance Eye Color Blue
 ```
 
-Such project structure will be utilized as a hierarchy generation tree.
-
-Example `XCOM.json`
-
-```json
-{
-  "Weapon": {
-    "Rifles": {
-      "Automatics": ["AK47", "Manning71"],
-      "Snipers": ["AWP-4", "SNEAK1"]
-    },
-    "Heavy": ["Desert", "LOGGA"],
-    "Pistols": ["Ares", "NogaPIP"]
-  },
-  "Class": ["Grenadier", "Medic"],
-  "Spaceship": ["Destroyer", "Warship"]
-}
-```
-
-then call `narrator.gen()` to get it kicked. At any time of the wizard you can either:
-
-1. Leave empty for random selection
-2. Enter the index choice
-3. Enter #n to generate n of each of the possible selections
-4. Enter a custom input you'd like to have
-5. 0 to return and do nothing
-
-or call `narrator.mgen(n=3)` to generate #n random choices
-
-print the narrator any time to show selections content
-        
-# Example usage and results
-```python
-from narrator.narrang import Narrator
-narrator = Narrator("XCOM", "Robert Baratheon")
-'''
-            Narrator initialized. On wizard, use the following inputs:
-                - Number selection
-                - Empty For random selection
-                - #n to generate n of each possible selection
-                - Any text for customized entry
-                - 0 to return and do nothing
-'''
-                
-narrator.gen()
-'''
-1. Spaceship*
-2. Class*
-3. Weapon*
->> 2
-
-1. Class MEC Trooper
-2. Class Psionic
-3. Class Assault
-4. Class XCOM Hero
-5. Class Heavy
-6. Class Sniper
-7. Class Support
->>3
-'''
-
-narrator.gen()
-'''
-1. Spaceship*
-2. Class*
-3. Weapon*
->> 3
-
-1. Weapon Pistols*
-2. Weapon Heavy*
-3. Weapon Rifles*
->> 3
-
-1. Weapon Rifles Snipers*
-2. Weapon Rifles Automatics*
->> 1
-
-1. Weapon Rifles Snipers AWP-4
-2. Weapon Rifles Snipers Dorsa
->> 1
-'''
-print(narrator)
-'''
---------------------
-Project Robert Baratheon has:
---------------------
-1. Class Assault
-2. Weapon Rifles Snipers AWP-4
-'''
-```
-
-## To Do
-1. Export result to file with format
-2. Add weights or strategies for random choices
-3. Improve story-telling
-
-Author: Saif Ellafi
+Author: Saif Addin Ellafi
