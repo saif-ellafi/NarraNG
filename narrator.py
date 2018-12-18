@@ -53,7 +53,7 @@ class Narrator:
                 - @n to generate n random selections
                 - #n to generate n random of each possible selection
                 - Any text for customized entry
-                - 0 to return and do nothing
+                - 0 to exit
                 """
         self.load_project(project)
         self.build = []
@@ -80,6 +80,9 @@ class Narrator:
             if choice == '0':
                 logging.debug("exit option selected")
                 return 0
+            elif choice == '#':
+                logging.debug("# random go")
+                return choice
             elif choice.startswith('#') or choice.startswith('@'):
                 logging.debug("# of each")
                 try:
@@ -153,9 +156,16 @@ class Narrator:
                     logging.info("Node %s locked. Ignored new value." % node.name)
                     return False
             elif node.bound == 'all':
-                user_choice = '#'+str(len(node.links))
+                user_choice = '#'+str(1)
             else:
-                user_choice = self.weighted_random_node(node_links)
+                minv = node.qrange.minv
+                maxv = node.qrange.maxv
+                rndchoice = random.randrange(minv, maxv+1)
+                logging.debug("Decided to go for %s nodes in %s" % (rndchoice, node.name))
+                result_nodes = []
+                for _ in range(0, rndchoice):
+                    result_nodes.append(self.weighted_random_node(node_links))
+                user_choice = result_nodes.copy()
         else:
             print('\n'.join([str(i+1) + '. ' + k.name for (i, k) in enumerate(node_links)]))
             user_choice = self.input_callback(node_links)
@@ -168,13 +178,24 @@ class Narrator:
         elif str(user_choice) == '--clear':
             self.build.clear()
             self.load_project(self.project)
+        elif isinstance(user_choice, list):
+            logging.debug("Detected list choice")
+            for qnode in user_choice:
+                self.handle_choice(qnode, history, auto)
         elif isinstance(user_choice, Node):
             self.handle_choice(user_choice, history, auto)
+        elif str(user_choice) == '#':
+            logging.debug("User entered Random mode")
+            for i in range(0, len(node_links)):
+                chosen_value = node_links[i]
+                logging.debug("entering link %s" % chosen_value.name)
+                self.handle_choice(chosen_value, history, auto=True)
         elif str(user_choice).startswith('#'):
             n = int(user_choice[1:])
             for i in range(0, len(node_links)):
                 for _ in range(0, n):
                     chosen_value = node_links[i]
+                    logging.debug("entering link %s" % chosen_value.name)
                     self.handle_choice(chosen_value, history, auto=True)
         elif str(user_choice).startswith('@'):
             n = int(user_choice[1:])
