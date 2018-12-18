@@ -16,6 +16,7 @@ Use the Generator to build node structures (*Projects*). Then, the narrator will
 The following scripts are wizards that will guide you through the process.
 
 Run `python run_generator.py` and follow instructions to generate a `.json` structure
+
 Run `python run_narrator.py` and follow instructions to generate content
 
 ### Generator
