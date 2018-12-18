@@ -1,0 +1,86 @@
+{
+  "name": "XCOM",
+  "bound": "many",
+  "links": [
+    {
+      "name": "Class",
+      "bound": "single",
+      "links": [
+        {
+          "name": "Assault",
+          "weight": 1.4
+        },
+        {
+          "name": "Sniper",
+          "weight": 1.0
+        },
+        {
+          "name": "Support",
+          "weight": 1.0
+        },
+        {
+          "name": "Heavy",
+          "weight": 1.0
+        }
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Weapon",
+      "bound": "many",
+      "links": [
+        {
+          "name": "Mauzer 95",
+          "weight": 1.0
+        },
+        {
+          "name": "Colt 2071",
+          "weight": 1.0
+        },
+        {
+          "name": "Magnum Laser",
+          "weight": 1.0
+        }
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Appearance",
+      "bound": "all",
+      "links": [
+        {
+          "name": "Hair Color",
+          "bound": "single",
+          "links": [
+            {
+              "name": "Black",
+              "weight": 1.0
+            },
+            {
+              "name": "Blonde",
+              "weight": 1.0
+            }
+          ],
+          "weight": 1.0
+        },
+        {
+          "name": "Eye Color",
+          "bound": "single",
+          "links": [
+            {
+              "name": "Green",
+              "weight": 1.0
+            },
+            {
+              "name": "Blue",
+              "weight": 1.0
+            }
+          ],
+          "weight": 1.0
+        }
+      ],
+      "weight": 1.0
+    }
+  ],
+  "weight": 1.0
+}
