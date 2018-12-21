@@ -5,7 +5,7 @@ from components import *
 
 class Generator:
 
-    def __init__(self, name, bound='m', weight=1.0, qrange=QRange(1, 1, 'u')):
+    def __init__(self, name, bound='m', weight=1.0, qrange=QRange(1, 1, 1)):
         self.root_node = LinkNode(None, name, weight=weight, bound=bound, qrange=qrange)
         self.root_node.root = self.root_node
         self.name = name
@@ -16,15 +16,15 @@ class Generator:
         name = None
         while not name:
             name = input('LinkNode name\n>> ')
-        if name == '#' :
-            return ('#', '#', '#', '#' )
+        if name == '#':
+            return '#', '#', '#', '#'
         bound = None
         while bound not in ['m', 's', 'a', '#']:
             bound = input('LinkNode bound (many).\ns. single\nm. many\na. all\n>> ')
             if not bound:
                 bound = 'm'
-        if bound == '#' :
-            return ('#', '#', '#', '#' )
+        if bound == '#':
+            return '#', '#', '#', '#'
         weight = None
         while not weight:
             a = input("LinkNode weight (1.0)\n>> ")
@@ -38,21 +38,14 @@ class Generator:
                 except ValueError:
                     weight = None
                     continue
-        if weight == '#' :
-            return ('#', '#', '#', '#' )
-        qrange_dist = None
-        while qrange_dist not in ['u', 'n', 't', '#']:
-            qrange_dist = input('LinkNode0 qrange dist (u).\nu. uniform\nn. normal\nt. t-dist\n>> ')
-            if not qrange_dist:
-                qrange_dist = 'u'
-        if qrange_dist == '#' :
-            return ('#', '#', '#', '#' )
+        if weight == '#':
+            return '#', '#', '#', '#'
         qrange_minv = None
         while not qrange_minv:
             a = input("LinkNode qrange min (1)\n>> ")
             if not a:
                 qrange_minv = 1
-            elif a == '#' :
+            elif a == '#':
                 qrange_minv = '#'
             else:
                 try:
@@ -60,14 +53,14 @@ class Generator:
                 except ValueError:
                     qrange_minv = None
                     continue
-        if qrange_minv  == '#' :
-            return ('#', '#', '#', '#' )
+        if qrange_minv == '#':
+            return '#', '#', '#', '#'
         qrange_maxv = None
         while not qrange_maxv:
             a = input("LinkNode qrange max (1)\n>> ")
             if not a:
                 qrange_maxv = 1
-            elif a == '#' :
+            elif a == '#':
                 qrange_maxv = '#'
             else:
                 try:
@@ -75,9 +68,24 @@ class Generator:
                 except ValueError:
                     qrange_maxv = None
                     continue
-        if qrange_maxv  == '#' :
-            return ('#', '#', '#', '#' )
-        return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_dist)
+        if qrange_maxv == '#':
+            return '#', '#', '#', '#'
+        qrange_mode = None
+        while not qrange_mode:
+            input_mode = input('LinkNode0 qrange mode %i.\n>> ')
+            if input_mode == '#':
+                return '#', '#', '#', '#'
+            try:
+                input_mode = int(input_mode)
+                if qrange_minv <= qrange_mode <= qrange_maxv:
+                    qrange_mode = input_mode
+                else:
+                    continue
+            except ValueError:
+                continue
+            if not qrange_mode:
+                qrange_mode = round((qrange_minv+qrange_maxv)/2)
+        return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode)
 
     @staticmethod
     def create_leaf_node():
@@ -133,8 +141,8 @@ class Generator:
         answer = None
 
         while not answer:
-            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nf. LeafNode\n\n'
-                           'enter $i to jump into a LinkNode\n\n>> ')
+            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nf. '
+                           'LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
 
         try:
             link_answer = int(answer)
@@ -159,7 +167,7 @@ class Generator:
             return self.enter_or_not(node, link_node)
         elif answer == 'ql':
             name = input("Quick name input: \n>> ")
-            bound, weight, qrange =( 'm', 1.0, QRange(minv=1, maxv=1, dist='u'))
+            bound, weight, qrange = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'))
             if name == '#' or bound == '#':
                 return self.menu(node)
             link_node = LinkNode(node, name, bound, weight, qrange)

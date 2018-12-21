@@ -158,9 +158,7 @@ class Narrator:
             elif node.bound == 'all':
                 user_choice = '#'+str(1)
             else:
-                minv = node.qrange.minv
-                maxv = node.qrange.maxv
-                rndchoice = random.randrange(minv, maxv+1)
+                rndchoice = round(random.triangular(node.qrange.minv, node.qrange.maxv, node.qrange.mode))
                 logging.debug("Decided to go for %s nodes in %s" % (rndchoice, node.name))
                 result_nodes = []
                 for _ in range(0, rndchoice):

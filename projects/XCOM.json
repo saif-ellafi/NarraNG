@@ -31,7 +31,7 @@
           "qrange": {
             "minv": 1,
             "maxv": 3,
-            "dist": "u"
+            "mode": 2
           }
         },
         {
@@ -55,7 +55,7 @@
           "qrange": {
             "minv": 1,
             "maxv": 1,
-            "dist": "u"
+            "mode": 1
           }
         }
       ],
@@ -63,7 +63,7 @@
       "qrange": {
         "minv": 1,
         "maxv": 1,
-        "dist": "u"
+        "mode": 1
       }
     },
     {
@@ -107,7 +107,7 @@
           "qrange": {
             "minv": 1,
             "maxv": 3,
-            "dist": "t"
+            "mode": 2
           }
         }
       ],
@@ -115,7 +115,7 @@
       "qrange": {
         "minv": 1,
         "maxv": 1,
-        "dist": "u"
+        "mode": 1
       }
     }
   ],
@@ -123,6 +123,6 @@
   "qrange": {
     "minv": 1,
     "maxv": 1,
-    "dist": "u"
+    "mode": 1
   }
 }

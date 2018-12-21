@@ -4,16 +4,16 @@ import json
 class NodeEncoder(json.JSONEncoder):
 
     @staticmethod
-    def decode_qrange(qr):
+    def encode_qrange(qr):
         return {
             'minv': qr.minv,
             'maxv': qr.maxv,
-            'dist': qr.dist
+            'mode': qr.mode
         }
 
     def default(self, o):
         if isinstance(o, LinkNode):
-            return {'name': o.name, 'bound': o.bound, 'links': o.links, 'weight': o.weight, 'qrange': NodeEncoder.decode_qrange(o.qrange)}
+            return {'name': o.name, 'bound': o.bound, 'links': o.links, 'weight': o.weight, 'qrange': NodeEncoder.encode_qrange(o.qrange)}
         elif isinstance(o, LeafNode):
             return {'name': o.name, 'weight': o.weight}
         else:
@@ -23,14 +23,14 @@ class NodeEncoder(json.JSONEncoder):
 class NodeDecoder:
 
     @staticmethod
-    def create_qrange(content):
-        return QRange(content['minv'], content['maxv'], content['dist'])
+    def decode_qrange(content):
+        return QRange(content['minv'], content['maxv'], content['mode'])
 
     @staticmethod
     def node_generator(links, root):
         for link in links:
             if 'bound' in link:
-                node = LinkNode(root, link['name'], link['bound'], link['weight'], NodeDecoder.create_qrange(link['qrange']))
+                node = LinkNode(root, link['name'], link['bound'], link['weight'], NodeDecoder.decode_qrange(link['qrange']))
                 sublinks = NodeDecoder.node_generator(link['links'], node)
                 node.links = list(sublinks)
                 yield node
@@ -44,7 +44,7 @@ class NodeDecoder:
         name = root_node['name']
         bound = root_node['bound']
         weight = root_node['weight']
-        qrange = NodeDecoder.create_qrange(root_node['qrange'])
+        qrange = NodeDecoder.decode_qrange(root_node['qrange'])
         root = LinkNode(None, name, bound, weight, qrange)
         root.root = root
         root_links = list(NodeDecoder.node_generator(root_node['links'], root))
@@ -53,12 +53,17 @@ class NodeDecoder:
 
 
 class QRange:
-    def __init__(self, minv, maxv, dist):
+    def __init__(self, minv, maxv, mode):
         self.minv = minv
         self.maxv = maxv
-        if dist not in ['u', 'n', 't']:
-            raise Exception('Created QRange with invalid dist. Can be only t or n. Received %s' % dist)
-        self.dist = dist
+        try:
+            int_mode = int(mode)
+        except ValueError:
+            raise Exception('Created QRange with invalid mode. Must be a number %s' % mode)
+        if minv <= int_mode <= maxv:
+            self.mode = mode
+        else:
+            raise Exception("Mode must be within minv and maxv")
 
 
 class Node:
