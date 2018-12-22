@@ -241,4 +241,6 @@ class Narrator:
     def save(self):
         with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
             file.write(str(self))
+        with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
+            json.dump(self.output_node_root, file, cls=NodeEncoder, indent=2)
 
