@@ -4,7 +4,7 @@ import logging
 import json
 import pprint
 
-from components import NodeDecoder, NodeEncoder, Node, LinkNode
+from components import NodeDecoder, NodeEncoder, Node, LinkNode, LeafNode
 from common import Common
 
 logging.getLogger().setLevel(logging.WARN)
@@ -19,27 +19,6 @@ class Narrator:
 
     IGNORE_REPEAT = True
 
-    # Represents a narrative selection
-    class Selection:
-        def __init__(self, name, description, history):
-            self.name = name
-            self.description = description
-            self.history = history
-
-        def __eq__(self, other):
-            if isinstance(other, Narrator.Selection):
-                return self.name == other.name and self.history == other.history
-            else:
-                return False
-
-        def __repr__(self):
-            sel_str = ''
-            for node in self.history:
-                sel_str += node.name + (' (( ' + node.description + ' )) ' if node.description else '') + '\n\t'
-            sel_str += self.name + (' (( ' + self.description + ' )) ' if self.description else ' ')
-            sel_str += '\n'
-            return sel_str
-
     # Represents a weighted selection node
     class WeightedChoice:
         def __init__(self, node, min_bound, max_bound):
@@ -53,8 +32,8 @@ class Narrator:
         self.name = name if name else project
         self.project = project
         self.root_node = None
+        self.output_node_root = None
         self.load_project(project)
-        self.build = []
         self.intro = """
             Narrator initialized. On wizard, use the following inputs:
                 - --help for command list
@@ -71,10 +50,10 @@ class Narrator:
 
     # How is Narrative represented in console
     def __repr__(self):
-        if self.build:
+        if self.output_node_root.links:
             content = '''--------------------\n{} ({})\n--------------------\n\n{}\n--------------------'''. \
                 format(self.name, self.project, '\n'.join([str(index+1) + '. ' +
-                                                           str(selection) for index, selection in enumerate(self.build)]))
+                                                           str(selection) for index, selection in enumerate(self.output_node_root.links)]))
         else:
             content = '''--------------------\n{} is empty\n--------------------'''. \
                 format(self.name)
@@ -82,14 +61,11 @@ class Narrator:
 
     # Handles user's input and validations
     @staticmethod
-    def input_callback(nodes):
+    def user_input(nodes):
         max_index = len(nodes)
         while True:
             choice = input('>> ').strip()
-            if choice == '0':
-                logging.debug("exit option selected")
-                return 0
-            elif choice == '#':
+            if choice == '#':
                 logging.debug("# random go")
                 return choice
             elif choice.startswith('#') or choice.startswith('@'):
@@ -111,17 +87,9 @@ class Narrator:
                     if choice:
                         return choice
 
-    def show_tree(self):
-        pprint.pprint(json.dumps(self.root_node, cls=NodeEncoder))
-
-    # Clears current selections
-    def clear(self):
-        logging.debug("Clearing build")
-        self.build = []
-
-    # Deletes a specific selection
-    def delete(self, index):
-        del self.build[index-1]
+    @staticmethod
+    def delete(node, index):
+        del node.links[index - 1]
 
     # Returns a random selection considering weights
     @staticmethod
@@ -140,96 +108,125 @@ class Narrator:
                 logging.debug('found uniform match at: %s against: %s' % (str(rnd), str(choice.node.name)))
                 return choice.node
 
+    def reset_output_node(self):
+        self.output_node_root = LinkNode(
+            None,
+            self.root_node.name,
+            self.root_node.bound,
+            self.root_node.weight,
+            self.root_node.qrange,
+            self.root_node.description
+        )
+        self.output_node_root.root = self.output_node_root
+
+    def show_tree(self):
+        pprint.pprint(json.dumps(self.root_node, cls=NodeEncoder))
+
+    # Clears current selections
+    def clear(self):
+        logging.debug("Clearing build")
+        self.reset_output_node()
+
     def load_project(self, project):
-        path = os.path.join(Common.PROJECTS_FOLDER, project+'.json')
         if type(project) == LinkNode:
             self.root_node = project
         elif type(project) == str:
+            path = os.path.join(Common.PROJECTS_FOLDER, project+'.json')
             with open(path) as file:
                 self.root_node = NodeDecoder.decode(file)
         else:
             raise Exception("Invalid project type. Must be either a LinkNode or a path to file.")
+        self.reset_output_node()
+
+    def simulate_choice(self, node, node_links):
+        if node.bound == 'single':
+            if not node.locked:
+                node.locked = True
+                user_choice = self.weighted_random_node(node_links)
+            else:
+                logging.info("Node %s locked. Ignored new value." % node.name)
+                user_choice = None
+        elif node.bound == 'all':
+            user_choice = '#'+str(1)
+        else:
+            rndchoice = round(random.triangular(node.qrange.minv, node.qrange.maxv, node.qrange.mode))
+            logging.debug("Decided to go for %s nodes in %s" % (rndchoice, node.name))
+            result_nodes = []
+            for _ in range(0, rndchoice):
+                result_nodes.append(self.weighted_random_node(node_links))
+            user_choice = result_nodes.copy()
+        return user_choice
 
     # Internal recursive value choice generator
-    def _gen(self, node=None, history=None, auto=False):
+    def _gen(self, node=None, output_node=None, auto=False):
         node = node if node else self.root_node
+        output_node = output_node if output_node else self.output_node_root
         node_links = node.links
-        history = history if history else []
         logging.debug("successfully built " + str(len(node_links)) + ' selections')
         if auto:
-            if node.bound == 'single':
-                if not node.locked:
-                    node.locked = True
-                    user_choice = self.weighted_random_node(node_links)
-                else:
-                    logging.info("Node %s locked. Ignored new value." % node.name)
-                    return False
-            elif node.bound == 'all':
-                user_choice = '#'+str(1)
-            else:
-                rndchoice = round(random.triangular(node.qrange.minv, node.qrange.maxv, node.qrange.mode))
-                logging.debug("Decided to go for %s nodes in %s" % (rndchoice, node.name))
-                result_nodes = []
-                for _ in range(0, rndchoice):
-                    result_nodes.append(self.weighted_random_node(node_links))
-                user_choice = result_nodes.copy()
+            user_choice = self.simulate_choice(node, node_links)
         else:
             print('\n'.join([str(i+1) + '. ' + k.name for (i, k) in enumerate(node_links)]))
-            user_choice = self.input_callback(node_links)
-        if user_choice == 0 or str(user_choice) == '--exit':
+            user_choice = self.user_input(node_links)
+        if str(user_choice) == '--exit':
             return True
         elif str(user_choice) == '--help':
             print(self.intro)
         elif str(user_choice) == '--save':
             self.save()
         elif str(user_choice) == '--clear':
-            self.build.clear()
             self.load_project(self.project)
         elif isinstance(user_choice, list):
             logging.debug("Detected list choice")
             for qnode in user_choice:
-                self.handle_choice(qnode, history, auto)
+                self.handle_choice(qnode, output_node, auto)
         elif isinstance(user_choice, Node):
-            self.handle_choice(user_choice, history, auto)
+            self.handle_choice(user_choice, output_node, auto)
         elif str(user_choice) == '#':
             logging.debug("User entered Random mode")
             for i in range(0, len(node_links)):
-                chosen_value = node_links[i]
-                logging.debug("entering link %s" % chosen_value.name)
-                self.handle_choice(chosen_value, history, auto=True)
+                chosen_node = node_links[i]
+                logging.debug("entering link %s" % chosen_node.name)
+                self.handle_choice(chosen_node, output_node, auto=True)
         elif str(user_choice).startswith('#'):
             n = int(user_choice[1:])
             for i in range(0, len(node_links)):
                 for _ in range(0, n):
-                    chosen_value = node_links[i]
-                    logging.debug("entering link %s" % chosen_value.name)
-                    self.handle_choice(chosen_value, history, auto=True)
+                    chosen_node = node_links[i]
+                    logging.debug("entering link %s" % chosen_node.name)
+                    self.handle_choice(chosen_node, output_node, auto=True)
         elif str(user_choice).startswith('@'):
             n = int(user_choice[1:])
             for _ in range(0, n):
-                self._gen(node, history, auto=True)
+                self._gen(node, auto=True)
         elif type(user_choice) == str:
-            self.build.append(self.Selection(user_choice, description=None, history=history))
+            node.links.append(LeafNode(node, user_choice, 1.0, None))
             print(self)
         else:
             if not node.locked:
                 if node.bound == 'single':
                     node.locked = True
-                chosen_value = node_links[user_choice - 1]
-                self.handle_choice(chosen_value, history, auto)
+                chosen_node = node_links[user_choice - 1]
+                self.handle_choice(chosen_node, output_node, auto)
             else:
                 logging.info("Node %s locked. Ignored new value." % node.name)
 
     # Internal handled for choice roots
-    def handle_choice(self, chosen_value, history, auto):
-        if type(chosen_value) == LinkNode:
-            hc = history.copy()
-            hc.append(chosen_value)
-            self._gen(chosen_value, hc, auto=auto)
+    def handle_choice(self, new_node, output_node, auto):
+        if type(new_node) == LinkNode:
+            blank_node = LinkNode(
+                output_node,
+                new_node.name,
+                new_node.bound,
+                new_node.weight,
+                new_node.qrange,
+                new_node.description
+            )
+            output_node.links.append(blank_node)
+            self._gen(new_node, blank_node, auto=auto)
         else:
-            selection = self.Selection(chosen_value.name, chosen_value.description, history)
-            if not (Narrator.IGNORE_REPEAT and selection in self.build):
-                self.build.append(selection)
+            if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
+                output_node.links.append(new_node)
             else:
                 logging.info('IGNORE_REPEAT is True and selection already exists in target')
 

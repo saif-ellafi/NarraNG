@@ -2,22 +2,21 @@
 Peter Petrelli (XCOM)
 --------------------
 
-1. Appearance
-	Hair Color
-	Blonde 
+1. Appearance 
+	Hair Color 
+		Black (( Normal boring hair )) 
+	Skin 
+		White 
 
-2. Appearance
-	Skin
-	Dark 
+2. Weapons 
+	Swapfire Custom 
+		Thermal scope (( Heat detection mod )) 
+		Forward Grip (( Improves handling )) 
 
-3. Weapons
-	Swapfire Custom (( A customized modern gun )) 
-	Muzzlebreak (( The classic mod that stabilizes firing )) 
+3. Armor (( Basic Protection )) 
+		Light Armor 
 
-4. Armor (( Basic Protection )) 
-	Light Armor 
-
-5. Vehicle (( Transport and combat drones )) 
-	Drone XF86 (( Combat Drone )) 
+4. Vehicle (( Transport and combat drones )) 
+		Nissan Z5 (( Speed Vehicle )) 
 
 --------------------

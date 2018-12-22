@@ -117,8 +117,22 @@ class Node:
             raise Exception('Node weight must be float')
         self.weight = weight
 
+    def __eq__(self, other):
+        return self.name == other.name and self.root.name == other.root.name
+
+    def tostr(self, node, sel_str):
+        if isinstance(node, LeafNode):
+            sel_str += '\t'
+        sel_str += node.name + (' (( ' + node.description + ' )) ' if node.description else ' ')
+        if isinstance(node, LinkNode):
+            for subnode in node.links:
+                sel_str = self.tostr(subnode, sel_str + '\n\t')
+        return sel_str
+
     def __repr__(self):
-        return self.name
+        sel_str = self.tostr(self, '')
+        sel_str += '\n'
+        return sel_str
 
 
 class LinkNode(Node):
@@ -138,9 +152,6 @@ class LinkNode(Node):
         self.qrange = qrange
         self.locked = False
         self.external = None
-
-    def __repr__(self):
-        return self.name
 
 
 class LeafNode(Node):
