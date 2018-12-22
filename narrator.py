@@ -40,9 +40,12 @@ class Narrator:
 
     # Initializes project, path recognition and user input
     def __init__(self, project, name=None):
+        logging.debug("DEBUG MODE ENABLED")
         self.name = name if name else project
         self.project = project
         self.root_node = None
+        self.load_project(project)
+        self.build = []
         self.intro = """
             Narrator initialized. On wizard, use the following inputs:
                 - --help for command list
@@ -55,10 +58,7 @@ class Narrator:
                 - Any text for customized entry
                 - 0 to exit
                 """
-        self.load_project(project)
-        self.build = []
         print(self.intro)
-        logging.debug("DEBUG MODE ENABLED")
 
     # How is Narrative represented in console
     def __repr__(self):
