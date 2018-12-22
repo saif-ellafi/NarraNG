@@ -1,8 +1,0 @@
---------------------
-Baum Robertson (XCOM) has:
---------------------
-1. Appearance Hair Color Blonde
-2. Appearance Hair Color Black
-3. Appearance Hair Color Green
-4. Appearance Skin Fair
-5. Main Weapon Magnum Revolver

@@ -7,7 +7,7 @@ import pprint
 from components import NodeDecoder, NodeEncoder, Node, LinkNode
 from common import Common
 
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.WARN)
 
 
 class Narrator:

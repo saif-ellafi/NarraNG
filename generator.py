@@ -1,6 +1,7 @@
-import os
-
+import logging
 from components import *
+
+logging.getLogger().setLevel(logging.WARN)
 
 
 class Generator:
@@ -72,9 +73,11 @@ class Generator:
             return '#', '#', '#', '#'
         qrange_mode = None
         while not qrange_mode:
-            input_mode = input('LinkNode0 qrange mode %i.\n>> ')
+            input_mode = input('LinkNode0 qrange mode (%i)\n>> ' % round((qrange_minv+qrange_maxv)/2))
             if input_mode == '#':
                 return '#', '#', '#', '#'
+            if not qrange_mode:
+                qrange_mode = round((qrange_minv+qrange_maxv)/2)
             try:
                 input_mode = int(input_mode)
                 if qrange_minv <= qrange_mode <= qrange_maxv:
@@ -83,8 +86,6 @@ class Generator:
                     continue
             except ValueError:
                 continue
-            if not qrange_mode:
-                qrange_mode = round((qrange_minv+qrange_maxv)/2)
         return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode)
 
     @staticmethod
@@ -116,11 +117,11 @@ class Generator:
                        map(lambda n: str(n[0]+1) + ': ' + n[1].name,
                            enumerate(filter(lambda nn: type(nn) == LinkNode, node.links))
                            )
-                   ),
+                   ) if not node.external else (node.external + '(external)'),
                    ' | '.join(map(lambda n: n.name,
                                   filter(lambda nn: type(nn) == LeafNode, node.links)
                                   )
-                              )
+                              ) if not node.external else '(external)'
                )
 
     def enter_or_not(self, current_node, new_node):
@@ -141,8 +142,8 @@ class Generator:
         answer = None
 
         while not answer:
-            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nf. '
-                           'LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
+            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nxl. '
+                           'External LinkNode\nf. LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
 
         try:
             link_answer = int(answer)
@@ -159,14 +160,26 @@ class Generator:
             self.save()
             return self.menu(self.root_node)
         elif answer == 'l':
+            if node.external:
+                logging.warning('Cannot add LinkNode. Node links are external')
+                return self.menu(node)
             name, bound, weight, qrange = self.create_link_node()
             if name == '#' or bound == '#' or weight == '#' or qrange == '#':
                 return self.menu(node)
             link_node = LinkNode(node, name, bound, weight, qrange)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
+        elif answer == 'xl':
+            if len(links) != 0:
+                logging.warning("external links require current node links to be empty")
+                return self.menu(node)
+            node.external = input("external link name\n>> ")
+            return self.menu(node)
         elif answer == 'ql':
-            name = input("Quick name input: \n>> ")
+            if node.external:
+                logging.warning('Cannot add LinkNode. Node links are external')
+                return self.menu(node)
+            name = input("Quick name input\n>> ")
             bound, weight, qrange = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'))
             if name == '#' or bound == '#':
                 return self.menu(node)
@@ -174,6 +187,9 @@ class Generator:
             links.append(link_node)
             return self.enter_or_not(node, link_node)
         elif answer == 'f':
+            if node.external:
+                logging.warning('Cannot add LinkNode. Node links are external')
+                return self.menu(node)
             name, weight = self.create_leaf_node()
             if name == '#' or weight == '#':
                 return self.menu(node)
@@ -181,6 +197,9 @@ class Generator:
             links.append(leaf_node)
             return self.menu(node)
         elif 1 <= link_answer <= len(node_links):
+            if node.external:
+                logging.warning('Cannot enter an external LinkNode')
+                return self.menu(node)
             return self.menu(node_links[link_answer - 1])
         else:
             return self.menu(node)
@@ -206,7 +225,7 @@ class Generator:
         if isfile:
             r = None
             while r not in ['y', 'n']:
-                r = input('file %s exists. continue? y/n (n)\n>> ')
-            if not r or r == 'n':
-                return
+                r = input('file %s exists. continue? y/n (n)\n>> ' % self.path)
+                if not r or r == 'n':
+                    return
         self.run()

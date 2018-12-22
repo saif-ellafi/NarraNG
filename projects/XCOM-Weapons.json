@@ -1,0 +1,52 @@
+{
+  "name": "XCOM-Weapons",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "AWP 2018",
+      "weight": 1.0
+    },
+    {
+      "name": "Magnum Revolver",
+      "weight": 1.0
+    },
+    {
+      "name": "Swapfire Custom",
+      "bound": "many",
+      "weight": 1.5,
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2
+      },
+      "links": [
+        {
+          "name": "Thermal scope",
+          "weight": 1.0
+        },
+        {
+          "name": "Dragonfire Smartgun",
+          "weight": 0.3
+        },
+        {
+          "name": "Lasersight",
+          "weight": 1.0
+        },
+        {
+          "name": "Forward Grip",
+          "weight": 1.0
+        },
+        {
+          "name": "Muzzlebreak",
+          "weight": 1.5
+        }
+      ]
+    }
+  ]
+}

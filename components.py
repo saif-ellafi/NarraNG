@@ -1,4 +1,6 @@
 import json
+import os
+from common import Common
 
 
 class NodeEncoder(json.JSONEncoder):
@@ -13,7 +15,13 @@ class NodeEncoder(json.JSONEncoder):
 
     def default(self, o):
         if isinstance(o, LinkNode):
-            return {'name': o.name, 'bound': o.bound, 'links': o.links, 'weight': o.weight, 'qrange': NodeEncoder.encode_qrange(o.qrange)}
+            return {
+                'name': o.name,
+                'bound': o.bound,
+                'weight': o.weight,
+                'qrange': NodeEncoder.encode_qrange(o.qrange),
+                'links': o.external if o.external else o.links,
+            }
         elif isinstance(o, LeafNode):
             return {'name': o.name, 'weight': o.weight}
         else:
@@ -27,16 +35,33 @@ class NodeDecoder:
         return QRange(content['minv'], content['maxv'], content['mode'])
 
     @staticmethod
-    def node_generator(links, root):
+    def decode_listlinks(links, root):
         for link in links:
             if 'bound' in link:
-                node = LinkNode(root, link['name'], link['bound'], link['weight'], NodeDecoder.decode_qrange(link['qrange']))
-                sublinks = NodeDecoder.node_generator(link['links'], node)
+                node = LinkNode(
+                    root,
+                    link['name'],
+                    link['bound'],
+                    link['weight'],
+                    NodeDecoder.decode_qrange(link['qrange'])
+                )
+                sublinks = NodeDecoder.decode_links(link['links'], node)
                 node.links = list(sublinks)
                 yield node
             else:
                 node = LeafNode(root, link['name'], link['weight'])
                 yield node
+
+    @staticmethod
+    def decode_links(links, root):
+        if type(links) == list:
+            return list(NodeDecoder.decode_listlinks(links, root))
+        else:
+            path = os.path.join(Common.PROJECTS_FOLDER, links+'.json')
+            root.external = links
+            with open(path) as sublinks_file:
+                delegate_sublinks = NodeDecoder.decode(sublinks_file).links
+            return delegate_sublinks
 
     @staticmethod
     def decode(file):
@@ -47,7 +72,7 @@ class NodeDecoder:
         qrange = NodeDecoder.decode_qrange(root_node['qrange'])
         root = LinkNode(None, name, bound, weight, qrange)
         root.root = root
-        root_links = list(NodeDecoder.node_generator(root_node['links'], root))
+        root_links = list(NodeDecoder.decode_links(root_node['links'], root))
         root.links = root_links
         return root
 
@@ -95,6 +120,10 @@ class LinkNode(Node):
         self.links = []
         self.qrange = qrange
         self.locked = False
+        self.external = None
+
+    def __repr__(self):
+        return self.name
 
 
 class LeafNode(Node):
