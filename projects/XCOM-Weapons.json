@@ -10,16 +10,19 @@
   "links": [
     {
       "name": "AWP 2018",
-      "weight": 1.0
+      "weight": 1.0,
+      "description": "Sniper Rifle Stock"
     },
     {
       "name": "Magnum Revolver",
-      "weight": 1.0
+      "weight": 1.0,
+      "description": "Old School"
     },
     {
       "name": "Swapfire Custom",
       "bound": "many",
       "weight": 1.5,
+      "description": "A customized modern gun",
       "qrange": {
         "minv": 1,
         "maxv": 3,
@@ -28,7 +31,8 @@
       "links": [
         {
           "name": "Thermal scope",
-          "weight": 1.0
+          "weight": 1.0,
+          "description": "Heat detection mod"
         },
         {
           "name": "Dragonfire Smartgun",
@@ -36,14 +40,17 @@
         },
         {
           "name": "Lasersight",
-          "weight": 1.0
+          "weight": 1.0,
+          "description": "Helps with aiming"
         },
         {
           "name": "Forward Grip",
-          "weight": 1.0
+          "weight": 1.0,
+          "description": "Improves handling"
         },
         {
           "name": "Muzzlebreak",
+          "description": "The classic mod that stabilizes firing",
           "weight": 1.5
         }
       ]

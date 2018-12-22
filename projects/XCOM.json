@@ -30,7 +30,8 @@
           "links": [
             {
               "name": "Black",
-              "weight": 1.4
+              "weight": 1.4,
+              "description": "Normal boring hair"
             },
             {
               "name": "Red",
@@ -87,6 +88,7 @@
       "name": "Armor",
       "bound": "single",
       "weight": 1.0,
+      "description": "Basic Protection",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -100,6 +102,29 @@
         {
           "name": "Light Armor",
           "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Vehicle",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "Transport and combat drones",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Drone XF86",
+          "weight": 1.0,
+          "description": "Combat Drone"
+        },
+        {
+          "name": "Nissan Z5",
+          "weight": 1.0,
+          "description": "Speed Vehicle"
         }
       ]
     }

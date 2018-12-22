@@ -21,8 +21,9 @@ class Narrator:
 
     # Represents a narrative selection
     class Selection:
-        def __init__(self, name, history):
+        def __init__(self, name, description, history):
             self.name = name
+            self.description = description
             self.history = history
 
         def __eq__(self, other):
@@ -30,6 +31,14 @@ class Narrator:
                 return self.name == other.name and self.history == other.history
             else:
                 return False
+
+        def __repr__(self):
+            sel_str = ''
+            for node in self.history:
+                sel_str += node.name + (' (( ' + node.description + ' )) ' if node.description else '') + '\n\t'
+            sel_str += self.name + (' (( ' + self.description + ' )) ' if self.description else ' ')
+            sel_str += '\n'
+            return sel_str
 
     # Represents a weighted selection node
     class WeightedChoice:
@@ -63,9 +72,9 @@ class Narrator:
     # How is Narrative represented in console
     def __repr__(self):
         if self.build:
-            content = '''--------------------\n{} ({}) has:\n--------------------\n{}'''. \
-                format(self.name, self.project, '\n'.join([str(index+1) + '. ' + ' '.join(selection.history) + ' ' +
-                                                           selection.name for index, selection in enumerate(self.build)]))
+            content = '''--------------------\n{} ({})\n--------------------\n\n{}\n--------------------'''. \
+                format(self.name, self.project, '\n'.join([str(index+1) + '. ' +
+                                                           str(selection) for index, selection in enumerate(self.build)]))
         else:
             content = '''--------------------\n{} is empty\n--------------------'''. \
                 format(self.name)
@@ -167,7 +176,7 @@ class Narrator:
         else:
             print('\n'.join([str(i+1) + '. ' + k.name for (i, k) in enumerate(node_links)]))
             user_choice = self.input_callback(node_links)
-        if user_choice == 0:
+        if user_choice == 0 or str(user_choice) == '--exit':
             return True
         elif str(user_choice) == '--help':
             print(self.intro)
@@ -200,7 +209,7 @@ class Narrator:
             for _ in range(0, n):
                 self._gen(node, history, auto=True)
         elif type(user_choice) == str:
-            self.build.append(self.Selection(user_choice, history))
+            self.build.append(self.Selection(user_choice, description=None, history=history))
             print(self)
         else:
             if not node.locked:
@@ -215,10 +224,10 @@ class Narrator:
     def handle_choice(self, chosen_value, history, auto):
         if type(chosen_value) == LinkNode:
             hc = history.copy()
-            hc.append(chosen_value.name)
+            hc.append(chosen_value)
             self._gen(chosen_value, hc, auto=auto)
         else:
-            selection = self.Selection(chosen_value.name, history)
+            selection = self.Selection(chosen_value.name, chosen_value.description, history)
             if not (Narrator.IGNORE_REPEAT and selection in self.build):
                 self.build.append(selection)
             else:

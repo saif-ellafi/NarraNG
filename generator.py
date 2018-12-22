@@ -6,8 +6,8 @@ logging.getLogger().setLevel(logging.WARN)
 
 class Generator:
 
-    def __init__(self, name, bound='m', weight=1.0, qrange=QRange(1, 1, 1)):
-        self.root_node = LinkNode(None, name, weight=weight, bound=bound, qrange=qrange)
+    def __init__(self, name, bound='m', weight=1.0, qrange=QRange(1, 1, 1), description=None):
+        self.root_node = LinkNode(None, name, weight=weight, bound=bound, qrange=qrange, description=description)
         self.root_node.root = self.root_node
         self.name = name
         self.path = './projects/'+self.name+'.json'
@@ -73,7 +73,7 @@ class Generator:
             return '#', '#', '#', '#'
         qrange_mode = None
         while not qrange_mode:
-            input_mode = input('LinkNode0 qrange mode (%i)\n>> ' % round((qrange_minv+qrange_maxv)/2))
+            input_mode = input('LinkNode qrange mode (%i)\n>> ' % round((qrange_minv+qrange_maxv)/2))
             if input_mode == '#':
                 return '#', '#', '#', '#'
             if not qrange_mode:
@@ -86,7 +86,10 @@ class Generator:
                     continue
             except ValueError:
                 continue
-        return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode)
+        description = input('LinkNode description (none)\n>> ')
+        if not description:
+            description = None
+        return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode), description
 
     @staticmethod
     def create_leaf_node():
@@ -105,7 +108,20 @@ class Generator:
                     weight = float(w)
             except ValueError:
                 continue
-        return name, weight
+        description = input('LeafNode description (none)\n>> ')
+        if not description:
+            description = None
+        while True:
+            merge = input("LeafNode merge: (false)\n>> ")
+            if not merge:
+                merge = False
+                break
+            try:
+                merge = bool(merge)
+                break
+            except ValueError:
+                continue
+        return name, weight, description, merge
 
     @staticmethod
     def status(node):
@@ -163,10 +179,10 @@ class Generator:
             if node.external:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
-            name, bound, weight, qrange = self.create_link_node()
+            name, bound, weight, qrange, description = self.create_link_node()
             if name == '#' or bound == '#' or weight == '#' or qrange == '#':
                 return self.menu(node)
-            link_node = LinkNode(node, name, bound, weight, qrange)
+            link_node = LinkNode(node, name, bound, weight, qrange, description)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
         elif answer == 'xl':
@@ -180,20 +196,20 @@ class Generator:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
             name = input("Quick name input\n>> ")
-            bound, weight, qrange = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'))
+            bound, weight, qrange, description = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'), None)
             if name == '#' or bound == '#':
                 return self.menu(node)
-            link_node = LinkNode(node, name, bound, weight, qrange)
+            link_node = LinkNode(node, name, bound, weight, qrange, description)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
         elif answer == 'f':
             if node.external:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
-            name, weight = self.create_leaf_node()
+            name, weight, description, merge = self.create_leaf_node()
             if name == '#' or weight == '#':
                 return self.menu(node)
-            leaf_node = LeafNode(node, name, weight)
+            leaf_node = LeafNode(node, name, weight, description, merge)
             links.append(leaf_node)
             return self.menu(node)
         elif 1 <= link_answer <= len(node_links):
