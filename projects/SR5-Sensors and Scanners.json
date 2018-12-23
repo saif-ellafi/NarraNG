@@ -1,0 +1,123 @@
+{
+  "name": "SR5-Sensors and Scanners",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 5,
+    "mode": 2
+  },
+  "links": [
+    {
+      "name": "Good lighting",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "Good lighting to deterrent intrusion",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Manually controlled",
+          "weight": 0.7,
+          "description": "On off switch"
+        },
+        {
+          "name": "Scheduled",
+          "weight": 1.0,
+          "description": "By motion or ay time"
+        }
+      ]
+    },
+    {
+      "name": "Alarms",
+      "bound": "single",
+      "weight": 1.3,
+      "description": "Can be bypassed with Hardware (5, 1 minute)",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Silent",
+          "weight": 1.0
+        },
+        {
+          "name": "Silent with dim flash light",
+          "weight": 1.1
+        },
+        {
+          "name": "Loud warning klaxon",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Wire",
+      "weight": 0.9,
+      "description": "Requires perception check to spot"
+    },
+    {
+      "name": "Trip beams",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "Perception to detect. Escape artist to go through.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Laser emitter",
+          "weight": 1.3,
+          "description": "Visible laser"
+        },
+        {
+          "name": "Infrared emitter",
+          "weight": 0.9,
+          "description": "Invisible to sight laser or high perception test"
+        }
+      ]
+    },
+    {
+      "name": "Pressure pads",
+      "weight": 0.8,
+      "description": "Percetion(3/4 on outdoor pressure mesh). If failed, second perception test allows for Reaction + Intuition (Body) to remove pressure"
+    },
+    {
+      "name": "Motion sensors",
+      "weight": 1.0,
+      "description": "Ultrasonic field requires ultrasound sensor within 5 meters to perceive. Sneaking (3) afterwards. Wired characters negative bonus per bonus initiative"
+    },
+    {
+      "name": "Sound vibration detector",
+      "weight": 0.8,
+      "description": "Sensitive microphones pick up sounds and vibrations. Requires Infiltration(3)"
+    },
+    {
+      "name": "Security Cameras",
+      "weight": 1.5,
+      "description": "Camera may have thermographic vision or low-light sensors"
+    },
+    {
+      "name": "Olfactory pheromone scanners",
+      "weight": 0.6,
+      "description": "Detects chemicals in air, particularly for nitrogen rich particles from explosives and ammunition. Rolls ating(3) to detect. Easier when more explosives. Detects metahuman pheromone."
+    },
+    {
+      "name": "Magnetic Anomaly Detectors (MADs)",
+      "weight": 1.4,
+      "description": "Single hit on device rating will detect any metals"
+    },
+    {
+      "name": "Millimeter wave detection (cyberware scanner)",
+      "weight": 1.0,
+      "description": "Detects weapons and prohibited cybertech. Depends on quality and situation"
+    }
+  ]
+}
