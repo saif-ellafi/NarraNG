@@ -87,6 +87,8 @@ class Generator:
             except ValueError:
                 continue
         description = input('LinkNode description (none)\n>> ')
+        if description == '#':
+            return '#', '#', '#', '#'
         if not description:
             description = None
         return name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode), description
@@ -96,6 +98,8 @@ class Generator:
         name = ''
         while not name:
             name = input('LeafNode name\n>> ')
+        if name == '#':
+            return '#', '#', '#'
         weight = None
         while not weight:
             try:
@@ -108,7 +112,11 @@ class Generator:
                     weight = float(w)
             except ValueError:
                 continue
+        if weight == '#':
+            return '#', '#', '#'
         description = input('LeafNode description (none)\n>> ')
+        if description == '#':
+            return '#', '#', '#'
         if not description:
             description = None
         return name, weight, description

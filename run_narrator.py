@@ -10,14 +10,20 @@ NarraNG Narrator
 ==================
 """)
 print('\n-- Project list --')
-print('\n'.join(projects))
+for i, p in enumerate(projects):
+    print(str(i+1) + '. ' + str(p))
 print('\n')
 project_name = None
 while project_name not in projects:
-    project_name = input('Pick a project to start with:\n>> ')
+    project_choice = input('Pick a project index to start with:\n>> ')
+    try:
+        project_name = projects[int(project_choice)-1]
+    except ValueError:
+        continue
+    except IndexError:
+        continue
 
-happy = 'n'
-target_name = input('Enter a target name for this narrator:\n>> ')
+target_name = input('Enter a target name for %s:\n>> ' % project_name)
 if not target_name:
     target_name = None
 

@@ -43,6 +43,7 @@ class Narrator:
                 - Empty For random selection
                 - @n to generate n random selections
                 - #n to generate n random of each possible selection
+                - # for full random strategy (Recommended)
                 - Any text for customized entry
                 - 0 to exit
                 """
@@ -184,10 +185,7 @@ class Narrator:
             self.handle_choice(user_choice, output_node, auto)
         elif str(user_choice) == '#':
             logging.debug("User entered Random mode")
-            for i in range(0, len(node_links)):
-                chosen_node = node_links[i]
-                logging.debug("entering link %s" % chosen_node.name)
-                self.handle_choice(chosen_node, output_node, auto=True)
+            self._gen(node, auto=True)
         elif str(user_choice).startswith('#'):
             n = int(user_choice[1:])
             for i in range(0, len(node_links)):

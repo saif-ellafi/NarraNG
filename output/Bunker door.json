@@ -1,0 +1,80 @@
+{
+  "name": "Locks",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Maglock",
+      "bound": "all",
+      "weight": 1.4,
+      "description": "Matrix connected locks, keep usage logs. Has",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Anti-Tamper system",
+          "bound": "single",
+          "weight": 1.0,
+          "description": "Whether it has anti breaking security system. Requires Additional Locksmith vs 1-4 to disable",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "No",
+              "weight": 1.0
+            }
+          ]
+        },
+        {
+          "name": "Connection",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Wireless",
+              "weight": 1.0
+            }
+          ]
+        },
+        {
+          "name": "Security type",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Keypad",
+              "weight": 1.0,
+              "description": "Utilize access code by userID. Requires rewiring with Locksmith vs (rating x2) or Maglock sequencer opposed tests of ratings"
+            },
+            {
+              "name": "Voice recognition",
+              "weight": 0.7,
+              "description": "May use Voice modulator"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
