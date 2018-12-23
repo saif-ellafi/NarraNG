@@ -39,6 +39,7 @@ class Narrator:
                 - --help for command list
                 - --save to save current output
                 - --clear to restart target
+                - --exit to quit
                 - Number selection
                 - Empty For random selection
                 - @n to generate n random selections
