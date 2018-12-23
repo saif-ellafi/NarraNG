@@ -111,17 +111,7 @@ class Generator:
         description = input('LeafNode description (none)\n>> ')
         if not description:
             description = None
-        while True:
-            merge = input("LeafNode merge: (false)\n>> ")
-            if not merge:
-                merge = False
-                break
-            try:
-                merge = bool(merge)
-                break
-            except ValueError:
-                continue
-        return name, weight, description, merge
+        return name, weight, description
 
     @staticmethod
     def status(node):
@@ -206,10 +196,10 @@ class Generator:
             if node.external:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
-            name, weight, description, merge = self.create_leaf_node()
+            name, weight, description = self.create_leaf_node()
             if name == '#' or weight == '#':
                 return self.menu(node)
-            leaf_node = LeafNode(node, name, weight, description, merge)
+            leaf_node = LeafNode(node, name, weight, description)
             links.append(leaf_node)
             return self.menu(node)
         elif 1 <= link_answer <= len(node_links):
