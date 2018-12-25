@@ -1,6 +1,6 @@
 {
   "name": "XCOM",
-  "bound": "many",
+  "bound": "all",
   "weight": 1.0,
   "qrange": {
     "minv": 1,

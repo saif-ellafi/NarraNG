@@ -7,10 +7,9 @@ logging.getLogger().setLevel(logging.WARN)
 class Generator:
 
     def __init__(self, project_name):
-        self.root_node = self.create_link_node(given_name=project_name)
-        self.root_node.root = self.root_node
-        self.name = self.root_node.name
-        self.path = './projects/'+self.name+'.json'
+        self.root_node = None
+        self.project_name = project_name
+        self.path = './projects/'+project_name+'.json'
 
     @staticmethod
     def create_link_node(given_name=None, root_node=None):
@@ -223,7 +222,7 @@ class Generator:
                 return self.menu(node)
             links.append(leaf_node)
             return self.menu(node)
-        elif 1 <= link_answer <= len(node_links):
+        elif link_answer and 1 <= link_answer <= len(node_links):
             if node.external:
                 logging.warning('Cannot enter an external LinkNode')
                 return self.menu(node)
@@ -255,4 +254,6 @@ class Generator:
                 r = input('file %s exists. continue? y/n (n)\n>> ' % self.path)
                 if not r or r == 'n':
                     return
+        self.root_node = self.create_link_node(given_name=self.project_name)
+        self.root_node.root = self.root_node
         self.run()
