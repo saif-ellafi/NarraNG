@@ -1,7 +1,6 @@
 {
-  "name": "Peter Petrelli",
-  "project": "XCOM(EN)",
-  "bound": "many",
+  "name": "XCOM(EN)",
+  "bound": "all",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
@@ -30,6 +29,19 @@
           },
           "links": [
             {
+              "name": "Black",
+              "weight": 1.4,
+              "description": "Normal boring hair"
+            },
+            {
+              "name": "Red",
+              "weight": 1.0
+            },
+            {
+              "name": "Green",
+              "weight": 1.0
+            },
+            {
               "name": "Blonde",
               "weight": 1.0
             }
@@ -48,6 +60,14 @@
             {
               "name": "Fair",
               "weight": 1.0
+            },
+            {
+              "name": "Dark",
+              "weight": 1.0
+            },
+            {
+              "name": "White",
+              "weight": 0.3
             }
           ]
         }
@@ -62,30 +82,7 @@
         "maxv": 1,
         "mode": 1
       },
-      "links": [
-        {
-          "name": "Swapfire Custom",
-          "bound": "many",
-          "weight": 1.5,
-          "qrange": {
-            "minv": 1,
-            "maxv": 3,
-            "mode": 2
-          },
-          "links": [
-            {
-              "name": "Thermal scope",
-              "weight": 1.0,
-              "description": "Heat detection mod"
-            },
-            {
-              "name": "Muzzlebreak",
-              "weight": 1.5,
-              "description": "The classic mod that stabilizes firing"
-            }
-          ]
-        }
-      ]
+      "links": "XCOM(EN) Weapons"
     },
     {
       "name": "Armor",
@@ -100,6 +97,10 @@
       "links": [
         {
           "name": "Heavy Armor",
+          "weight": 1.0
+        },
+        {
+          "name": "Light Armor",
           "weight": 1.0
         }
       ]
@@ -119,6 +120,11 @@
           "name": "Drone XF86",
           "weight": 1.0,
           "description": "Combat Drone"
+        },
+        {
+          "name": "Nissan Z5",
+          "weight": 1.0,
+          "description": "Speed Vehicle"
         }
       ]
     }

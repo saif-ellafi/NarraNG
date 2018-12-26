@@ -1,9 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ project_name }}</title>
+</head>
+<body>
+<h2>{{ project_name }}</h2>
 {% if project_entries %}
 <ul>
     {% for entry in project_entries %}
-    <li>{{ entry.links }}</li>
+    <li><a href="/ngnarrator/{{ project_id }}/{{ entry.eid }}/">{{ entry.node.name }}</a></li>
     {% endfor %}
 </ul>
 {% else %}
 <p>No entries are available.</p>
 {% endif %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ entry_node.name }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
+</head>
+<body>
+<div class="tree">
+    <ul>
+        <li>
+            <a href="#">{{ entry_node.name }}</a>
+            <ul>
+                {% for link in entry_node.links %}
+                {% include "ngnarrator/sub_entry.html" %}
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

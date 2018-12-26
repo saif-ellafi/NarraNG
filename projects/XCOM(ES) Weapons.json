@@ -1,5 +1,5 @@
 {
-  "name": "XCOM-Weapons",
+  "name": "XCOM(ES) Weapons",
   "bound": "many",
   "weight": 1.0,
   "qrange": {
@@ -11,12 +11,12 @@
     {
       "name": "AWP 2018",
       "weight": 1.0,
-      "description": "Sniper Rifle Stock"
+      "description": "Rifle Sniper"
     },
     {
       "name": "Magnum Revolver",
       "weight": 1.0,
-      "description": "Old School"
+      "description": "De vieja escuela"
     },
     {
       "name": "Swapfire Custom",
@@ -29,29 +29,29 @@
       },
       "links": [
         {
-          "name": "Thermal scope",
+          "name": "Vision termal",
           "weight": 1.0,
-          "description": "Heat detection mod"
+          "description": "Detecta calor"
         },
         {
           "name": "Dragonfire Smartgun",
           "weight": 0.3,
-          "description": "Connects your weapon to the matrix"
+          "description": "Conecta tu sistema de punteria a la matrix"
         },
         {
-          "name": "Lasersight",
+          "name": "Mira Laser",
           "weight": 1.0,
-          "description": "Helps with aiming"
+          "description": "Ayuda con la punteria y vision en humo"
         },
         {
-          "name": "Forward Grip",
+          "name": "Agarre delantero",
           "weight": 1.0,
-          "description": "Improves handling"
+          "description": "Mejora el comfort"
         },
         {
-          "name": "Muzzlebreak",
+          "name": "Compensador de retroceso",
           "weight": 1.5,
-          "description": "The classic mod that stabilizes firing"
+          "description": "Modificacion que estabiliza el disparo"
         }
       ]
     }

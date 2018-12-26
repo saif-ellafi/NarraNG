@@ -11,7 +11,7 @@ NarraNG Generator
 """)
 print('\n-- Project list --')
 for project in projects:
-    print(str(project.id+1) + '. ' + str(project.name))
+    print(str(project.pid+1) + '. ' + str(project.name))
 print('\n')
 project_name = None
 while project_name not in map(lambda p: p.name, projects):

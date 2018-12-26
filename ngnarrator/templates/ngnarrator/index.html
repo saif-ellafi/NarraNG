@@ -1,4 +1,11 @@
-{% if projects_list %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NarraNG</title>
+</head>
+<body>
+<h2>NarraNG Projects</h2>{% if projects_list %}
 <ul>
     {% for project in projects_list %}
     <li><a href="/ngnarrator/{{ project.pid }}/">{{ project.name }}</a></li>
@@ -7,3 +14,5 @@
 {% else %}
 <p>No projects are available.</p>
 {% endif %}
+</body>
+</html>

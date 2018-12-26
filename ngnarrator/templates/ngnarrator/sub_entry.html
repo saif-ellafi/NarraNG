@@ -1,0 +1,13 @@
+{% load ngnarrator_extras %}
+<li>
+    <a href="#">{{ link.name }}</a>
+    {% if link|is_link_node %}
+        <ul>
+        {% for sublink in link.links %}
+            {% with link=sublink template_name="ngnarrator/sub_entry.html" %}
+                {% include template_name %}
+            {% endwith %}
+        {% endfor %}
+        </ul>
+    {% endif %}
+</li>

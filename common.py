@@ -11,14 +11,11 @@ class Common:
 
     PROJECTS_FOLDER = 'projects'
 
-    projects = []
-
     @staticmethod
     def load_projects():
-        if Common.projects:
-            return Common.projects
+        projects = []
         path = os.path.join(Common.PROJECTS_FOLDER)
-        prjs = [f[:-5] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
+        prjs = sorted([f[:-5] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')])
         for i, p in enumerate(prjs):
-            Common.projects.append(Project(p, i))
-        return Common.projects
+            projects.append(Project(p, i))
+        return projects

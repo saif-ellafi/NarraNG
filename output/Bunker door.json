@@ -1,5 +1,6 @@
 {
-  "name": "SR5-Locks",
+  "name": "Metallic door security",
+  "project": "SR5(EN)-Locks",
   "bound": "many",
   "weight": 1.0,
   "qrange": {

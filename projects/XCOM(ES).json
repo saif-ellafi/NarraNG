@@ -1,5 +1,5 @@
 {
-  "name": "XCOM",
+  "name": "XCOM(ES)",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -9,7 +9,7 @@
   },
   "links": [
     {
-      "name": "Appearance",
+      "name": "Apariencia",
       "bound": "all",
       "weight": 1.0,
       "qrange": {
@@ -19,7 +19,7 @@
       },
       "links": [
         {
-          "name": "Hair Color",
+          "name": "Color de pelo",
           "bound": "many",
           "weight": 1.0,
           "qrange": {
@@ -29,26 +29,25 @@
           },
           "links": [
             {
-              "name": "Black",
-              "weight": 1.4,
-              "description": "Normal boring hair"
+              "name": "Negro",
+              "weight": 1.4
             },
             {
-              "name": "Red",
+              "name": "Rojo",
               "weight": 1.0
             },
             {
-              "name": "Green",
+              "name": "Verde",
               "weight": 1.0
             },
             {
-              "name": "Blonde",
+              "name": "Rubio",
               "weight": 1.0
             }
           ]
         },
         {
-          "name": "Skin",
+          "name": "Piel",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -58,15 +57,15 @@
           },
           "links": [
             {
-              "name": "Fair",
+              "name": "Clara",
               "weight": 1.0
             },
             {
-              "name": "Dark",
+              "name": "Oscura",
               "weight": 1.0
             },
             {
-              "name": "White",
+              "name": "Albina",
               "weight": 0.3
             }
           ]
@@ -74,7 +73,7 @@
       ]
     },
     {
-      "name": "Weapons",
+      "name": "Armas",
       "bound": "many",
       "weight": 1.0,
       "qrange": {
@@ -82,13 +81,13 @@
         "maxv": 1,
         "mode": 1
       },
-      "links": "XCOM-Weapons"
+      "links": "XCOM(ES) Weapons"
     },
     {
-      "name": "Armor",
+      "name": "Armadura",
       "bound": "single",
       "weight": 1.0,
-      "description": "Basic Protection",
+      "description": "Proteccion basica",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -96,20 +95,20 @@
       },
       "links": [
         {
-          "name": "Heavy Armor",
+          "name": "Armadura Pesada de metal",
           "weight": 1.0
         },
         {
-          "name": "Light Armor",
+          "name": "Armadura Ligera de cuero",
           "weight": 1.0
         }
       ]
     },
     {
-      "name": "Vehicle",
+      "name": "Vehiculo",
       "bound": "single",
       "weight": 1.0,
-      "description": "Transport and combat drones",
+      "description": "De transporte y Drones",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -117,14 +116,14 @@
       },
       "links": [
         {
-          "name": "Drone XF86",
+          "name": "Dron XF86",
           "weight": 1.0,
-          "description": "Combat Drone"
+          "description": "Dron de combate"
         },
         {
           "name": "Nissan Z5",
           "weight": 1.0,
-          "description": "Speed Vehicle"
+          "description": "Vehiculo de carreras"
         }
       ]
     }
