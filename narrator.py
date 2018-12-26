@@ -13,10 +13,6 @@ logging.getLogger().setLevel(logging.WARN)
 class Narrator:
 
     OUTPUT_FOLDER = 'output'
-    SUBSECTION_CHAR = '*'
-    SELECTION_CHAR = '-'
-    COMMENT_CHAR = '#'
-
     IGNORE_REPEAT = True
 
     # Represents a weighted selection node
@@ -55,11 +51,26 @@ class Narrator:
         if self.output_node_root.links:
             content = '''--------------------\n{} ({})\n--------------------\n\n{}\n--------------------'''. \
                 format(self.name, self.project, '\n'.join([str(index+1) + '. ' +
-                                                           str(selection) for index, selection in enumerate(self.output_node_root.links)]))
+                                                           str(selection) for index, selection in
+                                                           enumerate(self.output_node_root.links)]))
         else:
             content = '''--------------------\n{} is empty\n--------------------'''. \
                 format(self.name)
         return content
+
+    @staticmethod
+    def load_entries(project_id):
+        if not Common.projects:
+            Common.load_projects()
+        entries = []
+        path = Narrator.OUTPUT_FOLDER
+        entry_files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
+        for entry_path in entry_files:
+            with open(entry_path, 'r') as entry_file:
+                decoded_entry = NodeDecoder.decode(entry_file)
+                if decoded_entry.name == next(p.name for p in Common.projects if p.pid == project_id):
+                    entries.append(decoded_entry)
+        return entries
 
     # Handles user's input and validations
     @staticmethod
@@ -242,4 +253,3 @@ class Narrator:
             file.write(str(self))
         with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
             json.dump(self.output_node_root, file, cls=NodeEncoder, indent=2)
-

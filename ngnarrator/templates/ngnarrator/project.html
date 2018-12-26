@@ -1,0 +1,9 @@
+{% if project_entries %}
+<ul>
+    {% for entry in project_entries %}
+    <li>{{ entry.links }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No entries are available.</p>
+{% endif %}
