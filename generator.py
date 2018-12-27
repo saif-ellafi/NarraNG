@@ -109,7 +109,11 @@ class Generator:
             return
         if not description:
             description = None
-        return LinkNode(root_node, name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode), description)
+        node = LinkNode(root_node, name, description)
+        node.set_bound(bound)
+        node.set_weight(weight)
+        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        return node
 
     @staticmethod
     def create_leaf_node(root_node):
@@ -140,13 +144,15 @@ class Generator:
             return
         if not description:
             description = None
-        return LeafNode(root_node, name, weight, description)
+        node = LeafNode(root_node, name, description)
+        node.set_weight(weight)
+        return node
 
     @staticmethod
     def create_value_node(root_node):
         name = ''
         while not name:
-            name = input('LeafNode name\n>> ')
+            name = input('ValueNode name\n>> ')
         if name == '#':
             return
         if root_node.bound in ['a', 's']:
@@ -155,7 +161,7 @@ class Generator:
             weight = None
         while not weight:
             try:
-                w = input('LeafNode weight (1.0)\n>> ')
+                w = input('ValueNode weight (1.0)\n>> ')
                 if not w:
                     weight = 1.0
                 elif w == '#':
@@ -166,17 +172,20 @@ class Generator:
                 continue
         if weight == '#':
             return
-        description = input('LeafNode description (none)\n>> ')
+        description = input('ValueNode description (none)\n>> ')
         if description == '#':
             return
         if not description:
             description = None
         qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(root_node.bound)
-        return ValueNode(root_node, name, weight, QRange(qrange_minv, qrange_maxv, qrange_mode), description)
+        node = ValueNode(root_node, name, description)
+        node.set_weight(weight)
+        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        return node
 
     @staticmethod
     def status(node):
-        return 'Currently in node < %s > with back-root < %s >, links < %s > and leaves < %s >' % \
+        return '\nCurrently in node < %s > with\nback-root< %s >\nlinks < %s >\nleaves < %s >\nvalues < %s >' % \
                (
                    node.name,
                    node.root.name,
@@ -187,6 +196,10 @@ class Generator:
                    ) if not node.external else (node.external + '(external)'),
                    ' | '.join(map(lambda n: n.name,
                                   filter(lambda nn: type(nn) == LeafNode, node.links)
+                                  )
+                              ) if not node.external else '(external)',
+                   ' | '.join(map(lambda n: n.name,
+                                  filter(lambda nn: type(nn) == ValueNode, node.links)
                                   )
                               ) if not node.external else '(external)'
                )
@@ -209,8 +222,8 @@ class Generator:
         answer = None
 
         while not answer:
-            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nxl. '
-                           'External LinkNode\nf. LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
+            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nq. Quick LinkNode\nx. '
+                           'External LinkNode\nf. LeafNode\nv. ValueNode\n\nenter $i to jump into a LinkNode\n\n>> ')
 
         try:
             link_answer = int(answer)
@@ -249,7 +262,10 @@ class Generator:
             bound, weight, qrange, description = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'), None)
             if name == '#' or bound == '#':
                 return self.menu(node)
-            link_node = LinkNode(node, name, bound, weight, qrange, description)
+            link_node = LinkNode(node, name, description)
+            link_node.set_bound(bound)
+            link_node.set_weight(weight)
+            link_node.set_qrange(qrange)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
         elif answer == 'f':

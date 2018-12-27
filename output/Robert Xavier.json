@@ -1,0 +1,72 @@
+{
+  "project": "XCOM(ES)",
+  "name": "Robert Xavier",
+  "links": [
+    {
+      "name": "Apariencia",
+      "links": [
+        {
+          "name": "Color de pelo",
+          "links": [
+            {
+              "name": "Negro"
+            }
+          ]
+        },
+        {
+          "name": "Piel",
+          "links": [
+            {
+              "name": "Oscura"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armas",
+      "links": [
+        {
+          "name": "Swapfire Custom",
+          "links": [
+            {
+              "name": "Vision termal",
+              "description": "Detecta calor"
+            },
+            {
+              "name": "Compensador de retroceso",
+              "description": "Modificacion que estabiliza el disparo"
+            },
+            {
+              "name": "Agarre delantero",
+              "description": "Mejora el comfort"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armadura",
+      "description": "Proteccion basica",
+      "links": [
+        {
+          "name": "Armadura Ligera de cuero"
+        }
+      ]
+    },
+    {
+      "name": "Vehiculo",
+      "description": "De transporte y Drones",
+      "links": [
+        {
+          "name": "Nissan Z5",
+          "description": "Vehiculo de carreras"
+        }
+      ]
+    },
+    {
+      "name": "Edad",
+      "value": 28
+    }
+  ]
+}
