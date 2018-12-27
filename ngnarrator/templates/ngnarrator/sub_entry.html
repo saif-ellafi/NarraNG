@@ -1,6 +1,6 @@
 {% load ngnarrator_extras %}
 <li>
-    <a href="#">{{ link.name }}</a>
+    <a class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="{% if link.description %} {{ link.description }} {% endif %}">{{ link.name }}</a>
     {% if link|is_link_node %}
         <ul>
         {% for sublink in link.links %}
