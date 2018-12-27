@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
 </head>
 <body>
-<h2>NarraNG Projects</h2>{% if projects_list %}
+<h1>NarraNG Projects</h1>{% if projects_list %}
 <ul>
     {% for project in projects_list %}
     <li><a href="/ngnarrator/{{ project.pid }}/">{{ project.name }}</a></li>
