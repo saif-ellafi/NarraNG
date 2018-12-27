@@ -170,5 +170,6 @@ class LeafNode(Node):
 
 
 class ValueNode(Node):
-    def __init__(self, root, name, weight, description,):
+    def __init__(self, root, name, weight, qrange, description):
         super(ValueNode, self).__init__(root, name, weight, description)
+        self.qrange = qrange
