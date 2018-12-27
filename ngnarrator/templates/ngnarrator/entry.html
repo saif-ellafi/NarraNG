@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ entry_node.name }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/tree.css' %}">
+
+    <script src="{% static 'jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="tree">
+    <ul>
+        <li>
+            <a class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="left" title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}">{{ entry_node.name }}</a>
+            <ul>
+                {% for link in entry_node.links %}
+                {% include "ngnarrator/sub_entry.html" %}
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>

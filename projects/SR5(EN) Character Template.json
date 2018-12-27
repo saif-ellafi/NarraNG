@@ -1,0 +1,44 @@
+{
+  "name": "SR5(EN) Character Template",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Metatype",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Human",
+          "weight": 1.4
+        },
+        {
+          "name": "Elven",
+          "weight": 0.9
+        },
+        {
+          "name": "Dwarf",
+          "weight": 0.4
+        },
+        {
+          "name": "Orc",
+          "weight": 0.8
+        },
+        {
+          "name": "Troll",
+          "weight": 0.5
+        }
+      ]
+    }
+  ]
+}

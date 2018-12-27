@@ -12,11 +12,6 @@ logging.getLogger().setLevel(logging.WARN)
 
 class Narrator:
 
-    OUTPUT_FOLDER = 'output'
-    SUBSECTION_CHAR = '*'
-    SELECTION_CHAR = '-'
-    COMMENT_CHAR = '#'
-
     IGNORE_REPEAT = True
 
     # Represents a weighted selection node
@@ -26,11 +21,16 @@ class Narrator:
             self.min_bound = min_bound
             self.max_bound = max_bound
 
+    class Entry:
+        def __init__(self, eid, node):
+            self.eid = eid
+            self.node = node
+
     # Initializes project, path recognition and user input
     def __init__(self, project, name=None):
         logging.debug("DEBUG MODE ENABLED")
         self.name = name if name else project
-        self.project = project
+        self.project_source = project
         self.root_node = None
         self.output_node_root = None
         self.load_project(project)
@@ -54,12 +54,28 @@ class Narrator:
     def __repr__(self):
         if self.output_node_root.links:
             content = '''--------------------\n{} ({})\n--------------------\n\n{}\n--------------------'''. \
-                format(self.name, self.project, '\n'.join([str(index+1) + '. ' +
-                                                           str(selection) for index, selection in enumerate(self.output_node_root.links)]))
+                format(self.name, self.project_source, '\n'.join([str(index + 1) + '. ' +
+                                                                  str(selection) for index, selection in
+                                                                  enumerate(self.output_node_root.links)]))
         else:
             content = '''--------------------\n{} is empty\n--------------------'''. \
                 format(self.name)
         return content
+
+    @staticmethod
+    def load_entries(project_id):
+        entries = []
+        path = Common.OUTPUT_FOLDER
+        entry_files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
+        projects = Common.load_projects()
+        i = 0
+        for entry_path in entry_files:
+            with open(entry_path, 'r') as entry_file:
+                decoded_entry = NodeDecoder.decode(entry_file)
+                if decoded_entry.project == next(p.name for p in projects if p.pid == project_id):
+                    entries.append(Narrator.Entry(i, decoded_entry))
+                    i += 1
+        return entries
 
     # Handles user's input and validations
     @staticmethod
@@ -111,7 +127,7 @@ class Narrator:
                 return choice.node
 
     def reset_output_node(self):
-        self.output_node_root = LinkNode(
+        clean_node = LinkNode(
             None,
             self.root_node.name,
             self.root_node.bound,
@@ -119,7 +135,9 @@ class Narrator:
             self.root_node.qrange,
             self.root_node.description
         )
-        self.output_node_root.root = self.output_node_root
+        clean_node.root = self.output_node_root
+        clean_node.project = self.root_node.project
+        self.output_node_root = clean_node
 
     def show_tree(self):
         pprint.pprint(json.dumps(self.root_node, cls=NodeEncoder))
@@ -130,12 +148,17 @@ class Narrator:
         self.reset_output_node()
 
     def load_project(self, project):
+        print("Got", project)
         if type(project) == LinkNode:
             self.root_node = project
+            self.name = project.name
         elif type(project) == str:
             path = os.path.join(Common.PROJECTS_FOLDER, project+'.json')
             with open(path) as file:
                 self.root_node = NodeDecoder.decode(file)
+                self.root_node.project = self.root_node.name
+                print("new root node project name", self.root_node.project)
+                self.root_node.name = self.name
         else:
             raise Exception("Invalid project type. Must be either a LinkNode or a path to file.")
         self.reset_output_node()
@@ -175,9 +198,9 @@ class Narrator:
         elif str(user_choice) == '--help':
             print(self.intro)
         elif str(user_choice) == '--save':
-            self.save()
+            self.output_node_root.save()
         elif str(user_choice) == '--clear':
-            self.load_project(self.project)
+            self.load_project(self.project_source)
         elif isinstance(user_choice, list):
             logging.debug("Detected list choice")
             for qnode in user_choice:
@@ -236,10 +259,3 @@ class Narrator:
             print('\nMake your choice\n')
             ret = self._gen()
             print(self)
-
-    def save(self):
-        with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
-            file.write(str(self))
-        with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
-            json.dump(self.output_node_root, file, cls=NodeEncoder, indent=2)
-

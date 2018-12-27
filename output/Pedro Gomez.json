@@ -1,7 +1,7 @@
 {
-  "name": "Peter Petrelli",
-  "project": "XCOM(EN)",
-  "bound": "many",
+  "project": "XCOM(ES)",
+  "name": "Pedro Gomez",
+  "bound": "all",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
@@ -10,7 +10,7 @@
   },
   "links": [
     {
-      "name": "Appearance",
+      "name": "Apariencia",
       "bound": "all",
       "weight": 1.0,
       "qrange": {
@@ -20,7 +20,7 @@
       },
       "links": [
         {
-          "name": "Hair Color",
+          "name": "Color de pelo",
           "bound": "many",
           "weight": 1.0,
           "qrange": {
@@ -30,13 +30,17 @@
           },
           "links": [
             {
-              "name": "Blonde",
+              "name": "Verde",
               "weight": 1.0
+            },
+            {
+              "name": "Negro",
+              "weight": 1.4
             }
           ]
         },
         {
-          "name": "Skin",
+          "name": "Piel",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -46,7 +50,7 @@
           },
           "links": [
             {
-              "name": "Fair",
+              "name": "Clara",
               "weight": 1.0
             }
           ]
@@ -54,7 +58,7 @@
       ]
     },
     {
-      "name": "Weapons",
+      "name": "Armas",
       "bound": "many",
       "weight": 1.0,
       "qrange": {
@@ -64,34 +68,17 @@
       },
       "links": [
         {
-          "name": "Swapfire Custom",
-          "bound": "many",
-          "weight": 1.5,
-          "qrange": {
-            "minv": 1,
-            "maxv": 3,
-            "mode": 2
-          },
-          "links": [
-            {
-              "name": "Thermal scope",
-              "weight": 1.0,
-              "description": "Heat detection mod"
-            },
-            {
-              "name": "Muzzlebreak",
-              "weight": 1.5,
-              "description": "The classic mod that stabilizes firing"
-            }
-          ]
+          "name": "Magnum Revolver",
+          "weight": 1.0,
+          "description": "De vieja escuela"
         }
       ]
     },
     {
-      "name": "Armor",
+      "name": "Armadura",
       "bound": "single",
       "weight": 1.0,
-      "description": "Basic Protection",
+      "description": "Proteccion basica",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -99,16 +86,16 @@
       },
       "links": [
         {
-          "name": "Heavy Armor",
+          "name": "Armadura Ligera de cuero",
           "weight": 1.0
         }
       ]
     },
     {
-      "name": "Vehicle",
+      "name": "Vehiculo",
       "bound": "single",
       "weight": 1.0,
-      "description": "Transport and combat drones",
+      "description": "De transporte y Drones",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -116,9 +103,9 @@
       },
       "links": [
         {
-          "name": "Drone XF86",
+          "name": "Dron XF86",
           "weight": 1.0,
-          "description": "Combat Drone"
+          "description": "Dron de combate"
         }
       ]
     }

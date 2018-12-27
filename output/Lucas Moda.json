@@ -1,7 +1,7 @@
 {
-  "name": "Peter Petrelli",
-  "project": "XCOM(EN)",
-  "bound": "many",
+  "project": "XCOM(ES)",
+  "name": "Lucas Moda",
+  "bound": "all",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
@@ -10,7 +10,7 @@
   },
   "links": [
     {
-      "name": "Appearance",
+      "name": "Apariencia",
       "bound": "all",
       "weight": 1.0,
       "qrange": {
@@ -20,7 +20,7 @@
       },
       "links": [
         {
-          "name": "Hair Color",
+          "name": "Color de pelo",
           "bound": "many",
           "weight": 1.0,
           "qrange": {
@@ -30,13 +30,17 @@
           },
           "links": [
             {
-              "name": "Blonde",
+              "name": "Rojo",
               "weight": 1.0
+            },
+            {
+              "name": "Negro",
+              "weight": 1.4
             }
           ]
         },
         {
-          "name": "Skin",
+          "name": "Piel",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -46,7 +50,7 @@
           },
           "links": [
             {
-              "name": "Fair",
+              "name": "Oscura",
               "weight": 1.0
             }
           ]
@@ -54,7 +58,7 @@
       ]
     },
     {
-      "name": "Weapons",
+      "name": "Armas",
       "bound": "many",
       "weight": 1.0,
       "qrange": {
@@ -74,24 +78,24 @@
           },
           "links": [
             {
-              "name": "Thermal scope",
+              "name": "Agarre delantero",
               "weight": 1.0,
-              "description": "Heat detection mod"
+              "description": "Mejora el comfort"
             },
             {
-              "name": "Muzzlebreak",
-              "weight": 1.5,
-              "description": "The classic mod that stabilizes firing"
+              "name": "Dragonfire Smartgun",
+              "weight": 0.3,
+              "description": "Conecta tu sistema de punteria a la matrix"
             }
           ]
         }
       ]
     },
     {
-      "name": "Armor",
+      "name": "Armadura",
       "bound": "single",
       "weight": 1.0,
-      "description": "Basic Protection",
+      "description": "Proteccion basica",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -99,16 +103,16 @@
       },
       "links": [
         {
-          "name": "Heavy Armor",
+          "name": "Armadura Pesada de metal",
           "weight": 1.0
         }
       ]
     },
     {
-      "name": "Vehicle",
+      "name": "Vehiculo",
       "bound": "single",
       "weight": 1.0,
-      "description": "Transport and combat drones",
+      "description": "De transporte y Drones",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -116,9 +120,9 @@
       },
       "links": [
         {
-          "name": "Drone XF86",
+          "name": "Nissan Z5",
           "weight": 1.0,
-          "description": "Combat Drone"
+          "description": "Vehiculo de carreras"
         }
       ]
     }

@@ -1,0 +1,59 @@
+{
+  "name": "XCOM(EN) Weapons",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "AWP 2018",
+      "weight": 1.0,
+      "description": "Sniper Rifle Stock"
+    },
+    {
+      "name": "Magnum Revolver",
+      "weight": 1.0,
+      "description": "Old School"
+    },
+    {
+      "name": "Swapfire Custom",
+      "bound": "many",
+      "weight": 1.5,
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2
+      },
+      "links": [
+        {
+          "name": "Thermal scope",
+          "weight": 1.0,
+          "description": "Heat detection mod"
+        },
+        {
+          "name": "Dragonfire Smartgun",
+          "weight": 0.3,
+          "description": "Connects your weapon to the matrix"
+        },
+        {
+          "name": "Lasersight",
+          "weight": 1.0,
+          "description": "Helps with aiming"
+        },
+        {
+          "name": "Forward Grip",
+          "weight": 1.0,
+          "description": "Improves handling"
+        },
+        {
+          "name": "Muzzlebreak",
+          "weight": 1.5,
+          "description": "The classic mod that stabilizes firing"
+        }
+      ]
+    }
+  ]
+}

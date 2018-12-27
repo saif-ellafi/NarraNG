@@ -15,11 +15,12 @@ class NodeEncoder(json.JSONEncoder):
 
     def default(self, o):
         if isinstance(o, LinkNode):
-            base = {
-                'name': o.name,
-                'bound': o.bound,
-                'weight': o.weight
-            }
+            base = {}
+            if o.project:
+                base['project'] = o.project
+            base['name'] = o.name
+            base['bound'] = o.bound
+            base['weight'] = o.weight
             if o.description:
                 base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
@@ -88,6 +89,8 @@ class NodeDecoder:
         description = root_node['description'] if 'description' in root_node else None
         root = LinkNode(None, name, bound, weight, qrange, description)
         root.root = root
+        if 'project' in root_node:
+            root.project = root_node['project']
         root_links = list(NodeDecoder.decode_links(root_node['links'], root))
         root.links = root_links
         return root
@@ -120,6 +123,11 @@ class Node:
     def __eq__(self, other):
         return self.name == other.name and self.root.name == other.root.name
 
+    def __repr__(self):
+        sel_str = self.tostr(self, '')
+        sel_str += '\n'
+        return sel_str
+
     def tostr(self, node, sel_str):
         if isinstance(node, LeafNode):
             sel_str += '\t'
@@ -127,11 +135,6 @@ class Node:
         if isinstance(node, LinkNode):
             for subnode in node.links:
                 sel_str = self.tostr(subnode, sel_str + '\n\t')
-        return sel_str
-
-    def __repr__(self):
-        sel_str = self.tostr(self, '')
-        sel_str += '\n'
         return sel_str
 
 
@@ -147,11 +150,18 @@ class LinkNode(Node):
         if lb not in list(LinkNode.MAPPER.keys()) + list(LinkNode.MAPPER.values()):
             raise Exception('LinkNode bound must be either single(s), many(m) or all(a)')
         super(LinkNode, self).__init__(root, name, weight, description)
+        self.project = None
         self.bound = LinkNode.MAPPER[lb] if lb in LinkNode.MAPPER.keys() else lb
         self.links = []
         self.qrange = qrange
         self.locked = False
         self.external = None
+
+    def save(self):
+        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
+            file.write(str(self))
+        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
+            json.dump(self, file, cls=NodeEncoder, indent=2)
 
 
 class LeafNode(Node):
