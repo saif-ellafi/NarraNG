@@ -1,6 +1,6 @@
 {
   "name": "XCOM(EN) Weapons",
-  "bound": "many",
+  "bound": "single",
   "weight": 1.0,
   "qrange": {
     "minv": 1,

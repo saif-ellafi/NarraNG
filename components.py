@@ -24,7 +24,7 @@ class NodeEncoder(json.JSONEncoder):
             if o.description:
                 base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
-            base['links'] = o.external if o.external else o.links
+            base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
             base = {
@@ -42,6 +42,14 @@ class NodeEncoder(json.JSONEncoder):
                 base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
             return base
+        elif isinstance(o, ExternalNode):
+            base = {}
+            base['name'] = o.name
+            base['weight'] = o.weight
+            if o.description:
+                base['description'] = o.description
+            base['link'] = o.link
+            return base
         else:
             return json.JSONEncoder.default(self, o)
 
@@ -56,7 +64,7 @@ class OutputNodeEncoder(json.JSONEncoder):
             base['name'] = o.name
             if o.description:
                 base['description'] = o.description
-            base['links'] = o.external if o.external else o.links
+            base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
             base = {
@@ -75,6 +83,8 @@ class OutputNodeEncoder(json.JSONEncoder):
             if o.description:
                 base['description'] = o.description
             return base
+        elif isinstance(o, ExternalNode):
+            raise Exception("output encoder received an uncompressed ExternalNode")
         else:
             return json.JSONEncoder.default(self, o)
 
@@ -108,6 +118,15 @@ class NodeDecoder:
                 )
                 node.set_weight(link['weight'])
                 node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
+                yield node
+            elif 'link' in link:
+                node = ExternalNode(
+                    root,
+                    link['name'],
+                    link['description'] if 'description' in link else None,
+                    link['link']
+                )
+                node.set_weight(link['weight'])
                 yield node
             else:
                 node = LeafNode(
@@ -171,6 +190,8 @@ class OutputNodeDecoder:
                 )
                 node.value = link['value']
                 yield node
+            elif 'link' in link:
+                raise Exception('Decoder attempted to read output with a compressed ExternalNode. Bad Encoder?')
             else:
                 node = LeafNode(
                     root,
@@ -265,7 +286,6 @@ class LinkNode(Node):
         self.bound = None
         self.qrange = None
         self.locked = False
-        self.external = None
 
     def set_bound(self, bound):
         lb = bound.lower()
@@ -306,3 +326,9 @@ class ValueNode(Node):
             self.value = value
         else:
             raise Exception("ValueNode value must be within qrange")
+
+
+class ExternalNode(Node):
+    def __init__(self, root, name, description, link):
+        super(ExternalNode, self).__init__(root, name, description)
+        self.link = link

@@ -1,0 +1,15 @@
+Nicole Beretha 
+	Appearance 
+	Hair Color 
+		Green 
+		Red 
+	Skin 
+		Dark 
+	Armor (( Basic Protection )) 
+		Light Armor 
+	Vehicle (( Transport and combat drones )) 
+		Drone XF86 (( Combat Drone )) 
+	Weapons SRS (( XCOM Front battle weapons )) 
+	Swapfire Custom 
+		Muzzlebreak (( The classic mod that stabilizes firing )) 
+		Lasersight (( Helps with aiming )) 

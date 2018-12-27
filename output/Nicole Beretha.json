@@ -1,0 +1,68 @@
+{
+  "project": "XCOM(EN)",
+  "name": "Nicole Beretha",
+  "links": [
+    {
+      "name": "Appearance",
+      "links": [
+        {
+          "name": "Hair Color",
+          "links": [
+            {
+              "name": "Green"
+            },
+            {
+              "name": "Red"
+            }
+          ]
+        },
+        {
+          "name": "Skin",
+          "links": [
+            {
+              "name": "Dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armor",
+      "description": "Basic Protection",
+      "links": [
+        {
+          "name": "Light Armor"
+        }
+      ]
+    },
+    {
+      "name": "Vehicle",
+      "description": "Transport and combat drones",
+      "links": [
+        {
+          "name": "Drone XF86",
+          "description": "Combat Drone"
+        }
+      ]
+    },
+    {
+      "name": "Weapons SRS",
+      "description": "XCOM Front battle weapons",
+      "links": [
+        {
+          "name": "Swapfire Custom",
+          "links": [
+            {
+              "name": "Muzzlebreak",
+              "description": "The classic mod that stabilizes firing"
+            },
+            {
+              "name": "Lasersight",
+              "description": "Helps with aiming"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

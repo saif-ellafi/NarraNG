@@ -74,17 +74,6 @@
       ]
     },
     {
-      "name": "Weapons",
-      "bound": "many",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "links": "XCOM(EN) Weapons"
-    },
-    {
       "name": "Armor",
       "bound": "single",
       "weight": 1.0,
@@ -127,6 +116,12 @@
           "description": "Speed Vehicle"
         }
       ]
+    },
+    {
+      "name": "Weapons SRS",
+      "weight": 1.0,
+      "link": "XCOM(EN) Weapons",
+      "description": "XCOM Front battle weapons"
     }
   ]
 }

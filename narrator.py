@@ -1,11 +1,10 @@
-import os
 import random
 import logging
 
 from components import *
 from common import Common
 
-logging.getLogger().setLevel(logging.WARN)
+logging.getLogger().setLevel(logging.DEBUG)
 
 
 class Narrator:
@@ -75,6 +74,13 @@ class Narrator:
                     i += 1
         return entries
 
+    @staticmethod
+    def load_external_node(external_node):
+        path = os.path.join(Common.PROJECTS_FOLDER, external_node.link + '.json')
+        with open(path) as file:
+            node = NodeDecoder.decode(file)
+        return node
+
     # Handles user's input and validations
     @staticmethod
     def user_input(nodes):
@@ -140,10 +146,10 @@ class Narrator:
         self.reset_output_node()
 
     def load_project(self, project):
-        if type(project) == LinkNode:
+        if isinstance(project, LinkNode):
             self.root_node = project
             self.name = project.name
-        elif type(project) == str:
+        elif isinstance(project, str):
             path = os.path.join(Common.PROJECTS_FOLDER, project+'.json')
             with open(path) as file:
                 self.root_node = NodeDecoder.decode(file)
@@ -211,7 +217,7 @@ class Narrator:
             n = int(user_choice[1:])
             for _ in range(0, n):
                 self._gen(node, auto=True)
-        elif type(user_choice) == str:
+        elif isinstance(user_choice, str):
             node.links.append(LeafNode(node, user_choice, None))
             print(self)
         else:
@@ -233,6 +239,14 @@ class Narrator:
             )
             output_node.links.append(blank_node)
             self._gen(new_node, blank_node, auto=auto)
+        elif isinstance(new_node, ExternalNode):
+            blank_node = LinkNode(
+                output_node,
+                new_node.name,
+                new_node.description
+            )
+            output_node.links.append(blank_node)
+            self._gen(self.load_external_node(new_node), blank_node, auto=auto)
         elif isinstance(new_node, ValueNode):
             if auto:
                 new_node.set_value(round(random.triangular(

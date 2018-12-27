@@ -1,0 +1,132 @@
+{
+  "name": "SR5(EN) Magical Skills",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Alchemy",
+      "weight": 1.0,
+      "description": "Magic. Enchanting.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Arcana",
+      "weight": 1.0,
+      "description": "Logic. Creation of magical formulae for spells and foci.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Artificing",
+      "weight": 1.0,
+      "description": "Magic. Crafting magical foci. Enchanting.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Assensing",
+      "weight": 1.0,
+      "description": "Intuition",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Astral Combat",
+      "weight": 1.0,
+      "description": "Willpower",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Banishing",
+      "weight": 1.0,
+      "description": "Magic",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Binding",
+      "weight": 1.0,
+      "description": "Magic. Conjuring.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Counterspelling",
+      "weight": 1.0,
+      "description": "Magic. Sorcery",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Disenchanting",
+      "weight": 1.0,
+      "description": "Magic. Enchanting.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Ritual Spellcasting",
+      "weight": 1.0,
+      "description": "Magic. Sorcery.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Spellcasting",
+      "weight": 1.0,
+      "description": "Magic. Sorcery.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Summoning",
+      "weight": 1.0,
+      "description": "Magic. Conjuring.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    }
+  ]
+}
