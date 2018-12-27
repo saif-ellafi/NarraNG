@@ -1,0 +1,15 @@
+Lucas Moda 
+	Apariencia 
+	Color de pelo 
+		Rojo 
+		Negro 
+	Piel 
+		Oscura 
+	Armas 
+	Swapfire Custom 
+		Agarre delantero (( Mejora el comfort )) 
+		Dragonfire Smartgun (( Conecta tu sistema de punteria a la matrix )) 
+	Armadura (( Proteccion basica )) 
+		Armadura Pesada de metal 
+	Vehiculo (( De transporte y Drones )) 
+		Nissan Z5 (( Vehiculo de carreras )) 

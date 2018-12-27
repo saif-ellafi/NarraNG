@@ -1,0 +1,130 @@
+{
+  "project": "XCOM(ES)",
+  "name": "Lucas Moda",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Apariencia",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Color de pelo",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 2
+          },
+          "links": [
+            {
+              "name": "Rojo",
+              "weight": 1.0
+            },
+            {
+              "name": "Negro",
+              "weight": 1.4
+            }
+          ]
+        },
+        {
+          "name": "Piel",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Oscura",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armas",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Swapfire Custom",
+          "bound": "many",
+          "weight": 1.5,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 2
+          },
+          "links": [
+            {
+              "name": "Agarre delantero",
+              "weight": 1.0,
+              "description": "Mejora el comfort"
+            },
+            {
+              "name": "Dragonfire Smartgun",
+              "weight": 0.3,
+              "description": "Conecta tu sistema de punteria a la matrix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armadura",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "Proteccion basica",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Armadura Pesada de metal",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Vehiculo",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "De transporte y Drones",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Nissan Z5",
+          "weight": 1.0,
+          "description": "Vehiculo de carreras"
+        }
+      ]
+    }
+  ]
+}

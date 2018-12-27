@@ -15,5 +15,10 @@
 {% else %}
 <p>No entries are available.</p>
 {% endif %}
+<form action="{% url 'create_entry' project_id %}" method="get">
+    Create new!
+    <input type="text" name="target">
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>

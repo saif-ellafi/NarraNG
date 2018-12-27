@@ -10,6 +10,9 @@ class Project:
 class Common:
 
     PROJECTS_FOLDER = 'projects'
+    OUTPUT_FOLDER = 'output'
+
+    temp_entry = None
 
     @staticmethod
     def load_projects():

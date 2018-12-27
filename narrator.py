@@ -12,7 +12,6 @@ logging.getLogger().setLevel(logging.WARN)
 
 class Narrator:
 
-    OUTPUT_FOLDER = 'output'
     IGNORE_REPEAT = True
 
     # Represents a weighted selection node
@@ -66,7 +65,7 @@ class Narrator:
     @staticmethod
     def load_entries(project_id):
         entries = []
-        path = Narrator.OUTPUT_FOLDER
+        path = Common.OUTPUT_FOLDER
         entry_files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
         projects = Common.load_projects()
         i = 0
@@ -199,7 +198,7 @@ class Narrator:
         elif str(user_choice) == '--help':
             print(self.intro)
         elif str(user_choice) == '--save':
-            self.save()
+            self.output_node_root.save()
         elif str(user_choice) == '--clear':
             self.load_project(self.project_source)
         elif isinstance(user_choice, list):
@@ -260,9 +259,3 @@ class Narrator:
             print('\nMake your choice\n')
             ret = self._gen()
             print(self)
-
-    def save(self):
-        with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
-            file.write(str(self))
-        with open(os.path.join(Narrator.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
-            json.dump(self.output_node_root, file, cls=NodeEncoder, indent=2)

@@ -123,6 +123,11 @@ class Node:
     def __eq__(self, other):
         return self.name == other.name and self.root.name == other.root.name
 
+    def __repr__(self):
+        sel_str = self.tostr(self, '')
+        sel_str += '\n'
+        return sel_str
+
     def tostr(self, node, sel_str):
         if isinstance(node, LeafNode):
             sel_str += '\t'
@@ -130,11 +135,6 @@ class Node:
         if isinstance(node, LinkNode):
             for subnode in node.links:
                 sel_str = self.tostr(subnode, sel_str + '\n\t')
-        return sel_str
-
-    def __repr__(self):
-        sel_str = self.tostr(self, '')
-        sel_str += '\n'
         return sel_str
 
 
@@ -156,6 +156,12 @@ class LinkNode(Node):
         self.qrange = qrange
         self.locked = False
         self.external = None
+
+    def save(self):
+        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
+            file.write(str(self))
+        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
+            json.dump(self, file, cls=NodeEncoder, indent=2)
 
 
 class LeafNode(Node):
