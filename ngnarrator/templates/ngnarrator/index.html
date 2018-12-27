@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>NarraNG</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
 </head>
 <body>
 <h2>NarraNG Projects</h2>{% if projects_list %}
