@@ -2,6 +2,11 @@ body {
     background-color: #3a0f1a;
 }
 
+h1 {
+    color: #6a7ea0;
+}
+
 a {
     font-size: 30px;
+    color: white;
 }

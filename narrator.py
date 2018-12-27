@@ -1,10 +1,8 @@
 import os
 import random
 import logging
-import json
-import pprint
 
-from components import NodeDecoder, NodeEncoder, Node, LinkNode, LeafNode
+from components import *
 from common import Common
 
 logging.getLogger().setLevel(logging.WARN)
@@ -63,7 +61,7 @@ class Narrator:
         return content
 
     @staticmethod
-    def load_entries(project_id):
+    def load_output_entries(project_id):
         entries = []
         path = Common.OUTPUT_FOLDER
         entry_files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
@@ -71,7 +69,7 @@ class Narrator:
         i = 0
         for entry_path in entry_files:
             with open(entry_path, 'r') as entry_file:
-                decoded_entry = NodeDecoder.decode(entry_file)
+                decoded_entry = OutputNodeDecoder.decode(entry_file)
                 if decoded_entry.project == next(p.name for p in projects if p.pid == project_id):
                     entries.append(Narrator.Entry(i, decoded_entry))
                     i += 1
@@ -130,17 +128,11 @@ class Narrator:
         clean_node = LinkNode(
             None,
             self.root_node.name,
-            self.root_node.bound,
-            self.root_node.weight,
-            self.root_node.qrange,
             self.root_node.description
         )
         clean_node.root = self.output_node_root
         clean_node.project = self.root_node.project
         self.output_node_root = clean_node
-
-    def show_tree(self):
-        pprint.pprint(json.dumps(self.root_node, cls=NodeEncoder))
 
     # Clears current selections
     def clear(self):
@@ -148,7 +140,6 @@ class Narrator:
         self.reset_output_node()
 
     def load_project(self, project):
-        print("Got", project)
         if type(project) == LinkNode:
             self.root_node = project
             self.name = project.name
@@ -157,7 +148,6 @@ class Narrator:
             with open(path) as file:
                 self.root_node = NodeDecoder.decode(file)
                 self.root_node.project = self.root_node.name
-                print("new root node project name", self.root_node.project)
                 self.root_node.name = self.name
         else:
             raise Exception("Invalid project type. Must be either a LinkNode or a path to file.")
@@ -222,7 +212,7 @@ class Narrator:
             for _ in range(0, n):
                 self._gen(node, auto=True)
         elif type(user_choice) == str:
-            node.links.append(LeafNode(node, user_choice, 1.0, None))
+            node.links.append(LeafNode(node, user_choice, None))
             print(self)
         else:
             if not node.locked:
@@ -235,17 +225,36 @@ class Narrator:
 
     # Internal handled for choice roots
     def handle_choice(self, new_node, output_node, auto):
-        if type(new_node) == LinkNode:
+        if isinstance(new_node, LinkNode):
             blank_node = LinkNode(
                 output_node,
                 new_node.name,
-                new_node.bound,
-                new_node.weight,
-                new_node.qrange,
                 new_node.description
             )
             output_node.links.append(blank_node)
             self._gen(new_node, blank_node, auto=auto)
+        elif isinstance(new_node, ValueNode):
+            if auto:
+                new_node.set_value(round(random.triangular(
+                    new_node.qrange.minv,
+                    new_node.qrange.maxv,
+                    new_node.qrange.mode)))
+                output_node.links.append(new_node)
+            else:
+                value = None
+                while not value:
+                    try:
+                        v = int(input('Enter %s value:\n>> ' % new_node.name))
+                        if new_node.qrange.minv <= v <= new_node.qrange.maxv:
+                            value = v
+                            break
+                        else:
+                            continue
+                    except ValueError:
+                        continue
+                new_node.set_value(value)
+                output_node.links.append(new_node)
+
         else:
             if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
                 output_node.links.append(new_node)

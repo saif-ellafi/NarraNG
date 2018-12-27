@@ -126,6 +126,15 @@
           "description": "Vehiculo de carreras"
         }
       ]
+    },
+    {
+      "name": "Edad",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 17,
+        "maxv": 42,
+        "mode": 23.0
+      }
     }
   ]
 }

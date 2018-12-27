@@ -12,37 +12,7 @@ class Generator:
         self.path = './projects/'+project_name+'.json'
 
     @staticmethod
-    def create_link_node(given_name=None, root_node=None):
-        name = given_name
-        while not name:
-            name = input('LinkNode name\n>> ')
-        if name == '#':
-            return
-        bound = None
-        while bound not in ['m', 's', 'a', '#']:
-            bound = input('LinkNode bound (many).\ns. single\nm. many\na. all\n>> ')
-            if not bound:
-                bound = 'm'
-        if bound == '#':
-            return
-        if root_node and root_node.bound == 'all':
-            weight = 1.0
-        else:
-            weight = None
-        while not weight:
-            a = input("LinkNode weight (1.0)\n>> ")
-            if not a:
-                weight = 1.0
-            elif a == '#':
-                weight = '#'
-            else:
-                try:
-                    weight = float(a)
-                except ValueError:
-                    weight = None
-                    continue
-        if weight == '#':
-            return
+    def input_qrange(bound):
         if bound in ['a', 's']:
             qrange_minv = 1
         else:
@@ -84,25 +54,66 @@ class Generator:
         else:
             qrange_mode = None
         while not qrange_mode:
-            input_mode = input('LinkNode qrange mode (%i)\n>> ' % round((qrange_minv+qrange_maxv)/2))
+            input_mode = input('LinkNode qrange mode (%f)\n>> ' % ((qrange_minv+qrange_maxv)/2))
             if input_mode == '#':
                 return
             if not qrange_mode:
-                qrange_mode = round((qrange_minv+qrange_maxv)/2)
+                qrange_mode = (qrange_minv+qrange_maxv)/2
             try:
-                input_mode = int(input_mode)
+                input_mode = float(input_mode)
                 if qrange_minv <= qrange_mode <= qrange_maxv:
                     qrange_mode = input_mode
                 else:
                     continue
             except ValueError:
                 continue
+        return qrange_minv, qrange_maxv, qrange_mode
+
+    @staticmethod
+    def create_link_node(given_name=None, root_node=None):
+        name = given_name
+        while not name:
+            name = input('LinkNode name\n>> ')
+        if name == '#':
+            return
+        bound = None
+        while bound not in ['m', 's', 'a', '#']:
+            bound = input('LinkNode bound (many).\ns. single\nm. many\na. all\n>> ')
+            if not bound:
+                bound = 'm'
+        if bound == '#':
+            return
+        if root_node and root_node.bound == 'all':
+            weight = 1.0
+        else:
+            weight = None
+        while not weight:
+            a = input("LinkNode weight (1.0)\n>> ")
+            if not a:
+                weight = 1.0
+            elif a == '#':
+                weight = '#'
+            else:
+                try:
+                    weight = float(a)
+                except ValueError:
+                    weight = None
+                    continue
+        if weight == '#':
+            return
+        qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(bound)
+        if not qrange_minv or not qrange_maxv or not qrange_mode:
+            return
         description = input('LinkNode description (none)\n>> ')
         if description == '#':
             return
         if not description:
             description = None
-        return LinkNode(root_node, name, bound, weight, QRange(qrange_minv, qrange_maxv, qrange_mode), description)
+        node = LinkNode(root_node, name, description)
+        node.set_bound(bound)
+        node.set_weight(weight)
+        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        return node
 
     @staticmethod
     def create_leaf_node(root_node):
@@ -133,11 +144,48 @@ class Generator:
             return
         if not description:
             description = None
-        return LeafNode(root_node, name, weight, description)
+        node = LeafNode(root_node, name, description)
+        node.set_weight(weight)
+        return node
+
+    @staticmethod
+    def create_value_node(root_node):
+        name = ''
+        while not name:
+            name = input('ValueNode name\n>> ')
+        if name == '#':
+            return
+        if root_node.bound in ['a', 's']:
+            weight = 1.0
+        else:
+            weight = None
+        while not weight:
+            try:
+                w = input('ValueNode weight (1.0)\n>> ')
+                if not w:
+                    weight = 1.0
+                elif w == '#':
+                    weight = '#'
+                else:
+                    weight = float(w)
+            except ValueError:
+                continue
+        if weight == '#':
+            return
+        description = input('ValueNode description (none)\n>> ')
+        if description == '#':
+            return
+        if not description:
+            description = None
+        qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(root_node.bound)
+        node = ValueNode(root_node, name, description)
+        node.set_weight(weight)
+        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        return node
 
     @staticmethod
     def status(node):
-        return 'Currently in node < %s > with back-root < %s >, links < %s > and leaves < %s >' % \
+        return '\nCurrently in node < %s > with\nback-root< %s >\nlinks < %s >\nleaves < %s >\nvalues < %s >' % \
                (
                    node.name,
                    node.root.name,
@@ -148,6 +196,10 @@ class Generator:
                    ) if not node.external else (node.external + '(external)'),
                    ' | '.join(map(lambda n: n.name,
                                   filter(lambda nn: type(nn) == LeafNode, node.links)
+                                  )
+                              ) if not node.external else '(external)',
+                   ' | '.join(map(lambda n: n.name,
+                                  filter(lambda nn: type(nn) == ValueNode, node.links)
                                   )
                               ) if not node.external else '(external)'
                )
@@ -170,8 +222,8 @@ class Generator:
         answer = None
 
         while not answer:
-            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nql. Quick LinkNode\nxl. '
-                           'External LinkNode\nf. LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
+            answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nq. Quick LinkNode\nx. '
+                           'External LinkNode\nf. LeafNode\nv. ValueNode\n\nenter $i to jump into a LinkNode\n\n>> ')
 
         try:
             link_answer = int(answer)
@@ -196,13 +248,13 @@ class Generator:
                 return self.menu(node)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
-        elif answer == 'xl':
+        elif answer == 'x':
             if len(links) != 0:
                 logging.warning("external links require current node links to be empty")
                 return self.menu(node)
             node.external = input("external link name\n>> ")
             return self.menu(node)
-        elif answer == 'ql':
+        elif answer == 'q':
             if node.external:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
@@ -210,7 +262,10 @@ class Generator:
             bound, weight, qrange, description = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'), None)
             if name == '#' or bound == '#':
                 return self.menu(node)
-            link_node = LinkNode(node, name, bound, weight, qrange, description)
+            link_node = LinkNode(node, name, description)
+            link_node.set_bound(bound)
+            link_node.set_weight(weight)
+            link_node.set_qrange(qrange)
             links.append(link_node)
             return self.enter_or_not(node, link_node)
         elif answer == 'f':
@@ -218,6 +273,15 @@ class Generator:
                 logging.warning('Cannot add LinkNode. Node links are external')
                 return self.menu(node)
             leaf_node = self.create_leaf_node(root_node=node)
+            if not leaf_node:
+                return self.menu(node)
+            links.append(leaf_node)
+            return self.menu(node)
+        elif answer == 'v':
+            if node.external:
+                logging.warning('Cannot add LinkNode. Node links are external')
+                return self.menu(node)
+            leaf_node = self.create_value_node(root_node=node)
             if not leaf_node:
                 return self.menu(node)
             links.append(leaf_node)
