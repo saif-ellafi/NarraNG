@@ -167,3 +167,8 @@ class LinkNode(Node):
 class LeafNode(Node):
     def __init__(self, root, name, weight, description):
         super(LeafNode, self).__init__(root, name, weight, description)
+
+
+class ValueNode(Node):
+    def __init__(self, root, name, weight, description,):
+        super(ValueNode, self).__init__(root, name, weight, description)

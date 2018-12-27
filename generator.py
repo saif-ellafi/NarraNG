@@ -84,13 +84,13 @@ class Generator:
         else:
             qrange_mode = None
         while not qrange_mode:
-            input_mode = input('LinkNode qrange mode (%i)\n>> ' % round((qrange_minv+qrange_maxv)/2))
+            input_mode = input('LinkNode qrange mode (%f)\n>> ' % ((qrange_minv+qrange_maxv)/2))
             if input_mode == '#':
                 return
             if not qrange_mode:
-                qrange_mode = round((qrange_minv+qrange_maxv)/2)
+                qrange_mode = (qrange_minv+qrange_maxv)/2
             try:
-                input_mode = int(input_mode)
+                input_mode = float(input_mode)
                 if qrange_minv <= qrange_mode <= qrange_maxv:
                     qrange_mode = input_mode
                 else:
