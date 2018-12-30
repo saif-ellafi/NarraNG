@@ -4,7 +4,7 @@ import logging
 from components import *
 from common import Common
 
-logging.getLogger().setLevel(logging.WARN)
+logging.getLogger().setLevel(logging.DEBUG)
 
 
 class Narrator:
@@ -32,7 +32,7 @@ class Narrator:
         self.output_node_root = None
         self.load_project(project)
         self.intro = """
-            Narrator initialized. On wizard, use the following inputs:
+            Narrator initialized for %s - %s. On wizard, use the following inputs:
                 - --help for command list
                 - --save to save current output
                 - --clear to restart target
@@ -44,7 +44,7 @@ class Narrator:
                 - # for full random strategy (Recommended)
                 - Any text for customized entry
                 - 0 to exit
-                """
+                """ % (project, name)
         print(self.intro)
 
     # How is Narrative represented in console
@@ -189,6 +189,7 @@ class Narrator:
         else:
             print('\n'.join([str(i+1) + '. ' + k.name for (i, k) in enumerate(node_links)]))
             user_choice = self.user_input(node_links)
+        logging.debug("parsing choice for node %s" % node.name)
         if str(user_choice) == '--exit':
             return True
         elif str(user_choice) == '--help':
@@ -240,6 +241,7 @@ class Narrator:
             output_node.links.append(blank_node)
             self._gen(new_node, blank_node, auto=auto)
         elif isinstance(new_node, ExternalNode):
+            logging.debug("Processing external node %s" % new_node.name)
             blank_node = LinkNode(
                 output_node,
                 new_node.name,

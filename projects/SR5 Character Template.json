@@ -26,7 +26,7 @@
         {
           "name": "Attributes",
           "weight": 1.0,
-          "link": "SR5 Attributes"
+          "link": "SR5 Attributes SS"
         },
         {
           "name": "Qualities",
@@ -36,32 +36,235 @@
         {
           "name": "Physical Skills",
           "weight": 1.0,
-          "link": "SR5 Physical Skills"
+          "link": "SR5 Physical Skills SS"
         },
         {
           "name": "Technical Skills",
           "weight": 1.0,
-          "link": "Sr5 Technical Skills"
+          "link": "SR5 Technical Skills SS"
         },
         {
           "name": "Social Skills",
           "weight": 1.0,
-          "link": "SR5 Social Skills"
+          "link": "SR5 Social Skills SS"
         },
         {
           "name": "Combat Skills",
           "weight": 1.0,
-          "link": "Sr5 Combat Skills"
-        },
-        {
-          "name": "Magical Skills",
-          "weight": 1.0,
-          "link": "Sr5 Magical Skills"
+          "link": "SR5 Combat Skills SS"
         },
         {
           "name": "Vehicle Skills",
           "weight": 1.0,
-          "link": "SR5 Vehicle Skills"
+          "link": "SR5 Vehicle Skills SS"
+        }
+      ]
+    },
+    {
+      "name": "Covert Specialist",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Covert"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills Covert"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills Covert"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills SS"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Covert"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills SS"
+        }
+      ]
+    },
+    {
+      "name": "Face",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Face"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills Face"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills Covert"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills Face"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Face"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills SS"
+        }
+      ]
+    },
+    {
+      "name": "Decker",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Decker"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills Face"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills Decker"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills SS"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Face"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills SS"
+        }
+      ]
+    },
+    {
+      "name": "Drone Rigger",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Decker"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills Covert"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills Rigger"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills SS"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Covert"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills Rigger"
         }
       ]
     }
