@@ -1,7 +1,7 @@
 import logging
 from components import *
 
-logging.getLogger().setLevel(logging.WARN)
+logging.getLogger().setLevel(Common.LOG_LEVEL)
 
 
 class Generator:
@@ -18,7 +18,7 @@ class Generator:
         else:
             qrange_minv = None
         while not qrange_minv:
-            a = input("LinkNode qrange min (1)\n>> ")
+            a = input("QRange min (1)\n>> ")
             if not a:
                 qrange_minv = 1
             elif a == '#':
@@ -155,6 +155,8 @@ class Generator:
         if not description:
             description = None
         qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(root_node.bound)
+        if not qrange_mode:
+            return
         node = ValueNode(root_node, name, description)
         node.set_weight(weight)
         node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
@@ -178,6 +180,8 @@ class Generator:
         link = None
         while not link:
             link = input('ExternalNode link\n>> ')
+        if link == '#':
+            return
         node = ExternalNode(root_node, name, description, link)
         node.set_weight(weight)
         return node

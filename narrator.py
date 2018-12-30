@@ -4,7 +4,7 @@ import logging
 from components import *
 from common import Common
 
-logging.getLogger().setLevel(logging.DEBUG)
+logging.getLogger().setLevel(Common.LOG_LEVEL)
 
 
 class Narrator:
@@ -233,29 +233,34 @@ class Narrator:
     # Internal handled for choice roots
     def handle_choice(self, new_node, output_node, auto):
         if isinstance(new_node, LinkNode):
-            blank_node = LinkNode(
-                output_node,
-                new_node.name,
-                new_node.description
-            )
-            output_node.links.append(blank_node)
-            self._gen(new_node, blank_node, auto=auto)
+            if new_node in output_node.links:
+                self._gen(new_node, output_node.links[output_node.index(new_node)], auto=auto)
+            else:
+                blank_node = LinkNode(
+                    output_node,
+                    new_node.name,
+                    new_node.description
+                )
+                output_node.links.append(blank_node)
+                self._gen(new_node, blank_node, auto=auto)
         elif isinstance(new_node, ExternalNode):
             logging.debug("Processing external node %s" % new_node.name)
-            blank_node = LinkNode(
-                output_node,
-                new_node.name,
-                new_node.description
-            )
-            output_node.links.append(blank_node)
-            self._gen(self.load_external_node(new_node), blank_node, auto=auto)
+            if new_node in output_node.links:
+                self._gen(new_node, output_node.links[output_node.index(new_node)], auto=auto)
+            else:
+                blank_node = LinkNode(
+                    output_node,
+                    new_node.name,
+                    new_node.description
+                )
+                output_node.links.append(blank_node)
+                self._gen(self.load_external_node(new_node), blank_node, auto=auto)
         elif isinstance(new_node, ValueNode):
             if auto:
                 new_node.set_value(round(random.triangular(
                     new_node.qrange.minv,
                     new_node.qrange.maxv,
                     new_node.qrange.mode)))
-                output_node.links.append(new_node)
             else:
                 value = None
                 while not value:
@@ -269,8 +274,10 @@ class Narrator:
                     except ValueError:
                         continue
                 new_node.set_value(value)
+            if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
                 output_node.links.append(new_node)
-
+            else:
+                logging.info('IGNORE_REPEAT is True and selection already exists in target')
         else:
             if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
                 output_node.links.append(new_node)

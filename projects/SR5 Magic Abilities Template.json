@@ -1,0 +1,750 @@
+{
+  "name": "SR5 Magic Abilities Template",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Tradition",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Hermetic",
+          "weight": 1.0,
+          "description": "Drain: Logic + Willpower"
+        },
+        {
+          "name": "Shamanic",
+          "weight": 1.0,
+          "description": "Drain: Charisma + Willpower"
+        }
+      ]
+    },
+    {
+      "name": "Spells",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.25
+      },
+      "links": [
+        {
+          "name": "Sorcery",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 5,
+            "mode": 2.0
+          },
+          "links": [
+            {
+              "name": "Combat Spells",
+              "bound": "many",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              },
+              "links": [
+                {
+                  "name": "Acid Stream",
+                  "weight": 1.0,
+                  "description": "Indirect, Elemental, F-3"
+                },
+                {
+                  "name": "Toxic Wave",
+                  "weight": 1.0,
+                  "description": "Indirect, Elemental, F-1"
+                },
+                {
+                  "name": "Punch",
+                  "weight": 1.0,
+                  "description": "Indirect, F-6"
+                },
+                {
+                  "name": "Clout",
+                  "weight": 1.0,
+                  "description": "Indirect, F-3"
+                },
+                {
+                  "name": "Blast",
+                  "weight": 1.0,
+                  "description": "Indirect, F, Stun"
+                },
+                {
+                  "name": "Death Touch",
+                  "weight": 1.0,
+                  "description": "Direct, F-6"
+                },
+                {
+                  "name": "Manabolt",
+                  "weight": 1.0,
+                  "description": "Indirect, F-3"
+                },
+                {
+                  "name": "Manaball",
+                  "weight": 1.0,
+                  "description": "Direct"
+                },
+                {
+                  "name": "Flamethrower",
+                  "weight": 1.0,
+                  "description": "Indirect, F-3"
+                },
+                {
+                  "name": "Fireball",
+                  "weight": 1.0,
+                  "description": "Indirect, Elemental, F-1"
+                },
+                {
+                  "name": "Lightning Bolt",
+                  "weight": 1.0,
+                  "description": "Indirect, Elemental, F-3"
+                },
+                {
+                  "name": "Ball Lightning",
+                  "weight": 1.0,
+                  "description": "Indirect, F-1"
+                },
+                {
+                  "name": "Shatter",
+                  "weight": 1.0,
+                  "description": "Direct, F-6"
+                },
+                {
+                  "name": "Powerbolt",
+                  "weight": 1.0,
+                  "description": "Direct, F-3"
+                },
+                {
+                  "name": "Powerball",
+                  "weight": 1.0,
+                  "description": "Direct, F"
+                },
+                {
+                  "name": "Knockout",
+                  "weight": 1.0,
+                  "description": "Direct, F-6, Stun"
+                },
+                {
+                  "name": "Stunbolt",
+                  "weight": 1.0,
+                  "description": "Direct, F-3"
+                },
+                {
+                  "name": "Stunball",
+                  "weight": 1.0,
+                  "description": "Direct, F, Stun, Area"
+                }
+              ]
+            },
+            {
+              "name": "Detection Spells",
+              "bound": "many",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 4,
+                "mode": 2.0
+              },
+              "links": [
+                {
+                  "name": "Analyze Device",
+                  "weight": 1.0,
+                  "description": "Active, Directional, Sustained, F-3. Analyze purpose and operation of device on the function it has been given to. Not about manufacturer or technical specs."
+                },
+                {
+                  "name": "Analyze Magic",
+                  "weight": 1.0,
+                  "description": "Active, Directional, Sustained, F-3. Analyze purpose of magical object"
+                },
+                {
+                  "name": "Analyze Truth",
+                  "weight": 1.0,
+                  "description": "Active, Directional, Sustained, F-2. Checks whether target statements are truth or hoenestly spoken. Does not work on written stuff or tech medium."
+                },
+                {
+                  "name": "Clairaudience",
+                  "weight": 1.0,
+                  "description": "Passive, Directional, Sustained, F-3. Hear distant sounds as if present. Listening point can be moved with Complex action"
+                },
+                {
+                  "name": "Clairvoyance",
+                  "weight": 1.0,
+                  "description": "Passive, Directional, Sustained, F-3. See distant scenes as if physically present. Moved as complex action. Does not work augmented"
+                },
+                {
+                  "name": "Combat Sense",
+                  "weight": 1.0,
+                  "description": "Passive, psychic, sustained, F. Analyze combat situations."
+                },
+                {
+                  "name": "Detect Enemies",
+                  "weight": 1.0,
+                  "description": "Active, Area, Sustained, F-2"
+                },
+                {
+                  "name": "Detect Enemies Extended",
+                  "weight": 1.0,
+                  "description": "Active, Extended Area, Sustained, F"
+                },
+                {
+                  "name": "Detect Individual",
+                  "weight": 1.0,
+                  "description": "Active, Area, Sustained, F-3"
+                },
+                {
+                  "name": "Detect Life",
+                  "weight": 1.0,
+                  "description": "Active, Area, Sustained, F-3"
+                },
+                {
+                  "name": "Detect Life Extended",
+                  "weight": 1.0,
+                  "description": "Active, Extended Area, Sustained, F-1. Does not work in crowded area"
+                },
+                {
+                  "name": "Detect Life Form",
+                  "weight": 1.0,
+                  "description": "Active, Area, Sustained, F-2"
+                },
+                {
+                  "name": "Detect Life Form Extended",
+                  "weight": 1.0,
+                  "description": "Active, Extended Area, Sustained, F. Something specific"
+                },
+                {
+                  "name": "Detect Magic",
+                  "weight": 1.0,
+                  "description": "Active, Area, Sustained, F-2"
+                },
+                {
+                  "name": "Detect Magic Extended",
+                  "weight": 1.0,
+                  "description": "Active, Extended Area, sustained, F"
+                },
+                {
+                  "name": "Detect Specific Object",
+                  "weight": 1.0,
+                  "description": "ACtive, Area, Sustained, F-2"
+                },
+                {
+                  "name": "Mindlink",
+                  "weight": 1.0,
+                  "description": "Active, Psychic, Sustained, F-1. With voluntary subject, communicate mentally"
+                },
+                {
+                  "name": "Mind Probe",
+                  "weight": 1.0,
+                  "description": "Active, directional, sustained, F. Extract information from subject. Subject is aware but doesn't know where from"
+                }
+              ]
+            },
+            {
+              "name": "Health Spells",
+              "bound": "many",
+              "weight": 1.0,
+              "description": "Spellcastic + Magic[Force]",
+              "qrange": {
+                "minv": 1,
+                "maxv": 4,
+                "mode": 2.0
+              },
+              "links": [
+                {
+                  "name": "Antidote",
+                  "weight": 1.0,
+                  "description": "F-3. Posioned subject overcome toxins, add net hits from spells to the resistance test."
+                },
+                {
+                  "name": "Cure Disease",
+                  "weight": 1.0,
+                  "description": "F-4. Overcome illness, adds net hits to disease resistance."
+                },
+                {
+                  "name": "Dicrease Attribute",
+                  "bound": "many",
+                  "weight": 1.0,
+                  "qrange": {
+                    "minv": 1,
+                    "maxv": 3,
+                    "mode": 1.0
+                  },
+                  "links": [
+                    {
+                      "name": "Strength",
+                      "weight": 1.0,
+                      "description": "f"
+                    },
+                    {
+                      "name": "Logic",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Intuition",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Reaction",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Body",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Willpower",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Charisma",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Agility",
+                      "weight": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "Detox",
+                  "weight": 1.0,
+                  "description": "F-6"
+                },
+                {
+                  "name": "Heal",
+                  "weight": 1.0,
+                  "description": "Heals number of boxes of damage equal to spell hits and base time"
+                },
+                {
+                  "name": "Increase Attribute",
+                  "bound": "many",
+                  "weight": 1.0,
+                  "qrange": {
+                    "minv": 1,
+                    "maxv": 3,
+                    "mode": 1.0
+                  },
+                  "links": [
+                    {
+                      "name": "Strength",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Body",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Agility",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Reaction",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Intuition",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Logic",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Willpower",
+                      "weight": 1.0
+                    },
+                    {
+                      "name": "Charisma",
+                      "weight": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "Increase Reflexes",
+                  "weight": 1.0,
+                  "description": "F. Each hit adds +1 to target initiative and every two hits 1d"
+                },
+                {
+                  "name": "Oxygenate",
+                  "weight": 1.0,
+                  "description": "F-5. Adds dice to resist suffocation, strangulation"
+                },
+                {
+                  "name": "Prophylaxis",
+                  "weight": 1.0,
+                  "description": "F-4. Sustained. Extra dice per hit to resist infection, drugs or toxis. Affects good ones too."
+                },
+                {
+                  "name": "Resist Pain",
+                  "weight": 1.0,
+                  "description": "F-4. Reduces penalties of damage conditions"
+                },
+                {
+                  "name": "Stabilize",
+                  "weight": 1.0,
+                  "description": "F-4"
+                }
+              ]
+            },
+            {
+              "name": "Illusion Spells",
+              "bound": "many",
+              "weight": 1.0,
+              "description": "Mana illusions resisted with Logic + Willpower. Physical Illusions resisted with Intuition + Logic",
+              "qrange": {
+                "minv": 1,
+                "maxv": 4,
+                "mode": 1.0
+              },
+              "links": [
+                {
+                  "name": "Agony",
+                  "weight": 1.0,
+                  "description": "Realistic, Single-Sense. F-4. Sustained"
+                },
+                {
+                  "name": "Mass Agony",
+                  "weight": 1.0,
+                  "description": "Realistic, Single-Sense, Sustained, F-2. Agony of terrible pain on target. Inflicts 1 box of physical and 1 box of stun per Net Hits."
+                },
+                {
+                  "name": "Bugs",
+                  "weight": 1.0,
+                  "description": "Realistic, MultiSense, Sustained, F-3. Make target believe small bugs crawl over his body. Loses 2 initiative score"
+                },
+                {
+                  "name": "Swarm",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-Sense, Area, Sustained, F-1. Bugs crawling. Reduces 2 initiative per hit."
+                },
+                {
+                  "name": "Confusion",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-Sense, Sustained, F-3. Net hits -1 dice to all tests as distraction."
+                },
+                {
+                  "name": "Mass Confusion",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-sense, Area, F-1, Sustained, net hits -1 dice to tests"
+                },
+                {
+                  "name": "Chaos",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-Sense, Physical, F-2, affects mechanical"
+                },
+                {
+                  "name": "Chaotic World",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-sense, area, F, -1 dice to all tests due distraction. Physical."
+                },
+                {
+                  "name": "Entertainment",
+                  "weight": 1.0,
+                  "description": "Obvious, Multi-Sense, Area, Mana, F-3"
+                },
+                {
+                  "name": "Trid Entertainment",
+                  "weight": 1.0,
+                  "description": "Obvious, Multi-Sense, Area, Sustained, F-2"
+                },
+                {
+                  "name": "Invisibility",
+                  "weight": 1.0,
+                  "description": "Realistic, Single Sense, Mana, Sustained, F-2"
+                },
+                {
+                  "name": "Improved Invisibility",
+                  "weight": 1.0,
+                  "description": "Realistic, Single Sense, Sustained, Phyisical, Sustained, F-1."
+                },
+                {
+                  "name": "Mask",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-sense, Mana, Sustained, changes appearance"
+                },
+                {
+                  "name": "Phyisical Mask",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-sense, Phyisical, F-1, Sustained. Changes appearance, voice scent and characteristics"
+                },
+                {
+                  "name": "Phantasm",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-Sense, Area, Sustained, Mana, F-1. Create convincing illusions of any object or creature"
+                },
+                {
+                  "name": "Trid Phantasm",
+                  "weight": 1.0,
+                  "description": "Realistic, Multi-Sense, Area, Sustained, Phyisical, F. Convincing illusion of any object creature or scene"
+                },
+                {
+                  "name": "Hush",
+                  "weight": 1.0,
+                  "description": "Realistic, Single-Sense, Area"
+                },
+                {
+                  "name": "Silence",
+                  "weight": 1.0,
+                  "description": "Phyisical, Sustained, F-1. Dampen sound, -1 hit on spellcasting to anyone using sound powers."
+                },
+                {
+                  "name": "Stealth",
+                  "weight": 1.0,
+                  "description": "Realistic, Single-Sense, Physical, sustained, F-2. Makes subject less audible, character noises are inaudible."
+                }
+              ]
+            },
+            {
+              "name": "Manipulation Spells",
+              "bound": "many",
+              "weight": 1.0,
+              "description": "Damaging Spells equal to Force 0 AP, resisted with Body + Armor. Mental vs Logic + Willpower. Net hits sustain spell, target hits reduce effect.",
+              "qrange": {
+                "minv": 1,
+                "maxv": 4,
+                "mode": 2.0
+              },
+              "links": [
+                {
+                  "name": "Animate",
+                  "weight": 1.0,
+                  "description": "Physical, F-1, sustained. Inanimate objects to move."
+                },
+                {
+                  "name": "Mass Animate",
+                  "weight": 1.0,
+                  "description": "Physical, Area, F+1, all inanimate objects to move. If opposed Force x2 vs Strength + Body"
+                },
+                {
+                  "name": "Armor",
+                  "weight": 1.0,
+                  "description": "Physical, Sustained, F-2. Armor equal to hits scored"
+                },
+                {
+                  "name": "Control Actions",
+                  "weight": 1.0,
+                  "description": "Mental, Sustained, F-1. Controls target using your skills"
+                },
+                {
+                  "name": "Mob Control",
+                  "weight": 1.0,
+                  "description": "Mental, Area, Sustained, F+1. Controls victims body, using your skills to do things."
+                },
+                {
+                  "name": "Control Thoughts",
+                  "weight": 1.0,
+                  "description": "Mental, Mana, F-1, Sustained. Targets mind to think"
+                },
+                {
+                  "name": "Mob Mind",
+                  "weight": 1.0,
+                  "description": "Mental, Area, Mana, Sustained, F+1, control targets mind thoughts"
+                },
+                {
+                  "name": "Fling",
+                  "weight": 1.0,
+                  "description": "Physical, Damaging, F-2, Instant. Psychokinetically hurl a single object against target, with spellcasting test and magic instead ranging combat"
+                },
+                {
+                  "name": "Ice Sheet",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, Physical, Instant, F. Slippery sheet of icee. Agility + Reactin to resist falling prone."
+                },
+                {
+                  "name": "Ignite",
+                  "weight": 1.0,
+                  "description": "Physical, Permanent, F-1. Causes molecular motion to catch fire. Vs Body + reaction or device rating"
+                },
+                {
+                  "name": "Influence",
+                  "weight": 1.0,
+                  "description": "Mental, Mana, F-1. Insert suggestion in mind"
+                },
+                {
+                  "name": "Levitate",
+                  "weight": 1.0,
+                  "description": "Physical, Sustained, F-2. Levitate a person or object"
+                },
+                {
+                  "name": "Light",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, F-4, Sustained"
+                },
+                {
+                  "name": "Magic Fingers",
+                  "weight": 1.0,
+                  "description": "Physical"
+                },
+                {
+                  "name": "Mana Barrier",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, Sustained, Mana, F-2. Barrier rating equal to net hits"
+                },
+                {
+                  "name": "Physical Barrier",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, Sustained, F-1. 1 armor and structure rating per hit. Height equal to Force and length Force x2"
+                },
+                {
+                  "name": "Poltergeist",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, Physical, Sustained, F-2. Picks up all small object and whilr them around in patterns."
+                },
+                {
+                  "name": "Shadow",
+                  "weight": 1.0,
+                  "description": "Environmental, Area, Physical, Sustained, F-3. Darkness with radius Force meters. For every two net hits one penalty in visibility"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Counterspelling",
+          "bound": "all",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Spell Defense",
+              "weight": 1.0,
+              "description": "Either free action  or interrupt action -5 to add counterspelling rating per turn. Can decide how much and to who. Adds to defense"
+            },
+            {
+              "name": "Dispelling",
+              "weight": 1.0,
+              "description": "Counterspelling + Magic[Astral] vs Force + caster magic. Every net hits reduce number of hits to caster."
+            }
+          ]
+        },
+        {
+          "name": "Rituals",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Curse",
+              "weight": 1.0,
+              "description": "Material Link, Illusion Spell"
+            },
+            {
+              "name": "Prodigal Spell",
+              "weight": 1.0,
+              "description": "Combat Spell, Spotter. Requires Force hours to perform. Designates someone to astrally perceive target."
+            },
+            {
+              "name": "Remote Sensing",
+              "weight": 1.0,
+              "description": "Spell, Spotter, Detection spell"
+            },
+            {
+              "name": "Ward",
+              "weight": 1.0,
+              "description": "Anchored. Creates astral barrier with force equal ritual force. Force hours to complete."
+            },
+            {
+              "name": "Circle of Protection",
+              "weight": 1.0,
+              "description": "Anchored. Small astral and physical barrier ni sphere form of physical and mana barrier."
+            },
+            {
+              "name": "Circle of Healing",
+              "weight": 1.0,
+              "description": "Anchored, spell. Healing."
+            },
+            {
+              "name": "Renascence",
+              "weight": 1.0,
+              "description": "Anchored, Spell. Manpulation spell. 1 hour double each hits."
+            },
+            {
+              "name": "Watcher",
+              "weight": 1.0,
+              "description": "Mental like spirit with ethereal form. Lasts for Force hours. B-A-R-S is Force. W-L-I-C is Force -2. Can do assensing, Astrla Combat, Perception. Astral Form, can Manifest, Search, Sapience"
+            },
+            {
+              "name": "Homunculus",
+              "weight": 1.0,
+              "description": "Physical Servant. Using inanimate object material to animate, such as a Statue. Body = Structural material. A-R is F-2. Strenght is F. W-L-I is 1. Slow movement, Assensing, astral combat, perception, unarmed combat."
+            }
+          ]
+        },
+        {
+          "name": "Conjuring",
+          "bound": "single",
+          "weight": 1.0,
+          "description": "Summoning + Magic[Force] vs Spirit Force. Every 3 points of Force, one additional power",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Spirits of Air",
+              "weight": 1.0
+            },
+            {
+              "name": "Spirits of Earth",
+              "weight": 1.0
+            },
+            {
+              "name": "Spirits of Beasts",
+              "weight": 1.0
+            },
+            {
+              "name": "Spirits of Fire",
+              "weight": 1.0
+            }
+          ]
+        },
+        {
+          "name": "Enchanting",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 2,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Alchemy",
+              "weight": 1.0,
+              "description": "Spell, Force, Lynchpin and trigger"
+            },
+            {
+              "name": "Artificing",
+              "weight": 1.0,
+              "description": "Focus Formula, Telesma, Magical Lodge, reagants and craft"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

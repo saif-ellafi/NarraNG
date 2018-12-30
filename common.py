@@ -1,4 +1,5 @@
 import os
+import logging
 
 
 class Project:
@@ -11,6 +12,8 @@ class Common:
 
     PROJECTS_FOLDER = 'projects'
     OUTPUT_FOLDER = 'output'
+
+    LOG_LEVEL = logging.DEBUG
 
     temp_entry = None
 

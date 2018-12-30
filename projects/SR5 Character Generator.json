@@ -1,5 +1,5 @@
 {
-  "name": "SR5 Character Template",
+  "name": "SR5 Character Generator",
   "bound": "single",
   "weight": 1.0,
   "qrange": {
@@ -265,6 +265,125 @@
           "name": "Vehicle Skills",
           "weight": 1.0,
           "link": "SR5 Vehicle Skills Rigger"
+        }
+      ]
+    },
+    {
+      "name": "Combat Mage",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Combat Mage"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills Face"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills SS"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills SS"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Covert"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills SS"
+        },
+        {
+          "name": "Magical Skills",
+          "weight": 1.0,
+          "link": "SR5 Magical Skills Combat Mage"
+        },
+        {
+          "name": "Magic Abilities",
+          "weight": 1.0,
+          "link": "SR5 Magic Abilities Combat Mage"
+        }
+      ]
+    },
+    {
+      "name": "Brawling Adept",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes Brawling Adept"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills SS"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "SR5 Technical Skills SS"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills SS"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "SR5 Combat Skills Covert"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills SS"
+        },
+        {
+          "name": "Adept Powers",
+          "weight": 1.0,
+          "link": "SR5 Adept Powers Template"
         }
       ]
     }

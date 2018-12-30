@@ -1,5 +1,5 @@
 {
-  "name": "SR5 Attributes",
+  "name": "SR5 Attributes Combat Mage",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -12,27 +12,27 @@
       "name": "Body",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 7,
-        "mode": 3.5
+        "minv": 2,
+        "maxv": 5,
+        "mode": 2.5
       }
     },
     {
       "name": "Agility",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 7,
-        "mode": 3.5
+        "minv": 2,
+        "maxv": 5,
+        "mode": 3
       }
     },
     {
       "name": "Reaction",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 7,
-        "mode": 3.5
+        "minv": 2,
+        "maxv": 6,
+        "mode": 3
       }
     },
     {
@@ -40,34 +40,34 @@
       "weight": 1.0,
       "qrange": {
         "minv": 0,
-        "maxv": 7,
-        "mode": 3.5
+        "maxv": 5,
+        "mode": 2
       }
     },
     {
       "name": "Willpower",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
+        "minv": 3,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 4
       }
     },
     {
       "name": "Logic",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
+        "minv": 1,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 2.5
       }
     },
     {
       "name": "Intuition",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 7,
+        "minv": 2,
+        "maxv": 6,
         "mode": 3.5
       }
     },
@@ -76,8 +76,8 @@
       "weight": 1.0,
       "qrange": {
         "minv": 0,
-        "maxv": 7,
-        "mode": 3.5
+        "maxv": 5,
+        "mode": 2
       }
     },
     {
@@ -86,16 +86,16 @@
       "qrange": {
         "minv": 0,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 2
       }
     },
     {
       "name": "Magic",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
+        "minv": 3,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 5
       }
     }
   ]
