@@ -1,0 +1,37 @@
+{
+  "name": "SR5 Metatypes",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Human",
+      "weight": 1.4,
+      "Description": "2 Edge"
+    },
+    {
+      "name": "Elf",
+      "weight": 0.8,
+      "Description": "Low Light Vision. 2 Agility. 3 Charisma."
+    },
+    {
+      "name": "Dwarf",
+      "weight": 0.3,
+      "Description": "Thermographic vision, +2 pathogen and toxin resistance, +20% lifestyle cost. 3 Body. 3 Str. 2 Willpower"
+    },
+    {
+      "name": "Ork",
+      "weight": 0.8,
+      "Description": "Low Light Vision. 3 Strength."
+    },
+    {
+      "name": "Troll",
+      "weight": 0.5,
+      "Description": "Thermographic Vision, +1 Reach, +1 Dermal armor, +100% lifestyle cost."
+    }
+  ]
+}

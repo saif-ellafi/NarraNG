@@ -1,5 +1,5 @@
 {
-  "name": "SR5(EN) Physical Skills",
+  "name": "SR5 Physical Skills",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -23,8 +23,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -40,7 +40,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Camouflage",
@@ -94,7 +94,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "by breathing apparatus",
@@ -142,7 +142,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "By restraint",
@@ -189,7 +189,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Jumping",
@@ -267,7 +267,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Balance",
@@ -329,7 +329,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Legerdemain",
@@ -380,7 +380,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Hearing",
@@ -442,7 +442,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Distance",
@@ -493,7 +493,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "By location",
@@ -536,7 +536,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Desert",
@@ -598,7 +598,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Dash",
@@ -644,11 +644,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
-            },
-            {
-              "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Desert",

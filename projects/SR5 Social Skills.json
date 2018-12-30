@@ -1,5 +1,5 @@
 {
-  "name": "SR5(EN) Social Skills",
+  "name": "SR5 Social Skills",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -22,8 +22,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -39,7 +39,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Fast Talking",
@@ -67,8 +67,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -84,7 +84,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "By culture",
@@ -140,8 +140,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -157,7 +157,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "By metatype",
@@ -209,8 +209,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -226,7 +226,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "By skill or knowledge",
@@ -282,8 +282,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -299,7 +299,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Interrogation",
@@ -335,8 +335,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -352,7 +352,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Command",
@@ -388,8 +388,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -405,7 +405,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "Bargaining",
@@ -437,8 +437,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -454,7 +454,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.5
+              "weight": 3.0
             },
             {
               "name": "By performance art",

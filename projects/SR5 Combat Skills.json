@@ -1,5 +1,5 @@
 {
-  "name": "SR5(EN) Combat Skills",
+  "name": "SR5 Combat Skills",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -13,7 +13,7 @@
       "bound": "all",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
         "mode": 1
       },
@@ -22,8 +22,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -39,7 +39,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Bow",
@@ -75,8 +75,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -92,7 +92,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Assault Rifles",
@@ -128,8 +128,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -145,7 +145,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Axes",
@@ -177,8 +177,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -194,7 +194,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Batons",
@@ -234,8 +234,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -251,7 +251,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Assault Cannons",
@@ -291,8 +291,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -308,7 +308,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Extended-Range shots",
@@ -348,8 +348,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -365,7 +365,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Holdouts",
@@ -401,8 +401,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -418,7 +418,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Aerodynamic",
@@ -450,8 +450,8 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 6,
+            "minv": 0,
+            "maxv": 7,
             "mode": 3.5
           }
         },
@@ -467,7 +467,7 @@
           "links": [
             {
               "name": "None",
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "name": "Blocking",

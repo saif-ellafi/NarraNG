@@ -6,26 +6,33 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/tree.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/collapsible.css' %}">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/multilevel.css' %}">
 
     <script src="{% static 'jquery/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-<div class="tree">
-    <ul>
-        <li>
-            <a class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="left" title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}">{{ entry_node.name }}</a>
-            <ul>
-                {% for link in entry_node.links %}
-                {% include "ngnarrator/sub_entry.html" %}
-                {% endfor %}
-            </ul>
-        </li>
-    </ul>
-</div>
-
+<header role="banner">
+    <nav class="nav" role="navigation">
+        <ul class="nav__list">
+            <li>
+                <input id="group-1" type="checkbox" hidden />
+                <label data-toggle="tooltip" data-placement="left" title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}" for="group-1"><span class="fa fa-angle-right"></span>{{ entry_node.name }}</label>
+                <ul class="group-list">
+                    {% for link in entry_node.links %}
+                    {% with prefix=0 %}
+                    {% include "ngnarrator/sub_entry.html" %}
+                    {% endwith %}
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 <script type="text/javascript">
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()

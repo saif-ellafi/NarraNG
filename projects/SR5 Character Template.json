@@ -1,0 +1,69 @@
+{
+  "name": "SR5 Character Template",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Street Samurai",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Metatype",
+          "weight": 1.0,
+          "link": "SR5 Metatypes"
+        },
+        {
+          "name": "Attributes",
+          "weight": 1.0,
+          "link": "SR5 Attributes"
+        },
+        {
+          "name": "Qualities",
+          "weight": 1.0,
+          "link": "SR5 Qualities"
+        },
+        {
+          "name": "Physical Skills",
+          "weight": 1.0,
+          "link": "SR5 Physical Skills"
+        },
+        {
+          "name": "Technical Skills",
+          "weight": 1.0,
+          "link": "Sr5 Technical Skills"
+        },
+        {
+          "name": "Social Skills",
+          "weight": 1.0,
+          "link": "SR5 Social Skills"
+        },
+        {
+          "name": "Combat Skills",
+          "weight": 1.0,
+          "link": "Sr5 Combat Skills"
+        },
+        {
+          "name": "Magical Skills",
+          "weight": 1.0,
+          "link": "Sr5 Magical Skills"
+        },
+        {
+          "name": "Vehicle Skills",
+          "weight": 1.0,
+          "link": "SR5 Vehicle Skills"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import logging
 from components import *
 from common import Common
 
-logging.getLogger().setLevel(logging.DEBUG)
+logging.getLogger().setLevel(logging.WARN)
 
 
 class Narrator:

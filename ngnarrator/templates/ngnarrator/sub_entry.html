@@ -1,16 +1,26 @@
 {% load ngnarrator_extras %}
+{% if link|is_link_node %}
+    <li>
+        <input id="group-{{link.name|slugify}}-{{forloop.counter}}-{{forloop.parentloop.counter}}-{{link.root.name|slugify}}" type="checkbox" hidden />
+        <label for="group-{{link.name|slugify}}-{{forloop.counter}}-{{forloop.parentloop.counter}}-{{link.root.name|slugify}}"
+               data-toggle="tooltip"
+               data-placement="top"
+               title="{% if link.description %} {{ link.description }} {% endif %}"><span class="fa fa-angle-right"></span>{{ link.name }}{% if link|is_value_node%} : {{ link.value  }} {% endif %}</label>
+        <ul class="s{{prefix}}-group-list">
+        {% with prefix=prefix|add:1 %}
+            {% for sublink in link.links %}
+                {% with link=sublink template_name="ngnarrator/sub_entry.html" %}
+                    {% include template_name %}
+                {% endwith %}
+            {% endfor %}
+        {% endwith %}
+        </ul>
+    </li>
+{% else %}
 <li>
-    <a class="btn btn-primary btn-lg"
+    <a href="#"
        data-toggle="tooltip"
        data-placement="top"
        title="{% if link.description %} {{ link.description }} {% endif %}">{{ link.name }}{% if link|is_value_node%} : {{ link.value  }} {% endif %}</a>
-    {% if link|is_link_node %}
-        <ul>
-        {% for sublink in link.links %}
-            {% with link=sublink template_name="ngnarrator/sub_entry.html" %}
-                {% include template_name %}
-            {% endwith %}
-        {% endfor %}
-        </ul>
-    {% endif %}
 </li>
+{% endif %}
