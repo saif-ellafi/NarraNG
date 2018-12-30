@@ -1,6 +1,6 @@
 {
   "name": "SR5 Locks",
-  "bound": "many",
+  "bound": "single",
   "weight": 1.0,
   "qrange": {
     "minv": 1,

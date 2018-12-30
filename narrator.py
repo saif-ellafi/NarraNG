@@ -234,7 +234,7 @@ class Narrator:
     def handle_choice(self, new_node, output_node, auto):
         if isinstance(new_node, LinkNode):
             if new_node in output_node.links:
-                self._gen(new_node, output_node.links[output_node.index(new_node)], auto=auto)
+                self._gen(new_node, output_node.links[output_node.links.index(new_node)], auto=auto)
             else:
                 blank_node = LinkNode(
                     output_node,
@@ -246,7 +246,7 @@ class Narrator:
         elif isinstance(new_node, ExternalNode):
             logging.debug("Processing external node %s" % new_node.name)
             if new_node in output_node.links:
-                self._gen(new_node, output_node.links[output_node.index(new_node)], auto=auto)
+                self._gen(new_node, output_node.links[output_node.links.index(new_node)], auto=auto)
             else:
                 blank_node = LinkNode(
                     output_node,

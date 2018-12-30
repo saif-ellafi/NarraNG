@@ -1,0 +1,244 @@
+{
+  "name": "SR5 Run Generator",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Job Type",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Datasteal",
+          "weight": 1.0
+        },
+        {
+          "name": "Assassination",
+          "weight": 1.0
+        },
+        {
+          "name": "Destruction",
+          "weight": 1.0
+        },
+        {
+          "name": "Extraction",
+          "weight": 1.0
+        },
+        {
+          "name": "Insertion",
+          "weight": 1.0
+        },
+        {
+          "name": "Misdirection",
+          "weight": 1.0
+        },
+        {
+          "name": "Protection",
+          "weight": 1.0
+        },
+        {
+          "name": "Delivery",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Meet Location",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Bar",
+          "weight": 1.0
+        },
+        {
+          "name": "Club",
+          "weight": 1.0
+        },
+        {
+          "name": "Restaurant",
+          "weight": 1.0
+        },
+        {
+          "name": "Warehouse",
+          "weight": 1.0
+        },
+        {
+          "name": "Loading Dock",
+          "weight": 1.0
+        },
+        {
+          "name": "Factory",
+          "weight": 1.0
+        },
+        {
+          "name": "Unused site",
+          "weight": 1.0
+        },
+        {
+          "name": "Barrens district",
+          "weight": 1.0
+        },
+        {
+          "name": "Urban Hellhole",
+          "weight": 1.0
+        },
+        {
+          "name": "Moving Vehicle",
+          "weight": 1.0
+        },
+        {
+          "name": "Matrix Host",
+          "weight": 1.0
+        },
+        {
+          "name": "Astral Space",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Macguffin",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "A key employee",
+          "weight": 1.0
+        },
+        {
+          "name": "A prototype product",
+          "weight": 1.0
+        },
+        {
+          "name": "Cutting-edge tech research",
+          "weight": 1.0
+        },
+        {
+          "name": "Bioengineered life form",
+          "weight": 1.0
+        },
+        {
+          "name": "Medical object",
+          "weight": 1.0
+        },
+        {
+          "name": "Urban building",
+          "weight": 1.0
+        },
+        {
+          "name": "Rural location",
+          "weight": 1.0
+        },
+        {
+          "name": "Infrastructure object",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Employer",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Secret Society",
+          "weight": 1.0
+        },
+        {
+          "name": "Political or Activist group",
+          "weight": 1.0
+        },
+        {
+          "name": "Government official or agency",
+          "weight": 1.0
+        },
+        {
+          "name": "Minor corporation",
+          "weight": 1.0
+        },
+        {
+          "name": "Megacorporation",
+          "weight": 1.0
+        },
+        {
+          "name": "Criminal Syndicate",
+          "weight": 1.0
+        },
+        {
+          "name": "Magical Group",
+          "weight": 1.0
+        },
+        {
+          "name": "Private individual",
+          "weight": 1.0
+        },
+        {
+          "name": "Exotic or Mysterious being",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Twists",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 2,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Security is unexpectedly high",
+          "weight": 1.0
+        },
+        {
+          "name": "Third party is interested",
+          "weight": 1.0
+        },
+        {
+          "name": "Target is not what it appears to be. Group lied to.",
+          "weight": 1.0
+        },
+        {
+          "name": "Job requires a rare piece of equipment",
+          "weight": 1.0
+        },
+        {
+          "name": "Target has moved or is being moved",
+          "weight": 1.0
+        },
+        {
+          "name": "Employer double crosses runners",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

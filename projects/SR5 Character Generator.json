@@ -1,6 +1,6 @@
 {
   "name": "SR5 Character Generator",
-  "bound": "single",
+  "bound": "all",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
@@ -9,8 +9,8 @@
   },
   "links": [
     {
-      "name": "Street Samurai",
-      "bound": "all",
+      "name": "Archetype",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
@@ -19,371 +19,535 @@
       },
       "links": [
         {
-          "name": "Metatype",
+          "name": "Street Samurai",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Metatypes"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes SS"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills SS"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills SS"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills SS"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            }
+          ]
         },
         {
-          "name": "Attributes",
+          "name": "Covert Specialist",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Attributes SS"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Covert"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills Covert"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills Covert"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Covert"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            }
+          ]
         },
         {
-          "name": "Qualities",
+          "name": "Face",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Qualities"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Face"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills Face"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills SS"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills Face"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Face"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            }
+          ]
         },
         {
-          "name": "Physical Skills",
+          "name": "Decker",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Physical Skills SS"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Decker"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills Face"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills Decker"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Face"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            }
+          ]
         },
         {
-          "name": "Technical Skills",
+          "name": "Drone Rigger",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Technical Skills SS"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Decker"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills Covert"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills Rigger"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Covert"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills Rigger"
+            }
+          ]
         },
         {
-          "name": "Social Skills",
+          "name": "Combat Mage",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Social Skills SS"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Combat Mage"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills Face"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills SS"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Covert"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            },
+            {
+              "name": "Magical Skills",
+              "weight": 1.0,
+              "link": "SR5 Magical Skills Combat Mage"
+            },
+            {
+              "name": "Magic Abilities",
+              "weight": 1.0,
+              "link": "SR5 Magic Abilities Combat Mage"
+            }
+          ]
         },
         {
-          "name": "Combat Skills",
+          "name": "Brawling Adept",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Combat Skills SS"
-        },
-        {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Metatype",
+              "weight": 1.0,
+              "link": "SR5 Metatypes"
+            },
+            {
+              "name": "Attributes",
+              "weight": 1.0,
+              "link": "SR5 Attributes Brawling Adept"
+            },
+            {
+              "name": "Qualities",
+              "weight": 1.0,
+              "link": "SR5 Qualities"
+            },
+            {
+              "name": "Physical Skills",
+              "weight": 1.0,
+              "link": "SR5 Physical Skills SS"
+            },
+            {
+              "name": "Technical Skills",
+              "weight": 1.0,
+              "link": "SR5 Technical Skills SS"
+            },
+            {
+              "name": "Social Skills",
+              "weight": 1.0,
+              "link": "SR5 Social Skills SS"
+            },
+            {
+              "name": "Combat Skills",
+              "weight": 1.0,
+              "link": "SR5 Combat Skills Covert"
+            },
+            {
+              "name": "Vehicle Skills",
+              "weight": 1.0,
+              "link": "SR5 Vehicle Skills SS"
+            },
+            {
+              "name": "Adept Powers",
+              "weight": 1.0,
+              "link": "SR5 Adept Powers Template"
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Covert Specialist",
-      "bound": "all",
+      "name": "Physical Traits",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
-        "maxv": 1,
-        "mode": 1
+        "maxv": 2,
+        "mode": 1.0
       },
       "links": [
         {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
+          "name": "Tatoos",
+          "weight": 1.0
         },
         {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Covert"
+          "name": "Piercings",
+          "weight": 1.0
         },
         {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
+          "name": "Jewelry",
+          "weight": 1.0
         },
         {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills Covert"
+          "name": "Unique dress style",
+          "weight": 1.0
         },
         {
-          "name": "Technical Skills",
-          "weight": 1.0,
-          "link": "SR5 Technical Skills Covert"
+          "name": "Unique hair style",
+          "weight": 1.0
         },
         {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills SS"
+          "name": "Obvious or distinctive cybernetics",
+          "weight": 1.0
         },
         {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Covert"
+          "name": "Dramatically high or low weight and or height for metatype",
+          "weight": 1.0
         },
         {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
+          "name": "Abnormally clean or dirty",
+          "weight": 1.0
         }
       ]
     },
     {
-      "name": "Face",
-      "bound": "all",
+      "name": "Personality trait",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
-        "maxv": 1,
+        "maxv": 3,
         "mode": 1
       },
       "links": [
         {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
+          "name": "Hair-trigger temper",
+          "weight": 1.0
         },
         {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Face"
+          "name": "Very easily distracted",
+          "weight": 1.0
         },
         {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
+          "name": "Racist",
+          "weight": 1.0
         },
         {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills Face"
+          "name": "Chuckles constantly",
+          "weight": 1.0
         },
         {
-          "name": "Technical Skills",
-          "weight": 1.0,
-          "link": "SR5 Technical Skills Covert"
+          "name": "Regularly high",
+          "weight": 1.0
         },
         {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills Face"
+          "name": "Drunk",
+          "weight": 1.0
         },
         {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Face"
+          "name": "Flirtatious with anyone or everyone",
+          "weight": 1.0
         },
         {
-          "name": "Vehicle Skills",
+          "name": "Way he talks",
+          "bound": "many",
           "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
-        }
-      ]
-    },
-    {
-      "name": "Decker",
-      "bound": "all",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "links": [
-        {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
+          "qrange": {
+            "minv": 1,
+            "maxv": 2,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Verbose",
+              "weight": 1.0
+            },
+            {
+              "name": "Timid",
+              "weight": 1.0
+            },
+            {
+              "name": "Gross",
+              "weight": 1.0
+            },
+            {
+              "name": "Delicate, subtle",
+              "weight": 1.0
+            },
+            {
+              "name": "Shouting",
+              "weight": 1.0
+            },
+            {
+              "name": "Babbling, twitchy",
+              "weight": 1.0
+            }
+          ]
         },
         {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Decker"
+          "name": "Hates something",
+          "weight": 1.0
         },
         {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
+          "name": "Afraid of something",
+          "weight": 1.0
         },
         {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills Face"
+          "name": "Swetting",
+          "weight": 1.0
         },
         {
-          "name": "Technical Skills",
+          "name": "Motivations",
+          "bound": "all",
           "weight": 1.0,
-          "link": "SR5 Technical Skills Decker"
-        },
-        {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills SS"
-        },
-        {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Face"
-        },
-        {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
-        }
-      ]
-    },
-    {
-      "name": "Drone Rigger",
-      "bound": "all",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "links": [
-        {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
-        },
-        {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Decker"
-        },
-        {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
-        },
-        {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills Covert"
-        },
-        {
-          "name": "Technical Skills",
-          "weight": 1.0,
-          "link": "SR5 Technical Skills Rigger"
-        },
-        {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills SS"
-        },
-        {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Covert"
-        },
-        {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills Rigger"
-        }
-      ]
-    },
-    {
-      "name": "Combat Mage",
-      "bound": "all",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "links": [
-        {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
-        },
-        {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Combat Mage"
-        },
-        {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
-        },
-        {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills Face"
-        },
-        {
-          "name": "Technical Skills",
-          "weight": 1.0,
-          "link": "SR5 Technical Skills SS"
-        },
-        {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills SS"
-        },
-        {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Covert"
-        },
-        {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
-        },
-        {
-          "name": "Magical Skills",
-          "weight": 1.0,
-          "link": "SR5 Magical Skills Combat Mage"
-        },
-        {
-          "name": "Magic Abilities",
-          "weight": 1.0,
-          "link": "SR5 Magic Abilities Combat Mage"
-        }
-      ]
-    },
-    {
-      "name": "Brawling Adept",
-      "bound": "all",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "links": [
-        {
-          "name": "Metatype",
-          "weight": 1.0,
-          "link": "SR5 Metatypes"
-        },
-        {
-          "name": "Attributes",
-          "weight": 1.0,
-          "link": "SR5 Attributes Brawling Adept"
-        },
-        {
-          "name": "Qualities",
-          "weight": 1.0,
-          "link": "SR5 Qualities"
-        },
-        {
-          "name": "Physical Skills",
-          "weight": 1.0,
-          "link": "SR5 Physical Skills SS"
-        },
-        {
-          "name": "Technical Skills",
-          "weight": 1.0,
-          "link": "SR5 Technical Skills SS"
-        },
-        {
-          "name": "Social Skills",
-          "weight": 1.0,
-          "link": "SR5 Social Skills SS"
-        },
-        {
-          "name": "Combat Skills",
-          "weight": 1.0,
-          "link": "SR5 Combat Skills Covert"
-        },
-        {
-          "name": "Vehicle Skills",
-          "weight": 1.0,
-          "link": "SR5 Vehicle Skills SS"
-        },
-        {
-          "name": "Adept Powers",
-          "weight": 1.0,
-          "link": "SR5 Adept Powers Template"
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "What",
+              "weight": 1.0
+            },
+            {
+              "name": "Why",
+              "weight": 1.0
+            }
+          ]
         }
       ]
     }
