@@ -1,0 +1,323 @@
+{
+  "name": "Qualities",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Positive",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
+      "links": [
+        {
+          "name": "Ambidextrous",
+          "weight": 21.0,
+          "description": "-2 when using offhand"
+        },
+        {
+          "name": "Analytical Mind",
+          "weight": 20.0,
+          "description": "+2 logic tests on thinking"
+        },
+        {
+          "name": "Aptitude",
+          "weight": 11.0,
+          "description": "Higher max skills"
+        },
+        {
+          "name": "Astral Chameleon",
+          "weight": 15.0,
+          "description": "-2 when trying to assense this"
+        },
+        {
+          "name": "Bilingual",
+          "weight": 20.0
+        },
+        {
+          "name": "Blandness",
+          "weight": 17.0,
+          "description": "Difficult to remember him, locate or track him. Does not apply on matrix or astral."
+        },
+        {
+          "name": "Catlike",
+          "weight": 18.0,
+          "description": "+2 on sneaking"
+        },
+        {
+          "name": "Codeslinger",
+          "weight": 15.0,
+          "description": "+2 to some matrix action"
+        },
+        {
+          "name": "Double-Jointed",
+          "weight": 19.0,
+          "description": "+2 escape artists"
+        },
+        {
+          "name": "Exceptional Attribute",
+          "weight": 11.0,
+          "description": "One attribute higher max"
+        },
+        {
+          "name": "First Impression",
+          "weight": 14.0,
+          "description": "+2 social tests on first approach"
+        },
+        {
+          "name": "Focused Concentration",
+          "weight": 12.0,
+          "description": "Can sustain spells without -2 penalty"
+        },
+        {
+          "name": "Gearhead",
+          "weight": 14.0,
+          "description": "Can increase speed of vehicle or drone by +1 during 1d6 minutes and +2 on difficult maneuvers"
+        },
+        {
+          "name": "Guts",
+          "weight": 15.0,
+          "description": "+2 to resist fear and intimidation"
+        },
+        {
+          "name": "High Pain Tolerance",
+          "weight": 10.0,
+          "description": "Higher wound modifier resistance"
+        },
+        {
+          "name": "Home Ground",
+          "weight": 15.0,
+          "description": "+2 bonus on local knowledge or skills"
+        },
+        {
+          "name": "Human-Looking",
+          "weight": 20.0
+        },
+        {
+          "name": "Indomitable",
+          "weight": 8.0,
+          "description": "+2 inherent limit"
+        },
+        {
+          "name": "Juryrigger",
+          "weight": 15.0,
+          "description": "+2 on technical skill tests and reduced threshold"
+        },
+        {
+          "name": "Lucky",
+          "weight": 13.0,
+          "description": "More edge"
+        },
+        {
+          "name": "Magic Resistance",
+          "weight": 8.0,
+          "description": "Bonus on spell resistance"
+        },
+        {
+          "name": "Mentor spirit",
+          "weight": 20.0,
+          "description": "Has some sort of mentor spirit"
+        },
+        {
+          "name": "Natural Athlete",
+          "weight": 18.0,
+          "description": "+2 dice for Running and Gymnastics"
+        },
+        {
+          "name": "Natural Hardening",
+          "weight": 15.0,
+          "description": "Filters 1 biofeedback damage"
+        },
+        {
+          "name": "Natural Immunity",
+          "weight": 17.0,
+          "description": "Immune to a single disease or toxin"
+        },
+        {
+          "name": "Photographic Memory",
+          "weight": 19.0,
+          "description": "+2 dice on memory"
+        },
+        {
+          "name": "Quick Healer",
+          "weight": 22.0,
+          "description": "+2 dice on healing tests"
+        },
+        {
+          "name": "Resistance to Pathogens or Toxins",
+          "weight": 19.0,
+          "description": "+1 bonus for resisting tests"
+        },
+        {
+          "name": "Spirit Affinity",
+          "weight": 18.0,
+          "description": "+1 dice for binding or summoning"
+        },
+        {
+          "name": "Toughness",
+          "weight": 16.0,
+          "description": "+1 dice for body in damage soak"
+        },
+        {
+          "name": "Will to live",
+          "weight": 19.0,
+          "description": "+1 damage overflow box"
+        }
+      ]
+    },
+    {
+      "name": "Negative",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
+      "links": [
+        {
+          "name": "Addiction",
+          "weight": 15.0
+        },
+        {
+          "name": "Allergy",
+          "weight": 15.0
+        },
+        {
+          "name": "Astral Beacon",
+          "weight": 15.0,
+          "description": "Astral signature lasts twice and others get -1 treshold for detection"
+        },
+        {
+          "name": "Bad Luck",
+          "weight": 13.0,
+          "description": "Edge rolls go bad"
+        },
+        {
+          "name": "Bad Rep",
+          "weight": 18.0,
+          "description": "Notorious for doing something wrong"
+        },
+        {
+          "name": "Code of Honor",
+          "weight": 10.0,
+          "description": "Some honor code avoids a specific moral acction"
+        },
+        {
+          "name": "Codeblock",
+          "weight": 15.0,
+          "description": "-2 dice on some matrix action"
+        },
+        {
+          "name": "Combat Paralysis",
+          "weight": 13.0,
+          "description": "-3 dice roll on surprise tests and bad first initiative"
+        },
+        {
+          "name": "Dependents",
+          "weight": 17.0,
+          "description": "Some dependants affect life"
+        },
+        {
+          "name": "Distinctive Style",
+          "weight": 20.0,
+          "description": "Easier to remember"
+        },
+        {
+          "name": "Elf Poser",
+          "weight": 19.0
+        },
+        {
+          "name": "Gremlins",
+          "weight": 15.0,
+          "description": "More chance to glitch on device usage"
+        },
+        {
+          "name": "Incompetent",
+          "weight": 15.0,
+          "description": "Some skill group is very low. Higher notoriety"
+        },
+        {
+          "name": "Insomina",
+          "weight": 12.0
+        },
+        {
+          "name": "Loss of confidence",
+          "weight": 15.0,
+          "description": "A skill suffers -2 due a bad glitch sometime"
+        },
+        {
+          "name": "Low Pain Tolerance",
+          "weight": 16.0,
+          "description": "Lower pain odifier tolerance"
+        },
+        {
+          "name": "Ork Poser",
+          "weight": 17.0
+        },
+        {
+          "name": "Prejudiced",
+          "weight": 18.0,
+          "description": "Social tests affected against a prejudiced group of people or types"
+        },
+        {
+          "name": "Scorched",
+          "weight": 15.0,
+          "description": "On a glitch during VR or BTL something bad happens psychologically to character"
+        },
+        {
+          "name": "Sensitive System",
+          "weight": 13.0,
+          "description": "Higher essence loss due to impalants"
+        },
+        {
+          "name": "Simsense Vertigo",
+          "weight": 20.0,
+          "description": "Disorientation when working in VR -2 dice for AR or VR"
+        },
+        {
+          "name": "Sinner",
+          "weight": 8.0
+        },
+        {
+          "name": "Social Stress",
+          "weight": 17.0,
+          "description": "Social stress under a particular situation requires composure"
+        },
+        {
+          "name": "Spirit Bane",
+          "weight": 17.0,
+          "description": "-2 dice on binding or resisting attempts"
+        },
+        {
+          "name": "Uncouth",
+          "weight": 11.0,
+          "description": "Bad social habits make things difficult to interact. -2 dice"
+        },
+        {
+          "name": "Uneducated",
+          "weight": 17.0,
+          "description": "Bad at technical and knowledge skills. Difficult to learn. Higher notoriety"
+        },
+        {
+          "name": "Unsteady Hands",
+          "weight": 18.0,
+          "description": "-2 dice for agility tests when symtoms manifest"
+        },
+        {
+          "name": "Weak Ummune System",
+          "weight": 15.0,
+          "description": "+2 disease power by test."
+        }
+      ]
+    }
+  ]
+}

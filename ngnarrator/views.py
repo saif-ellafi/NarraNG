@@ -6,11 +6,21 @@ from narrator import Narrator
 from common import Common
 from components import LinkNode
 
+import os
+
 
 def index(request):
     template = loader.get_template('ngnarrator/index.html')
+    projects = Common.load_projects()
+    sourced_projects = {}
+    for p in projects:
+        source = os.path.split(p.source)[0].replace(Common.PROJECTS_FOLDER, '')
+        if source in sourced_projects:
+            sourced_projects[source].append(p)
+        else:
+            sourced_projects[source] = [p]
     context = {
-        'projects_list': Common.load_projects(),
+        'projects_list': sourced_projects,
     }
     return HttpResponse(template.render(context, request))
 
@@ -18,8 +28,7 @@ def index(request):
 def project(request, project_id):
     template = loader.get_template('ngnarrator/project.html')
     context = {
-        'project_id': project_id,
-        'project_name': Common.load_projects()[project_id].name,
+        'project': Common.load_projects()[project_id],
         'project_entries': Narrator.load_output_entries(project_id)
     }
     return HttpResponse(template.render(context, request))
@@ -39,7 +48,7 @@ def create_entry(request, project_id):
 
 def new_entry(request, project_id, entry_name):
     template = loader.get_template('ngnarrator/new_entry.html')
-    loaded_project = Common.load_projects()[project_id].name
+    loaded_project = Common.load_projects()[project_id].source
     new_node = Narrator(loaded_project, name=entry_name)
     new_node._gen(auto=True)
     Common.temp_entry = new_node.output_node_root

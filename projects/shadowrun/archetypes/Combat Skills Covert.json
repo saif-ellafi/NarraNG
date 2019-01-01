@@ -1,0 +1,669 @@
+{
+  "name": "Combat Skills",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Archery",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 0,
+            "maxv": 7,
+            "mode": 3.5
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Bow",
+              "weight": 1.0
+            },
+            {
+              "name": "Crossbow",
+              "weight": 1.0
+            },
+            {
+              "name": "Non-Standard ammunition",
+              "weight": 1.0
+            },
+            {
+              "name": "Slingshot",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Automatics",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 3,
+            "maxv": 5,
+            "mode": 3
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Assault Rifles",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyber-implant",
+              "weight": 1.0
+            },
+            {
+              "name": "Machine Pistols",
+              "weight": 1.0
+            },
+            {
+              "name": "Submachine Guns",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blades",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 5,
+            "maxv": 7,
+            "mode": 5.5
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Axes",
+              "weight": 1.0
+            },
+            {
+              "name": "Swords",
+              "weight": 1.0
+            },
+            {
+              "name": "Parrying",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clubs",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 2,
+            "maxv": 4,
+            "mode": 2
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Batons",
+              "weight": 1.0
+            },
+            {
+              "name": "Hammers",
+              "weight": 1.0
+            },
+            {
+              "name": "Saps",
+              "weight": 1.0
+            },
+            {
+              "name": "Staves",
+              "weight": 1.0
+            },
+            {
+              "name": "Parrying",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavy Weapons",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Assault Cannons",
+              "weight": 1.0
+            },
+            {
+              "name": "Grenade Launchers",
+              "weight": 1.0
+            },
+            {
+              "name": "Guided Missiles",
+              "weight": 1.0
+            },
+            {
+              "name": "Machine Guns",
+              "weight": 1.0
+            },
+            {
+              "name": "Rocket Launchers",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Longarms",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 3,
+            "maxv": 7,
+            "mode": 5
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Extended-Range shots",
+              "weight": 1.0
+            },
+            {
+              "name": "Long-Range Shots",
+              "weight": 1.0
+            },
+            {
+              "name": "Shots",
+              "weight": 1.0
+            },
+            {
+              "name": "Shotguns",
+              "weight": 1.0
+            },
+            {
+              "name": "Sniper Rifles",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pistols",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 5,
+            "maxv": 7,
+            "mode": 5.5
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Holdouts",
+              "weight": 1.0
+            },
+            {
+              "name": "Revolvers",
+              "weight": 1.0
+            },
+            {
+              "name": "Semi-Automatics",
+              "weight": 1.0
+            },
+            {
+              "name": "Tasers",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Throwing Weapons",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 4,
+            "maxv": 7,
+            "mode": 4.5
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Aerodynamic",
+              "weight": 1.0
+            },
+            {
+              "name": "Blades",
+              "weight": 1.0
+            },
+            {
+              "name": "Non-Aerodynamic",
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unarmed Combat",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Rating",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 2,
+            "maxv": 7,
+            "mode": 4.0
+          }
+        },
+        {
+          "name": "Specialization",
+          "bound": "single",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "None",
+              "weight": 3.0
+            },
+            {
+              "name": "Blocking",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyber Implants",
+              "weight": 1.0
+            },
+            {
+              "name": "Subduing",
+              "weight": 1.0
+            },
+            {
+              "name": "Martial Artist",
+              "bound": "single",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 1,
+                "mode": 1
+              },
+              "links": [
+                {
+                  "name": "52 Blocks",
+                  "weight": 1.0,
+                  "description": "Learned in prison, self defense and survival, quick and dirty"
+                },
+                {
+                  "name": "Aikido",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Arnis de mano",
+                  "weight": 1.0,
+                  "description": "Two weapon fighting style with sticks or daggers."
+                },
+                {
+                  "name": "Bartitsu",
+                  "weight": 1.0,
+                  "description": "Improvised weapons martial art like umbrellas or pens"
+                },
+                {
+                  "name": "Boxing",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Capoeira",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Carromeleg",
+                  "weight": 1.0,
+                  "description": "Elven tought martial art"
+                },
+                {
+                  "name": "Chakram",
+                  "weight": 1.0,
+                  "description": "Indian martial art using circular weapons with sharp edge"
+                },
+                {
+                  "name": "Fiore Dei Liberi",
+                  "weight": 1.0,
+                  "description": "Two weapon sword fighting"
+                },
+                {
+                  "name": "Firefight",
+                  "weight": 1.0,
+                  "description": "Urban trained combat style for close quarters"
+                },
+                {
+                  "name": "Gun Kata",
+                  "weight": 1.0,
+                  "description": "Guns used in melee and range, modern martial art, urban based"
+                },
+                {
+                  "name": "Jeet Kune Do",
+                  "weight": 1.0,
+                  "description": "Bruce Lee martial art"
+                },
+                {
+                  "name": "Jogo Du Pau",
+                  "weight": 1.0,
+                  "description": "Portuguese art"
+                },
+                {
+                  "name": "Jujitsu",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Karate",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Kenjutsu",
+                  "weight": 1.0,
+                  "description": "Katana based training"
+                },
+                {
+                  "name": "Knight Errant Tactical",
+                  "weight": 1.0,
+                  "description": "Urban modern neutralize based techniques"
+                },
+                {
+                  "name": "Krav Maga",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Kunst Des Fechtens",
+                  "weight": 1.0,
+                  "description": "German two handed blades"
+                },
+                {
+                  "name": "Kyujutsu",
+                  "weight": 1.0,
+                  "description": "Art of archery"
+                },
+                {
+                  "name": "La verdadera destreza",
+                  "weight": 1.0,
+                  "description": "Spanish swordmanship based on rapier"
+                },
+                {
+                  "name": "Lone Star Tactical",
+                  "weight": 1.0,
+                  "description": "Lone Star based urban combat training with firearms"
+                },
+                {
+                  "name": "Muay Thai",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Ninjutsu",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Okichitaw",
+                  "weight": 1.0,
+                  "description": "Blend of judo and Tae Kwon Do, applied on military"
+                },
+                {
+                  "name": "Parkour",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Pentjak-Silat",
+                  "weight": 1.0,
+                  "description": "Indonesian martial art"
+                },
+                {
+                  "name": "Quarterstaff fighting",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Sangre y Acero",
+                  "weight": 1.0,
+                  "description": "Aztlan based modern augmentation based style"
+                },
+                {
+                  "name": "Tae Kwon Do",
+                  "weight": 1.0,
+                  "description": "f"
+                },
+                {
+                  "name": "Cowboy way",
+                  "weight": 1.0,
+                  "description": "Lasso and ranged control combat"
+                },
+                {
+                  "name": "Turkish Archery",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Whip Fighting",
+                  "weight": 1.0,
+                  "description": "Uses whip and dagger, from philippines"
+                },
+                {
+                  "name": "Wildcat",
+                  "weight": 1.0,
+                  "description": "Modern martial art from the Sioux Nation special forces"
+                },
+                {
+                  "name": "Wrestling",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Wudang Sword",
+                  "weight": 1.0,
+                  "description": "Chinese great sword art"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

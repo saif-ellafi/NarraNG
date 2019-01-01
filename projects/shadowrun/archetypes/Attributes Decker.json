@@ -1,0 +1,102 @@
+{
+  "name": "Attributes",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Body",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 2,
+        "maxv": 4,
+        "mode": 2
+      }
+    },
+    {
+      "name": "Agility",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2.5
+      }
+    },
+    {
+      "name": "Reaction",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 3,
+        "maxv": 6,
+        "mode": 4
+      }
+    },
+    {
+      "name": "Strength",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 3,
+        "maxv": 4,
+        "mode": 3
+      }
+    },
+    {
+      "name": "Willpower",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 3,
+        "maxv": 6,
+        "mode": 3
+      }
+    },
+    {
+      "name": "Logic",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 4,
+        "maxv": 7,
+        "mode": 5
+      }
+    },
+    {
+      "name": "Intuition",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 4,
+        "maxv": 7,
+        "mode": 4
+      }
+    },
+    {
+      "name": "Charisma",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 2,
+        "maxv": 5,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Edge",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Magic",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 0,
+        "mode": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+Lucas Devia 
+	Archetype 
+	Drone Rigger 
+	Metatype 
+		Ork 
+	Attributes 
+	Body : 2
+	Agility : 2
+	Reaction : 3
+	Strength : 3
+	Willpower : 4
+	Logic : 5
+	Intuition : 4
+	Charisma : 3
+	Edge : 3
+	Magic 
+	Qualities 
+	Positive 
+		Photographic Memory (( +2 dice on memory )) 
+	Negative 
+		Codeblock (( -2 dice on some matrix action )) 
+		Distinctive Style (( Easier to remember )) 
+		Combat Paralysis (( -3 dice roll on surprise tests and bad first initiative )) 
+	Physical Skills 
+	Disguise (( Intuition )) 
+	Rating : 4
+	Specialization 
+		Cosmetic 
+	Diving (( Body )) 
+	Rating : 3
+	Specialization 
+		by breathing apparatus (( Liquid system, mixed gas, oxygen extraction, scuba, etc )) 
+	Escape Artist (( Agility )) 
+	Rating : 5
+	Specialization 
+		None 
+	Free-Fall (( Body )) 
+	Rating : 5
+	Specialization 
+		None 
+	Gymnastics (( Agility )) 
+	Rating : 4
+	Specialization 
+		Rolling 
+	Palming (( Agility )) 
+	Rating : 4
+	Specialization 
+		Legerdemain (( Tricks, magic )) 
+	Perception (( Intuition )) 
+	Rating : 5
+	Specialization 
+		None 
+	Running (( Strength )) 
+	Rating : 4
+	Specialization 
+		By terrain (( Desert, Urban, Wilderness, etc )) 
+	Sneaking (( Agility )) 
+	Rating : 4
+	Specialization 
+		By location (( Jungle, Urban, Desert )) 
+	Survival (( Willpower )) 
+	Rating : 4
+	Specialization 
+		Urban 
+	Swimming (( Strength )) 
+	Rating : 4
+	Specialization 
+		None 
+	Tracking (( Intuition )) 
+	Rating : 5
+	Specialization 
+		None 
+	Technical Skills 
+	Aeronautics Mechanic (( Logic. Repair aerospace vehicles. )) 
+	Rating 
+	Specialization 
+		Rotary Wing 
+	Animal Handling (( Charisma )) 
+	Rating : 2
+	Specialization 
+		Riding 
+	Armorer (( Logic. Build and maintain weapons and armors. )) 
+	Rating : 4
+	Specialization 
+		Armor 
+	Artisan (( Intuition )) 
+	Rating : 2
+	Specialization 
+		Cooking 
+	Automotive Mechanic (( Logic. Ground vehicles )) 
+	Rating : 4
+	Specialization 
+		None 
+	Biotechnology (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
+	Rating 
+	Specialization 
+		Bioware 
+	Chemistry (( Logic )) 
+	Rating 
+	Specialization 
+		Inorganic 
+	Computer (( Logic )) 
+	Cybercombat (( Logic )) 
+	Rating : 3
+	Specialization (( f )) 
+		None 
+	Cybertechnology (( Logic. Maintain or repair or build cybernetics )) 
+	Rating 
+	Specialization 
+		Headware 
+	Demolitions (( Logic )) 
+	Rating : 3
+	Specialization 
+		None 
+	Electronic Warfare 
+	Rating : 3
+	Specialization 
+		Sensor operations 
+	First Aid (( Logic )) : 1
+	Forgery (( Logic )) 
+	Rating : 1
+	Specialization 
+		Paper Forgery 
+	Hacking (( Logic )) 
+	Rating : 1
+	Specialization 
+		Devices 
+	Hardware (( Logic )) : 3
+	Industrial Mechanic (( Logic )) 
+	Rating : 3
+	Specialization 
+		Electrical Power Systems 
+	Locksmith : 1
+	Medicine (( Logic )) 
+	Rating : 1
+	Specialization 
+		Organ Culture 
+	Nautical Mechanic (( Logic )) 
+	Rating : 4
+	Specialization 
+		None 
+	Navigation (( Intuition )) 
+	Rating : 4
+	Specialization 
+		None 
+	Software (( Logic )) : 3
+	Social Skills 
+	Con 
+	Rating : 1
+	Specialization 
+		None 
+	Etiquette 
+	Rating : 2
+	Specialization 
+		None 
+	Impersonation 
+	Rating 
+	Specialization 
+		None 
+	Instruction 
+	Rating : 3
+	Specialization 
+		None 
+	Intimidation 
+	Rating : 2
+	Specialization 
+		Mental 
+	Leadership 
+	Rating : 3
+	Specialization 
+		Command 
+	Negotiation 
+	Rating : 3
+	Specialization 
+		Contracts 
+	Performance 
+	Rating : 1
+	Specialization 
+		None 
+	Combat Skills 
+	Archery 
+	Rating : 4
+	Specialization 
+		None 
+	Automatics 
+	Rating : 4
+	Specialization 
+		None 
+	Blades 
+	Rating : 6
+	Specialization 
+		Swords 
+	Clubs 
+	Rating : 3
+	Specialization 
+		Staves 
+	Heavy Weapons 
+	Rating : 1
+	Specialization 
+		None 
+	Longarms 
+	Rating : 6
+	Specialization 
+		None 
+	Pistols 
+	Rating : 6
+	Specialization 
+		Tasers 
+	Throwing Weapons 
+	Rating : 5
+	Specialization 
+		Blades 
+	Unarmed Combat 
+	Rating : 3
+	Specialization 
+		None 
+	Vehicle Skills 
+	Gunnery 
+	Rating : 5
+	Specialization 
+		Guided Missile 
+	Pilot Aerospace 
+	Rating : 5
+	Specialization 
+		Deep Space 
+	Pilot Aircraft 
+	Rating 
+	Specialization 
+		Rotary Wing 
+	Pilot Walker 
+	Rating 
+	Specialization 
+		None 
+	Pilot Ground Craft 
+	Rating : 2
+	Specialization 
+		Bike 
+	Pilot Watercraft 
+	Rating 
+	Specialization 
+		Submarine 
+	Physical Traits 
+		Piercings 
+		Abnormally clean or dirty 
+	Personality trait 
+		Afraid of something 

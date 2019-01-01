@@ -306,9 +306,12 @@ class LinkNode(Node):
         self.qrange = qrange
 
     def save(self):
-        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.txt'), 'w') as file:
+        output_path = os.path.join(Common.OUTPUT_FOLDER, self.project)
+        if not os.path.exists(output_path):
+            os.makedirs(output_path)
+        with open(os.path.join(output_path, self.name+'.txt'), 'w') as file:
             file.write(str(self))
-        with open(os.path.join(Common.OUTPUT_FOLDER, self.name+'.json'), 'w') as file:
+        with open(os.path.join(output_path, self.name+'.json'), 'w') as file:
             json.dump(self, file, cls=OutputNodeEncoder, indent=2)
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ project_name }}</title>
+    <title>{{ project.name }}</title>
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
@@ -14,17 +14,17 @@
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-<h1>{{ project_name }}</h1>
+<h1>{{ project.source }}</h1>
 {% if project_entries %}
 <ul>
     {% for entry in project_entries %}
-    <li><a href="/ngnarrator/{{ project_id }}/{{ entry.eid }}/">{{ entry.node.name }}</a></li>
+    <li><a href="/ngnarrator/{{ project.pid }}/{{ entry.eid }}/">{{ entry.node.name }}</a></li>
     {% endfor %}
 </ul>
 {% else %}
 <p>No entries are available.</p>
 {% endif %}
-<form action="{% url 'create_entry' project_id %}" method="get">
+<form action="{% url 'create_entry' project.pid %}" method="get">
     <div class="row">
         <div class="col-lg-2">
             <div class="input-group">

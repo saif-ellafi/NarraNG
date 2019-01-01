@@ -62,21 +62,23 @@ class Narrator:
     @staticmethod
     def load_output_entries(project_id):
         entries = []
-        path = Common.OUTPUT_FOLDER
+        target_project = Common.load_projects()[project_id]
+        path = os.path.join(Common.OUTPUT_FOLDER, target_project.name)
+        if not os.path.exists(path):
+            return entries
         entry_files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f.endswith('.json')]
-        projects = Common.load_projects()
         i = 0
         for entry_path in entry_files:
             with open(entry_path, 'r') as entry_file:
                 decoded_entry = OutputNodeDecoder.decode(entry_file)
-                if decoded_entry.project == next(p.name for p in projects if p.pid == project_id):
+                if decoded_entry.project == target_project.name:
                     entries.append(Narrator.Entry(i, decoded_entry))
                     i += 1
         return entries
 
     @staticmethod
     def load_external_node(external_node):
-        path = os.path.join(Common.PROJECTS_FOLDER, external_node.link + '.json')
+        path = os.path.join(external_node.link)
         with open(path) as file:
             node = NodeDecoder.decode(file)
         return node
@@ -150,7 +152,7 @@ class Narrator:
             self.root_node = project
             self.name = project.name
         elif isinstance(project, str):
-            path = os.path.join(Common.PROJECTS_FOLDER, project+'.json')
+            path = os.path.join(project)
             with open(path) as file:
                 self.root_node = NodeDecoder.decode(file)
                 self.root_node.project = self.root_node.name

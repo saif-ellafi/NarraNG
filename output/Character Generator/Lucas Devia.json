@@ -1,0 +1,1085 @@
+{
+  "project": "Character Generator",
+  "name": "Lucas Devia",
+  "links": [
+    {
+      "name": "Archetype",
+      "links": [
+        {
+          "name": "Drone Rigger",
+          "links": [
+            {
+              "name": "Metatype",
+              "links": [
+                {
+                  "name": "Ork"
+                }
+              ]
+            },
+            {
+              "name": "Attributes",
+              "links": [
+                {
+                  "name": "Body",
+                  "value": 2
+                },
+                {
+                  "name": "Agility",
+                  "value": 2
+                },
+                {
+                  "name": "Reaction",
+                  "value": 3
+                },
+                {
+                  "name": "Strength",
+                  "value": 3
+                },
+                {
+                  "name": "Willpower",
+                  "value": 4
+                },
+                {
+                  "name": "Logic",
+                  "value": 5
+                },
+                {
+                  "name": "Intuition",
+                  "value": 4
+                },
+                {
+                  "name": "Charisma",
+                  "value": 3
+                },
+                {
+                  "name": "Edge",
+                  "value": 3
+                },
+                {
+                  "name": "Magic",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Qualities",
+              "links": [
+                {
+                  "name": "Positive",
+                  "links": [
+                    {
+                      "name": "Photographic Memory",
+                      "description": "+2 dice on memory"
+                    }
+                  ]
+                },
+                {
+                  "name": "Negative",
+                  "links": [
+                    {
+                      "name": "Codeblock",
+                      "description": "-2 dice on some matrix action"
+                    },
+                    {
+                      "name": "Distinctive Style",
+                      "description": "Easier to remember"
+                    },
+                    {
+                      "name": "Combat Paralysis",
+                      "description": "-3 dice roll on surprise tests and bad first initiative"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Physical Skills",
+              "links": [
+                {
+                  "name": "Disguise",
+                  "description": "Intuition",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Cosmetic"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Diving",
+                  "description": "Body",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "by breathing apparatus",
+                          "description": "Liquid system, mixed gas, oxygen extraction, scuba, etc"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Escape Artist",
+                  "description": "Agility",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Free-Fall",
+                  "description": "Body",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Gymnastics",
+                  "description": "Agility",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Rolling"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Palming",
+                  "description": "Agility",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Legerdemain",
+                          "description": "Tricks, magic"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Perception",
+                  "description": "Intuition",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Running",
+                  "description": "Strength",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "By terrain",
+                          "description": "Desert, Urban, Wilderness, etc"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Sneaking",
+                  "description": "Agility",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "By location",
+                          "description": "Jungle, Urban, Desert"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Survival",
+                  "description": "Willpower",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Urban"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Swimming",
+                  "description": "Strength",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Tracking",
+                  "description": "Intuition",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Technical Skills",
+              "links": [
+                {
+                  "name": "Aeronautics Mechanic",
+                  "description": "Logic. Repair aerospace vehicles.",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Rotary Wing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Animal Handling",
+                  "description": "Charisma",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 2
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Riding"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Armorer",
+                  "description": "Logic. Build and maintain weapons and armors.",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Armor"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Artisan",
+                  "description": "Intuition",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 2
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Cooking"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Automotive Mechanic",
+                  "description": "Logic. Ground vehicles",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Biotechnology",
+                  "description": "Logic. Doctors and scientists for growing organic body parts on bioware",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Bioware"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Chemistry",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Inorganic"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Computer",
+                  "value": 0,
+                  "description": "Logic"
+                },
+                {
+                  "name": "Cybercombat",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "description": "f",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Cybertechnology",
+                  "description": "Logic. Maintain or repair or build cybernetics",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Headware"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Demolitions",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Electronic Warfare",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Sensor operations"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "First Aid",
+                  "value": 1,
+                  "description": "Logic"
+                },
+                {
+                  "name": "Forgery",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Paper Forgery"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Hacking",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Devices"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "value": 3,
+                  "description": "Logic"
+                },
+                {
+                  "name": "Industrial Mechanic",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Electrical Power Systems"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Locksmith",
+                  "value": 1
+                },
+                {
+                  "name": "Medicine",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Organ Culture"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Nautical Mechanic",
+                  "description": "Logic",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Navigation",
+                  "description": "Intuition",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Software",
+                  "value": 3,
+                  "description": "Logic"
+                }
+              ]
+            },
+            {
+              "name": "Social Skills",
+              "links": [
+                {
+                  "name": "Con",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Etiquette",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 2
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Impersonation",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Instruction",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Intimidation",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 2
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Mental"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Leadership",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Command"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Negotiation",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Contracts"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Performance",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Combat Skills",
+              "links": [
+                {
+                  "name": "Archery",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Automatics",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 4
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Blades",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 6
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Swords"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Clubs",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Staves"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Heavy Weapons",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 1
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Longarms",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 6
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pistols",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 6
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Tasers"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Throwing Weapons",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Blades"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Unarmed Combat",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 3
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Vehicle Skills",
+              "links": [
+                {
+                  "name": "Gunnery",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Guided Missile"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pilot Aerospace",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 5
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Deep Space"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pilot Aircraft",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Rotary Wing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pilot Walker",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "None"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pilot Ground Craft",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 2
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Bike"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pilot Watercraft",
+                  "links": [
+                    {
+                      "name": "Rating",
+                      "value": 0
+                    },
+                    {
+                      "name": "Specialization",
+                      "links": [
+                        {
+                          "name": "Submarine"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physical Traits",
+      "links": [
+        {
+          "name": "Piercings"
+        },
+        {
+          "name": "Abnormally clean or dirty"
+        }
+      ]
+    },
+    {
+      "name": "Personality trait",
+      "links": [
+        {
+          "name": "Afraid of something"
+        }
+      ]
+    }
+  ]
+}

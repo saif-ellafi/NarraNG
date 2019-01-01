@@ -1,0 +1,72 @@
+{
+  "project": "XCOM(EN)",
+  "name": "Roberto Lonza",
+  "links": [
+    {
+      "name": "Appearance",
+      "links": [
+        {
+          "name": "Hair Color",
+          "links": [
+            {
+              "name": "Green"
+            },
+            {
+              "name": "Red"
+            },
+            {
+              "name": "Black",
+              "description": "Normal boring hair"
+            }
+          ]
+        },
+        {
+          "name": "Skin",
+          "links": [
+            {
+              "name": "Dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armor",
+      "description": "Basic Protection",
+      "links": [
+        {
+          "name": "Light Armor"
+        }
+      ]
+    },
+    {
+      "name": "Vehicle",
+      "description": "Transport and combat drones",
+      "links": [
+        {
+          "name": "Drone XF86",
+          "description": "Combat Drone"
+        }
+      ]
+    },
+    {
+      "name": "Weapons SRS",
+      "description": "XCOM Front battle weapons",
+      "links": [
+        {
+          "name": "Swapfire Custom",
+          "links": [
+            {
+              "name": "Thermal scope",
+              "description": "Heat detection mod"
+            },
+            {
+              "name": "Forward Grip",
+              "description": "Improves handling"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
