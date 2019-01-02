@@ -1,0 +1,73 @@
+{
+  "name": "Armor",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Actioneer Business Clothes",
+      "weight": 8.0,
+      "description": "AR8"
+    },
+    {
+      "name": "Armor clothing",
+      "weight": 16.0,
+      "description": "AR6"
+    },
+    {
+      "name": "Armor Jacket",
+      "weight": 16.0,
+      "description": "AR12"
+    },
+    {
+      "name": "Armor vest",
+      "weight": 12.0,
+      "description": "AR9"
+    },
+    {
+      "name": "Chameleon suit",
+      "weight": 4.0,
+      "description": "AR9. +2 limit on sneak. Wireless +2 dice on sneak"
+    },
+    {
+      "name": "Full body armor",
+      "bound": "many",
+      "weight": 1.0,
+      "description": "AR15",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Full helmet",
+          "weight": 5.0,
+          "description": "6 capacity"
+        },
+        {
+          "name": "Chemical seal",
+          "weight": 1.0
+        },
+        {
+          "name": "Environment adaptation",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Lined Coat",
+      "weight": 12.0,
+      "description": "AR9"
+    },
+    {
+      "name": "Urban Explorer Jumpsuit 8",
+      "weight": 8.0,
+      "description": "AR9"
+    }
+  ]
+}

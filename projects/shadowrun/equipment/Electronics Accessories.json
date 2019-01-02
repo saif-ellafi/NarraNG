@@ -1,0 +1,50 @@
+{
+  "name": "Electronics Accessories",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 7,
+    "mode": 3.0
+  },
+  "links": [
+    {
+      "name": "AR Gloves",
+      "weight": 1.0
+    },
+    {
+      "name": "Biometric reader",
+      "weight": 1.0
+    },
+    {
+      "name": "Electronic paper",
+      "weight": 0.8
+    },
+    {
+      "name": "Printer",
+      "weight": 0.8
+    },
+    {
+      "name": "Satellite link",
+      "weight": 0.6,
+      "description": "f"
+    },
+    {
+      "name": "Simrig",
+      "weight": 0.4,
+      "description": "Requires DNI. records sensory"
+    },
+    {
+      "name": "Subvocal mic",
+      "weight": 0.7
+    },
+    {
+      "name": "Trid projector",
+      "weight": 1.0
+    },
+    {
+      "name": "Trodes",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Ammunition",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "APDS",
+      "weight": 2.0,
+      "description": "Forbidden. AP-4"
+    },
+    {
+      "name": "Explosive rounds",
+      "weight": 5.0,
+      "description": "Forbidden, +1DV -1AP"
+    },
+    {
+      "name": "Flechette rounds",
+      "weight": 8.0,
+      "description": "+2DV +5AP"
+    },
+    {
+      "name": "Gel rounds",
+      "weight": 6.0,
+      "description": "Stun, AP+1"
+    },
+    {
+      "name": "Hollow points",
+      "weight": 8.0,
+      "description": "Forbidden. DV+1 AP+2"
+    },
+    {
+      "name": "Injection darts",
+      "weight": 8.0,
+      "link": "projects/shadowrun/modules/Toxins.json"
+    },
+    {
+      "name": "Regular ammo",
+      "weight": 14.0
+    },
+    {
+      "name": "Stick-n-Shock",
+      "weight": 8.0,
+      "description": "DV-2Se -5AP"
+    },
+    {
+      "name": "Tracer",
+      "weight": 8.0
+    }
+  ]
+}

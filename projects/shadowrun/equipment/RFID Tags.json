@@ -1,0 +1,28 @@
+{
+  "name": "RFID Tags",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Datachip",
+      "weight": 1.0
+    },
+    {
+      "name": "Security tags",
+      "weight": 1.0
+    },
+    {
+      "name": "Sensor tags",
+      "weight": 1.0
+    },
+    {
+      "name": "Stealth tags",
+      "weight": 1.0
+    }
+  ]
+}

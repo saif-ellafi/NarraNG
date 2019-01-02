@@ -1,0 +1,27 @@
+{
+  "name": "Helmets and shields",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Helmet",
+      "weight": 1.0,
+      "description": "6 capacity. AR+2"
+    },
+    {
+      "name": "Ballistic Shield",
+      "weight": 0.5,
+      "description": "AR+6"
+    },
+    {
+      "name": "Riot shield",
+      "weight": 0.5,
+      "description": "AR+6. Electric damage. Wireless recharges."
+    }
+  ]
+}

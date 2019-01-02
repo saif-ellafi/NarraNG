@@ -1,0 +1,63 @@
+{
+  "name": "Armor Modifications",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Chemical Protection",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Fire resistance",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Insulation",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Nonconductivity",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Shock Frills",
+      "weight": 1.0,
+      "description": "10 charches, unarmed response electricity damage. Wireless active deactivate as free"
+    },
+    {
+      "name": "Thermal Damping",
+      "weight": 0.8,
+      "description": "+rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    }
+  ]
+}

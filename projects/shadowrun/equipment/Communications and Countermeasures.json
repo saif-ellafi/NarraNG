@@ -1,0 +1,42 @@
+{
+  "name": "Communications and Countermeasures",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Bug scanner",
+      "weight": 1.0,
+      "description": "EW + Logic to operate it to find devices within 20 meters. Wireless substitute with your own skill"
+    },
+    {
+      "name": "Data tap",
+      "weight": 1.0,
+      "description": "Hacking tool to attach it to a data cable to get direct universal connector. Goes both ways. Wireless can be commanded wirelessly with self destruct"
+    },
+    {
+      "name": "Headjammer",
+      "weight": 1.0
+    },
+    {
+      "name": "Jammer",
+      "weight": 1.0
+    },
+    {
+      "name": "Micro-transceiver",
+      "weight": 1.0
+    },
+    {
+      "name": "Tag eraser",
+      "weight": 1.0
+    },
+    {
+      "name": "White noise generator",
+      "weight": 1.0
+    }
+  ]
+}

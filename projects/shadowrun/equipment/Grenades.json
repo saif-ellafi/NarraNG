@@ -1,0 +1,47 @@
+{
+  "name": "Grenades",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 2
+  },
+  "links": [
+    {
+      "name": "Flash-bang",
+      "weight": 6.0,
+      "description": "10S AP-4 10m radius"
+    },
+    {
+      "name": "Flash-pak",
+      "weight": 8.0,
+      "description": "Eye directed quarts halogen micro flashes. -4 dice penalty on attack, -2 with compensation, retinal -1. wireless target single"
+    },
+    {
+      "name": "Fragmentation",
+      "weight": 4.0,
+      "description": "16P AP-2 blast -2/m"
+    },
+    {
+      "name": "High Explosive",
+      "weight": 4.0,
+      "description": "16P AP-2 -2/m"
+    },
+    {
+      "name": "Smoke",
+      "weight": 8.0,
+      "description": "10m radius"
+    },
+    {
+      "name": "Thermal Smoke",
+      "weight": 6.0,
+      "description": "10m radius. 4 combat turns, obscure thermographic vision"
+    },
+    {
+      "name": "Gas grenade",
+      "weight": 6.0,
+      "link": "projects/shadowrun/modules/Toxins.json"
+    }
+  ]
+}

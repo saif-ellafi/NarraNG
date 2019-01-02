@@ -1,0 +1,83 @@
+{
+  "name": "Commlinks",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Sim module",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "None",
+          "weight": 0.2
+        },
+        {
+          "name": "Cold-sim",
+          "weight": 1.0
+        },
+        {
+          "name": "Hot-sim",
+          "weight": 0.6
+        }
+      ]
+    },
+    {
+      "name": "Model",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Meta Link",
+          "weight": 10.0,
+          "description": "DR1"
+        },
+        {
+          "name": "Sony Emperor",
+          "weight": 12.0,
+          "description": "DR2"
+        },
+        {
+          "name": "Renraku Sensei",
+          "weight": 10.0,
+          "description": "DR3"
+        },
+        {
+          "name": "Erika Elite",
+          "weight": 8.0,
+          "description": "DR4"
+        },
+        {
+          "name": "Hermes Ikon",
+          "weight": 6.0,
+          "description": "DR5"
+        },
+        {
+          "name": "Transys Avalon",
+          "weight": 4.0,
+          "description": "DR6"
+        },
+        {
+          "name": "Fairlight Caliban",
+          "weight": 2.0,
+          "description": "DR7"
+        }
+      ]
+    }
+  ]
+}

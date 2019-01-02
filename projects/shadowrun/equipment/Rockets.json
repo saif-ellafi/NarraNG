@@ -1,0 +1,27 @@
+{
+  "name": "Rockets",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Anti-vehicle",
+      "weight": 2.0,
+      "description": "24P AP-4/-10 -4/m"
+    },
+    {
+      "name": "Fragmentation",
+      "weight": 6.0,
+      "description": "23Pf +5AP -1/m"
+    },
+    {
+      "name": "High-explosive",
+      "weight": 2.0,
+      "description": "21P -2AP -2/m"
+    }
+  ]
+}

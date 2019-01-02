@@ -128,7 +128,7 @@ class NodeDecoder:
                 if 'bound' in link:
                     node.set_bound(link['bound'])
                 yield node
-            elif 'value' in link:
+            elif 'qrange' in link:
                 node = ValueNode(
                     root,
                     link['name'],
@@ -136,7 +136,6 @@ class NodeDecoder:
                 )
                 node.set_weight(link['weight'])
                 node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
-                node.set_value(link['value'])
                 yield node
             else:
                 node = LeafNode(
