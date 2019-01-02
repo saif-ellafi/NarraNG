@@ -1,0 +1,863 @@
+{
+  "name": "Cyberlimb",
+  "bound": "many",
+  "weight": 1.0,
+  "description": "Base strength and agility. May be improved",
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 1.5
+  },
+  "links": [
+    {
+      "name": "Obvious",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Full Arm",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 5,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Cyberarm Gyromount",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyberarm slide",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyber holster",
+              "weight": 1.0
+            },
+            {
+              "name": "Large smuggling compartment",
+              "weight": 1.0
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Full Leg",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 4,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Hydraulic jacks",
+              "weight": 1.0,
+              "description": "Adds to limit of jumping and sprinting, and two percent jump distance. Wireless +1 dice including lifting",
+              "qrange": {
+                "minv": 1,
+                "maxv": 6,
+                "mode": 2.0
+              }
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Hand",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Foot",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Lower arm",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Lower leg",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Torso",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Skill",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Synthetic",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Full Arm",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 5,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Cyberarm Gyromount",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyberarm slide",
+              "weight": 1.0
+            },
+            {
+              "name": "Cyber holster",
+              "weight": 1.0
+            },
+            {
+              "name": "Large smuggling compartment",
+              "weight": 1.0
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Full Leg",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 4,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Hydraulic jacks",
+              "weight": 1.0,
+              "description": "Adds to limit of jumping and sprinting, and two percent jump distance. Wireless +1 dice including lifting",
+              "qrange": {
+                "minv": 1,
+                "maxv": 6,
+                "mode": 2.0
+              }
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Hand",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Foot",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Lower arm",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Lower leg",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Torso",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Light Cyber pistol",
+              "weight": 1.0,
+              "description": "7P"
+            },
+            {
+              "name": "Heavy Cyber pistol",
+              "weight": 1.0,
+              "description": "8P AP-1"
+            },
+            {
+              "name": "Cyber submachine gun",
+              "weight": 0.7,
+              "description": "7P SA/BF RC2"
+            },
+            {
+              "name": "Cyber shotgun",
+              "weight": 0.7,
+              "description": "10P AP-1 SS"
+            },
+            {
+              "name": "Cyber grenade launcher",
+              "weight": 0.5,
+              "description": "Grenade"
+            }
+          ]
+        },
+        {
+          "name": "Skill",
+          "bound": "many",
+          "weight": 1.0,
+          "qrange": {
+            "minv": 1,
+            "maxv": 3,
+            "mode": 1.0
+          },
+          "links": [
+            {
+              "name": "Agility Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Strength Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            },
+            {
+              "name": "Armor Enhancement",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

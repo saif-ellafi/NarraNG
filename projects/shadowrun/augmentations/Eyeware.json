@@ -1,0 +1,68 @@
+{
+  "name": "Eyeware",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 2.5
+  },
+  "links": [
+    {
+      "name": "Cybereyes",
+      "weight": 6.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Flare compensation",
+      "weight": 1.0
+    },
+    {
+      "name": "Image Link",
+      "weight": 1.0
+    },
+    {
+      "name": "Low Light vision",
+      "weight": 1.0
+    },
+    {
+      "name": "Ocular Drone",
+      "weight": 0.6
+    },
+    {
+      "name": "Retinal Duplication",
+      "weight": 0.7,
+      "description": "Retinal reproduction of someone else",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Smartlink",
+      "weight": 1.0
+    },
+    {
+      "name": "Thermographic Vision",
+      "weight": 1.0
+    },
+    {
+      "name": "Vision Enhancement",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Vision Magnification",
+      "weight": 1.0
+    }
+  ]
+}

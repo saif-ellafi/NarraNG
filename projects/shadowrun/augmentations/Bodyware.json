@@ -1,0 +1,112 @@
+{
+  "name": "Bodyware",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Bone Lacing",
+      "bound": "single",
+      "weight": 1.0,
+      "description": "Bones laced with lattice chains of reinforcing material. Gives extra body and armor.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Plastic",
+          "weight": 1.0,
+          "description": "+1 Body +1 Armor. Unarmed STR+1P"
+        },
+        {
+          "name": "Aluminium",
+          "weight": 1.0,
+          "description": "Body+2 Armor+2 Unarmed STR+2P"
+        },
+        {
+          "name": "Titanium",
+          "weight": 1.0,
+          "description": "Body+3 Armor+3 Unarmed STR+3P"
+        }
+      ]
+    },
+    {
+      "name": "Dermal Plating",
+      "weight": 1.0,
+      "description": "Hard plastic and ceramic fiber plates are bonded to skin, clearly visible. Give bons armor.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Fingertip Compartment",
+      "weight": 1.0
+    },
+    {
+      "name": "Grapple gun",
+      "weight": 1.0
+    },
+    {
+      "name": "Internal Air Tank",
+      "weight": 1.0,
+      "description": "Can hold breath for rating hours. Wireless can use as free action",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      }
+    },
+    {
+      "name": "Muscle Replacement",
+      "weight": 1.0,
+      "description": "Vat grown synthetic muslces replace your own or augment. Increases Strength and Agility by rating",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Reaction Enhancers",
+      "weight": 1.0,
+      "description": "Improve Reaction by rating. Wireless can exceed +4 limit",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      }
+    },
+    {
+      "name": "Skillwires",
+      "weight": 1.0,
+      "description": "Allow usage of active skillsofts",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Smuggling Compartment",
+      "weight": 1.0
+    },
+    {
+      "name": "Wired Reflexes",
+      "weight": 1.0,
+      "description": "+1 reaction and +1d6 for initiative. If wireless, can exceed limit",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    }
+  ]
+}

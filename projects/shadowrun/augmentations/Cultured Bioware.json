@@ -1,0 +1,67 @@
+{
+  "name": "Cultured Bioware",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Cerebral booster",
+      "weight": 1.0,
+      "description": "Adds Logic attribute by rating",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Damage compensators",
+      "weight": 1.0,
+      "description": "Ignore damage boxes by rating before modifiers",
+      "qrange": {
+        "minv": 1,
+        "maxv": 12,
+        "mode": 4.0
+      }
+    },
+    {
+      "name": "Mnemonic enhancer",
+      "weight": 1.0,
+      "description": "Improves memory adds to knowledge language and memory tests as well to mental limit",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Synaptic booster",
+      "weight": 1.0,
+      "description": "+1 REACTION and +1d6 dice on initiative",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Pain editor",
+      "weight": 1.0,
+      "description": "Forbidden. Ignore injury modifiers and stay conscious on stun damage fill. No pain felt. Increases Will +1 and -1 Intuition. Tacticle perceptions -4"
+    },
+    {
+      "name": "Reflex recorder",
+      "weight": 1.0,
+      "description": "+1 rating to specific physical skill"
+    },
+    {
+      "name": "Sleep regulator",
+      "weight": 1.0,
+      "description": "Need less for sleeping"
+    }
+  ]
+}

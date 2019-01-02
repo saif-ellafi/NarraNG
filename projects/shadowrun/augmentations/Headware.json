@@ -1,0 +1,105 @@
+{
+  "name": "Headware",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Commlink",
+      "weight": 1.0
+    },
+    {
+      "name": "Control Rig",
+      "weight": 1.0,
+      "description": "Rigger control implant with built in sim module to use for DNI with other devices",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.5
+      }
+    },
+    {
+      "name": "Cyberdeck",
+      "weight": 1.0,
+      "description": "Whatever cyberdeck has the user"
+    },
+    {
+      "name": "Datajack",
+      "weight": 1.0,
+      "description": "Direct interface with electronic device via cables. If wireless adds rating 1 noise reduction"
+    },
+    {
+      "name": "Data Lock",
+      "weight": 1.0,
+      "description": "It makes user a walking data safe. It is not wireless",
+      "qrange": {
+        "minv": 1,
+        "maxv": 12,
+        "mode": 4.0
+      }
+    },
+    {
+      "name": "Olfactory Booster",
+      "weight": 1.0,
+      "description": "Records smells and plays them back later.",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Simrig",
+      "weight": 1.0,
+      "description": "Record sensory data for later replay"
+    },
+    {
+      "name": "Skilljack",
+      "weight": 0.8,
+      "description": "Skill headware to interpret knowsoft and linguasofts to be used later as your own. Also runs activesofts but needs skillwires. If wireless bosts rating limit to rating x 3",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Taste booster",
+      "weight": 1.0,
+      "description": "Gustatory data in AR and VR. Applies to perception tests",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Tooth Compartment",
+      "weight": 1.0
+    },
+    {
+      "name": "Ultrasound Sensor",
+      "weight": 1.0,
+      "description": "When active replaces normal vision. Switch betwen  active sonar and passive sonar or off with Free action",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Voice Modulator",
+      "weight": 1.0,
+      "description": "Adds rating to impersionation skill tests. Forbidden",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    }
+  ]
+}

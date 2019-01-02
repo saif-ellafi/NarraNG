@@ -1,0 +1,136 @@
+{
+  "name": "Bioware",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 5,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Adrenaline Pump",
+      "weight": 1.0,
+      "description": "Rating to STR AGI REA and WILL for 1d6 turns. Ignore damage penalty",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      }
+    },
+    {
+      "name": "Bone density augmentation",
+      "weight": 1.0,
+      "description": "Increase Body by rating for damage resistance tests. Physical in unarmed damage increases",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.0
+      }
+    },
+    {
+      "name": "Cat's eyes",
+      "weight": 1.0,
+      "description": "Lowlight vision"
+    },
+    {
+      "name": "Enhanced articulation",
+      "weight": 1.0,
+      "description": "+1 escape artist and +1 limit"
+    },
+    {
+      "name": "Muscle Augmentation",
+      "weight": 1.0,
+      "description": "Adds to strength",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.0
+      }
+    },
+    {
+      "name": "Muscle toner",
+      "weight": 1.0,
+      "description": "Adds to agility",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Orthoskin",
+      "weight": 1.0,
+      "description": "Adds to armor",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Pathogenic defense",
+      "weight": 1.0,
+      "description": "Adds to disease rating",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.5
+      }
+    },
+    {
+      "name": "Platelet factories",
+      "weight": 1.0,
+      "description": "Any receivved 2 or more damage reduces by 1"
+    },
+    {
+      "name": "Skin pocket",
+      "weight": 1.0
+    },
+    {
+      "name": "Suprathyroid gland",
+      "weight": 1.0,
+      "description": "+1 Body Reaction Strength Agility and 25% lifecost"
+    },
+    {
+      "name": "Symbiotes",
+      "weight": 1.0,
+      "description": "Adds to healing tests and higher cost for food",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2.5
+      }
+    },
+    {
+      "name": "Synthacardium",
+      "weight": 1.0,
+      "description": "Increase social limit by rating. Add rating to test skills in acting and influence if comfortable",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Toxin extractor",
+      "weight": 1.0,
+      "description": "Adds rating to toxin resistance",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Tracheal filter",
+      "weight": 1.0,
+      "description": "Implanted on trachea, can absorb airborne impurities. Adds rating to toxin resistance vs inhalation",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    }
+  ]
+}
