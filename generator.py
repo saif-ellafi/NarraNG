@@ -10,6 +10,7 @@ class Generator:
         self.root_node = None
         self.project_name = os.path.split(project_source)[-1][:-5]
         self.path = project_source if project_source.endswith('.json') else project_source+'.json'
+        self.path = os.path.join(Common.PROJECTS_FOLDER, self.path)
         path_dir = os.path.split(self.path)[0]
         if not os.path.exists(path_dir):
             os.makedirs(path_dir)

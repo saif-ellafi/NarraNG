@@ -1,0 +1,52 @@
+{
+  "name": "Toxins",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "CS/Tear Gas",
+      "weight": 15.0,
+      "description": "Contact, Inhalation vector. 3 seconds. Power 8. Disorientation, Nausea, Stun damage. Irritant effect to eyes skins and mucus membranes."
+    },
+    {
+      "name": "Gamma-Scopolamine",
+      "weight": 5.0,
+      "description": "Injection vector, immediate. Power 12. Paralysis, truth serum, reduces willpower by 3. Nasty agent from night-shade, neuromuscular blocking that paralyzes target"
+    },
+    {
+      "name": "Narcojet",
+      "weight": 12.0,
+      "description": "Injection vector, immediate. Power 15. Stun damage. Tranquilizer."
+    },
+    {
+      "name": "Nausea Gas",
+      "weight": 14.0,
+      "description": "Inhalation vector, 9 seconds, power 9. Disorientation, Nausea. Riot control agent. Ineret after two minutes."
+    },
+    {
+      "name": "Seven-7",
+      "weight": 4.0,
+      "description": "Contact, inhalation vector. 3 seconds. Penetration -2. Physical damage, disorientation, nausea. Colorless and odorless gass. Inerent after 10 minutes of exposure."
+    },
+    {
+      "name": "Neuro-Stun VIII",
+      "weight": 6.0,
+      "description": "Contact, Inhalation vector, 3 seconds. Stun damage. Colorless and odorless knockout gas. Inert after ten minutes."
+    },
+    {
+      "name": "Neuro-Stun IX",
+      "weight": 6.0,
+      "description": "3 seconds. Contact, inhalation vector. Power 15, disorientation, stun damage. Inert after one minute."
+    },
+    {
+      "name": "Neuro-Stun X",
+      "weight": 6.0,
+      "description": "Contact, inhalation vector. 3 seconds. Power 15. -2 AP. Stun Damage. Inert after one minute. Colorless and odorless."
+    }
+  ]
+}

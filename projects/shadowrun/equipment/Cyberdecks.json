@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Erika MCD-1",
-      "weight": 17.0,
+      "weight": 10.0,
       "description": "DR1. 4321. Progs 1",
       "bound": "many",
       "qrange": {

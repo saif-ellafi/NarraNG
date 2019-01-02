@@ -1,0 +1,95 @@
+{
+  "name": "BTL ",
+  "bound": "single",
+  "weight": 1.0,
+  "description": "Self-erasing shot that requires skilljack or datajack or any hot sim simsense.",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Dreamchip",
+      "bound": "many",
+      "weight": 1.0,
+      "description": "Standard simsense recordings to BTL output",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Heroic fantasy",
+          "weight": 1.0
+        },
+        {
+          "name": "Recorded crime",
+          "weight": 1.0
+        },
+        {
+          "name": "Pornography",
+          "weight": 1.0
+        },
+        {
+          "name": "Hardcore violence",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Moodchip",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Euphoria",
+          "weight": 1.0
+        },
+        {
+          "name": "Sexual urges",
+          "weight": 1.0
+        },
+        {
+          "name": "Terror",
+          "weight": 1.0
+        },
+        {
+          "name": "Hatred",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Personafix chips",
+      "bound": "single",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Historical figure",
+          "weight": 1.0
+        },
+        {
+          "name": "Pop culture icon",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Tripchip",
+      "weight": 1.0,
+      "description": "Sensory output, flooding the user with interesting and unusual sensations. Simple or advanced stimulating situationns"
+    }
+  ]
+}

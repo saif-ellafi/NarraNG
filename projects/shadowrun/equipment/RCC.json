@@ -1,0 +1,144 @@
+{
+  "name": "Rigger Command Console",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Scratch-Built Junk",
+      "weight": 10.0,
+      "description": "DR 1, DP 3, FW 2, SH 1, NR 0",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Radio Shack Remote Controller",
+      "weight": 14.0,
+      "description": "DR 2, DP 3, FW 3, SH 2, NR 0",
+      "bound": "many",
+      "qrange": {
+        "minv": 2,
+        "maxv": 2,
+        "mode": 2
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Essy Motors DroneMaster",
+      "weight": 14.0,
+      "description": "DR 3, DP 4, FW 4, SH 2, NR 1",
+      "bound": "many",
+      "qrange": {
+        "minv": 2,
+        "maxv": 2,
+        "mode": 2
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "CompuForce TaskMaster",
+      "weight": 12.0,
+      "description": "DR 4 DP 5 FW 4 SH 3 NR 1",
+      "bound": "many",
+      "qrange": {
+        "minv": 3,
+        "maxv": 3,
+        "mode": 3
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Maersk Spider",
+      "weight": 12.0,
+      "description": "DR 4 DP 4 FW 5 SH 2 NR 2",
+      "bound": "many",
+      "qrange": {
+        "minv": 2,
+        "maxv": 2,
+        "mode": 2
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Maser Industrial Electronics",
+      "weight": 12.0,
+      "description": "DR 5 DP 3 FW 4 SH 4 NR 1",
+      "bound": "many",
+      "qrange": {
+        "minv": 4,
+        "maxv": 4,
+        "mode": 4
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Vulcan Liegelord",
+      "weight": 10.0,
+      "description": "DR 5 DP 5 FW 6 SH 3 NR 2",
+      "bound": "many",
+      "qrange": {
+        "minv": 3,
+        "maxv": 3,
+        "mode": 3
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Proteus Poseidon",
+      "weight": 8.0,
+      "description": "DR 5 DP 5 FW 6 SH 3 NR 2",
+      "bound": "many",
+      "qrange": {
+        "minv": 3,
+        "maxv": 3,
+        "mode": 3
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Lone Star Remote Commander",
+      "weight": 6.0,
+      "description": "DR 6 DP 6 FW 5 SH 4 NR 2",
+      "bound": "many",
+      "qrange": {
+        "minv": 4,
+        "maxv": 4,
+        "mode": 4
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "MCT Drone Web",
+      "weight": 4.0,
+      "description": "DR 6 DP 7 FW 6 SH 3 NR 3",
+      "bound": "many",
+      "qrange": {
+        "minv": 3,
+        "maxv": 3,
+        "mode": 3
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    },
+    {
+      "name": "Triox UberMensch",
+      "weight": 2.0,
+      "description": "DR 6 DP 8 FW 7 SH 4 NR 2",
+      "bound": "many",
+      "qrange": {
+        "minv": 4,
+        "maxv": 4,
+        "mode": 4
+      },
+      "link": "projects/shadowrun/equipment/RCC Programs.json"
+    }
+  ]
+}

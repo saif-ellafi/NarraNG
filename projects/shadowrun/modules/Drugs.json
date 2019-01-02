@@ -1,0 +1,62 @@
+{
+  "name": "Drugs",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Bliss",
+      "weight": 7.0,
+      "description": "Tranquilizing narcotic. Inhalation, Injection. 3 seconds. Duration 6-Body hours. -1 Reaction, +1 tresholds, -1 all limits. Pain tolerance 3"
+    },
+    {
+      "name": "Cram",
+      "weight": 8.0,
+      "description": "Ingestion, inhalation. 10 minutes. Duration 12-Body hours. Psychological. +1 reaction, +1d6 iniciative. Stimulant. Takes 6 Stun after war off"
+    },
+    {
+      "name": "Deepweed",
+      "weight": 2.0,
+      "description": "Ingestion, Inhalation. Immediate speed. Duration 6 - body hours. Physiological. Forbidden. +1 Willpower, +1 mental limit, -1 Physical limi, forces astral perceive. Wear off -1 all dice and -1 all limits."
+    },
+    {
+      "name": "Jazz",
+      "weight": 8.0,
+      "description": "Inhalation. Immediate. Duration 10  x 1d6 minutes. +1 Reaction. +1 P limit. +2d6 initiative. stimulante. Disorientation on wear off."
+    },
+    {
+      "name": "Kamikaze",
+      "weight": 6.0,
+      "description": "Inhalation, Immediate, 10x1d6 minutes. Physiological, +1 Body, +1 Agility, +2 Strength, +1 willpower, +2 P limit, +2d6 dice, High pain tolerance.-1 Reaction, -1 Willpower, -2 to all limits on wear off. 6 stun damage."
+    },
+    {
+      "name": "Long Haul",
+      "weight": 8.0,
+      "description": "Injection. 10 minutes. Duration 4 days. Psychological. Aliviates need for sleep. Wear off passes out and sleeps for 8d6 hours. Afterwards disroientation. Second dose additional 1d6/2 days, then 10 stun damage and crash."
+    },
+    {
+      "name": "Nitro",
+      "weight": 8.0,
+      "description": "Inhalation, 3 seconds, 10 x 1d6 minutes duration, +2 STR, +2 Will, +2 PER, +2 P Limit, High pain tolerance. Wear off -2 all limits and 9 stun damage"
+    },
+    {
+      "name": "Novacoke",
+      "weight": 8.0,
+      "description": "Inhalation, injection. 3 seconds. 10-Body hours. +1 reaction, +1 charisma, +1 PER, +1 Social limit, High Pain tolerance 1. Cha and Will -1"
+    },
+    {
+      "name": "Psyche",
+      "weight": 8.0,
+      "description": "Ingestion, 10 minutes. Duration 12-Body hours. +1 INT, +1 Logic, +1 mental limit. Hyper-aware and detached."
+    },
+    {
+      "name": "Zen",
+      "weight": 6.0,
+      "description": "Inhalation, 5 minutes. 10 x 1d6 minutes duration. -2 Reac, +1 Will, -1 Physical action pool. Hallucinogen."
+    }
+  ]
+}
