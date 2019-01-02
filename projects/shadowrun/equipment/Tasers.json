@@ -1,0 +1,22 @@
+{
+  "name": "Tasers",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 2,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Defiance EX Shocker",
+      "weight": 1.0,
+      "description": "ACC4, 9Se, AP-5, SS"
+    },
+    {
+      "name": "Yamaha Pulsar",
+      "weight": 1.0,
+      "description": "ACC5, 7Se, -5AP, SA"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Shotguns",
+  "bound": "single",
+  "weight": 10.0,
+  "description": "ACC4 10P AP-1 SS/SA",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Enfield AS-7",
+      "weight": 2.0,
+      "description": "Forbidden. Acc4/5 13P -1AP SA/BF"
+    },
+    {
+      "name": "PJSS Model 55",
+      "weight": 5.0,
+      "description": "ACC6 11P -1AP SS RC1"
+    }
+  ]
+}

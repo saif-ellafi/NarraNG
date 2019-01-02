@@ -1,0 +1,82 @@
+{
+  "name": "Melee Weapons",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Combat Axe",
+      "weight": 8.0,
+      "description": "Acc 4 Reach 2 Dmg STR+5 AP-4"
+    },
+    {
+      "name": "Combat Knife",
+      "weight": 16.0,
+      "description": "Acc 6 STR+2P -3AP"
+    },
+    {
+      "name": "Katana",
+      "weight": 11.0,
+      "description": "Acc 7 Reach 1 STR+3P -3AP"
+    },
+    {
+      "name": "Forearm snap-blades",
+      "weight": 13.0,
+      "description": "Acc4 Str+2P -2AP"
+    },
+    {
+      "name": "Knife",
+      "weight": 16.0,
+      "description": "Acc5 STR+1P -1AP"
+    },
+    {
+      "name": "Pole arm",
+      "weight": 14.0,
+      "description": "Acc5 Reach 3 STR+3P -2AP"
+    },
+    {
+      "name": "Survival Knife",
+      "weight": 16.0,
+      "description": "ACC5 STR+2P -1AP"
+    },
+    {
+      "name": "Sword",
+      "weight": 15.0,
+      "description": "Acc6 Reach1 STR+3P -2AP"
+    },
+    {
+      "name": "Club",
+      "weight": 16.0,
+      "description": "Acc4 Reach1 STR+3P"
+    },
+    {
+      "name": "Extendable Baton",
+      "weight": 16.0,
+      "description": "Acc5 Reach1 STR+2P"
+    },
+    {
+      "name": "Staff",
+      "weight": 17.0,
+      "description": "Acc6 Reach2 STR+3P"
+    },
+    {
+      "name": "Stun baton",
+      "weight": 14.0,
+      "description": "Acc4 Reach1 9S electric -5AP"
+    },
+    {
+      "name": "Knucks",
+      "weight": 18.0,
+      "description": "Acc-PLimit STR+1P"
+    },
+    {
+      "name": "Shock Gloves",
+      "weight": 14.0,
+      "description": "Acc-PLimit 8S electric, AP -5"
+    }
+  ]
+}

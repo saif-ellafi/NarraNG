@@ -1,0 +1,37 @@
+{
+  "name": "Assault Rifles",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "AK-97",
+      "weight": 16.0,
+      "description": "ACC5 10P AP-2"
+    },
+    {
+      "name": "Ares Alpha",
+      "weight": 9.0,
+      "description": "Forbidden. ACC5/7 11P AP-2 RC2. May have Grenade Launcher"
+    },
+    {
+      "name": "Colt M23",
+      "weight": 16.0,
+      "description": "ACC4 9P AP-2"
+    },
+    {
+      "name": "FN HAR",
+      "weight": 12.0,
+      "description": "ACC 5/6 10P AP-2 RC2"
+    },
+    {
+      "name": "Yamaha Raiden",
+      "weight": 6.0,
+      "description": "Forbidden, ACC6/8 11P AP-2 BF/FA RC1"
+    }
+  ]
+}

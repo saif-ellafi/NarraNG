@@ -1,0 +1,46 @@
+{
+  "name": "Projectile Weapons",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 2,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Bow",
+      "weight": 14.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 20,
+        "mode": 8.0
+      }
+    },
+    {
+      "name": "Light Crossbow",
+      "weight": 18.0,
+      "description": "Acc7 Dmg5P -1AP"
+    },
+    {
+      "name": "Medium Crossbow",
+      "weight": 16.0,
+      "description": "Acc6 Dmg7P AP-2"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "weight": 12.0,
+      "description": "Acc 5 Dmg 10P AP-3"
+    },
+    {
+      "name": "Throwing knife",
+      "weight": 10.0,
+      "description": "Acc-PLimit STR+1P -1AP"
+    },
+    {
+      "name": "Throwing shuriken",
+      "weight": 6.0,
+      "description": "ACC-PLimit STR+1P -1AP"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Hold-Outs",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Fichetti Tiffani Needler",
+      "weight": 1.0,
+      "description": "ACC5, 8Pf,+5AP, SA"
+    },
+    {
+      "name": "Streetline Special",
+      "weight": 1.0,
+      "description": "4ACC, 6P, SA"
+    },
+    {
+      "name": "Walther Palm Pistol",
+      "weight": 1.0,
+      "description": "ACC4, 7P, SS/BF"
+    }
+  ]
+}

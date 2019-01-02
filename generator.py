@@ -8,9 +8,10 @@ class Generator:
 
     def __init__(self, project_source):
         self.root_node = None
-        self.project_name = os.path.split(project_source)[-1][:-5]
+        project_name = os.path.split(project_source)[-1]
+        self.project_name = project_name[:-5] if project_name.endswith('.json') else project_name
         self.path = project_source if project_source.endswith('.json') else project_source+'.json'
-        self.path = os.path.join(Common.PROJECTS_FOLDER, self.path)
+        self.path = os.path.join(Common.PROJECTS_FOLDER, self.path) if not self.path.startswith(Common.PROJECTS_FOLDER) else self.path
         path_dir = os.path.split(self.path)[0]
         if not os.path.exists(path_dir):
             os.makedirs(path_dir)

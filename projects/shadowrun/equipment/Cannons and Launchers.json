@@ -1,0 +1,43 @@
+{
+  "name": "Cannons and Launchers",
+  "bound": "single",
+  "weight": 1.0,
+  "description": "Heavy Weapons",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares Antioch-2",
+      "weight": 14.0,
+      "description": "ACC4/6 Grenade SS"
+    },
+    {
+      "name": "ArmTech MGL-12",
+      "weight": 12.0,
+      "description": "Forbidden. ACC4 Grenade SA"
+    },
+    {
+      "name": "Aztechnology Striker",
+      "weight": 12.0,
+      "description": "Forbidden. ACC5 Missile SS"
+    },
+    {
+      "name": "Krime Cannon",
+      "weight": 2.0,
+      "description": "Forbidden. ACC4 16P -6AP SA RC1"
+    },
+    {
+      "name": "Onotari Interceptor",
+      "weight": 4.0,
+      "description": "Forbidden. ACC4/6 Missile SS"
+    },
+    {
+      "name": "Panther XXL",
+      "weight": 2.0,
+      "description": "Forbidden, ACC5/7 17P AP-6 SS"
+    }
+  ]
+}

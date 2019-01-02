@@ -1,0 +1,97 @@
+{
+  "name": "Firearm Accessories",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Airburst link",
+      "weight": 8.0,
+      "description": "Smartgun accessory reduces scatter"
+    },
+    {
+      "name": "Bipod",
+      "weight": 12.0,
+      "description": "+2 RC. Wireless folding or deploying bipod is free action."
+    },
+    {
+      "name": "Concealable Holster",
+      "weight": 12.0,
+      "description": "-1 conceal. Wireless -1 color camouflage conceal"
+    },
+    {
+      "name": "Gyro mount",
+      "weight": 7.0,
+      "description": "Better recoil compensation -6. Wireless set with free action"
+    },
+    {
+      "name": "Gas-vent system",
+      "weight": 1.0,
+      "description": "Recoil compensation"
+    },
+    {
+      "name": "Hidden Arm slide",
+      "weight": 10.0,
+      "description": "quick draw treshold is 2. conceal -1. Wireless ready weapon during slide as free"
+    },
+    {
+      "name": "Imaging Scope",
+      "weight": 12.0,
+      "description": "Top mount. Include micro camera and vision magnification, 3 capacity for vision enhancements. Wireless can share line of sight.",
+      "link": "projects/shadowrun/equipment/Vision Enhancements.json"
+    },
+    {
+      "name": "Laser Sight",
+      "weight": 12.0,
+      "description": "Top or under mount. Laser beam to project do. Accuracy +1. Wireless +1 dice. Activate and deactivate as free."
+    },
+    {
+      "name": "Periscope",
+      "weight": 11.0,
+      "description": "Top mount. -3 to -2 penalty to target around corners. One vision enhancement. Wireless penalty is -1"
+    },
+    {
+      "name": "Quick-draw holster",
+      "weight": 10.0,
+      "description": "-1 quick draw treshold"
+    },
+    {
+      "name": "Shock Pad",
+      "weight": 12.0,
+      "description": "-1 RC"
+    },
+    {
+      "name": "Silencer/suppressor",
+      "weight": 5.0,
+      "description": "Forbidden. Barrel mount. -4 perception to spoit it. Wireless adds rating 2 microphone to alert through VR"
+    },
+    {
+      "name": "Smart firing platform",
+      "weight": 2.0,
+      "description": "Forbidden. non-mobile robotic tripod with remote control pivot. Targeting autosoft rating 3. -5 RC. Wireless can fire remotely."
+    },
+    {
+      "name": "Smartgun system",
+      "weight": 10.0,
+      "description": "Acc+2, periscope bonus, wireless +1 dice or +2 with augmentation. Can control with smartlink"
+    },
+    {
+      "name": "Spare clip",
+      "weight": 10.0
+    },
+    {
+      "name": "Speed loader",
+      "weight": 12.0,
+      "description": "Revolver improvement"
+    },
+    {
+      "name": "Tripod",
+      "weight": 10.0,
+      "description": "Under mount. 6RC points. Wireless deploy as free"
+    }
+  ]
+}

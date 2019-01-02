@@ -1,0 +1,27 @@
+{
+  "name": "Machine Pistols",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares Crusader II",
+      "weight": 3.0,
+      "description": "ACC 5/7 7P SA/BF RC 2"
+    },
+    {
+      "name": "Ceska Black Scorpion",
+      "weight": 6.0,
+      "description": "5ACC 6P SA/BF RC1"
+    },
+    {
+      "name": "Steyr TMP",
+      "weight": 2.0,
+      "description": "ACC4 7P SA/BF/FA"
+    }
+  ]
+}
