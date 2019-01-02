@@ -1,15 +1,18 @@
-import logging
 from components import *
+import os
 
 logging.getLogger().setLevel(Common.LOG_LEVEL)
 
 
 class Generator:
 
-    def __init__(self, project_name):
+    def __init__(self, project_source):
         self.root_node = None
-        self.project_name = project_name
-        self.path = './projects/'+project_name+'.json'
+        self.project_name = os.path.split(project_source)[-1][:-5]
+        self.path = project_source if project_source.endswith('.json') else project_source+'.json'
+        path_dir = os.path.split(self.path)[0]
+        if not os.path.exists(path_dir):
+            os.makedirs(path_dir)
 
     @staticmethod
     def input_qrange(bound):
@@ -294,9 +297,10 @@ class Generator:
             json.dump(self.root_node, file, indent=2, cls=NodeEncoder)
 
     def load(self):
+        logging.debug("loading generator project: %s" % self.path)
         isfile = os.path.isfile(self.path)
         if not isfile:
-            return "file does not exist"
+            raise Exception("file does not exist")
         with open(self.path, 'r') as read_file:
             self.root_node = NodeDecoder.decode(read_file)
         self.run()

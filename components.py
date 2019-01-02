@@ -17,7 +17,15 @@ class NodeEncoder(json.JSONEncoder):
         }
 
     def default(self, o):
-        if isinstance(o, LinkNode):
+        if isinstance(o, ExternalNode):
+            base = {}
+            base['name'] = o.name
+            base['weight'] = o.weight
+            if o.description:
+                base['description'] = o.description
+            base['link'] = o.link
+            return base
+        elif isinstance(o, LinkNode):
             base = {}
             if o.project:
                 base['project'] = o.project
@@ -45,14 +53,6 @@ class NodeEncoder(json.JSONEncoder):
                 base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
             return base
-        elif isinstance(o, ExternalNode):
-            base = {}
-            base['name'] = o.name
-            base['weight'] = o.weight
-            if o.description:
-                base['description'] = o.description
-            base['link'] = o.link
-            return base
         else:
             return json.JSONEncoder.default(self, o)
 
@@ -60,7 +60,9 @@ class NodeEncoder(json.JSONEncoder):
 class OutputNodeEncoder(json.JSONEncoder):
 
     def default(self, o):
-        if isinstance(o, LinkNode):
+        if isinstance(o, ExternalNode):
+            raise Exception("output encoder received an uncompressed ExternalNode")
+        elif isinstance(o, LinkNode):
             base = {}
             if o.project:
                 base['project'] = o.project
@@ -86,8 +88,6 @@ class OutputNodeEncoder(json.JSONEncoder):
             if o.description:
                 base['description'] = o.description
             return base
-        elif isinstance(o, ExternalNode):
-            raise Exception("output encoder received an uncompressed ExternalNode")
         else:
             return json.JSONEncoder.default(self, o)
 
@@ -113,15 +113,6 @@ class NodeDecoder:
                 sublinks = NodeDecoder.decode_links(link['links'], node)
                 node.links = list(sublinks)
                 yield node
-            elif 'qrange' in link:
-                node = ValueNode(
-                    root,
-                    link['name'],
-                    link['description'] if 'description' in link else None
-                )
-                node.set_weight(link['weight'])
-                node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
-                yield node
             elif 'link' in link:
                 node = ExternalNode(
                     root,
@@ -130,6 +121,22 @@ class NodeDecoder:
                     link['link']
                 )
                 node.set_weight(link['weight'])
+                if 'qrange' in link:
+                    node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
+                if 'weight' in link:
+                    node.set_weight(link['weight'])
+                if 'bound' in link:
+                    node.set_bound(link['bound'])
+                yield node
+            elif 'value' in link:
+                node = ValueNode(
+                    root,
+                    link['name'],
+                    link['description'] if 'description' in link else None
+                )
+                node.set_weight(link['weight'])
+                node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
+                node.set_value(link['value'])
                 yield node
             else:
                 node = LeafNode(
@@ -315,6 +322,16 @@ class LinkNode(Node):
             json.dump(self, file, cls=OutputNodeEncoder, indent=2)
 
 
+class ExternalNode(LinkNode):
+    def __init__(self, root, name, description, link):
+        super(ExternalNode, self).__init__(root, name, description)
+        self.link = link
+
+    def __eq__(self, other):
+        logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
+        return self.name == other.name and self.link == other.root.name
+
+
 class LeafNode(Node):
     def __init__(self, root, name, description):
         super(LeafNode, self).__init__(root, name, description)
@@ -336,13 +353,3 @@ class ValueNode(Node):
             self.value = value
         else:
             raise Exception("ValueNode value must be within qrange")
-
-
-class ExternalNode(Node):
-    def __init__(self, root, name, description, link):
-        super(ExternalNode, self).__init__(root, name, description)
-        self.link = link
-
-    def __eq__(self, other):
-        logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
-        return self.name == other.name and self.link == other.root.name

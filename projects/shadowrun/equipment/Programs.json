@@ -1,0 +1,132 @@
+{
+  "name": "Pro",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 3.5
+  },
+  "links": [
+    {
+      "name": "Browse",
+      "weight": 1.0,
+      "description": "Matrix search takes half"
+    },
+    {
+      "name": "Edit",
+      "weight": 1.0,
+      "description": "+2 to data processing limit for edit tests. Gives smart interface that learns and suggests."
+    },
+    {
+      "name": "Encryption",
+      "weight": 1.0,
+      "description": "+1 firewall atribute"
+    },
+    {
+      "name": "Signal Scrub",
+      "weight": 1.0,
+      "description": "Rating 2 noise reduction"
+    },
+    {
+      "name": "Toolbox",
+      "weight": 1.0,
+      "description": "+1 data processing attribute"
+    },
+    {
+      "name": "Armor",
+      "weight": 1.0,
+      "description": "+2 to resist matrix damage"
+    },
+    {
+      "name": "Baby Monitor",
+      "weight": 1.0,
+      "description": "Tells GOD score"
+    },
+    {
+      "name": "Biofeedback",
+      "weight": 1.0,
+      "description": "Adds stun or physical damage if Hot-Sim to both given and received attacks"
+    },
+    {
+      "name": "Biofeedback filter",
+      "weight": 1.0,
+      "description": "+2 resist biofeedback damage"
+    },
+    {
+      "name": "Blackout",
+      "weight": 1.0,
+      "description": "Biofeedback damage taken and received matrix damage also goes to stun damage"
+    },
+    {
+      "name": "Decryption",
+      "weight": 1.0,
+      "description": "+1 bonus to attack attribute"
+    },
+    {
+      "name": "Defuse",
+      "weight": 1.0,
+      "description": "+4 to resist damage from data bombs"
+    },
+    {
+      "name": "Demolition",
+      "weight": 1.0,
+      "description": "+1 rating to data bombs set"
+    },
+    {
+      "name": "Exploit",
+      "weight": 1.0,
+      "description": "+2 sleaze attribute when Hack on the Fly"
+    },
+    {
+      "name": "Fork",
+      "weight": 1.0,
+      "description": "Matrix action on two targets. Same roll for both. Each defend separately."
+    },
+    {
+      "name": "Guard",
+      "weight": 1.0,
+      "description": "Reduces extra damage by 1 per mark"
+    },
+    {
+      "name": "Hammer",
+      "weight": 1.0,
+      "description": "Matrix damage dealt adds +2 DV"
+    },
+    {
+      "name": "Lockdown",
+      "weight": 1.0,
+      "description": "Cauusing damage to persona is link-locked"
+    },
+    {
+      "name": "Mugger",
+      "weight": 1.0,
+      "description": "Damage by marks increased 1DV per mark"
+    },
+    {
+      "name": "Shell",
+      "weight": 1.0,
+      "description": "+1 dice to resist both matrix and biofeedback"
+    },
+    {
+      "name": "Sneak",
+      "weight": 1.0,
+      "description": "+2 dice pool to defend against trace user actions. GOD converge don't get physical location"
+    },
+    {
+      "name": "Stealth",
+      "weight": 1.0,
+      "description": "+1 Sleaze"
+    },
+    {
+      "name": "Track",
+      "weight": 1.0,
+      "description": "+2 data processing on trace icon actions. If target on sneak, negates +2 pool"
+    },
+    {
+      "name": "Wrapper",
+      "weight": 1.0,
+      "description": "Can set any icon. Matrix Perception test can detect if suspicious"
+    }
+  ]
+}

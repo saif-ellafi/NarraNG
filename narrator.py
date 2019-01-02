@@ -81,6 +81,13 @@ class Narrator:
         path = os.path.join(external_node.link)
         with open(path) as file:
             node = NodeDecoder.decode(file)
+        # Give priority to current root attributes
+        if external_node.weight:
+            node.set_weight(external_node.weight)
+        if external_node.qrange:
+            node.set_qrange(external_node.qrange)
+        if external_node.bound:
+            node.set_bound(external_node.bound)
         return node
 
     # Handles user's input and validations
@@ -234,18 +241,7 @@ class Narrator:
 
     # Internal handled for choice roots
     def handle_choice(self, new_node, output_node, auto):
-        if isinstance(new_node, LinkNode):
-            if new_node in output_node.links:
-                self._gen(new_node, output_node.links[output_node.links.index(new_node)], auto=auto)
-            else:
-                blank_node = LinkNode(
-                    output_node,
-                    new_node.name,
-                    new_node.description
-                )
-                output_node.links.append(blank_node)
-                self._gen(new_node, blank_node, auto=auto)
-        elif isinstance(new_node, ExternalNode):
+        if isinstance(new_node, ExternalNode):
             logging.debug("Processing external node %s" % new_node.name)
             if new_node in output_node.links:
                 self._gen(new_node, output_node.links[output_node.links.index(new_node)], auto=auto)
@@ -257,6 +253,17 @@ class Narrator:
                 )
                 output_node.links.append(blank_node)
                 self._gen(self.load_external_node(new_node), blank_node, auto=auto)
+        elif isinstance(new_node, LinkNode):
+            if new_node in output_node.links:
+                self._gen(new_node, output_node.links[output_node.links.index(new_node)], auto=auto)
+            else:
+                blank_node = LinkNode(
+                    output_node,
+                    new_node.name,
+                    new_node.description
+                )
+                output_node.links.append(blank_node)
+                self._gen(new_node, blank_node, auto=auto)
         elif isinstance(new_node, ValueNode):
             if auto:
                 new_node.set_value(round(random.triangular(
