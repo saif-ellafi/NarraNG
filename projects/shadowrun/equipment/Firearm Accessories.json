@@ -42,7 +42,7 @@
       "name": "Imaging Scope",
       "weight": 12.0,
       "description": "Top mount. Include micro camera and vision magnification, 3 capacity for vision enhancements. Wireless can share line of sight.",
-      "link": "projects/shadowrun/equipment/Vision Enhancements.json"
+      "link": "projects/shadowrun/modules/Vision Enhancements.json"
     },
     {
       "name": "Laser Sight",
