@@ -1,14 +1,18 @@
 {
   "name": "Shotguns",
   "bound": "single",
-  "weight": 10.0,
-  "description": "ACC4 10P AP-1 SS/SA",
+  "weight": 1,
   "qrange": {
     "minv": 1,
     "maxv": 1,
     "mode": 1
   },
   "links": [
+    {
+      "name": "Defiance T-250",
+      "weight": 10.0,
+      "description": "ACC4 10P AP-1 SS/SA"
+    },
     {
       "name": "Enfield AS-7",
       "weight": 2.0,
