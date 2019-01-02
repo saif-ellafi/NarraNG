@@ -1,0 +1,64 @@
+{
+  "name": "Clinical components",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Disposable syringe",
+      "weight": 1.0
+    },
+    {
+      "name": "Medkit",
+      "weight": 3.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Antidote patch",
+      "weight": 0.7,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Stim patch",
+      "weight": 1.0,
+      "description": "Removes stun boxes to rating temporarily",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Tranq patch",
+      "weight": 0.8,
+      "description": "Inflict stun damage. Resist with body",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    },
+    {
+      "name": "Chem Patch",
+      "weight": 1.0,
+      "description": "Blank patch"
+    },
+    {
+      "name": "Trauma Patch",
+      "weight": 0.6,
+      "description": "Immediate stabilization test. Wireless ensures sucess"
+    }
+  ]
+}

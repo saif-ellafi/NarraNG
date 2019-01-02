@@ -45,6 +45,11 @@
     {
       "name": "Trodes",
       "weight": 0.7
+    },
+    {
+      "name": "Biomonitor",
+      "weight": 0.6,
+      "description": "Share information with other people, docwagon or ambulance service"
     }
   ]
 }

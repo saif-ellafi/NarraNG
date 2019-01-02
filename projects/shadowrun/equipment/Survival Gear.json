@@ -1,0 +1,77 @@
+{
+  "name": "Survival Gear",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Chemsuit",
+      "weight": 0.8,
+      "description": "Chemical protection to rating",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 4.0
+      }
+    },
+    {
+      "name": "Climbing gear",
+      "weight": 1.0
+    },
+    {
+      "name": "Diving gear",
+      "weight": 0.8
+    },
+    {
+      "name": "Flashlight",
+      "weight": 1.0
+    },
+    {
+      "name": "Gas Mask",
+      "weight": 1.0
+    },
+    {
+      "name": "Gecko tape gloves",
+      "weight": 0.6,
+      "description": "Adhesive gear. Wireless disable as free."
+    },
+    {
+      "name": "Hazmat suit",
+      "weight": 0.7,
+      "description": "Air tank. wireless informs about environment"
+    },
+    {
+      "name": "Light stick",
+      "weight": 1.0
+    },
+    {
+      "name": "Magneisum torch",
+      "weight": 1.0
+    },
+    {
+      "name": "Micro flare launcher",
+      "weight": 1.0
+    },
+    {
+      "name": "Rappeling gloves",
+      "weight": 1.0
+    },
+    {
+      "name": "Survival kit",
+      "weight": 1.0
+    },
+    {
+      "name": "Respirator",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 3.0
+      }
+    }
+  ]
+}

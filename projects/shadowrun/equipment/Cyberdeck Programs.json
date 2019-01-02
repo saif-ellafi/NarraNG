@@ -19,6 +19,16 @@
       "description": "+2 to data processing limit for edit tests. Gives smart interface that learns and suggests."
     },
     {
+      "name": "Agent",
+      "weight": 1.0,
+      "description": "Agent",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2
+      }
+    },
+    {
       "name": "Encryption",
       "weight": 1.0,
       "description": "+1 firewall atribute"

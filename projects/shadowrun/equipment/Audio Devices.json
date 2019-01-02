@@ -1,0 +1,32 @@
+{
+  "name": "Audio Devices",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 2.5
+  },
+  "links": [
+    {
+      "name": "Directional microphone",
+      "weight": 1.0
+    },
+    {
+      "name": "Ear buds",
+      "weight": 1.0
+    },
+    {
+      "name": "Headphones",
+      "weight": 1.0
+    },
+    {
+      "name": "Laser Microphone",
+      "weight": 0.8
+    },
+    {
+      "name": "Omni-directional microphone",
+      "weight": 0.6
+    }
+  ]
+}

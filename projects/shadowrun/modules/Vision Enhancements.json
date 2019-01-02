@@ -1,0 +1,50 @@
+{
+  "name": "Vision Enhancements",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Low-light vision",
+      "weight": 1.0
+    },
+    {
+      "name": "Flare compensation",
+      "weight": 1.0,
+      "description": "mitigates modifiers for glare and penalty from flash paks"
+    },
+    {
+      "name": "Image link",
+      "weight": 1.0,
+      "description": "AROs viewer, AR linker"
+    },
+    {
+      "name": "Smartlink",
+      "weight": 1.0,
+      "description": "Smartgun system receiver"
+    },
+    {
+      "name": "Thermographic vision",
+      "weight": 1.0
+    },
+    {
+      "name": "Vision magnification",
+      "weight": 1.0,
+      "description": "Reduce one category of visibility penalty"
+    },
+    {
+      "name": "Vision enhancement",
+      "weight": 1.0,
+      "description": "Improves limit on perception tests. Wireless adds to pool",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      }
+    }
+  ]
+}

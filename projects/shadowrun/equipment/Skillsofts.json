@@ -1,0 +1,26 @@
+{
+  "name": "Skillsofts",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Activesoft",
+      "weight": 1.0,
+      "description": "Replace physical active skills"
+    },
+    {
+      "name": "Knowsoft",
+      "weight": 1.0,
+      "description": "Knowledge skills"
+    },
+    {
+      "name": "Linguasofts",
+      "weight": 1.0
+    }
+  ]
+}

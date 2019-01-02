@@ -1,0 +1,52 @@
+{
+  "name": "Imaging Devices",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 2.0
+  },
+  "links": [
+    {
+      "name": "Binoculars",
+      "weight": 1.0
+    },
+    {
+      "name": "Camera",
+      "weight": 1.0
+    },
+    {
+      "name": "Contacts",
+      "weight": 1.0
+    },
+    {
+      "name": "Glasses",
+      "weight": 1.0
+    },
+    {
+      "name": "Goggles",
+      "weight": 1.0
+    },
+    {
+      "name": "Imaging Scopes",
+      "weight": 1.0
+    },
+    {
+      "name": "Monocle",
+      "weight": 1.0
+    },
+    {
+      "name": "Endoscope",
+      "weight": 1.0
+    },
+    {
+      "name": "Mage Sight Goggles",
+      "weight": 1.0
+    },
+    {
+      "name": "Periscope",
+      "weight": 1.0
+    }
+  ]
+}
