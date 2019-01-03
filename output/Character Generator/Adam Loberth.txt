@@ -1,109 +1,113 @@
-Lucas Devia 
+Adam Loberth 
 	Archetype 
-	Drone Rigger 
+	Street samurai 
 	Metatype 
-		Ork 
+		Human 
+	Personality 
+		Drunk 
+	Appearance 
+		Unique hair style 
 	Attributes 
-	Body : 2
-	Agility : 2
-	Reaction : 3
-	Strength : 3
+	Body : 4
+	Agility : 5
+	Reaction : 5
+	Strength : 5
 	Willpower : 4
-	Logic : 5
+	Logic : 2
 	Intuition : 4
-	Charisma : 3
-	Edge : 3
+	Charisma 
+	Edge : 5
 	Magic 
 	Qualities 
 	Positive 
-		Photographic Memory (( +2 dice on memory )) 
+		Ambidextrous (( -2 when using offhand )) 
+		Resistance to Pathogens or Toxins (( +1 bonus for resisting tests )) 
 	Negative 
-		Codeblock (( -2 dice on some matrix action )) 
-		Distinctive Style (( Easier to remember )) 
-		Combat Paralysis (( -3 dice roll on surprise tests and bad first initiative )) 
+		Loss of confidence (( A skill suffers -2 due a bad glitch sometime )) 
 	Physical Skills 
 	Disguise (( Intuition )) 
-	Rating : 4
+	Rating : 2
 	Specialization 
-		Cosmetic 
+		Trideo & Video 
 	Diving (( Body )) 
 	Rating : 3
 	Specialization 
-		by breathing apparatus (( Liquid system, mixed gas, oxygen extraction, scuba, etc )) 
+		None 
 	Escape Artist (( Agility )) 
-	Rating : 5
+	Rating : 2
 	Specialization 
 		None 
 	Free-Fall (( Body )) 
-	Rating : 5
+	Rating : 2
 	Specialization 
-		None 
+		Static Line 
 	Gymnastics (( Agility )) 
-	Rating : 4
+	Rating : 3
 	Specialization 
-		Rolling 
+		Parkour 
 	Palming (( Agility )) 
-	Rating : 4
+	Rating : 1
 	Specialization 
 		Legerdemain (( Tricks, magic )) 
 	Perception (( Intuition )) 
-	Rating : 5
+	Rating : 3
+	Specialization 
+		Hearing 
+	Running (( Strength )) 
+	Rating : 3
 	Specialization 
 		None 
-	Running (( Strength )) 
-	Rating : 4
-	Specialization 
-		By terrain (( Desert, Urban, Wilderness, etc )) 
 	Sneaking (( Agility )) 
-	Rating : 4
+	Rating : 2
 	Specialization 
-		By location (( Jungle, Urban, Desert )) 
+		None 
 	Survival (( Willpower )) 
 	Rating : 4
 	Specialization 
-		Urban 
+		None 
 	Swimming (( Strength )) 
 	Rating : 4
 	Specialization 
-		None 
+		Long Distance 
 	Tracking (( Intuition )) 
-	Rating : 5
+	Rating : 3
 	Specialization 
-		None 
+		Forest 
 	Technical Skills 
 	Aeronautics Mechanic (( Logic. Repair aerospace vehicles. )) 
 	Rating 
 	Specialization 
-		Rotary Wing 
+		Tilt wing 
 	Animal Handling (( Charisma )) 
 	Rating : 2
 	Specialization 
-		Riding 
+		None 
 	Armorer (( Logic. Build and maintain weapons and armors. )) 
-	Rating : 4
+	Rating 
 	Specialization 
-		Armor 
+		Melee Weapons 
 	Artisan (( Intuition )) 
-	Rating : 2
+	Rating 
 	Specialization 
-		Cooking 
+		None 
 	Automotive Mechanic (( Logic. Ground vehicles )) 
-	Rating : 4
+	Rating : 2
 	Specialization 
 		None 
 	Biotechnology (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
 	Rating 
 	Specialization 
-		Bioware 
+		None 
 	Chemistry (( Logic )) 
-	Rating 
+	Rating : 1
 	Specialization 
 		Inorganic 
-	Computer (( Logic )) 
+	Computer (( Logic )) : 4
 	Cybercombat (( Logic )) 
-	Rating : 3
+	Rating 
 	Specialization (( f )) 
-		None 
+	By target type 
+		Sprites 
 	Cybertechnology (( Logic. Maintain or repair or build cybernetics )) 
 	Rating 
 	Specialization 
@@ -113,37 +117,37 @@ Lucas Devia
 	Specialization 
 		None 
 	Electronic Warfare 
-	Rating : 3
+	Rating 
 	Specialization 
-		Sensor operations 
-	First Aid (( Logic )) : 1
+		None 
+	First Aid (( Logic )) : 4
 	Forgery (( Logic )) 
 	Rating : 1
 	Specialization 
 		Paper Forgery 
 	Hacking (( Logic )) 
-	Rating : 1
+	Rating 
 	Specialization 
-		Devices 
-	Hardware (( Logic )) : 3
+		None 
+	Hardware (( Logic )) : 6
 	Industrial Mechanic (( Logic )) 
+	Rating 
+	Specialization 
+		HVAC 
+	Locksmith : 5
+	Medicine (( Logic )) 
+	Rating : 2
+	Specialization 
+		None 
+	Nautical Mechanic (( Logic )) 
+	Rating 
+	Specialization 
+		Submarine 
+	Navigation (( Intuition )) 
 	Rating : 3
 	Specialization 
-		Electrical Power Systems 
-	Locksmith : 1
-	Medicine (( Logic )) 
-	Rating : 1
-	Specialization 
-		Organ Culture 
-	Nautical Mechanic (( Logic )) 
-	Rating : 4
-	Specialization 
 		None 
-	Navigation (( Intuition )) 
-	Rating : 4
-	Specialization 
-		None 
-	Software (( Logic )) : 3
+	Software (( Logic )) : 7
 	Social Skills 
 	Con 
 	Rating : 1
@@ -152,13 +156,15 @@ Lucas Devia
 	Etiquette 
 	Rating : 2
 	Specialization 
-		None 
+	By culture 
+		Street 
 	Impersonation 
-	Rating 
+	Rating : 1
 	Specialization 
-		None 
+	By metatype 
+		Dwarf 
 	Instruction 
-	Rating : 3
+	Rating : 1
 	Specialization 
 		None 
 	Intimidation 
@@ -166,63 +172,64 @@ Lucas Devia
 	Specialization 
 		Mental 
 	Leadership 
-	Rating : 3
+	Rating : 4
 	Specialization 
-		Command 
+		Inspire 
 	Negotiation 
-	Rating : 3
+	Rating : 1
 	Specialization 
-		Contracts 
+		Diplomacy 
 	Performance 
 	Rating : 1
 	Specialization 
-		None 
+	By performance art 
+		Specific instrument 
 	Combat Skills 
 	Archery 
-	Rating : 4
+	Rating : 3
 	Specialization 
 		None 
 	Automatics 
-	Rating : 4
+	Rating : 5
 	Specialization 
 		None 
 	Blades 
 	Rating : 6
 	Specialization 
-		Swords 
+		None 
 	Clubs 
-	Rating : 3
+	Rating : 4
 	Specialization 
 		Staves 
 	Heavy Weapons 
-	Rating : 1
+	Rating : 4
 	Specialization 
 		None 
 	Longarms 
-	Rating : 6
+	Rating : 3
 	Specialization 
-		None 
+		Sniper Rifles 
 	Pistols 
-	Rating : 6
+	Rating : 3
 	Specialization 
 		Tasers 
 	Throwing Weapons 
-	Rating : 5
+	Rating : 4
 	Specialization 
-		Blades 
+		Non-Aerodynamic 
 	Unarmed Combat 
 	Rating : 3
 	Specialization 
-		None 
+		Blocking 
 	Vehicle Skills 
 	Gunnery 
-	Rating : 5
+	Rating : 3
 	Specialization 
-		Guided Missile 
+		Rocket 
 	Pilot Aerospace 
-	Rating : 5
+	Rating 
 	Specialization 
-		Deep Space 
+		None 
 	Pilot Aircraft 
 	Rating 
 	Specialization 
@@ -232,15 +239,21 @@ Lucas Devia
 	Specialization 
 		None 
 	Pilot Ground Craft 
-	Rating : 2
+	Rating : 3
 	Specialization 
-		Bike 
+		None 
 	Pilot Watercraft 
-	Rating 
+	Rating : 1
 	Specialization 
 		Submarine 
-	Physical Traits 
-		Piercings 
-		Abnormally clean or dirty 
-	Personality trait 
-		Afraid of something 
+	Weapons 
+	Melee Weapons 
+		Forearm snap-blades (( Acc4 Str+2P -2AP )) 
+		Stun baton (( Acc4 Reach1 9S electric -5AP )) 
+	Augmentations 
+	Bodyware 
+		Smuggling Compartment 
+	Cyberlimb 
+	Obvious 
+	Skill 
+	Strength Enhancement : 2

@@ -123,8 +123,6 @@ class NodeDecoder:
                 node.set_weight(link['weight'])
                 if 'qrange' in link:
                     node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
-                if 'weight' in link:
-                    node.set_weight(link['weight'])
                 if 'bound' in link:
                     node.set_bound(link['bound'])
                 yield node
@@ -325,10 +323,6 @@ class ExternalNode(LinkNode):
     def __init__(self, root, name, description, link):
         super(ExternalNode, self).__init__(root, name, description)
         self.link = link
-
-    def __eq__(self, other):
-        logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
-        return self.name == other.name and self.link == other.root.name
 
 
 class LeafNode(Node):

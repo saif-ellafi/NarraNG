@@ -1,0 +1,32 @@
+{
+  "name": "Weapons",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Heavy Pistols",
+      "weight": 1.0,
+      "link": "projects/shadowrun/weapons/Heavy Pistols.json"
+    },
+    {
+      "name": "Shotguns",
+      "weight": 0.8,
+      "link": "projects/shadowrun/weapons/Shotguns.json"
+    },
+    {
+      "name": "Melee Weapons",
+      "weight": 1.2,
+      "link": "projects/shadowrun/weapons/Melee Weapons.json"
+    },
+    {
+      "name": "Projectile Weapons",
+      "weight": 0.6,
+      "link": "projects/shadowrun/weapons/Projectile Weapons.json"
+    }
+  ]
+}

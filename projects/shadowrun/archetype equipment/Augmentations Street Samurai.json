@@ -1,0 +1,42 @@
+{
+  "name": "Augmentations",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 6,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Cyberlimb",
+      "weight": 1.0,
+      "link": "projects/shadowrun/augmentations/Cyberlimb.json"
+    },
+    {
+      "name": "Bodyware",
+      "weight": 0.8,
+      "link": "projects/shadowrun/augmentations/Bodyware.json"
+    },
+    {
+      "name": "Eyeware",
+      "weight": 1.2,
+      "link": "projects/shadowrun/augmentations/Eyeware.json"
+    },
+    {
+      "name": "Earware",
+      "weight": 0.6,
+      "link": "projects/shadowrun/augmentations/Earware.json"
+    },
+    {
+      "name": "Headware",
+      "weight": 0.4,
+      "link": "projects/shadowrun/augmentations/Headware.json"
+    },
+    {
+      "name": "Bioware",
+      "weight": 0.1,
+      "link": "projects/shadowrun/augmentations/Bioware.json"
+    }
+  ]
+}

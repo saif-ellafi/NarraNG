@@ -1,6 +1,6 @@
 {
   "project": "XCOM(EN)",
-  "name": "Roberto Lonza",
+  "name": "Peter Lebrosk",
   "links": [
     {
       "name": "Appearance",
@@ -44,8 +44,8 @@
       "description": "Transport and combat drones",
       "links": [
         {
-          "name": "Drone XF86",
-          "description": "Combat Drone"
+          "name": "Nissan Z5",
+          "description": "Speed Vehicle"
         }
       ]
     },
@@ -54,17 +54,8 @@
       "description": "XCOM Front battle weapons",
       "links": [
         {
-          "name": "Swapfire Custom",
-          "links": [
-            {
-              "name": "Thermal scope",
-              "description": "Heat detection mod"
-            },
-            {
-              "name": "Forward Grip",
-              "description": "Improves handling"
-            }
-          ]
+          "name": "AWP 2018",
+          "description": "Sniper Rifle Stock"
         }
       ]
     }

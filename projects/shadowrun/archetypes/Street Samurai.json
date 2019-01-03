@@ -57,6 +57,16 @@
       "name": "Vehicle Skills",
       "weight": 1.0,
       "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
+    },
+    {
+      "name": "Weapons",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+    },
+    {
+      "name": "Augmentations",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype equipment/Augmentations Street Samurai.json"
     }
   ]
 }

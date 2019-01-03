@@ -1,12 +1,12 @@
 {
   "name": "Cyberlimb",
-  "bound": "many",
+  "bound": "single",
   "weight": 1.0,
   "description": "Base strength and agility. May be improved",
   "qrange": {
     "minv": 1,
-    "maxv": 6,
-    "mode": 1.5
+    "maxv": 1,
+    "mode": 1
   },
   "links": [
     {

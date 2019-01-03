@@ -1,10 +1,10 @@
 {
   "name": "Melee Weapons",
-  "bound": "many",
+  "bound": "single",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
-    "maxv": 3,
+    "maxv": 1,
     "mode": 1.0
   },
   "links": [

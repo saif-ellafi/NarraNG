@@ -1,0 +1,84 @@
+{
+  "name": "Heavy Pistols",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares Predator V",
+      "weight": 5.0,
+      "description": "ACC5/7 8P -1AP SA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Ares Viper Silvergun",
+      "weight": 2.0,
+      "description": "Forbidden. Acc4, 9Pf +4AP SA/BF",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Browning Ultra-Power",
+      "weight": 6.0,
+      "description": "ACC5/6 8P -1AP SA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Colt Government 2066",
+      "weight": 3.0,
+      "description": "ACC6 7P -1AP SA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Remington Roomsweeper",
+      "weight": 4.0,
+      "description": "ACC4 7P -1AP SA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Ruger Super Warhawk",
+      "weight": 6.0,
+      "description": "ACC5 9P -2AP SS",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    }
+  ]
+}

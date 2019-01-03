@@ -1,0 +1,48 @@
+{
+  "name": "Shotguns",
+  "bound": "single",
+  "weight": 1,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Defiance T-250",
+      "weight": 10.0,
+      "description": "ACC4 10P AP-1 SS/SA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Enfield AS-7",
+      "weight": 2.0,
+      "description": "Forbidden. Acc4/5 13P -1AP SA/BF",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "PJSS Model 55",
+      "weight": 5.0,
+      "description": "ACC6 11P -1AP SS RC1",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    }
+  ]
+}

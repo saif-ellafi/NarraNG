@@ -1,5 +1,6 @@
 import os
 import logging
+import json
 
 
 class Project:
@@ -14,7 +15,7 @@ class Common:
     PROJECTS_FOLDER = 'projects'
     OUTPUT_FOLDER = 'output'
 
-    LOG_LEVEL = logging.DEBUG
+    LOG_LEVEL = logging.WARN
 
     temp_entry = None
 
@@ -37,6 +38,7 @@ class Common:
         path = os.path.join(Common.PROJECTS_FOLDER)
         prjs = sorted(Common.list_dir(path))
         for i, p in enumerate(prjs):
-            logging.debug("Adding project path %s with name %s and id %i" % (p, os.path.split(p)[-1][:-5], i))
-            projects.append(Project(os.path.split(p)[-1][:-5], p, i))
+            with open(p) as file:
+                content = json.load(file)
+                projects.append(Project(content['name'], p, i))
         return projects

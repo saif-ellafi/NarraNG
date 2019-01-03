@@ -1,11 +1,11 @@
 {
   "name": "Eyeware",
-  "bound": "many",
+  "bound": "single",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
-    "maxv": 6,
-    "mode": 2.5
+    "maxv": 1,
+    "mode": 1
   },
   "links": [
     {

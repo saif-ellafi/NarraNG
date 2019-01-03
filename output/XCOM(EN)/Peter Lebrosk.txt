@@ -1,4 +1,4 @@
-Roberto Lonza 
+Peter Lebrosk 
 	Appearance 
 	Hair Color 
 		Green 
@@ -9,8 +9,6 @@ Roberto Lonza
 	Armor (( Basic Protection )) 
 		Light Armor 
 	Vehicle (( Transport and combat drones )) 
-		Drone XF86 (( Combat Drone )) 
+		Nissan Z5 (( Speed Vehicle )) 
 	Weapons SRS (( XCOM Front battle weapons )) 
-	Swapfire Custom 
-		Thermal scope (( Heat detection mod )) 
-		Forward Grip (( Improves handling )) 
+		AWP 2018 (( Sniper Rifle Stock )) 

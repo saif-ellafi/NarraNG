@@ -1,0 +1,49 @@
+{
+  "name": "Machine Guns",
+  "bound": "single",
+  "weight": 1.0,
+  "description": "Heavy Weapons. Require STR 8 and 10",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ingram Valiant",
+      "weight": 6.0,
+      "description": "Forbidden. ACC5/6 9P AP-2 BF/FA RC2/3",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Stoner-Ares M202",
+      "weight": 6.0,
+      "description": "Forbidden. Acc5 10P AP-3 FA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "RPK HMG",
+      "weight": 2.0,
+      "description": "Forbidden, ACC5 12P AP-4 FA",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    }
+  ]
+}
