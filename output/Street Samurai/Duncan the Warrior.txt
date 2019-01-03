@@ -1,0 +1,270 @@
+Duncan the Warrior 
+	Metatype 
+		Human 
+	Personality 
+		Very easily distracted 
+		Flirtatious with anyone or everyone 
+	Appearance 
+		Unique dress style 
+		Obvious or distinctive cybernetics 
+	Attributes 
+		Body : 6
+		Agility : 6
+		Reaction : 4
+		Strength : 3
+		Willpower : 4
+		Logic : 1
+		Intuition : 4
+		Charisma : 7
+		Edge : 1
+		Magic 
+	Qualities 
+		Positive 
+			Natural Immunity (( Immune to a single disease or toxin )) 
+			Toughness (( +1 dice for body in damage soak )) 
+		Negative 
+			Codeblock (( -2 dice on some matrix action )) 
+			Scorched (( On a glitch during VR or BTL something bad happens psychologically to character )) 
+			Ork Poser 
+	Physical Skills 
+		Disguise (( Intuition )) 
+			Rating : 2
+			Specialization 
+				Cosmetic 
+		Diving (( Body )) 
+			Rating : 3
+			Specialization 
+				None 
+		Escape Artist (( Agility )) 
+			Rating : 1
+			Specialization 
+				Contortionism 
+		Free-Fall (( Body )) 
+			Rating : 3
+			Specialization 
+				Break-Fall 
+		Gymnastics (( Agility )) 
+			Rating : 2
+			Specialization 
+				None 
+		Palming (( Agility )) 
+			Rating : 1
+			Specialization 
+				None 
+		Perception (( Intuition )) 
+			Rating : 4
+			Specialization 
+				Scent 
+		Running (( Strength )) 
+			Rating : 3
+			Specialization 
+				None 
+		Sneaking (( Agility )) 
+			Rating : 3
+			Specialization 
+				None 
+		Survival (( Willpower )) 
+			Rating : 4
+			Specialization 
+				None 
+		Swimming (( Strength )) 
+			Rating : 5
+			Specialization 
+				Long Distance 
+		Tracking (( Intuition )) 
+			Rating : 4
+			Specialization 
+				Jungle 
+	Technical Skills 
+		Aeronautics Mechanic (( Logic. Repair aerospace vehicles. )) 
+			Rating : 2
+			Specialization 
+				Tilt wing 
+		Animal Handling (( Charisma )) 
+			Rating : 1
+			Specialization 
+				None 
+		Armorer (( Logic. Build and maintain weapons and armors. )) 
+			Rating : 2
+			Specialization 
+				Weapon Accessories 
+		Artisan (( Intuition )) 
+			Rating 
+			Specialization 
+				Sculpting 
+		Automotive Mechanic (( Logic. Ground vehicles )) 
+			Rating : 1
+			Specialization 
+				None 
+		Biotechnology (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
+			Rating 
+			Specialization 
+				Gene Therapy 
+		Chemistry (( Logic )) 
+			Rating 
+			Specialization 
+				Physical 
+		Computer (( Logic )) : 1
+		Cybercombat (( Logic )) 
+			Rating 
+			Specialization (( f )) 
+				None 
+		Cybertechnology (( Logic. Maintain or repair or build cybernetics )) 
+			Rating 
+			Specialization 
+				Headware 
+		Demolitions (( Logic )) 
+			Rating : 2
+			Specialization 
+				None 
+		Electronic Warfare 
+			Rating 
+			Specialization 
+				None 
+		First Aid (( Logic )) : 5
+		Forgery (( Logic )) 
+			Rating : 1
+			Specialization 
+				Counterfeiting 
+		Hacking (( Logic )) 
+			Rating 
+			Specialization 
+				Devices 
+		Hardware (( Logic )) : 3
+		Industrial Mechanic (( Logic )) 
+			Rating : 1
+			Specialization 
+				None 
+		Locksmith : 2
+		Medicine (( Logic )) 
+			Rating : 2
+			Specialization 
+				Organ Culture 
+		Nautical Mechanic (( Logic )) 
+			Rating 
+			Specialization 
+				Motorbat 
+		Navigation (( Intuition )) 
+			Rating : 1
+			Specialization 
+				GPS 
+		Software (( Logic )) : 3
+	Social Skills 
+		Con 
+			Rating : 2
+			Specialization 
+				None 
+		Etiquette 
+			Rating : 4
+			Specialization 
+				By culture 
+					Media 
+		Impersonation 
+			Rating : 2
+			Specialization 
+				By metatype 
+					Elf 
+		Instruction 
+			Rating : 2
+			Specialization 
+				By skill or knowledge 
+					Academic 
+		Intimidation 
+			Rating : 4
+			Specialization 
+				Mental 
+		Leadership 
+			Rating : 3
+			Specialization 
+				None 
+		Negotiation 
+			Rating : 2
+			Specialization 
+				Bargaining 
+		Performance 
+			Rating : 2
+			Specialization 
+				None 
+	Combat Skills 
+		Archery 
+			Rating : 4
+			Specialization 
+				None 
+		Automatics 
+			Rating : 4
+			Specialization 
+				Assault Rifles 
+		Blades 
+			Rating : 6
+			Specialization 
+				None 
+		Clubs 
+			Rating : 3
+			Specialization 
+				None 
+		Heavy Weapons 
+			Rating : 5
+			Specialization 
+				None 
+		Longarms 
+			Rating : 5
+			Specialization 
+				None 
+		Pistols 
+			Rating : 5
+			Specialization 
+				None 
+		Throwing Weapons 
+			Rating : 5
+			Specialization 
+				Blades 
+		Unarmed Combat 
+			Rating : 4
+			Specialization 
+				Cyber Implants 
+	Vehicle Skills 
+		Gunnery 
+			Rating : 3
+			Specialization 
+				Artillery 
+		Pilot Aerospace 
+			Rating 
+			Specialization 
+				Launch Craft 
+		Pilot Aircraft 
+			Rating 
+			Specialization 
+				None 
+		Pilot Walker 
+			Rating 
+			Specialization 
+				None 
+		Pilot Ground Craft 
+			Rating : 2
+			Specialization 
+				Hovercraft 
+		Pilot Watercraft 
+			Rating : 1
+			Specialization 
+				Ship 
+	Weapons 
+		Melee Weapons 
+			Forearm snap-blades (( Acc4 Str+2P -2AP )) 
+		Shotguns 
+			Enfield AS-7 (( Forbidden. Acc4/5 13P -1AP SA/BF )) 
+				Bipod (( +2 RC. Wireless folding or deploying bipod is free action. )) 
+				Spare clip 
+				Airburst link (( Smartgun accessory reduces scatter )) 
+				Periscope (( Top mount. -3 to -2 penalty to target around corners. One vision enhancement. Wireless penalty is -1 )) 
+	Augmentations 
+		Cyberlimb 
+			Synthetic 
+				Hand 
+					Armor Enhancement : 3
+				Torso 
+					Agility Enhancement : 2
+					Heavy Cyber pistol (( 8P AP-1 )) 
+		Bodyware 
+			Dermal Plating (( Hard plastic and ceramic fiber plates are bonded to skin, clearly visible. Give bons armor. )) : 3
+		Eyeware 
+			Low Light vision 

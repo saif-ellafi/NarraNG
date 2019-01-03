@@ -264,13 +264,11 @@ class Node:
         sel_str += '\n'
         return sel_str
 
-    def tostr(self, node, sel_str):
-        if isinstance(node, LeafNode):
-            sel_str += '\t'
+    def tostr(self, node, sel_str, i=1):
         sel_str += node.name + (' (( ' + node.description + ' )) ' if node.description else ' ')
         if isinstance(node, LinkNode):
             for subnode in node.links:
-                sel_str = self.tostr(subnode, sel_str + '\n\t')
+                sel_str = self.tostr(subnode, sel_str + '\n' + '\t'*i, i+1)
         elif isinstance(node, ValueNode):
             if node.value:
                 sel_str += ': %i' % node.value
