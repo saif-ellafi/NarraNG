@@ -42,14 +42,15 @@ def entry(request, project_id, entry_id):
     return HttpResponse(template.render(context, request))
 
 
-def create_entry(request, project_id):
-    return HttpResponseRedirect(reverse('new_entry', args=(project_id, request.GET['target'])))
+def create_entry(request, project_name, project_id):
+    content = request.GET['target']
+    return HttpResponseRedirect(reverse('new_entry', args=(project_id, content if content else project_name)))
 
 
 def new_entry(request, project_id, entry_name):
     template = loader.get_template('ngnarrator/new_entry.html')
-    loaded_project = Common.load_projects()[project_id].source
-    new_node = Narrator(loaded_project, name=entry_name)
+    loaded_project = Common.load_projects()[project_id]
+    new_node = Narrator(loaded_project.source, name=entry_name)
     new_node._gen(auto=True)
     Common.temp_entry = new_node.output_node_root
     context = {

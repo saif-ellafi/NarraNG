@@ -24,7 +24,7 @@
 {% else %}
 <p>No entries are available.</p>
 {% endif %}
-<form action="{% url 'create_entry' project.pid %}" method="get">
+<form action="{% url 'create_entry' project.name project.pid  %}" method="get">
     <div class="row">
         <div class="col-lg-2">
             <div class="input-group">

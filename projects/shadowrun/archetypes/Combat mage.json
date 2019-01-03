@@ -1,0 +1,72 @@
+{
+  "name": "Combat Mage",
+  "bound": "all",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Metatype",
+      "weight": 1.0,
+      "link": "projects/shadowrun/generics/Metatypes.json"
+    },
+    {
+      "name": "Personality",
+      "weight": 1.0,
+      "link": "projects/shadowrun/generics/Personality.json"
+    },
+    {
+      "name": "Appearance",
+      "weight": 1.0,
+      "link": "projects/shadowrun/generics/Appearance.json"
+    },
+    {
+      "name": "Attributes",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Attributes Combat Mage.json"
+    },
+    {
+      "name": "Qualities",
+      "weight": 1.0,
+      "link": "projects/shadowrun/generics/Qualities.json"
+    },
+    {
+      "name": "Physical Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Physical Skills Face.json"
+    },
+    {
+      "name": "Technical Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Technical Skills Street Samurai.json"
+    },
+    {
+      "name": "Social Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Social Skills Street Samurai.json"
+    },
+    {
+      "name": "Combat Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Combat Skills Covert.json"
+    },
+    {
+      "name": "Vehicle Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
+    },
+    {
+      "name": "Magical Skills",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Magical Skills Combat Mage.json"
+    },
+    {
+      "name": "Magic Abilities",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Magic Abilities Combat Mage.json"
+    }
+  ]
+}

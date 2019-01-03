@@ -21,7 +21,14 @@
         <ul class="nav__list">
             <li>
                 <input id="group-1" type="checkbox" hidden />
-                <label data-toggle="tooltip" data-placement="left" title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}" for="group-1"><span class="fa fa-angle-right"></span>{{ entry_node.name }}</label>
+                <label data-toggle="tooltip" data-placement="left"
+                       title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}"
+                       for="group-1">
+                    <span class="fa fa-angle-right"></span>
+                    {% if entry_node.name == entry_node.project%} {{ entry_node.name }}
+                    {% else %}  {{ entry_node.name }}  ({{ entry_node.project }})
+                    {% endif %}
+                </label>
                 <ul class="group-list">
                     {% for link in entry_node.links %}
                     {% with prefix=0 %}

@@ -1,0 +1,108 @@
+{
+  "name": "Personality",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 3,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Hair-trigger temper",
+      "weight": 1.0
+    },
+    {
+      "name": "Very easily distracted",
+      "weight": 1.0
+    },
+    {
+      "name": "Racist",
+      "weight": 1.0
+    },
+    {
+      "name": "Chuckles constantly",
+      "weight": 1.0
+    },
+    {
+      "name": "Regularly high",
+      "weight": 1.0
+    },
+    {
+      "name": "Drunk",
+      "weight": 1.0
+    },
+    {
+      "name": "Flirtatious with anyone or everyone",
+      "weight": 1.0
+    },
+    {
+      "name": "Way he talks",
+      "bound": "many",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 2,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Verbose",
+          "weight": 1.0
+        },
+        {
+          "name": "Timid",
+          "weight": 1.0
+        },
+        {
+          "name": "Gross",
+          "weight": 1.0
+        },
+        {
+          "name": "Delicate, subtle",
+          "weight": 1.0
+        },
+        {
+          "name": "Shouting",
+          "weight": 1.0
+        },
+        {
+          "name": "Babbling, twitchy",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Hates something",
+      "weight": 1.0
+    },
+    {
+      "name": "Afraid of something",
+      "weight": 1.0
+    },
+    {
+      "name": "Swetting",
+      "weight": 1.0
+    },
+    {
+      "name": "Motivations",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "What",
+          "weight": 1.0
+        },
+        {
+          "name": "Why",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

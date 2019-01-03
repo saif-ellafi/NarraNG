@@ -1,0 +1,44 @@
+{
+  "name": "Appearance",
+  "bound": "many",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 2,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Tatoos",
+      "weight": 1.0
+    },
+    {
+      "name": "Piercings",
+      "weight": 1.0
+    },
+    {
+      "name": "Jewelry",
+      "weight": 1.0
+    },
+    {
+      "name": "Unique dress style",
+      "weight": 1.0
+    },
+    {
+      "name": "Unique hair style",
+      "weight": 1.0
+    },
+    {
+      "name": "Obvious or distinctive cybernetics",
+      "weight": 1.0
+    },
+    {
+      "name": "Dramatically high or low weight and or height for metatype",
+      "weight": 1.0
+    },
+    {
+      "name": "Abnormally clean or dirty",
+      "weight": 1.0
+    }
+  ]
+}
