@@ -14,6 +14,7 @@
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
+<a href="{% url 'index' %}" class="btn btn-warning">Go back</a>
 <h1>{{ project.source }}</h1>
 {% if project_entries %}
 <ul>
