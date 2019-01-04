@@ -1,5 +1,5 @@
 {
-  "name": "Programs",
+  "name": "Cyberdeck Programs",
   "bound": "many",
   "weight": 1.0,
   "qrange": {
@@ -10,12 +10,32 @@
   "links": [
     {
       "name": "Browse",
-      "weight": 1.0,
+      "weight": 0.5,
       "description": "Matrix search takes half"
     },
     {
       "name": "Edit",
-      "weight": 1.0,
+      "weight": 0.5,
+      "description": "+2 to data processing limit for edit tests. Gives smart interface that learns and suggests."
+    },
+	{
+      "name": "Datasofts",
+      "weight": 0.5,
+      "description": "+1 mental limit on specific knowledge area skills"
+    },
+    {
+      "name": "Mapsoft",
+      "weight": 0.5,
+      "description": "GPS like system. +1 limit bonus on navigation tests. Wireless maintains and updates region"
+    },
+    {
+      "name": "Shopsofts",
+      "weight": 0.5,
+      "description": "+1 social limit for availability and negotiation tests to buy and sell, check reviews, etc"
+    },
+    {
+      "name": "Tutorsofts",
+      "weight": 0.4,
       "description": "+2 to data processing limit for edit tests. Gives smart interface that learns and suggests."
     },
     {

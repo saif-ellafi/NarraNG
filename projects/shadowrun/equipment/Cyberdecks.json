@@ -12,109 +12,100 @@
       "name": "Erika MCD-1",
       "weight": 10.0,
       "description": "DR1. 4321. Progs 1",
-      "bound": "many",
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 1,
+		"maxv": 1,
+		"mode": 1
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Microdeck Summit",
-      "weight": 17.0,
+      "weight": 10.0,
       "description": "DR1, 4331, Progs 1",
-      "bound": "many",
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 1,
+		"maxv": 1,
+		"mode": 1
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Microtronica Azteca 200",
       "weight": 14.0,
       "description": "DR 2. 5432. Progs 2",
-      "bound": "many",
-      "qrange": {
-        "minv": 2,
-        "maxv": 2,
-        "mode": 2
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 2,
+		"maxv": 2,
+		"mode": 2
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Hermes Chariot",
       "weight": 14.0,
       "description": "DR 2. 5442. Progs 2",
-      "bound": "many",
-      "qrange": {
-        "minv": 2,
-        "maxv": 2,
-        "mode": 2
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 2,
+		"maxv": 2,
+		"mode": 2
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Novatech Navigator",
       "weight": 14.0,
       "description": "DR3. 6543. Progs 3",
-      "bound": "many",
-      "qrange": {
-        "minv": 3,
-        "maxv": 3,
-        "mode": 3.0
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 3,
+		"maxv": 3,
+		"mode": 3
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Renraku Tsurugi",
       "weight": 11.0,
       "description": "DR 3. 6553. Progs 3",
-      "bound": "many",
-      "qrange": {
-        "minv": 3,
-        "maxv": 3,
-        "mode": 3.0
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 3,
+		"maxv": 3,
+		"mode": 3
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Sony CIY-720",
       "weight": 8.0,
+	  "qrange": {
+		"minv": 4,
+		"maxv": 4,
+		"mode": 4
+	  },
       "description": "DR 4. 7654. Progs 4",
-      "bound": "many",
-      "qrange": {
-        "minv": 4,
-        "maxv": 4,
-        "mode": 4
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Shiawase Cyber-5",
       "weight": 5.0,
       "description": "DR 5. 8765. Progs 5",
-      "bound": "many",
-      "qrange": {
-        "minv": 5,
-        "maxv": 5,
-        "mode": 5
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 5,
+		"maxv": 5,
+		"mode": 5
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     },
     {
       "name": "Fairlight Excalibur",
       "weight": 2.0,
       "description": "DR 6. 9876. Progs 6.",
-      "bound": "many",
-      "qrange": {
-        "minv": 6,
-        "maxv": 6,
-        "mode": 6
-      },
-      "link": "projects/shadowrun/equipment/Programs.json"
+	  "qrange": {
+		"minv": 6,
+		"maxv": 6,
+		"mode": 6
+	  },
+      "link": "projects/shadowrun/equipment/Cyberdeck Programs.json"
     }
   ]
 }

@@ -95,6 +95,26 @@ class Generator:
         return weight
 
     @staticmethod
+    def input_must(root_node):
+        if root_node and root_node.bound == 'all':
+            return None
+        must = None
+        while not must:
+            a = input("Node must always be? y/n (n)\n>> ")
+            if not a:
+                must = False
+            elif a == '#':
+                must = '#'
+            else:
+                if a == 'y':
+                    must = True
+                elif a == 'n':
+                    must = False
+                else:
+                    continue
+        return must
+
+    @staticmethod
     def create_link_node(given_name=None, root_node=None):
         name = given_name
         while not name:
@@ -108,9 +128,13 @@ class Generator:
                 bound = 'm'
         if bound == '#':
             return
-        weight = Generator.input_weight(root_node)
-        if weight == '#':
-            return
+        must = Generator.input_must(root_node)
+        if must:
+            weight = 1.0
+        else:
+            weight = Generator.input_weight(root_node)
+            if weight == '#':
+                return
         qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(bound)
         if not qrange_minv or not qrange_maxv or not qrange_mode:
             return
@@ -123,6 +147,7 @@ class Generator:
         node.set_bound(bound)
         node.set_weight(weight)
         node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        node.set_must(must)
         return node
 
     @staticmethod
@@ -132,9 +157,13 @@ class Generator:
             name = input('LeafNode name\n>> ')
         if name == '#':
             return
-        weight = Generator.input_weight(root_node)
-        if weight == '#':
-            return
+        must = Generator.input_must(root_node)
+        if must:
+            weight = 1.0
+        else:
+            weight = Generator.input_weight(root_node)
+            if weight == '#':
+                return
         description = input('LeafNode description (none)\n>> ')
         if description == '#':
             return
@@ -142,6 +171,7 @@ class Generator:
             description = None
         node = LeafNode(root_node, name, description)
         node.set_weight(weight)
+        node.set_must(must)
         return node
 
     @staticmethod
@@ -151,9 +181,13 @@ class Generator:
             name = input('ValueNode name\n>> ')
         if name == '#':
             return
-        weight = Generator.input_weight(root_node)
-        if weight == '#':
-            return
+        must = Generator.input_must(root_node)
+        if must:
+            weight = 1.0
+        else:
+            weight = Generator.input_weight(root_node)
+            if weight == '#':
+                return
         description = input('ValueNode description (none)\n>> ')
         if description == '#':
             return
@@ -165,6 +199,7 @@ class Generator:
         node = ValueNode(root_node, name, description)
         node.set_weight(weight)
         node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        node.set_must(must)
         return node
 
     @staticmethod
@@ -174,9 +209,13 @@ class Generator:
             name = input('ExternalNode name\n>> ')
         if name == '#':
             return
-        weight = Generator.input_weight(root_node)
-        if weight == '#':
-            return
+        must = Generator.input_must(root_node)
+        if must:
+            weight = 1.0
+        else:
+            weight = Generator.input_weight(root_node)
+            if weight == '#':
+                return
         description = input('ExternalNode description (none)\n>> ')
         if description == '#':
             return
@@ -189,6 +228,7 @@ class Generator:
             return
         node = ExternalNode(root_node, name, description, link)
         node.set_weight(weight)
+        node.set_must(must)
         return node
 
     @staticmethod

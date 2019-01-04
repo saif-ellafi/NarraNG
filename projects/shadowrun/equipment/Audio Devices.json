@@ -5,28 +5,40 @@
   "qrange": {
     "minv": 1,
     "maxv": 4,
-    "mode": 2.5
+    "mode": 1
   },
   "links": [
     {
       "name": "Directional microphone",
-      "weight": 1.0
+      "weight": 0.8
     },
     {
-      "name": "Ear buds",
+      "name": "Earbuds",
       "weight": 1.0
     },
     {
       "name": "Headphones",
-      "weight": 1.0
-    },
-    {
-      "name": "Laser Microphone",
       "weight": 0.8
     },
     {
-      "name": "Omni-directional microphone",
+      "name": "Laser Microphone",
       "weight": 0.6
+    },
+    {
+      "name": "Omni-directional microphone",
+      "weight": 0.4
+    },
+    {
+      "name": "Audio enhancements",
+      "weight": 1.0,
+      "must": true,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.0
+      },
+      "link": "projects/shadowrun/modules/Audio Enhancements.json"
     }
   ]
 }

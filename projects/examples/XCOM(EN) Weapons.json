@@ -21,7 +21,7 @@
     {
       "name": "Swapfire Custom",
       "bound": "many",
-      "weight": 1.5,
+      "weight": 3.5,
       "qrange": {
         "minv": 1,
         "maxv": 3,
@@ -41,7 +41,8 @@
         {
           "name": "Lasersight",
           "weight": 1.0,
-          "description": "Helps with aiming"
+          "description": "Helps with aiming",
+          "must": true
         },
         {
           "name": "Forward Grip",

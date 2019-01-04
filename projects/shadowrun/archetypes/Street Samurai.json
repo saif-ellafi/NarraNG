@@ -73,6 +73,26 @@
       "weight": 1.0,
       "link": "projects/shadowrun/equipment/Commlinks.json"
     },
+	{
+      "name": "Imaging device",
+      "weight": 1.0,
+	  "qrange": {
+        "minv": 0,
+        "maxv": 2,
+        "mode": 1
+      },
+      "link": "projects/shadowrun/equipment/Imaging Devices.json"
+    },
+	{
+      "name": "Audio device",
+      "weight": 1.0,
+	  "qrange": {
+        "minv": 0,
+        "maxv": 2,
+        "mode": 1
+      },
+      "link": "projects/shadowrun/equipment/Audio Devices.json"
+    },
     {
       "name": "Armor",
       "bound": "all",
@@ -94,6 +114,16 @@
           "link": "projects/shadowrun/equipment/Armor Modifications.json"
         }
       ]
+    },
+    {
+      "name": "Electronic Accessories",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 2,
+        "mode": 1
+      },
+      "link": "projects/shadowrun/equipment/Electronic Accessories.json"
     }
   ]
 }

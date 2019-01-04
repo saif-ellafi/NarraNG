@@ -172,7 +172,10 @@ class Narrator:
         if node.bound == 'single':
             if not node.locked:
                 node.locked = True
-                user_choice = self.weighted_random_node(node_links)
+                user_choice = [self.weighted_random_node(node_links)]
+                for link in node_links:
+                    if link.must and link not in user_choice:
+                        user_choice.insert(0, link)
             else:
                 logging.info("Node %s locked. Ignored new value." % node.name)
                 user_choice = None
@@ -182,9 +185,13 @@ class Narrator:
             rndchoice = round(random.triangular(node.qrange.minv, node.qrange.maxv, node.qrange.mode))
             logging.debug("Decided to go for %s nodes in %s" % (rndchoice, node.name))
             result_nodes = []
-            for _ in range(0, rndchoice):
-                result_nodes.append(self.weighted_random_node(node_links))
-            user_choice = result_nodes.copy()
+            if rndchoice > 0:
+                for _ in range(0, rndchoice):
+                    result_nodes.append(self.weighted_random_node(node_links))
+                for link in node_links:
+                    if link.must and link not in result_nodes:
+                        result_nodes.insert(0, link)
+            user_choice = result_nodes
         return user_choice
 
     # Internal recursive value choice generator
@@ -209,8 +216,12 @@ class Narrator:
             self.load_project(self.project_source)
         elif isinstance(user_choice, list):
             logging.debug("Detected list choice")
-            for qnode in user_choice:
-                self.handle_choice(qnode, output_node, auto)
+            if user_choice:
+                for qnode in user_choice:
+                    self.handle_choice(qnode, output_node, auto)
+            else:
+                logging.info("node with empty selections. deleting root %s" % output_node.root.name)
+                del output_node.root.links[output_node.root.links.index(output_node)]
         elif isinstance(user_choice, Node):
             self.handle_choice(user_choice, output_node, auto)
         elif str(user_choice) == '#':

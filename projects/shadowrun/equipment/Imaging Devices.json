@@ -1,24 +1,24 @@
 {
   "name": "Imaging Devices",
-  "bound": "many",
   "weight": 1.0,
+  "bound": "many",
   "qrange": {
     "minv": 1,
     "maxv": 4,
-    "mode": 2.0
+    "mode": 1
   },
   "links": [
     {
       "name": "Binoculars",
-      "weight": 1.0
+      "weight": 0.7
     },
     {
       "name": "Camera",
-      "weight": 1.0
+      "weight": 0.6
     },
     {
-      "name": "Contacts",
-      "weight": 1.0
+      "name": "Contact Glasses",
+      "weight": 0.5
     },
     {
       "name": "Glasses",
@@ -26,15 +26,15 @@
     },
     {
       "name": "Goggles",
-      "weight": 1.0
+      "weight": 0.8
     },
     {
-      "name": "Imaging Scopes",
-      "weight": 1.0
+      "name": "Imaging Scope",
+      "weight": 0.65
     },
     {
       "name": "Monocle",
-      "weight": 1.0
+      "weight": 0.3
     },
     {
       "name": "Endoscope",
@@ -47,6 +47,18 @@
     {
       "name": "Periscope",
       "weight": 1.0
+    },
+    {
+      "name": "Vision enhancements",
+      "weight": 1.0,
+      "must": true,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.0
+      },
+      "link": "projects/shadowrun/modules/Vision Enhancements.json"
     }
   ]
 }

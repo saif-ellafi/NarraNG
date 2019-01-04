@@ -21,14 +21,12 @@ class Common:
 
     @staticmethod
     def list_dir(path):
-        logging.debug("received path", path)
+        logging.debug("received path %s" % str(path))
         for f in os.listdir(path):
             t = os.path.join(path, f)
             if os.path.isfile(t) and f.endswith('.json'):
-                logging.debug("is json", str(t))
                 yield os.path.join(path, f)
             elif os.path.isdir(t):
-                logging.debug("is dir", str(t))
                 for ff in Common.list_dir(t):
                     yield ff
 

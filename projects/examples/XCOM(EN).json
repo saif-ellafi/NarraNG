@@ -118,7 +118,7 @@
       ]
     },
     {
-      "name": "Weapons SRS",
+      "name": "Weapons",
       "weight": 1.0,
       "link": "projects/examples/XCOM(EN) Weapons.json",
       "description": "XCOM Front battle weapons"

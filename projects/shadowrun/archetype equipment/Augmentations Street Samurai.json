@@ -3,9 +3,9 @@
   "bound": "many",
   "weight": 1.0,
   "qrange": {
-    "minv": 1,
+    "minv": 0,
     "maxv": 6,
-    "mode": 1
+    "mode": 2
   },
   "links": [
     {
@@ -37,6 +37,39 @@
       "name": "Bioware",
       "weight": 0.1,
       "link": "projects/shadowrun/augmentations/Bioware.json"
+    },
+    {
+      "name": "Grade",
+      "weight": 1.0,
+      "bound": "single",
+      "must": true,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Standard",
+          "weight": 1.0
+        },
+        {
+          "name": "Alphaware",
+          "weight": 0.8
+        },
+        {
+          "name": "Betaware",
+          "weight": 0.7
+        },
+        {
+          "name": "Deltaware",
+          "weight": 0.5
+        },
+        {
+          "name": "Used",
+          "weight": 0.6
+        }
+      ]
     }
   ]
 }

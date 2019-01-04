@@ -17,40 +17,27 @@ class NodeEncoder(json.JSONEncoder):
         }
 
     def default(self, o):
+        base = {
+            'name': o.name,
+            'weight': o.weight
+        }
+        if o.description:
+            base['description'] = o.description
+        if o.must:
+            base['must'] = o.must
         if isinstance(o, ExternalNode):
-            base = {}
-            base['name'] = o.name
-            base['weight'] = o.weight
-            if o.description:
-                base['description'] = o.description
             base['link'] = o.link
             return base
         elif isinstance(o, LinkNode):
-            base = {}
             if o.project:
                 base['project'] = o.project
-            base['name'] = o.name
             base['bound'] = o.bound
-            base['weight'] = o.weight
-            if o.description:
-                base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
-            base = {
-                'name': o.name,
-                'weight': o.weight
-            }
-            if o.description:
-                base['description'] = o.description
             return base
         elif isinstance(o, ValueNode):
-            base = {}
-            base['name'] = o.name
-            base['weight'] = o.weight
-            if o.description:
-                base['description'] = o.description
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
             return base
         else:
@@ -62,31 +49,22 @@ class OutputNodeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, ExternalNode):
             raise Exception("output encoder received an uncompressed ExternalNode")
+        base = {
+            'name': o.name
+        }
+        if o.description:
+            base['description'] = o.description
         elif isinstance(o, LinkNode):
-            base = {}
             if o.project:
                 base['project'] = o.project
-            base['name'] = o.name
-            if o.description:
-                base['description'] = o.description
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
-            base = {
-                'name': o.name
-            }
-            if o.description:
-                base['description'] = o.description
             return base
         elif isinstance(o, ValueNode):
             if o.value is None or not isinstance(o.value, int):
                 raise Exception("Invalid ValueNode value %s" % str(o.value))
-            base = {
-                'name': o.name,
-                'value': o.value
-            }
-            if o.description:
-                base['description'] = o.description
+            base['value'] = o.value
             return base
         else:
             return json.JSONEncoder.default(self, o)
@@ -107,6 +85,8 @@ class NodeDecoder:
                     link['name'],
                     link['description'] if 'description' in link else None
                 )
+                if 'must' in link:
+                    node.set_must(link['must'])
                 node.set_bound(link['bound'])
                 node.set_weight(link['weight'])
                 node.set_qrange(NodeDecoder.decode_qrange(link['qrange'])),
@@ -125,6 +105,8 @@ class NodeDecoder:
                     node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
                 if 'bound' in link:
                     node.set_bound(link['bound'])
+                if 'must' in link:
+                    node.set_must(link['must'])
                 yield node
             elif 'qrange' in link:
                 node = ValueNode(
@@ -132,6 +114,8 @@ class NodeDecoder:
                     link['name'],
                     link['description'] if 'description' in link else None
                 )
+                if 'must' in link:
+                    node.set_must(link['must'])
                 node.set_weight(link['weight'])
                 node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
                 yield node
@@ -141,6 +125,8 @@ class NodeDecoder:
                     link['name'],
                     link['description'] if 'description' in link else None
                 )
+                if 'must' in link:
+                    node.set_must(link['must'])
                 node.set_weight(link['weight'])
                 yield node
 
@@ -254,6 +240,7 @@ class Node:
         self.name = name
         self.description = description
         self.weight = None
+        self.must = None
 
     def __eq__(self, other):
         logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
@@ -279,6 +266,10 @@ class Node:
             self.weight = float(weight)
         except ValueError:
             raise Exception('Node weight must be float compatible value. Received %s' % str(weight))
+
+    def set_must(self, must):
+        if must:
+            self.must = must
 
 
 class LinkNode(Node):
@@ -321,6 +312,10 @@ class ExternalNode(LinkNode):
     def __init__(self, root, name, description, link):
         super(ExternalNode, self).__init__(root, name, description)
         self.link = link
+
+    def __eq__(self, other):
+        logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
+        return self.name == other.name
 
 
 class LeafNode(Node):
