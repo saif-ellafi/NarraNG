@@ -36,7 +36,7 @@ class Common:
     def load_projects():
         projects = []
         path = os.path.join(Common.PROJECTS_FOLDER)
-        prjs = sorted(Common.list_dir(path))
+        prjs = sorted(Common.list_dir(path), key=lambda p: os.path.split(p)[-1])
         for i, p in enumerate(prjs):
             with open(p) as file:
                 content = json.load(file)

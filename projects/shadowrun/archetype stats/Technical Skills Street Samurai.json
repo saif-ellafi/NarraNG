@@ -663,7 +663,7 @@
       "qrange": {
             "minv": 0,
             "maxv": 7,
-            "mode": 3.5
+            "mode": 3
           }
     },
     {
@@ -785,7 +785,7 @@
       "qrange": {
             "minv": 0,
             "maxv": 7,
-            "mode": 3.5
+            "mode": 1
           }
     },
     {
@@ -856,7 +856,7 @@
       "qrange": {
             "minv": 0,
             "maxv": 7,
-            "mode": 3.5
+            "mode": 2
           }
     },
     {
@@ -1040,7 +1040,7 @@
       "qrange": {
             "minv": 0,
             "maxv": 7,
-            "mode": 3.5
+            "mode": 1
           }
     }
   ]

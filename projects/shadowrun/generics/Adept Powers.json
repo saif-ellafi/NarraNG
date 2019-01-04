@@ -11,7 +11,7 @@
     {
       "name": "Adrenaline Boost",
       "weight": 1.5,
-      "description": "+2 initiative score for current combat turn per level. Drains equal to rating levels.",
+      "description": "Free Action. +2 initiative score for current combat turn per level. Drains equal to rating levels.",
       "qrange": {
         "minv": 1,
         "maxv": 4,
@@ -101,6 +101,7 @@
     },
     {
       "name": "Combat Sense",
+      "description": "+1 dice per level to defense against ranged and melee",
       "weight": 1,
       "qrange": {
         "minv": 1,
@@ -330,6 +331,7 @@
     },
     {
       "name": "Spell Resistance",
+      "description": "+dice per level on defense against magic",
       "weight": 1.2,
       "qrange": {
         "minv": 1,

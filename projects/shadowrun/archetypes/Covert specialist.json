@@ -57,6 +57,43 @@
       "name": "Vehicle Skills",
       "weight": 1.0,
       "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
+    },
+    {
+      "name": "Weapons",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+    },
+    {
+      "name": "Augmentations",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype equipment/Augmentations Street Samurai.json"
+    },
+    {
+      "name": "Commlink",
+      "weight": 1.0,
+      "link": "projects/shadowrun/equipment/Commlinks.json"
+    },
+    {
+      "name": "Armor",
+      "bound": "all",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Set",
+          "weight": 1.0,
+          "link": "projects/shadowrun/equipment/Armor.json"
+        },
+        {
+          "name": "Mods",
+          "weight": 1.0,
+          "link": "projects/shadowrun/equipment/Armor Modifications.json"
+        }
+      ]
     }
   ]
 }
