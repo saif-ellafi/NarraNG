@@ -18,8 +18,7 @@
     </li>
 {% else %}
 <li>
-    <a href="#"
-       data-toggle="tooltip"
+    <a data-toggle="tooltip"
        data-placement="top"
        title="{% if link.description %} {{ link.description }} {% endif %}">{{ link.name }}{% if link|is_value_node%} : {{ link.value  }} {% endif %}</a>
 </li>
