@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Heavy Pistols",
-      "weight": 1.0,
+      "weight": 0.7,
       "link": "projects/shadowrun/weapons/Heavy Pistols.json"
     },
     {
@@ -20,17 +20,12 @@
     },
     {
       "name": "Melee Weapons",
-      "weight": 2,
+      "weight": 1.4,
       "link": "projects/shadowrun/weapons/Melee Weapons.json"
     },
     {
-      "name": "Projectile Weapons",
-      "weight": 0.6,
-      "link": "projects/shadowrun/weapons/Projectile Weapons.json"
-    },
-    {
       "name": "Grenades",
-      "weight": 0.7,
+      "weight": 1.7,
       "link": "projects/shadowrun/weapons/Grenades.json"
     },
     {

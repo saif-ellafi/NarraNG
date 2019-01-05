@@ -3,9 +3,9 @@
   "bound": "many",
   "weight": 1.0,
   "qrange": {
-    "minv": 0,
-    "maxv": 4,
-    "mode": 2
+    "minv": 2,
+    "maxv": 7,
+    "mode": 3
   },
   "links": [
     {

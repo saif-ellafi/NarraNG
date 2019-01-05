@@ -20,12 +20,12 @@
       "links": [
         {
           "name": "Hermetic",
-          "weight": 1.5,
+          "weight": 1,
           "description": "Drain: Logic + Willpower"
         },
         {
           "name": "Shamanic",
-          "weight": 0.7,
+          "weight": 1,
           "description": "Drain: Charisma + Willpower"
         }
       ]
@@ -43,10 +43,10 @@
         {
           "name": "Sorcery",
           "bound": "many",
-          "weight": 1,
+          "weight": 0.6,
           "qrange": {
             "minv": 1,
-            "maxv": 5,
+            "maxv": 3,
             "mode": 2.0
           },
           "links": [
@@ -157,9 +157,9 @@
               "bound": "many",
               "weight": 0.5,
               "qrange": {
-                "minv": 1,
-                "maxv": 4,
-                "mode": 2.0
+                "minv": 3,
+                "maxv": 7,
+                "mode": 4
               },
               "links": [
                 {
@@ -261,8 +261,8 @@
               "description": "Spellcastic + Magic[Force]",
               "qrange": {
                 "minv": 1,
-                "maxv": 4,
-                "mode": 2.0
+                "maxv": 7,
+                "mode": 2.5
               },
               "links": [
                 {
@@ -512,7 +512,7 @@
             {
               "name": "Manipulation Spells",
               "bound": "many",
-              "weight": 1.2,
+              "weight": 0.7,
               "description": "Damaging Spells equal to Force 0 AP, resisted with Body + Armor. Mental vs Logic + Willpower. Net hits sustain spell, target hits reduce effect.",
               "qrange": {
                 "minv": 1,
@@ -642,8 +642,8 @@
           "weight": 0.0,
           "qrange": {
             "minv": 1,
-            "maxv": 3,
-            "mode": 1.0
+            "maxv": 5,
+            "mode": 1.5
           },
           "links": [
             {
@@ -696,12 +696,12 @@
         {
           "name": "Conjuring",
           "bound": "single",
-          "weight": 0.0,
+          "weight": 0.8,
           "description": "Summoning + Magic[Force] vs Spirit Force. Every 3 points of Force, one additional power",
           "qrange": {
             "minv": 1,
-            "maxv": 1,
-            "mode": 1
+            "maxv": 7,
+            "mode": 2.5
           },
           "links": [
             {

@@ -12,45 +12,45 @@
       "name": "Body",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 4,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 5.5
       }
     },
     {
       "name": "Agility",
       "weight": 1.0,
       "qrange": {
-        "minv": 2,
+        "minv": 1,
         "maxv": 7,
-        "mode": 4.5
+        "mode": 3
       }
     },
     {
       "name": "Reaction",
       "weight": 1.0,
       "qrange": {
-        "minv": 2,
+        "minv": 1,
         "maxv": 7,
-        "mode": 4
+        "mode": 3
       }
     },
     {
       "name": "Strength",
       "weight": 1.0,
       "qrange": {
-        "minv": 3,
+        "minv": 1,
         "maxv": 7,
-        "mode": 4
+        "mode": 3
       }
     },
     {
       "name": "Willpower",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
+        "minv": 3,
         "maxv": 7,
-        "mode": 3.5
+        "mode": 5.5
       }
     },
     {
@@ -66,9 +66,9 @@
       "name": "Intuition",
       "weight": 1.0,
       "qrange": {
-        "minv": 3,
+        "minv": 1,
         "maxv": 6,
-        "mode": 4
+        "mode": 3
       }
     },
     {

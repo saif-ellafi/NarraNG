@@ -19,7 +19,7 @@
       },
       "links": [
         {
-          "name": "Rating",
+          "name": "F",
           "weight": 1.0,
           "qrange": {
             "minv": 0,
@@ -128,9 +128,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 5,
+            "minv": 1,
             "maxv": 7,
-            "mode": 5.5
+            "mode": 3
           }
         },
         {
@@ -175,7 +175,7 @@
       "links": [
         {
           "name": "Rating",
-          "weight": 1.0,
+          "weight": 0.0,
           "qrange": {
             "minv": 2,
             "maxv": 4,
@@ -232,7 +232,7 @@
       "links": [
         {
           "name": "Rating",
-          "weight": 1.0,
+          "weight": 0.0,
           "qrange": {
             "minv": 1,
             "maxv": 3,
@@ -291,9 +291,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 3,
+            "minv": 0,
             "maxv": 7,
-            "mode": 5
+            "mode": 3
           }
         },
         {
@@ -348,9 +348,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 5,
+            "minv": 1,
             "maxv": 7,
-            "mode": 5.5
+            "mode": 3.5
           }
         },
         {
@@ -401,9 +401,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 4,
+            "minv": 1,
             "maxv": 7,
-            "mode": 4.5
+            "mode": 4
           }
         },
         {
@@ -451,8 +451,8 @@
           "weight": 1.0,
           "qrange": {
             "minv": 2,
-            "maxv": 7,
-            "mode": 4.0
+            "maxv": 5,
+            "mode": 2.0
           }
         },
         {

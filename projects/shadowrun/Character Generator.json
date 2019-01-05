@@ -49,9 +49,44 @@
           "link": "projects/shadowrun/archetypes/Face.json"
         },
         {
+          "name": "Gunslinger adept",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Gunslinger adept.json"
+        },
+        {
+          "name": "Occult Investigator",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Occult Investigator.json"
+        },
+        {
+          "name": "Smuggler",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Smuggler.json"
+        },
+        {
+          "name": "Sprawl Ganger",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Sprawl Ganger.json"
+        },
+        {
           "name": "Street samurai",
           "weight": 1.0,
           "link": "projects/shadowrun/archetypes/Street Samurai.json"
+        },
+        {
+          "name": "Street Shaman",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Street Shaman.json"
+        },
+        {
+          "name": "Tank",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Tank.json"
+        },
+        {
+          "name": "Weapon Specialist",
+          "weight": 1.0,
+          "link": "projects/shadowrun/archetypes/Weapon Specialist.json"
         }
       ]
     }

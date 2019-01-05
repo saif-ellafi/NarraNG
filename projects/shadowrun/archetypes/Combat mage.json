@@ -51,7 +51,7 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Covert.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Face.json"
     },
     {
       "name": "Vehicle Skills",
@@ -71,7 +71,7 @@
     {
       "name": "Weapons",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+      "link": "projects/shadowrun/archetype equipment/Weapons Combat Mage.json"
     },
     {
       "name": "Commlink",

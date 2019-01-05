@@ -1,5 +1,5 @@
 {
-  "name": "Brawling Adept",
+  "name": "Street Samurai",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -26,7 +26,7 @@
     {
       "name": "Attributes",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Attributes Brawling Adept.json"
+      "link": "projects/shadowrun/archetype stats/Attributes Street Samurai.json"
     },
     {
       "name": "Qualities",
@@ -51,44 +51,44 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Weapon Specialist.json"
     },
     {
       "name": "Vehicle Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
-    },
-    {
-      "name": "Adept Powers",
-      "weight": 1.0,
-      "link": "projects/shadowrun/generics/Adept Powers.json"
+      "link": "projects/shadowrun/archetype stats/Vehicle Skills Covert.json"
     },
     {
       "name": "Weapons",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+      "link": "projects/shadowrun/archetype equipment/Weapons Specialist.json"
+    },
+    {
+      "name": "Augmentations",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype equipment/Augmentations Street Samurai.json"
     },
     {
       "name": "Commlink",
       "weight": 1.0,
       "link": "projects/shadowrun/equipment/Commlinks.json"
     },
-    {
+	{
       "name": "Imaging device",
       "weight": 1.0,
-      "qrange": {
+	  "qrange": {
         "minv": 0,
-        "maxv": 1,
+        "maxv": 2,
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Imaging Devices.json"
     },
-    {
+	{
       "name": "Audio device",
       "weight": 1.0,
-      "qrange": {
+	  "qrange": {
         "minv": 0,
-        "maxv": 1,
+        "maxv": 2,
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Audio Devices.json"
@@ -120,7 +120,7 @@
       "weight": 1.0,
       "qrange": {
         "minv": 0,
-        "maxv": 1,
+        "maxv": 2,
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Electronic Accessories.json"

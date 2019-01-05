@@ -1,5 +1,5 @@
 {
-  "name": "Brawling Adept",
+  "name": "Combat Mage",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -26,7 +26,7 @@
     {
       "name": "Attributes",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Attributes Brawling Adept.json"
+      "link": "projects/shadowrun/archetype stats/Attributes Combat Mage.json"
     },
     {
       "name": "Qualities",
@@ -36,7 +36,7 @@
     {
       "name": "Physical Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Physical Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Physical Skills Face.json"
     },
     {
       "name": "Technical Skills",
@@ -51,7 +51,7 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Face.json"
     },
     {
       "name": "Vehicle Skills",
@@ -59,14 +59,19 @@
       "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
     },
     {
-      "name": "Adept Powers",
+      "name": "Magical Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/generics/Adept Powers.json"
+      "link": "projects/shadowrun/archetype stats/Magical Skills Occult Investigator.json"
+    },
+    {
+      "name": "Magic Abilities",
+      "weight": 1.0,
+      "link": "projects/shadowrun/archetype stats/Magic Abilities Occult Investigator.json"
     },
     {
       "name": "Weapons",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+      "link": "projects/shadowrun/archetype equipment/Weapons Combat Mage.json"
     },
     {
       "name": "Commlink",

@@ -26,7 +26,7 @@
     {
       "name": "Attributes",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Attributes Brawling Adept.json"
+      "link": "projects/shadowrun/archetype stats/Attributes Covert.json"
     },
     {
       "name": "Qualities",
@@ -36,7 +36,7 @@
     {
       "name": "Physical Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Physical Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Physical Skills Covert.json"
     },
     {
       "name": "Technical Skills",
@@ -51,7 +51,7 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Weapon Specialist.json"
     },
     {
       "name": "Vehicle Skills",
@@ -66,7 +66,7 @@
     {
       "name": "Weapons",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+      "link": "projects/shadowrun/archetype equipment/Weapons Covert.json"
     },
     {
       "name": "Commlink",

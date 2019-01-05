@@ -75,9 +75,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 0,
+            "minv": 2,
             "maxv": 7,
-            "mode": 2
+            "mode": 4
           }
         },
         {
@@ -128,9 +128,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 4,
-            "maxv": 7,
-            "mode": 5.5
+            "minv": 0,
+            "maxv": 5,
+            "mode": 2.5
           }
         },
         {
@@ -166,7 +166,7 @@
     {
       "name": "Clubs",
       "bound": "all",
-      "weight": 1.0,
+      "weight": 0.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -177,9 +177,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
           }
         },
         {
@@ -234,9 +234,9 @@
           "name": "Rating",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
+            "minv": 3,
             "maxv": 7,
-            "mode": 2.5
+            "mode": 4.5
           }
         },
         {

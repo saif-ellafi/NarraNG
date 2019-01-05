@@ -4,7 +4,7 @@
   "weight": 1.0,
   "qrange": {
     "minv": 1,
-    "maxv": 4,
+    "maxv": 3,
     "mode": 1
   },
   "links": [
@@ -19,18 +19,8 @@
       "link": "projects/shadowrun/weapons/Shotguns.json"
     },
     {
-      "name": "Melee Weapons",
-      "weight": 2,
-      "link": "projects/shadowrun/weapons/Melee Weapons.json"
-    },
-    {
-      "name": "Projectile Weapons",
-      "weight": 0.6,
-      "link": "projects/shadowrun/weapons/Projectile Weapons.json"
-    },
-    {
       "name": "Grenades",
-      "weight": 0.7,
+      "weight": 0.3,
       "link": "projects/shadowrun/weapons/Grenades.json"
     },
     {

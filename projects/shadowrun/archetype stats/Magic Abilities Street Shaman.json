@@ -20,12 +20,12 @@
       "links": [
         {
           "name": "Hermetic",
-          "weight": 1.5,
+          "weight": 0.3,
           "description": "Drain: Logic + Willpower"
         },
         {
           "name": "Shamanic",
-          "weight": 0.7,
+          "weight": 1.6,
           "description": "Drain: Charisma + Willpower"
         }
       ]
@@ -43,7 +43,7 @@
         {
           "name": "Sorcery",
           "bound": "many",
-          "weight": 1,
+          "weight": 0.4,
           "qrange": {
             "minv": 1,
             "maxv": 5,
@@ -257,7 +257,7 @@
             {
               "name": "Health Spells",
               "bound": "many",
-              "weight": 0.3,
+              "weight": 0.9,
               "description": "Spellcastic + Magic[Force]",
               "qrange": {
                 "minv": 1,
@@ -512,7 +512,7 @@
             {
               "name": "Manipulation Spells",
               "bound": "many",
-              "weight": 1.2,
+              "weight": 0.2,
               "description": "Damaging Spells equal to Force 0 AP, resisted with Body + Armor. Mental vs Logic + Willpower. Net hits sustain spell, target hits reduce effect.",
               "qrange": {
                 "minv": 1,
@@ -617,7 +617,7 @@
         {
           "name": "Counterspelling",
           "bound": "all",
-          "weight": 0.4,
+          "weight": 0.3,
           "qrange": {
             "minv": 1,
             "maxv": 1,
@@ -639,7 +639,7 @@
         {
           "name": "Rituals",
           "bound": "many",
-          "weight": 0.0,
+          "weight": 0.8,
           "qrange": {
             "minv": 1,
             "maxv": 3,
@@ -696,7 +696,7 @@
         {
           "name": "Conjuring",
           "bound": "single",
-          "weight": 0.0,
+          "weight": 1.4,
           "description": "Summoning + Magic[Force] vs Spirit Force. Every 3 points of Force, one additional power",
           "qrange": {
             "minv": 1,
@@ -725,21 +725,21 @@
         {
           "name": "Enchanting",
           "bound": "many",
-          "weight": 0.0,
+          "weight": 0.6,
           "qrange": {
             "minv": 1,
-            "maxv": 2,
-            "mode": 1.0
+            "maxv": 3,
+            "mode": 1.4
           },
           "links": [
             {
               "name": "Alchemy",
-              "weight": 1.0,
+              "weight": 1.6,
               "description": "Spell, Force, Lynchpin and trigger"
             },
             {
               "name": "Artificing",
-              "weight": 1.0,
+              "weight": 0.6,
               "description": "Focus Formula, Telesma, Magical Lodge, reagants and craft"
             }
           ]

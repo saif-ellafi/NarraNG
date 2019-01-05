@@ -61,7 +61,7 @@
     {
       "name": "Weapons",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
+      "link": "projects/shadowrun/archetype equipment/Weapons Face.json"
     },
     {
       "name": "Augmentations",

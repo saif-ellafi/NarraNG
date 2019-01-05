@@ -1,5 +1,5 @@
 {
-  "name": "Brawling Adept",
+  "name": "Drone Rigger",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -26,7 +26,7 @@
     {
       "name": "Attributes",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Attributes Brawling Adept.json"
+      "link": "projects/shadowrun/archetype stats/Attributes Decker.json"
     },
     {
       "name": "Qualities",
@@ -41,7 +41,7 @@
     {
       "name": "Technical Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Technical Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Technical Skills Rigger.json"
     },
     {
       "name": "Social Skills",
@@ -51,17 +51,12 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Street Samurai.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Weapon Specialist.json"
     },
     {
       "name": "Vehicle Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Vehicle Skills Street Samurai.json"
-    },
-    {
-      "name": "Adept Powers",
-      "weight": 1.0,
-      "link": "projects/shadowrun/generics/Adept Powers.json"
+      "link": "projects/shadowrun/archetype stats/Vehicle Skills Rigger.json"
     },
     {
       "name": "Weapons",
@@ -69,16 +64,21 @@
       "link": "projects/shadowrun/archetype equipment/Weapons Street Samurai.json"
     },
     {
-      "name": "Commlink",
+      "name": "Augmentations",
       "weight": 1.0,
-      "link": "projects/shadowrun/equipment/Commlinks.json"
+      "link": "projects/shadowrun/archetype equipment/Augmentations Street Samurai.json"
+    },
+    {
+      "name": "RCC",
+      "weight": 1.0,
+      "link": "projects/shadowrun/equipment/RCC.json"
     },
     {
       "name": "Imaging device",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 1,
+        "minv": 1,
+        "maxv": 4,
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Imaging Devices.json"
@@ -87,8 +87,8 @@
       "name": "Audio device",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 1,
+        "minv": 1,
+        "maxv": 3,
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Audio Devices.json"
@@ -119,11 +119,21 @@
       "name": "Electronic Accessories",
       "weight": 1.0,
       "qrange": {
-        "minv": 0,
-        "maxv": 1,
-        "mode": 1
+        "minv": 1,
+        "maxv": 4,
+        "mode": 2
       },
       "link": "projects/shadowrun/equipment/Electronic Accessories.json"
+    },
+    {
+      "name": "Electronic Warfare",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 1,
+        "maxv": 5,
+        "mode": 2.5
+      },
+      "link": "projects/shadowrun/equipment/Electronic Warfare.json"
     }
   ]
 }
