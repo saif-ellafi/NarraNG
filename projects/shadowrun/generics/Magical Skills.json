@@ -12,7 +12,7 @@
       "name": "Alchemy",
       "weight": 1.0,
       "description": "Magic. Enchanting.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -22,7 +22,7 @@
       "name": "Arcana",
       "weight": 1.0,
       "description": "Logic. Creation of magical formulae for spells and foci.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -32,7 +32,7 @@
       "name": "Artificing",
       "weight": 1.0,
       "description": "Magic. Crafting magical foci. Enchanting.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -42,7 +42,7 @@
       "name": "Assensing",
       "weight": 1.0,
       "description": "Intuition",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -52,7 +52,7 @@
       "name": "Astral Combat",
       "weight": 1.0,
       "description": "Willpower",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -62,7 +62,7 @@
       "name": "Banishing",
       "weight": 1.0,
       "description": "Magic",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -72,7 +72,7 @@
       "name": "Binding",
       "weight": 1.0,
       "description": "Magic. Conjuring.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -82,7 +82,7 @@
       "name": "Counterspelling",
       "weight": 1.0,
       "description": "Magic. Sorcery",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -92,7 +92,7 @@
       "name": "Disenchanting",
       "weight": 1.0,
       "description": "Magic. Enchanting.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -102,7 +102,7 @@
       "name": "Ritual Spellcasting",
       "weight": 1.0,
       "description": "Magic. Sorcery.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -112,7 +112,7 @@
       "name": "Spellcasting",
       "weight": 1.0,
       "description": "Magic. Sorcery.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5
@@ -122,7 +122,7 @@
       "name": "Summoning",
       "weight": 1.0,
       "description": "Magic. Conjuring.",
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 3.5

@@ -177,34 +177,6 @@ class Generator:
         return node
 
     @staticmethod
-    def create_value_node(root_node):
-        name = ''
-        while not name:
-            name = input('ValueNode name\n>> ')
-        if name == '#':
-            return
-        must = Generator.input_must(root_node)
-        if must:
-            weight = 1.0
-        else:
-            weight = Generator.input_weight(root_node)
-            if weight == '#':
-                return
-        description = input('ValueNode description (none)\n>> ')
-        if description == '#':
-            return
-        if not description:
-            description = None
-        qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(root_node.bound)
-        if not qrange_mode:
-            return
-        node = ValueNode(root_node, name, description)
-        node.set_weight(weight)
-        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
-        node.set_must(must)
-        return node
-
-    @staticmethod
     def create_external_node(root_node):
         name = ''
         while not name:
@@ -235,7 +207,7 @@ class Generator:
 
     @staticmethod
     def status(node):
-        return '\nCurrently in node < %s > with\nback-root< %s >\nlinks < %s >\nexternal < %s >\nleaves < %s >\nvalues < %s >' % \
+        return '\nCurrently in node < %s > with\nback-root< %s >\nlinks < %s >\nexternal < %s >\nleaves < %s >' % \
                (
                    node.name,
                    node.root.name,
@@ -251,10 +223,6 @@ class Generator:
                    ),
                    ' | '.join(map(lambda n: n.name,
                                   filter(lambda nn: type(nn) == LeafNode, node.links)
-                                  )
-                              ),
-                   ' | '.join(map(lambda n: n.name,
-                                  filter(lambda nn: type(nn) == ValueNode, node.links)
                                   )
                               )
                )
@@ -278,7 +246,7 @@ class Generator:
 
         while not answer:
             answer = input('\ne. exit \nb/0. back\nr. root\ns. save\n#. cancel\nl. LinkNode\nq. Quick LinkNode\nx. '
-                           'External LinkNode\nf. LeafNode\nv. ValueNode\n\nenter $i to jump into a LinkNode\n\n>> ')
+                           'External LinkNode\nf. LeafNode\n\nenter $i to jump into a LinkNode\n\n>> ')
 
         try:
             link_answer = int(answer)

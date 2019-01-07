@@ -1,5 +1,5 @@
 {
-  "name": "Social Skills Street Samurai",
+  "name": "Social Skills Template",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -10,70 +10,54 @@
   "links": [
     {
       "name": "Con",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 3,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Fast Talking",
-              "weight": 1.0
-            },
-            {
-              "name": "Seduction",
-              "weight": 1.0
-            }
-          ]
+          "name": "Fast Talking",
+          "weight": 1.0
+        },
+        {
+          "name": "Seduction",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Etiquette",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 3,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
+          "name": "By culture",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -83,44 +67,28 @@
           },
           "links": [
             {
-              "name": "None",
-              "weight": 3.0
+              "name": "Corporate",
+              "weight": 1.0
             },
             {
-              "name": "By culture",
-              "bound": "single",
-              "weight": 1.0,
-              "qrange": {
-                "minv": 1,
-                "maxv": 1,
-                "mode": 1
-              },
-              "links": [
-                {
-                  "name": "Corporate",
-                  "weight": 1.0
-                },
-                {
-                  "name": "High Society",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Media",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Mercenary",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Street",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Yakuza",
-                  "weight": 1.0
-                }
-              ]
+              "name": "High Society",
+              "weight": 1.0
+            },
+            {
+              "name": "Media",
+              "weight": 1.0
+            },
+            {
+              "name": "Mercenary",
+              "weight": 1.0
+            },
+            {
+              "name": "Street",
+              "weight": 1.0
+            },
+            {
+              "name": "Yakuza",
+              "weight": 1.0
             }
           ]
         }
@@ -128,25 +96,25 @@
     },
     {
       "name": "Impersonation",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 2,
-            "mode": 1
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
+          "name": "By metatype",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -156,40 +124,24 @@
           },
           "links": [
             {
-              "name": "None",
-              "weight": 3.0
+              "name": "Human",
+              "weight": 1.0
             },
             {
-              "name": "By metatype",
-              "bound": "single",
-              "weight": 1.0,
-              "qrange": {
-                "minv": 1,
-                "maxv": 1,
-                "mode": 1
-              },
-              "links": [
-                {
-                  "name": "Human",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Elf",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Dwarf",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Ork",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Trol",
-                  "weight": 1.0
-                }
-              ]
+              "name": "Elf",
+              "weight": 1.0
+            },
+            {
+              "name": "Dwarf",
+              "weight": 1.0
+            },
+            {
+              "name": "Ork",
+              "weight": 1.0
+            },
+            {
+              "name": "Trol",
+              "weight": 1.0
             }
           ]
         }
@@ -197,25 +149,25 @@
     },
     {
       "name": "Instruction",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 2.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 4,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
+          "name": "By skill or knowledge",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -225,44 +177,28 @@
           },
           "links": [
             {
-              "name": "None",
-              "weight": 3.0
+              "name": "Combat",
+              "weight": 1.0
             },
             {
-              "name": "By skill or knowledge",
-              "bound": "single",
-              "weight": 1.0,
-              "qrange": {
-                "minv": 1,
-                "maxv": 1,
-                "mode": 1
-              },
-              "links": [
-                {
-                  "name": "Combat",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Language",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Magical",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Academic",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Knowledge",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Street Knowledge",
-                  "weight": 1.0
-                }
-              ]
+              "name": "Language",
+              "weight": 1.0
+            },
+            {
+              "name": "Magical",
+              "weight": 1.0
+            },
+            {
+              "name": "Academic",
+              "weight": 1.0
+            },
+            {
+              "name": "Knowledge",
+              "weight": 1.0
+            },
+            {
+              "name": "Street Knowledge",
+              "weight": 1.0
             }
           ]
         }
@@ -270,180 +206,132 @@
     },
     {
       "name": "Intimidation",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 2.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 4,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Interrogation",
-              "weight": 1.0
-            },
-            {
-              "name": "Mental",
-              "weight": 1.0
-            },
-            {
-              "name": "Physical",
-              "weight": 1.0
-            },
-            {
-              "name": "Torture",
-              "weight": 1.0
-            }
-          ]
+          "name": "Interrogation",
+          "weight": 1.0
+        },
+        {
+          "name": "Mental",
+          "weight": 1.0
+        },
+        {
+          "name": "Physical",
+          "weight": 1.0
+        },
+        {
+          "name": "Torture",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Leadership",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 1
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 3,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Command",
-              "weight": 1.0
-            },
-            {
-              "name": "Direct",
-              "weight": 1.0
-            },
-            {
-              "name": "Inspire",
-              "weight": 1.0
-            },
-            {
-              "name": "Rally",
-              "weight": 1.0
-            }
-          ]
+          "name": "Command",
+          "weight": 1.0
+        },
+        {
+          "name": "Direct",
+          "weight": 1.0
+        },
+        {
+          "name": "Inspire",
+          "weight": 1.0
+        },
+        {
+          "name": "Rally",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Negotiation",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 3,
-            "mode": 2.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Bargaining",
-              "weight": 1.0
-            },
-            {
-              "name": "Contracts",
-              "weight": 1.0
-            },
-            {
-              "name": "Diplomacy",
-              "weight": 1.0
-            }
-          ]
+          "name": "Bargaining",
+          "weight": 1.0
+        },
+        {
+          "name": "Contracts",
+          "weight": 1.0
+        },
+        {
+          "name": "Diplomacy",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Performance",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 4,
+        "mode": 1.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 3,
-            "mode": 1.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
+          "name": "By performance art",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
@@ -453,36 +341,20 @@
           },
           "links": [
             {
-              "name": "None",
-              "weight": 3.0
+              "name": "Presentation",
+              "weight": 1.0
             },
             {
-              "name": "By performance art",
-              "bound": "single",
-              "weight": 1.0,
-              "qrange": {
-                "minv": 1,
-                "maxv": 1,
-                "mode": 1
-              },
-              "links": [
-                {
-                  "name": "Presentation",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Acting",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Comedy",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Specific instrument",
-                  "weight": 1.0
-                }
-              ]
+              "name": "Acting",
+              "weight": 1.0
+            },
+            {
+              "name": "Comedy",
+              "weight": 1.0
+            },
+            {
+              "name": "Specific instrument",
+              "weight": 1.0
             }
           ]
         }

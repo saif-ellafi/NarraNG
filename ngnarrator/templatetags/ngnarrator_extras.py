@@ -1,6 +1,6 @@
 from django import template
 
-from components import LinkNode, ValueNode
+from components import LinkNode
 
 register = template.Library()
 
@@ -12,4 +12,4 @@ def is_link_node(node):
 
 @register.filter
 def is_value_node(node):
-    return isinstance(node, ValueNode)
+    return isinstance(node.value, int)

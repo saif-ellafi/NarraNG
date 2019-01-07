@@ -1,5 +1,5 @@
 import random
-import logging
+import copy
 
 from components import *
 from common import Common
@@ -250,6 +250,29 @@ class Narrator:
             else:
                 logging.info("Node %s locked. Ignored new value." % node.name)
 
+    @staticmethod
+    def get_set_value(node, auto):
+        if node.vrange and auto:
+            return round(random.triangular(
+                node.vrange.minv,
+                node.vrange.maxv,
+                node.vrange.mode))
+        elif node.vrange:
+            value = None
+            while not isinstance(value, int):
+                try:
+                    v = int(input('Enter %s value:\n>> ' % node.name))
+                    if node.vrange.minv <= v <= node.vrange.maxv:
+                        value = v
+                        break
+                    else:
+                        continue
+                except ValueError:
+                    continue
+            return value
+        else:
+            return None
+
     # Internal handled for choice roots
     def handle_choice(self, new_node, output_node, auto):
         if isinstance(new_node, ExternalNode):
@@ -273,34 +296,19 @@ class Narrator:
                     new_node.name,
                     new_node.description
                 )
+                set_value = Narrator.get_set_value(new_node, auto)
+                if isinstance(set_value, int):
+                    blank_node.set_value(set_value)
                 output_node.links.append(blank_node)
                 self._gen(new_node, blank_node, auto=auto)
-        elif isinstance(new_node, ValueNode):
-            if auto:
-                new_node.set_value(round(random.triangular(
-                    new_node.qrange.minv,
-                    new_node.qrange.maxv,
-                    new_node.qrange.mode)))
-            else:
-                value = None
-                while not value:
-                    try:
-                        v = int(input('Enter %s value:\n>> ' % new_node.name))
-                        if new_node.qrange.minv <= v <= new_node.qrange.maxv:
-                            value = v
-                            break
-                        else:
-                            continue
-                    except ValueError:
-                        continue
-                new_node.set_value(value)
-            if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
-                output_node.links.append(new_node)
-            else:
-                logging.info('IGNORE_REPEAT is True and selection already exists in target')
         else:
             if not (Narrator.IGNORE_REPEAT and new_node in output_node.links):
-                output_node.links.append(new_node)
+                blank_node = copy.copy(new_node)
+                set_value = Narrator.get_set_value(blank_node, auto)
+                if isinstance(set_value, int):
+                    blank_node.set_value(set_value)
+                    blank_node.clear_vrange()
+                output_node.links.append(blank_node)
             else:
                 logging.info('IGNORE_REPEAT is True and selection already exists in target')
 

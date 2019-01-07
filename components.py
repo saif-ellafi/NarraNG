@@ -33,12 +33,11 @@ class NodeEncoder(json.JSONEncoder):
                 base['project'] = o.project
             base['bound'] = o.bound
             base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
+            if o.vrange:
+                base['vrange'] = NodeEncoder.encode_qrange(o.vrange)
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
-            return base
-        elif isinstance(o, ValueNode):
-            base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
             return base
         else:
             return json.JSONEncoder.default(self, o)
@@ -57,6 +56,8 @@ class OutputNodeEncoder(json.JSONEncoder):
                 base['description'] = o.description
             if o.project:
                 base['project'] = o.project
+            if isinstance(o.value, int):
+                base['value'] = o.value
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
@@ -65,16 +66,8 @@ class OutputNodeEncoder(json.JSONEncoder):
             }
             if o.description:
                 base['description'] = o.description
-            return base
-        elif isinstance(o, ValueNode):
-            if o.value is None or not isinstance(o.value, int):
-                raise Exception("Invalid ValueNode value %s" % str(o.value))
-            base = {
-                'name': o.name
-            }
-            if o.description:
-                base['description'] = o.description
-            base['value'] = o.value
+            if isinstance(o.value, int):
+                base['value'] = o.value
             return base
         else:
             return json.JSONEncoder.default(self, o)
@@ -97,6 +90,8 @@ class NodeDecoder:
                 )
                 if 'must' in link:
                     node.set_must(link['must'])
+                if 'vrange' in link:
+                    node.set_vrange(NodeDecoder.decode_qrange(link['vrange']))
                 node.set_bound(link['bound'])
                 node.set_weight(link['weight'])
                 node.set_qrange(NodeDecoder.decode_qrange(link['qrange'])),
@@ -118,17 +113,6 @@ class NodeDecoder:
                 if 'must' in link:
                     node.set_must(link['must'])
                 yield node
-            elif 'qrange' in link:
-                node = ValueNode(
-                    root,
-                    link['name'],
-                    link['description'] if 'description' in link else None
-                )
-                if 'must' in link:
-                    node.set_must(link['must'])
-                node.set_weight(link['weight'])
-                node.set_qrange(NodeDecoder.decode_qrange(link['qrange']))
-                yield node
             else:
                 node = LeafNode(
                     root,
@@ -137,6 +121,8 @@ class NodeDecoder:
                 )
                 if 'must' in link:
                     node.set_must(link['must'])
+                if 'vrange' in link:
+                    node.set_vrange(NodeDecoder.decode_qrange(link['vrange']))
                 node.set_weight(link['weight'])
                 yield node
 
@@ -175,7 +161,6 @@ class OutputNodeDecoder:
 
     @staticmethod
     def decode_listlinks(links, root):
-        print('decoding listlink %s for root %s' % (str(links), str(root)))
         for link in links:
             if 'links' in link:
                 node = LinkNode(
@@ -185,14 +170,8 @@ class OutputNodeDecoder:
                 )
                 sublinks = OutputNodeDecoder.decode_links(link['links'], node)
                 node.links = list(sublinks)
-                yield node
-            elif 'value' in link:
-                node = ValueNode(
-                    root,
-                    link['name'],
-                    description=link['description'] if 'description' in link else None
-                )
-                node.value = link['value']
+                if 'value' in link:
+                    node.set_value(link['value'])
                 yield node
             elif 'link' in link:
                 raise Exception('Decoder attempted to read output with a compressed ExternalNode. Bad Encoder?')
@@ -202,6 +181,8 @@ class OutputNodeDecoder:
                     link['name'],
                     link['description'] if 'description' in link else None
                 )
+                if 'value' in link:
+                    node.set_value(link['value'])
                 yield node
 
     @staticmethod
@@ -252,6 +233,8 @@ class Node:
         self.description = description
         self.weight = None
         self.must = None
+        self.vrange = None
+        self.value = None
 
     def __eq__(self, other):
         logging.debug("Comparing %s with %s and root name %s vs %s" % (self.name, other.name, self.root.name, other.root.name))
@@ -263,13 +246,10 @@ class Node:
         return sel_str
 
     def tostr(self, node, sel_str, i=1):
-        sel_str += node.name + (' (( ' + node.description + ' )) ' if node.description else ' ')
+        sel_str += node.name + ((': %i' % node.value) if isinstance(node.value, int) else '') + (' (( ' + node.description + ' )) ' if node.description else ' ')
         if isinstance(node, LinkNode):
             for subnode in node.links:
                 sel_str = self.tostr(subnode, sel_str + '\n' + '\t'*i, i+1)
-        elif isinstance(node, ValueNode):
-            if node.value:
-                sel_str += ': %i' % node.value
         return sel_str
 
     def set_weight(self, weight):
@@ -281,6 +261,21 @@ class Node:
     def set_must(self, must):
         if must:
             self.must = must
+
+    def set_value(self, value):
+        if isinstance(value, int):
+            self.value = value
+        else:
+            raise Exception("Attempted to set non int value to node")
+
+    def set_vrange(self, vrange):
+        if isinstance(vrange, QRange):
+            self.vrange = vrange
+        else:
+            raise Exception("Attempted to set non QRange object as vrange")
+
+    def clear_vrange(self):
+        self.vrange = None
 
 
 class LinkNode(Node):
@@ -332,21 +327,3 @@ class ExternalNode(LinkNode):
 class LeafNode(Node):
     def __init__(self, root, name, description):
         super(LeafNode, self).__init__(root, name, description)
-
-
-class ValueNode(Node):
-    def __init__(self, root, name, description):
-        super(ValueNode, self).__init__(root, name, description)
-        self.qrange = None
-        self.value = None
-
-    def set_qrange(self, qrange):
-        if not isinstance(qrange, QRange):
-            raise Exception("received invalid qrange. not QRange object.")
-        self.qrange = qrange
-
-    def set_value(self, value):
-        if self.qrange.minv <= value <= self.qrange.maxv:
-            self.value = value
-        else:
-            raise Exception("ValueNode value must be within qrange")

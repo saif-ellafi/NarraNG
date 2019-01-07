@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Aeronautics Mechanic",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic. Repair aerospace vehicles.",
       "qrange": {
@@ -18,61 +18,45 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Aerospace",
-              "weight": 1.0
-            },
-            {
-              "name": "Fixed wing",
-              "weight": 1.0
-            },
-            {
-              "name": "LTA blimp",
-              "weight": 1.0
-            },
-            {
-              "name": "Rotary Wing",
-              "weight": 1.0
-            },
-            {
-              "name": "Tilt wing",
-              "weight": 1.0
-            },
-            {
-              "name": "Vector Thrust",
-              "weight": 1.0
-            }
-          ]
+          "name": "Aerospace",
+          "weight": 1.0
+        },
+        {
+          "name": "Fixed wing",
+          "weight": 1.0
+        },
+        {
+          "name": "LTA blimp",
+          "weight": 1.0
+        },
+        {
+          "name": "Rotary Wing",
+          "weight": 1.0
+        },
+        {
+          "name": "Tilt wing",
+          "weight": 1.0
+        },
+        {
+          "name": "Vector Thrust",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Animal Handling",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Charisma",
       "qrange": {
@@ -80,53 +64,37 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Specific Animal",
-              "weight": 1.0
-            },
-            {
-              "name": "Herding",
-              "weight": 1.0
-            },
-            {
-              "name": "Riding",
-              "weight": 1.0
-            },
-            {
-              "name": "Training",
-              "weight": 1.0
-            }
-          ]
+          "name": "Specific Animal",
+          "weight": 1.0
+        },
+        {
+          "name": "Herding",
+          "weight": 1.0
+        },
+        {
+          "name": "Riding",
+          "weight": 1.0
+        },
+        {
+          "name": "Training",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Armorer",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic. Build and maintain weapons and armors.",
       "qrange": {
@@ -134,65 +102,49 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Armor",
-              "weight": 1.0
-            },
-            {
-              "name": "Artillery",
-              "weight": 1.0
-            },
-            {
-              "name": "Explosives",
-              "weight": 1.0
-            },
-            {
-              "name": "Firearms",
-              "weight": 1.0
-            },
-            {
-              "name": "Melee Weapons",
-              "weight": 1.0
-            },
-            {
-              "name": "Heavy Weapons",
-              "weight": 1.0
-            },
-            {
-              "name": "Weapon Accessories",
-              "weight": 1.0
-            }
-          ]
+          "name": "Armor",
+          "weight": 1.0
+        },
+        {
+          "name": "Artillery",
+          "weight": 1.0
+        },
+        {
+          "name": "Explosives",
+          "weight": 1.0
+        },
+        {
+          "name": "Firearms",
+          "weight": 1.0
+        },
+        {
+          "name": "Melee Weapons",
+          "weight": 1.0
+        },
+        {
+          "name": "Heavy Weapons",
+          "weight": 1.0
+        },
+        {
+          "name": "Weapon Accessories",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Artisan",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
@@ -200,53 +152,37 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Cooking",
-              "weight": 1.0
-            },
-            {
-              "name": "Sculpting",
-              "weight": 1.0
-            },
-            {
-              "name": "Drawing",
-              "weight": 1.0
-            },
-            {
-              "name": "Carpentry",
-              "weight": 1.0
-            }
-          ]
+          "name": "Cooking",
+          "weight": 1.0
+        },
+        {
+          "name": "Sculpting",
+          "weight": 1.0
+        },
+        {
+          "name": "Drawing",
+          "weight": 1.0
+        },
+        {
+          "name": "Carpentry",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Automotive Mechanic",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic. Ground vehicles",
       "qrange": {
@@ -254,53 +190,37 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Walker",
-              "weight": 1.0
-            },
-            {
-              "name": "Hover",
-              "weight": 1.0
-            },
-            {
-              "name": "Tracked",
-              "weight": 1.0
-            },
-            {
-              "name": "Wheeled",
-              "weight": 1.0
-            }
-          ]
+          "name": "Walker",
+          "weight": 1.0
+        },
+        {
+          "name": "Hover",
+          "weight": 1.0
+        },
+        {
+          "name": "Tracked",
+          "weight": 1.0
+        },
+        {
+          "name": "Wheeled",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Biotechnology",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic. Doctors and scientists for growing organic body parts on bioware",
       "qrange": {
@@ -308,57 +228,41 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Bioinformatics",
-              "weight": 1.0
-            },
-            {
-              "name": "Bioware",
-              "weight": 1.0
-            },
-            {
-              "name": "Cloning",
-              "weight": 1.0
-            },
-            {
-              "name": "Gene Therapy",
-              "weight": 1.0
-            },
-            {
-              "name": "Vat Maintenance",
-              "weight": 1.0
-            }
-          ]
+          "name": "Bioinformatics",
+          "weight": 1.0
+        },
+        {
+          "name": "Bioware",
+          "weight": 1.0
+        },
+        {
+          "name": "Cloning",
+          "weight": 1.0
+        },
+        {
+          "name": "Gene Therapy",
+          "weight": 1.0
+        },
+        {
+          "name": "Vat Maintenance",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Chemistry",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -366,51 +270,35 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Analytical",
-              "weight": 1.0
-            },
-            {
-              "name": "Biochemistry",
-              "weight": 1.0
-            },
-            {
-              "name": "Inorganic",
-              "weight": 1.0
-            },
-            {
-              "name": "Organic",
-              "weight": 1.0
-            },
-            {
-              "name": "Physical",
-              "weight": 1.0
-            }
-          ]
+          "name": "Analytical",
+          "weight": 1.0
+        },
+        {
+          "name": "Biochemistry",
+          "weight": 1.0
+        },
+        {
+          "name": "Inorganic",
+          "weight": 1.0
+        },
+        {
+          "name": "Organic",
+          "weight": 1.0
+        },
+        {
+          "name": "Physical",
+          "weight": 1.0
         }
       ]
     },
@@ -419,14 +307,19 @@
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+        "minv": 0,
+        "maxv": 7,
+        "mode": 3.5
+      },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
     },
     {
       "name": "Cybercombat",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -434,21 +327,20 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
+          "name": "By target type",
           "bound": "single",
           "weight": 1.0,
-          "description": "f",
           "qrange": {
             "minv": 1,
             "maxv": 1,
@@ -456,40 +348,24 @@
           },
           "links": [
             {
-              "name": "None",
-              "weight": 3.0
+              "name": "Devices",
+              "weight": 1.0
             },
             {
-              "name": "By target type",
-              "bound": "single",
-              "weight": 1.0,
-              "qrange": {
-                "minv": 1,
-                "maxv": 1,
-                "mode": 1
-              },
-              "links": [
-                {
-                  "name": "Devices",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Grid",
-                  "weight": 1.0
-                },
-                {
-                  "name": "IC",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Personas",
-                  "weight": 1.0
-                },
-                {
-                  "name": "Sprites",
-                  "weight": 1.0
-                }
-              ]
+              "name": "Grid",
+              "weight": 1.0
+            },
+            {
+              "name": "IC",
+              "weight": 1.0
+            },
+            {
+              "name": "Personas",
+              "weight": 1.0
+            },
+            {
+              "name": "Sprites",
+              "weight": 1.0
             }
           ]
         }
@@ -497,7 +373,7 @@
     },
     {
       "name": "Cybertechnology",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic. Maintain or repair or build cybernetics",
       "qrange": {
@@ -505,53 +381,37 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Bodyware",
-              "weight": 1.0
-            },
-            {
-              "name": "Cyberlimbs",
-              "weight": 1.0
-            },
-            {
-              "name": "Headware",
-              "weight": 1.0
-            },
-            {
-              "name": "Repair",
-              "weight": 1.0
-            }
-          ]
+          "name": "Bodyware",
+          "weight": 1.0
+        },
+        {
+          "name": "Cyberlimbs",
+          "weight": 1.0
+        },
+        {
+          "name": "Headware",
+          "weight": 1.0
+        },
+        {
+          "name": "Repair",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Demolitions",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -559,100 +419,68 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Commercial explosives",
-              "weight": 1.0
-            },
-            {
-              "name": "Defusing",
-              "weight": 1.0
-            },
-            {
-              "name": "Improvised",
-              "weight": 1.0
-            },
-            {
-              "name": "Plastic Explosives",
-              "weight": 1.0
-            }
-          ]
+          "name": "Commercial explosives",
+          "weight": 1.0
+        },
+        {
+          "name": "Defusing",
+          "weight": 1.0
+        },
+        {
+          "name": "Improvised",
+          "weight": 1.0
+        },
+        {
+          "name": "Plastic Explosives",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Electronic Warfare",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "qrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Communications",
-              "weight": 1.0
-            },
-            {
-              "name": "Encryption",
-              "weight": 1.0
-            },
-            {
-              "name": "Jamming",
-              "weight": 1.0
-            },
-            {
-              "name": "Sensor operations",
-              "weight": 1.0
-            }
-          ]
+          "name": "Communications",
+          "weight": 1.0
+        },
+        {
+          "name": "Encryption",
+          "weight": 1.0
+        },
+        {
+          "name": "Jamming",
+          "weight": 1.0
+        },
+        {
+          "name": "Sensor operations",
+          "weight": 1.0
         }
       ]
     },
@@ -661,14 +489,19 @@
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+        "minv": 0,
+        "maxv": 7,
+        "mode": 3.5
+      },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
     },
     {
       "name": "Forgery",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -676,57 +509,41 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Counterfeiting",
-              "weight": 1.0
-            },
-            {
-              "name": "Credstick forgery",
-              "weight": 1.0
-            },
-            {
-              "name": "False ID",
-              "weight": 1.0
-            },
-            {
-              "name": "Image Doctoring",
-              "weight": 1.0
-            },
-            {
-              "name": "Paper Forgery",
-              "weight": 1.0
-            }
-          ]
+          "name": "Counterfeiting",
+          "weight": 1.0
+        },
+        {
+          "name": "Credstick forgery",
+          "weight": 1.0
+        },
+        {
+          "name": "False ID",
+          "weight": 1.0
+        },
+        {
+          "name": "Image Doctoring",
+          "weight": 1.0
+        },
+        {
+          "name": "Paper Forgery",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Hacking",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -734,47 +551,31 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Devices",
-              "weight": 1.0
-            },
-            {
-              "name": "Files",
-              "weight": 1.0
-            },
-            {
-              "name": "Hosts",
-              "weight": 1.0
-            },
-            {
-              "name": "Personas",
-              "weight": 1.0
-            }
-          ]
+          "name": "Devices",
+          "weight": 1.0
+        },
+        {
+          "name": "Files",
+          "weight": 1.0
+        },
+        {
+          "name": "Hosts",
+          "weight": 1.0
+        },
+        {
+          "name": "Personas",
+          "weight": 1.0
         }
       ]
     },
@@ -786,11 +587,16 @@
             "minv": 0,
             "maxv": 7,
             "mode": 3.5
-          }
+      },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
     },
     {
       "name": "Industrial Mechanic",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -798,55 +604,39 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Electrical Power Systems",
-              "weight": 1.0
-            },
-            {
-              "name": "Hydraulics",
-              "weight": 1.0
-            },
-            {
-              "name": "HVAC",
-              "weight": 1.0
-            },
-            {
-              "name": "Industrial Robotics",
-              "weight": 1.0
-            },
-            {
-              "name": "Structural",
-              "weight": 1.0
-            },
-            {
-              "name": "Welding",
-              "weight": 1.0
-            }
-          ]
+          "name": "Electrical Power Systems",
+          "weight": 1.0
+        },
+        {
+          "name": "Hydraulics",
+          "weight": 1.0
+        },
+        {
+          "name": "HVAC",
+          "weight": 1.0
+        },
+        {
+          "name": "Industrial Robotics",
+          "weight": 1.0
+        },
+        {
+          "name": "Structural",
+          "weight": 1.0
+        },
+        {
+          "name": "Welding",
+          "weight": 1.0
         }
       ]
     },
@@ -857,11 +647,16 @@
             "minv": 0,
             "maxv": 7,
             "mode": 3.5
-          }
+      },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
     },
     {
       "name": "Medicine",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -869,61 +664,45 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Cosmetic Surgery",
-              "weight": 1.0
-            },
-            {
-              "name": "Extendede Care",
-              "weight": 1.0
-            },
-            {
-              "name": "Implant Surgery",
-              "weight": 1.0
-            },
-            {
-              "name": "Magical Health",
-              "weight": 1.0
-            },
-            {
-              "name": "Organ Culture",
-              "weight": 1.0
-            },
-            {
-              "name": "Trauma Surgery",
-              "weight": 1.0
-            }
-          ]
+          "name": "Cosmetic Surgery",
+          "weight": 1.0
+        },
+        {
+          "name": "Extendede Care",
+          "weight": 1.0
+        },
+        {
+          "name": "Implant Surgery",
+          "weight": 1.0
+        },
+        {
+          "name": "Magical Health",
+          "weight": 1.0
+        },
+        {
+          "name": "Organ Culture",
+          "weight": 1.0
+        },
+        {
+          "name": "Trauma Surgery",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Nautical Mechanic",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -931,53 +710,37 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "Motorbat",
-              "weight": 1.0
-            },
-            {
-              "name": "Sailboat",
-              "weight": 1.0
-            },
-            {
-              "name": "Ship",
-              "weight": 1.0
-            },
-            {
-              "name": "Submarine",
-              "weight": 1.0
-            }
-          ]
+          "name": "Motorbat",
+          "weight": 1.0
+        },
+        {
+          "name": "Sailboat",
+          "weight": 1.0
+        },
+        {
+          "name": "Ship",
+          "weight": 1.0
+        },
+        {
+          "name": "Submarine",
+          "weight": 1.0
         }
       ]
     },
     {
       "name": "Navigation",
-      "bound": "all",
+      "bound": "single",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
@@ -985,51 +748,35 @@
         "maxv": 1,
         "mode": 1
       },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      },
       "links": [
         {
-          "name": "Rating",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 0,
-            "maxv": 7,
-            "mode": 3.5
-          }
+          "name": "None",
+          "weight": 3.0
         },
         {
-          "name": "Specialization",
-          "bound": "single",
-          "weight": 1.0,
-          "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
-          "links": [
-            {
-              "name": "None",
-              "weight": 3.0
-            },
-            {
-              "name": "AR Markers",
-              "weight": 1.0
-            },
-            {
-              "name": "Celestial",
-              "weight": 1.0
-            },
-            {
-              "name": "Compass",
-              "weight": 1.0
-            },
-            {
-              "name": "Map",
-              "weight": 1.0
-            },
-            {
-              "name": "GPS",
-              "weight": 1.0
-            }
-          ]
+          "name": "AR Markers",
+          "weight": 1.0
+        },
+        {
+          "name": "Celestial",
+          "weight": 1.0
+        },
+        {
+          "name": "Compass",
+          "weight": 1.0
+        },
+        {
+          "name": "Map",
+          "weight": 1.0
+        },
+        {
+          "name": "GPS",
+          "weight": 1.0
         }
       ]
     },
@@ -1041,7 +788,12 @@
             "minv": 0,
             "maxv": 7,
             "mode": 3.5
-          }
+      },
+      "vrange": {
+        "minv": 1,
+        "maxv": 7,
+        "mode": 3.5
+      }
     }
   ]
 }
