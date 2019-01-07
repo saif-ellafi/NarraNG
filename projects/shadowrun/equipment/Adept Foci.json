@@ -1,0 +1,30 @@
+{
+  "name": "Adept foci",
+  "weight": 1.0,
+  "bound": "many",
+  "qrange": {
+    "minv": 0,
+    "maxv": 2,
+    "mode": 0
+  },
+  "links": [
+    {
+      "name": "Qi Foci",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 7,
+        "mode": 2.0
+      }
+    },
+    {
+      "name": "Weapon Focus",
+      "weight": 0.7,
+      "qrange": {
+        "minv": 0,
+        "maxv": 7,
+        "mode": 2.0
+      }
+    }
+  ]
+}

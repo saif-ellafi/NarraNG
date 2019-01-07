@@ -1,0 +1,47 @@
+{
+  "name": "Vector Thrust Aircraft",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares Venture",
+      "weight": 1.0,
+      "description": "Small cheap env friendly smugglers and military. HND5 SPD7 ACC4 BOD16 ARM14 PIL4 SENS4 SEATS6"
+    },
+    {
+      "name": "Cascade Skraacha",
+      "weight": 1.0,
+      "description": "Small cheap env friendly smugglers and military. HND5 SPD7 ACC4 BOD16 ARM14 PIL4 SENS4 SEATS6"
+    },
+    {
+      "name": "Zhejiang Shenying Industries Raptor",
+      "weight": 1.0,
+      "description": "Small cheap env friendly smugglers and military. HND5 SPD7 ACC4 BOD16 ARM14 PIL4 SENS4 SEATS6"
+    },
+    {
+      "name": "GMC Banshee",
+      "weight": 1.0,
+      "description": "Lightning fast supersonic aircraft ionic t-bird and armor sensors military recoinnasance. HND6 SPD8 ACC4 BOD20 ARM18 PIL4 SENS6 SEATS12"
+    },
+    {
+      "name": "Aztechnology Lobo",
+      "weight": 1.0,
+      "description": "Lightning fast supersonic aircraft ionic t-bird and armor sensors military recoinnasance. HND6 SPD8 ACC4 BOD20 ARM18 PIL4 SENS6 SEATS12"
+    },
+    {
+      "name": "Federated Boeing Commuter",
+      "weight": 0.8,
+      "description": "Tilt wing passenger craft, inter city shuttle, corporate, aerospace. HND3 SPD3 ACC3 BOD16 ARM8 PIL3 SENS3 SEATS30"
+    },
+    {
+      "name": "Hughes-Aerospace Daytrader",
+      "weight": 0.8,
+      "description": "Tilt wing passenger craft, inter city shuttle, corporate, aerospace. HND3 SPD3 ACC3 BOD16 ARM8 PIL3 SENS3 SEATS30"
+    }
+  ]
+}

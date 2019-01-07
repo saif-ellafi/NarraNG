@@ -1,0 +1,27 @@
+{
+  "name": "Groundcraft",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Bike",
+      "weight": 1.0,
+      "link": "projects/shadowrun/vehicles/Bikes.json"
+    },
+    {
+      "name": "Car",
+      "weight": 1.0,
+      "link": "projects/shadowrun/vehicles/Cars.json"
+    },
+    {
+      "name": "Truck",
+      "weight": 0.8,
+      "link": "projects/shadowrun/vehicles/Trucks and Vans.json"
+    }
+  ]
+}

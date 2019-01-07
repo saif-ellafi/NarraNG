@@ -1,0 +1,43 @@
+{
+  "name": "Rotocraft",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares Dragon",
+      "weight": 1.0,
+      "description": "Versatile solid built for heavy cargo and military hybrid. HND4 SPD4 ACC3 BOD22 ARM8 PIL3 SENS3 SEATS18"
+    },
+    {
+      "name": "Hughes Stallion",
+      "weight": 1.0,
+      "description": "Versatile solid built for heavy cargo and military hybrid. HND4 SPD4 ACC3 BOD22 ARM8 PIL3 SENS3 SEATS18"
+    },
+    {
+      "name": "Northurp Wasp",
+      "weight": 0.8,
+      "description": "One man rotorcraft for policy and security, light armor and heavy weapon mount. HND5 SPD5 ACC3 BOD10 ARM8 PIL3 SENS3 SEATS1"
+    },
+    {
+      "name": "Nissan Hound",
+      "weight": 0.8,
+      "description": "bleeding edge transport for marines spec forces corporate. HND5 SPD4 ACC3 BOD16 ARM16 PIL2 SENS4 SEATS12"
+    },
+    {
+      "name": "Lockheed Kestrel",
+      "weight": 0.8,
+      "description": "One man rotorcraft for policy and security, light armor and heavy weapon mount. HND5 SPD5 ACC3 BOD10 ARM8 PIL3 SENS3 SEATS1"
+    },
+    {
+      "name": "Renraku Dragonfly",
+      "weight": 0.8,
+      "description": "One man rotorcraft for policy and security, light armor and heavy weapon mount. HND5 SPD5 ACC3 BOD10 ARM8 PIL3 SENS3 SEATS1"
+    }
+
+  ]
+}

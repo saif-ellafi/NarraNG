@@ -1,0 +1,28 @@
+{
+  "name": "Aircraft",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Rotorcraft",
+      "weight": 1.0,
+      "description": "projects/shadowrun/vehicles/Rotocraft.json",
+      "link": "projects/shadowrun/vehicles/Rotocraft.json"
+    },
+    {
+      "name": "Fixed wing",
+      "weight": 1.0,
+      "link": "projects/shadowrun/vehicles/Fixed-Wing Aircraft.json"
+    },
+    {
+      "name": "Vector thrusted",
+      "weight": 1.0,
+      "link": "projects/shadowrun/vehicles/Vector Thrust Aircraft.json"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "name": "Cars",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Chrysler-Nissan Jackrabbit",
+      "weight": 1.0,
+      "description": "Electric subcompact. HND4/3 SPD3 ACC2 BOD8 ARM4 PIL1 SENS2 SEATS2"
+    },
+    {
+      "name": "Peugeut 112",
+      "weight": 1.0,
+      "description": "Electric subcompact. HND4/3 SPD3 ACC2 BOD8 ARM4 PIL1 SENS2 SEATS2"
+    },
+    {
+      "name": "Opel Luna",
+      "weight": 1.0,
+      "description": "Electric subcompact. HND4/3 SPD3 ACC2 BOD8 ARM4 PIL1 SENS2 SEATS2"
+    },
+    {
+      "name": "Honda Spirit",
+      "weight": 1.0,
+      "description": "Three wheeled sleek electric car. HND3/2 SPD4 ACC2 BOD8 ARM6 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "Wuxing Breezer",
+      "weight": 1.0,
+      "description": "Three wheeled sleek electric car. HND3/2 SPD4 ACC2 BOD8 ARM6 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "Toyota Gazelle",
+      "weight": 1.0,
+      "description": "Three wheeled sleek electric car. HND3/2 SPD4 ACC2 BOD8 ARM6 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "Hyundai Shin-Hyung",
+      "weight": 1.0,
+      "description": "Cheap four door sports sedan. Customizable. HND5/4 SPD3 ACC6 BOD10 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "BMW 400GT",
+      "weight": 1.0,
+      "description": "Cheap four door sports sedan. Customizable. HND5/4 SPD3 ACC6 BOD10 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "GMC Commodore",
+      "weight": 1.0,
+      "description": "Cheap four door sports sedan. Customizable. HND5/4 SPD3 ACC6 BOD10 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "Eurocar Westwind 3000",
+      "weight": 0.6,
+      "description": "Sleek classic low slung speed machine, turbo charged. HND6/4 SPD7 ACC3 BOD10 ARM8 PIL3 SENS5 SEATS2"
+    },
+    {
+      "name": "Porsche Aguilar",
+      "weight": 0.6,
+      "description": "Sleek classic low slung speed machine, turbo charged. HND6/4 SPD7 ACC3 BOD10 ARM8 PIL3 SENS5 SEATS2"
+    },
+    {
+      "name": "Ferrari Diabolus",
+      "weight": 0.6,
+      "description": "Sleek classic low slung speed machine, turbo charged. HND6/4 SPD7 ACC3 BOD10 ARM8 PIL3 SENS5 SEATS2"
+    },
+    {
+      "name": "Ford Americar",
+      "weight": 1.0,
+      "description": "Four door sedan capacious storage not fast or sexy. HND4/3 SPD3 ACC2 BOD11 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "Mercury Comet",
+      "weight": 1.0,
+      "description": "Four door sedan capacious storage not fast or sexy. HND4/3 SPD3 ACC2 BOD11 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "Honda Citizen",
+      "weight": 1.0,
+      "description": "Four door sedan capacious storage not fast or sexy. HND4/3 SPD3 ACC2 BOD11 ARM6 PIL1 SENS2 SEATS4"
+    },
+    {
+      "name": "Saeder-Krupp-Bentley Concordat",
+      "weight": 0.7,
+      "description": "Luxury sedan stylish impressive, fast. HND5/4 SPD5 ACC2 BOD12 ARM12 PIL2 SENS4 SEATS4"
+    },
+    {
+      "name": "GMC Cadillac Nocturne",
+      "weight": 0.7,
+      "description": "Luxury sedan stylish impressive, fast. HND5/4 SPD5 ACC2 BOD12 ARM12 PIL2 SENS4 SEATS4"
+    },
+    {
+      "name": "BMW X89",
+      "weight": 0.7,
+      "description": "Luxury sedan stylish impressive, fast. HND5/4 SPD5 ACC2 BOD12 ARM12 PIL2 SENS4 SEATS4"
+    },
+    {
+      "name": "Mitsubishi Nightsky",
+      "weight": 0.5,
+      "description": "Seecure, high tech, limousine, executive. HND4/3 SPD4 ACC2 BOD15 ARM15 PIL3 SENS5 SEATS8"
+    },
+    {
+      "name": "Rolls Royce Phaeton",
+      "weight": 0.5,
+      "description": "Seecure, high tech, limousine, executive. HND4/3 SPD4 ACC2 BOD15 ARM15 PIL3 SENS5 SEATS8"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "name": "Combat Mage",
+  "name": "Occult Investigator",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -69,6 +69,11 @@
       "link": "projects/shadowrun/archetype stats/Magic Abilities Occult Investigator.json"
     },
     {
+      "name": "Magical Components",
+      "weight": 1.0,
+      "link": "projects/shadowrun/equipment/Magical Components.json"
+    },
+    {
       "name": "Weapons",
       "weight": 1.0,
       "link": "projects/shadowrun/archetype equipment/Weapons Combat Mage.json"
@@ -129,6 +134,16 @@
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Electronic Accessories.json"
+    },
+    {
+      "name": "Vehicle",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
+      "link": "projects/shadowrun/vehicles/Groundcraft.json"
     }
   ]
 }

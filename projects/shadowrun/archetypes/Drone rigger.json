@@ -134,6 +134,27 @@
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Electronic Warfare.json"
+    },
+    {
+      "name": "Vehicle",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
+      "link": "projects/shadowrun/vehicles/Groundcraft.json"
+    },
+    {
+      "name": "Drones",
+      "weight": 1.0,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 5,
+        "mode": 2
+      },
+      "link": "projects/shadowrun/vehicles/Drones.json"
     }
   ]
 }

@@ -1,0 +1,57 @@
+{
+  "name": "Boats",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Samuvani Criscraft Otter",
+      "weight": 1.0,
+      "description": "Mid sized pleasure boating fishing, fiber glass vessel open hull. HND4 SPD3 ACC2 BOD12 ARM6 PIL2 SENS2 SEATS8"
+    },
+    {
+      "name": "GMC Outrider",
+      "weight": 1.0,
+      "description": "Mid sized pleasure boating fishing, fiber glass vessel open hull. HND4 SPD3 ACC2 BOD12 ARM6 PIL2 SENS2 SEATS8"
+    },
+    {
+      "name": "Celebrian Nymph",
+      "weight": 1.0,
+      "description": "Mid sized pleasure boating fishing, fiber glass vessel open hull. HND4 SPD3 ACC2 BOD12 ARM6 PIL2 SENS2 SEATS8"
+    },
+    {
+      "name": "Yongkang Gala Trinity",
+      "weight": 0.8,
+      "description": "Fast moving speed boat as smuggler, long hull. HND5 SPD6 ACC3 BOD10 ARM6 PIL1 SENS1 SEATS3"
+    },
+    {
+      "name": "Zemlya-Poltava Crest",
+      "weight": 0.8,
+      "description": "Fast moving speed boat as smuggler, long hull. HND5 SPD6 ACC3 BOD10 ARM6 PIL1 SENS1 SEATS3"
+    },
+    {
+      "name": "Celebrian Dart",
+      "weight": 0.8,
+      "description": "Fast moving speed boat as smuggler, long hull. HND5 SPD6 ACC3 BOD10 ARM6 PIL1 SENS1 SEATS3"
+    },
+    {
+      "name": "Morgan Cutlass",
+      "weight": 0.5,
+      "description": "Patrol style boat heavy weapon mounts. HND5 SPD4 ACC2 BOD16 ARM10 PIL3 SENS5 SEATS6"
+    },
+    {
+      "name": "Surfstar Marine Seacop",
+      "weight": 0.5,
+      "description": "Patrol style boat heavy weapon mounts. HND5 SPD4 ACC2 BOD16 ARM10 PIL3 SENS5 SEATS6"
+    },
+    {
+      "name": "Messerschmidt-Kawasaki Harbor Sentry",
+      "weight": 0.5,
+      "description": "Patrol style boat heavy weapon mounts. HND5 SPD4 ACC2 BOD16 ARM10 PIL3 SENS5 SEATS6"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Fixed-Wing Aircraft",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Artemis Industries Nightwing",
+      "weight": 1.0,
+      "description": "Ultra light shrouded electric motor silent reduced heat. HND6 SPD3 ACC1 BOD4 ARM0 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "IFMU Spatz",
+      "weight": 1.0,
+      "description": "Ultra light shrouded electric motor silent reduced heat. HND6 SPD3 ACC1 BOD4 ARM0 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "Suzuki Wingman",
+      "weight": 1.0,
+      "description": "Ultra light shrouded electric motor silent reduced heat. HND6 SPD3 ACC1 BOD4 ARM0 PIL1 SENS1 SEATS1"
+    },
+    {
+      "name": "Cessna C750",
+      "weight": 1.0,
+      "description": "Dual prop civilian plane passengers light cargo surveillance. HND3 SPD5 ACC3 BOD18 ARM4 PIL2 SENS2 SEATS4"
+    },
+    {
+      "name": "Laer-Cessna ROver",
+      "weight": 1.0,
+      "description": "Dual prop civilian plane passengers light cargo surveillance. HND3 SPD5 ACC3 BOD18 ARM4 PIL2 SENS2 SEATS4"
+    },
+    {
+      "name": "Renault-Fiat Fokker Tundra-9",
+      "weight": 0.8,
+      "description": "Amphibious jet good for heavy cargo no airfield need. HND3 SPD4 ACC3 BOD20 ARM10 PIL3 SENS3 SEATS24"
+    },
+    {
+      "name": "Airbus JPFB-03",
+      "weight": 0.8,
+      "description": "Amphibious jet good for heavy cargo no airfield need. HND3 SPD4 ACC3 BOD20 ARM10 PIL3 SENS3 SEATS24"
+    },
+    {
+      "name": "Toyota TX13",
+      "weight": 0.8,
+      "description": "Amphibious jet good for heavy cargo no airfield need. HND3 SPD4 ACC3 BOD20 ARM10 PIL3 SENS3 SEATS24"
+    }
+  ]
+}

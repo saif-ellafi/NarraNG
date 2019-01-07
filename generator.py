@@ -22,7 +22,7 @@ class Generator:
             qrange_minv = 1
         else:
             qrange_minv = None
-        while not qrange_minv:
+        while not qrange_minv and not isinstance(qrange_minv, int):
             a = input("QRange min (1)\n>> ")
             if not a:
                 qrange_minv = 1
@@ -103,6 +103,7 @@ class Generator:
             a = input("Node must always be? y/n (n)\n>> ")
             if not a:
                 must = False
+                break
             elif a == '#':
                 must = '#'
             else:
@@ -110,6 +111,7 @@ class Generator:
                     must = True
                 elif a == 'n':
                     must = False
+                    break
                 else:
                     continue
         return must

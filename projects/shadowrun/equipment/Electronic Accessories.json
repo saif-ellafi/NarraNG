@@ -28,8 +28,7 @@
     },
     {
       "name": "Satellite link",
-      "weight": 0.6,
-      "description": "f"
+      "weight": 0.6
     },
     {
       "name": "Simrig",

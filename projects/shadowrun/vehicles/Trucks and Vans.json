@@ -1,0 +1,72 @@
+{
+  "name": "Trucks and Vans",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Toyota Gopher",
+      "weight": 1.0,
+      "description": "Classic pickup off-road suspension. HND5/5 SPD4 ACC2 BOD14 ARM10 PIL1 SENS2 SEATS3"
+    },
+    {
+      "name": "Gaz P-179",
+      "weight": 1.0,
+      "description": "Classic pickup off-road suspension. HND5/5 SPD4 ACC2 BOD14 ARM10 PIL1 SENS2 SEATS3"
+    },
+    {
+      "name": "Wuxing Peng You 4x4",
+      "weight": 1.0,
+      "description": "Classic pickup off-road suspension. HND5/5 SPD4 ACC2 BOD14 ARM10 PIL1 SENS2 SEATS3"
+    },
+    {
+      "name": "GMC Bulldog Step-Van",
+      "weight": 1.0,
+      "description": "Capacious armored van for logistics and security. HND3/3 SPD3 ACC1 BOD16 ARM12 PIL1 SENS2 SEATS6"
+    },
+    {
+      "name": "Renault-Fiat Eurovan",
+      "weight": 1.0,
+      "description": "Capacious armored van for logistics and security. HND3/3 SPD3 ACC1 BOD16 ARM12 PIL1 SENS2 SEATS6"
+    },
+    {
+      "name": "Aztechnology Governor",
+      "weight": 1.0,
+      "description": "Capacious armored van for logistics and security. HND3/3 SPD3 ACC1 BOD16 ARM12 PIL1 SENS2 SEATS6"
+    },
+    {
+      "name": "Rover Model 2072",
+      "weight": 0.6,
+      "description": "Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6"
+    },
+    {
+      "name": "Ares Humvee",
+      "weight": 0.6,
+      "description": "Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6"
+    },
+    {
+      "name": "Toyota Coaster",
+      "weight": 0.6,
+      "description": "Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6"
+    },
+    {
+      "name": "Ares Roadmaster",
+      "weight": 0.8,
+      "description": "Armored car. HND3/3 SPD3 ACC1 BOD18 ARM18 PIL3 SENS3 SEATS8"
+    },
+    {
+      "name": "Espirit Industries Sororita",
+      "weight": 0.8,
+      "description": "Armored car. HND3/3 SPD3 ACC1 BOD18 ARM18 PIL3 SENS3 SEATS8"
+    },
+    {
+      "name": "Renraku Kamekichi",
+      "weight": 0.8,
+      "description": "Armored car. HND3/3 SPD3 ACC1 BOD18 ARM18 PIL3 SENS3 SEATS8"
+    }
+  ]
+}

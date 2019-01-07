@@ -1,0 +1,127 @@
+{
+  "name": "Drones",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Microdrone",
+      "weight": 0.6,
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Shiawase Kanmushi",
+          "weight": 1.0,
+          "description": "Four legged bug crawler natural insect crawling walls ceilings. HND4 SPD2 ACC1 BOD0 ARM0 PIL3 SENS3"
+        },
+        {
+          "name": "Sikorsky-Bell Microskimmer",
+          "weight": 1.0,
+          "description": "Quiet durable disc shapped skimmer like frisbee skim over water. HND3 SPD3 ACC1 BOD0 ARM0 PIL3 SENS3"
+        }
+      ]
+    },
+    {
+      "name": "Minidrone",
+      "weight": 0.8,
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Horizon Flying Eye",
+          "weight": 1.0,
+          "description": "Spherical flying drone omnidirectional thrust nozzles with flash pak and some grenade if extra pay. HND4 SPD3 ACC2 BOD1 ARM0 PIL3 SENS3"
+        },
+        {
+          "name": "MCT Fly-Spy",
+          "weight": 1.0,
+          "description": "Mitsuhama drone insect size eye in the sky role. HND4 SPD3 ACC2 BOD01 ARM0 PIL3 SENS3"
+        }
+      ]
+    },
+    {
+      "name": "Small drone",
+      "weight": 1.0,
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Aztechnology Crawler",
+          "weight": 1.0,
+          "description": "Handles staisr and obstaciles operate remote snooper. HND4 SPD3 ACC1 BOD3 ARM3 PIL4 SENS3"
+        },
+        {
+          "name": "Lockheed Optic-X2",
+          "weight": 1.0,
+          "description": "Vector thrust sealth craft cyberdeck size like hawk radar system hard detected. HND4 SPD4 ACC3 BOD2 ARM2 PIL3 SENS3"
+        }
+      ]
+    },
+    {
+      "name": "Medium drone",
+      "weight": 1.0,
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Ares Duelist",
+          "weight": 1.0,
+          "description": "Anthromorph walker drone stylized samurai armor worn. HND3 SPD3 ACC1 BOD4 ARM4 PIL3 SENS3"
+        },
+        {
+          "name": "GM-Nissan Doberman",
+          "weight": 1.0,
+          "description": "Patrol Drone designated area day or night. HND5 SPD3 ACC1 BOD4 ARM4 PIL3 SENS3"
+        },
+        {
+          "name": "MCT-Nissan Roto-Drone",
+          "weight": 1.0,
+          "description": "Rotor wing drone for weapon integrations. HND4 SPD4 ACC2 BOD4 ARM4 PIL3 SENS3"
+        }
+      ]
+    },
+    {
+      "name": "Large drone",
+      "weight": 0.8,
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Cyberspace Designs Dalmatian",
+          "weight": 1.0,
+          "description": "Vector thrust recon drone hovers used for security. HND5 SPD5 ACC3 BOD5 ARM5 PIL3 SENS3"
+        },
+        {
+          "name": "Steel Lynx Combat Drone",
+          "weight": 1.0,
+          "description": "Ground combat machine for wheels and heavy weapon mount. HND5 SPD4 ACC2 BOD6 ARM12 PIL3 SENS3"
+        }
+      ]
+    }
+  ]
+}

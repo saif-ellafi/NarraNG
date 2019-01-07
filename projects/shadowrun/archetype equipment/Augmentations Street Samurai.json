@@ -51,7 +51,7 @@
       "links": [
         {
           "name": "Standard",
-          "weight": 1.0
+          "weight": 5.0
         },
         {
           "name": "Alphaware",

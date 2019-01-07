@@ -1,5 +1,5 @@
 {
-  "name": "Street Samurai",
+  "name": "Weapon Specialist",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -124,6 +124,16 @@
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/Electronic Accessories.json"
+    },
+    {
+      "name": "Vehicle",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
+      "link": "projects/shadowrun/vehicles/Groundcraft.json"
     }
   ]
 }

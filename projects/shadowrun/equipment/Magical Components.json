@@ -1,0 +1,290 @@
+{
+  "name": "Magical Components",
+  "weight": 1.0,
+  "bound": "many",
+  "qrange": {
+    "minv": 0,
+    "maxv": 3,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Reagents",
+      "weight": 3.0,
+      "description": "Reagents are used in all schools toreplacae limits with orichalcum drams, reduce drain or create foci",
+      "qrange": {
+        "minv": 1,
+        "maxv": 30,
+        "mode": 6.0
+      }
+    },
+    {
+      "name": "Focus",
+      "weight": 1.0,
+      "description": "Mana expelling objects that act as astral conducts. They must be bonded to the user and can take many forms. It lives with user's living and must be concious.",
+      "bound": "single",
+      "qrange": {
+        "minv": 1,
+        "maxv": 1,
+        "mode": 1
+      },
+      "links": [
+        {
+          "name": "Enchanting",
+          "weight": 1.0,
+          "description": "Alchemical or disenchanting focus. Adds force to test",
+          "bound": "all",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Force",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 6,
+                "mode": 2.0
+              }
+            },
+            {
+              "name": "Shape",
+              "weight": 1.0,
+              "bound": "many",
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 2.0
+              },
+              "links": [
+                {
+                  "name": "Pendant or collar",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Ring",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Gloves",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Hair item",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Neck item",
+                  "weight": 1.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Metamagic",
+          "weight": 0.5,
+          "description": "Advanced initiate mage metamagic",
+          "bound": "all",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Type",
+              "weight": 1.0,
+              "bound": "single",
+              "qrange": {
+                "minv": 1,
+                "maxv": 1,
+                "mode": 1
+              },
+              "links": [
+                {
+                  "name": "Centering focus",
+                  "weight": 1.0,
+                  "description": "add force on drain resistance tests"
+                },
+                {
+                  "name": "Flexible signature",
+                  "weight": 1.0,
+                  "description": "Adds force to treshold to opposite assension"
+                },
+                {
+                  "name": "Masking focus",
+                  "weight": 1.0,
+                  "description": "Adds force to assensing resistance tests"
+                },
+                {
+                  "name": "Spell shaping focus",
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "name": "Force",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 7,
+                "mode": 2.0
+              }
+            },
+            {
+              "name": "Shape",
+              "weight": 1.0,
+              "bound": "many",
+              "qrange": {
+                "minv": 1,
+                "maxv": 3,
+                "mode": 1.0
+              },
+              "links": [
+                {
+                  "name": "Cloak",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Hood",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Special Hair",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Amulet",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Brasalet",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Legwear",
+                  "weight": 1.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Foci",
+          "weight": 1.0,
+          "description": "Temporarily adds force to rating in any Magic involved test. Usually amulet or ring",
+          "qrange": {
+            "minv": 1,
+            "maxv": 7,
+            "mode": 2.0
+          }
+        },
+        {
+          "name": "Spell Foci",
+          "weight": 1.0,
+          "bound": "all",
+          "description": "Must be for only a specific school of magic",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Type",
+              "weight": 1.0,
+              "bound": "single",
+              "qrange": {
+                "minv": 1,
+                "maxv": 1,
+                "mode": 1
+              },
+              "links": [
+                {
+                  "name": "Counterspelling",
+                  "weight": 1.0
+                },
+                {
+                  "name": "Ritual spellcasting",
+                  "weight": 1.0,
+                  "description": "Adds force to die in tests"
+                },
+                {
+                  "name": "Sustaining",
+                  "weight": 1.0,
+                  "description": "reduces sustaining penality by force"
+                },
+                {
+                  "name": "Spellcasting",
+                  "weight": 1.0,
+                  "description": "Adds force to dice"
+                }
+              ]
+            },
+            {
+              "name": "Force",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 7,
+                "mode": 2.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Spirit Foci",
+          "weight": 1.0,
+          "description": "Attuned to specific type of spirit",
+          "bound": "all",
+          "qrange": {
+            "minv": 1,
+            "maxv": 1,
+            "mode": 1
+          },
+          "links": [
+            {
+              "name": "Force",
+              "weight": 1.0,
+              "qrange": {
+                "minv": 1,
+                "maxv": 7,
+                "mode": 2.0
+              }
+            },
+            {
+              "name": "Type",
+              "weight": 1.0,
+              "bound": "single",
+              "qrange": {
+                "minv": 1,
+                "maxv": 1,
+                "mode": 1
+              },
+              "links": [
+                {
+                  "name": "Summoning",
+                  "weight": 1.0,
+                  "description": "adds force to dice in summoning attempt"
+                },
+                {
+                  "name": "Banishing",
+                  "weight": 1.0,
+                  "description": "adds force to dice in banishing attempts"
+                },
+                {
+                  "name": "Binding",
+                  "weight": 1.0,
+                  "description": "Adds force to dice in binding attempts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

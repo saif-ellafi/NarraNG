@@ -1,5 +1,5 @@
 {
-  "name": "Drone Rigger",
+  "name": "Smuggler",
   "bound": "all",
   "weight": 1.0,
   "qrange": {
@@ -134,6 +134,16 @@
         "mode": 2.5
       },
       "link": "projects/shadowrun/equipment/Electronic Warfare.json"
+    },
+    {
+      "name": "Vehicle",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
+      "link": "projects/shadowrun/vehicles/Groundcraft.json"
     }
   ]
 }

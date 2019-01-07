@@ -144,6 +144,15 @@
         "mode": 1
       },
       "link": "projects/shadowrun/equipment/RFID Tags.json"
+    },{
+      "name": "Vehicle",
+      "weight": 1.0,
+      "qrange": {
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
+      "link": "projects/shadowrun/vehicles/Groundcraft.json"
     }
   ]
 }

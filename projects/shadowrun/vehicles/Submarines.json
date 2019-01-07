@@ -1,0 +1,42 @@
+{
+  "name": "Submarines",
+  "weight": 1.0,
+  "bound": "single",
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Proteus Lamprey",
+      "weight": 1.0,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD2 ACC1 BOD6 ARM6 PIL1 SENS3 SEATS4"
+    },
+    {
+      "name": "Kalmaar Seefuchs",
+      "weight": 1.0,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD2 ACC1 BOD6 ARM6 PIL1 SENS3 SEATS4"
+    },
+    {
+      "name": "Toyota TLM-2",
+      "weight": 1.0,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD2 ACC1 BOD6 ARM6 PIL1 SENS3 SEATS4"
+    },
+    {
+      "name": "Vulkan Electronaut",
+      "weight": 0.7,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD3 ACC1 BOD12 ARM10 PIL4 SENS4 SEATS2"
+    },
+    {
+      "name": "Proteus Explorer",
+      "weight": 0.7,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD3 ACC1 BOD12 ARM10 PIL4 SENS4 SEATS2"
+    },
+    {
+      "name": "Aztechnology Jade Diver",
+      "weight": 0.7,
+      "description": "Inspection and transport and scuba passengers used for spec op forces. HND3 SPD3 ACC1 BOD12 ARM10 PIL4 SENS4 SEATS2"
+    }
+  ]
+}

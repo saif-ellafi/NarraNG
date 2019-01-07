@@ -1,0 +1,76 @@
+{
+  "name": "Mentor spirit",
+  "weight": 1.0,
+  "bound": "many",
+  "qrange": {
+    "minv": 0,
+    "maxv": 1,
+    "mode": 0
+  },
+  "links": [
+    {
+      "name": "Cat",
+      "weight": 1.0
+    },
+    {
+      "name": "Dog",
+      "weight": 1.0
+    },
+    {
+      "name": "Beaer",
+      "weight": 1.0
+    },
+    {
+      "name": "Draagonslayer",
+      "weight": 1.0
+    },
+    {
+      "name": "Eagle",
+      "weight": 1.0
+    },
+    {
+      "name": "Fire-bringer",
+      "weight": 1.0
+    },
+    {
+      "name": "Mountain",
+      "weight": 1.0
+    },
+    {
+      "name": "Rat",
+      "weight": 1.0
+    },
+    {
+      "name": "Raven",
+      "weight": 1.0
+    },
+    {
+      "name": "Sea",
+      "weight": 1.0
+    },
+    {
+      "name": "Seducer",
+      "weight": 1.0
+    },
+    {
+      "name": "Shark",
+      "weight": 1.0
+    },
+    {
+      "name": "Snake",
+      "weight": 1.0
+    },
+    {
+      "name": "Thunderbird",
+      "weight": 1.0
+    },
+    {
+      "name": "Wise Warrior",
+      "weight": 1.0
+    },
+    {
+      "name": "Wolf",
+      "weight": 1.0
+    }
+  ]
+}
