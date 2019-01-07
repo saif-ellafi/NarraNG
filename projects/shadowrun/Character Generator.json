@@ -1,6 +1,6 @@
 {
   "name": "Character Generator",
-  "bound": "all",
+  "bound": "single",
   "weight": 1.0,
   "qrange": {
     "minv": 1,
@@ -8,87 +8,75 @@
     "mode": 1
   },
   "links": [
-    {
-      "name": "Archetype",
-      "bound": "single",
-      "weight": 1.0,
-      "qrange": {
-        "minv": 1,
-        "maxv": 1,
-        "mode": 1
+      {
+        "name": "Brawling adept",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Brawling adept.json"
       },
-      "links": [
-        {
-          "name": "Brawling adept",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Brawling adept.json"
-        },
-        {
-          "name": "Combat mage",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Combat mage.json"
-        },
-        {
-          "name": "Covert specialist",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Covert specialist.json"
-        },
-        {
-          "name": "Decker",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Decker.json"
-        },
-        {
-          "name": "Drone rigger",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Drone rigger.json"
-        },
-        {
-          "name": "Face",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Face.json"
-        },
-        {
-          "name": "Gunslinger adept",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Gunslinger adept.json"
-        },
-        {
-          "name": "Occult Investigator",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Occult Investigator.json"
-        },
-        {
-          "name": "Smuggler",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Smuggler.json"
-        },
-        {
-          "name": "Sprawl Ganger",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Sprawl Ganger.json"
-        },
-        {
-          "name": "Street samurai",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Street Samurai.json"
-        },
-        {
-          "name": "Street Shaman",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Street Shaman.json"
-        },
-        {
-          "name": "Tank",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Tank.json"
-        },
-        {
-          "name": "Weapon Specialist",
-          "weight": 1.0,
-          "link": "projects/shadowrun/archetypes/Weapon Specialist.json"
-        }
-      ]
-    }
-  ]
+      {
+        "name": "Combat mage",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Combat mage.json"
+      },
+      {
+        "name": "Covert specialist",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Covert specialist.json"
+      },
+      {
+        "name": "Decker",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Decker.json"
+      },
+      {
+        "name": "Drone rigger",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Drone rigger.json"
+      },
+      {
+        "name": "Face",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Face.json"
+      },
+      {
+        "name": "Gunslinger adept",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Gunslinger adept.json"
+      },
+      {
+        "name": "Occult Investigator",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Occult Investigator.json"
+      },
+      {
+        "name": "Smuggler",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Smuggler.json"
+      },
+      {
+        "name": "Sprawl Ganger",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Sprawl Ganger.json"
+      },
+      {
+        "name": "Street samurai",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Street Samurai.json"
+      },
+      {
+        "name": "Street Shaman",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Street Shaman.json"
+      },
+      {
+        "name": "Tank",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Tank.json"
+      },
+      {
+        "name": "Weapon Specialist",
+        "weight": 1.0,
+        "link": "projects/shadowrun/archetypes/Weapon Specialist.json"
+      }
+    ]
 }

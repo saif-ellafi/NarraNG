@@ -49,21 +49,31 @@ class OutputNodeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, ExternalNode):
             raise Exception("output encoder received an uncompressed ExternalNode")
-        base = {
-            'name': o.name
-        }
-        if o.description:
-            base['description'] = o.description
         elif isinstance(o, LinkNode):
+            base = {
+                'name': o.name
+            }
+            if o.description:
+                base['description'] = o.description
             if o.project:
                 base['project'] = o.project
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
+            base = {
+                'name': o.name
+            }
+            if o.description:
+                base['description'] = o.description
             return base
         elif isinstance(o, ValueNode):
             if o.value is None or not isinstance(o.value, int):
                 raise Exception("Invalid ValueNode value %s" % str(o.value))
+            base = {
+                'name': o.name
+            }
+            if o.description:
+                base['description'] = o.description
             base['value'] = o.value
             return base
         else:
@@ -165,6 +175,7 @@ class OutputNodeDecoder:
 
     @staticmethod
     def decode_listlinks(links, root):
+        print('decoding listlink %s for root %s' % (str(links), str(root)))
         for link in links:
             if 'links' in link:
                 node = LinkNode(

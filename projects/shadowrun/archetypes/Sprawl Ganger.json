@@ -51,7 +51,7 @@
     {
       "name": "Combat Skills",
       "weight": 1.0,
-      "link": "projects/shadowrun/archetype stats/Combat Skills Sprawl Ganger.json"
+      "link": "projects/shadowrun/archetype stats/Combat Skills Tank.json"
     },
     {
       "name": "Vehicle Skills",

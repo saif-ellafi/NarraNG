@@ -1,87 +1,88 @@
 Duncan the Warrior 
 	Metatype 
-		Human 
+		Ork 
 	Personality 
-		Very easily distracted 
+		Way he talks 
+			Shouting 
 		Flirtatious with anyone or everyone 
+		Hair-trigger temper 
 	Appearance 
-		Unique dress style 
-		Obvious or distinctive cybernetics 
+		Unique hair style 
 	Attributes 
-		Body : 6
-		Agility : 6
+		Body : 4
+		Agility : 5
 		Reaction : 4
-		Strength : 3
+		Strength : 5
 		Willpower : 4
-		Logic : 1
-		Intuition : 4
-		Charisma : 7
-		Edge : 1
+		Logic : 2
+		Intuition : 5
+		Charisma : 3
+		Edge : 3
 		Magic 
 	Qualities 
 		Positive 
-			Natural Immunity (( Immune to a single disease or toxin )) 
-			Toughness (( +1 dice for body in damage soak )) 
+			Natural Hardening (( Filters 1 biofeedback damage )) 
+			Quick Healer (( +2 dice on healing tests )) 
 		Negative 
-			Codeblock (( -2 dice on some matrix action )) 
-			Scorched (( On a glitch during VR or BTL something bad happens psychologically to character )) 
-			Ork Poser 
+			Uneducated (( Bad at technical and knowledge skills. Difficult to learn. Higher notoriety )) 
+			Allergy 
+			Bad Rep (( Notorious for doing something wrong )) 
 	Physical Skills 
 		Disguise (( Intuition )) 
 			Rating : 2
 			Specialization 
-				Cosmetic 
+				None 
 		Diving (( Body )) 
 			Rating : 3
 			Specialization 
 				None 
 		Escape Artist (( Agility )) 
-			Rating : 1
+			Rating : 2
 			Specialization 
 				Contortionism 
 		Free-Fall (( Body )) 
-			Rating : 3
+			Rating : 2
 			Specialization 
-				Break-Fall 
+				Static Line 
 		Gymnastics (( Agility )) 
 			Rating : 2
 			Specialization 
-				None 
+				Rolling 
 		Palming (( Agility )) 
-			Rating : 1
+			Rating : 2
 			Specialization 
-				None 
+				Pilfering 
 		Perception (( Intuition )) 
-			Rating : 4
-			Specialization 
-				Scent 
-		Running (( Strength )) 
 			Rating : 3
+			Specialization 
+				Hearing 
+		Running (( Strength )) 
+			Rating : 2
 			Specialization 
 				None 
 		Sneaking (( Agility )) 
+			Rating : 5
+			Specialization 
+				By location (( Jungle, Urban, Desert )) 
+		Survival (( Willpower )) 
 			Rating : 3
 			Specialization 
 				None 
-		Survival (( Willpower )) 
-			Rating : 4
+		Swimming (( Strength )) 
+			Rating : 3
 			Specialization 
 				None 
-		Swimming (( Strength )) 
-			Rating : 5
-			Specialization 
-				Long Distance 
 		Tracking (( Intuition )) 
-			Rating : 4
-			Specialization 
-				Jungle 
-	Technical Skills 
-		Aeronautics Mechanic (( Logic. Repair aerospace vehicles. )) 
 			Rating : 2
 			Specialization 
-				Tilt wing 
-		Animal Handling (( Charisma )) 
+				None 
+	Technical Skills 
+		Aeronautics Mechanic (( Logic. Repair aerospace vehicles. )) 
 			Rating : 1
+			Specialization 
+				None 
+		Animal Handling (( Charisma )) 
+			Rating : 2
 			Specialization 
 				None 
 		Armorer (( Logic. Build and maintain weapons and armors. )) 
@@ -89,63 +90,64 @@ Duncan the Warrior
 			Specialization 
 				Weapon Accessories 
 		Artisan (( Intuition )) 
-			Rating 
-			Specialization 
-				Sculpting 
-		Automotive Mechanic (( Logic. Ground vehicles )) 
 			Rating : 1
 			Specialization 
-				None 
+				Drawing 
+		Automotive Mechanic (( Logic. Ground vehicles )) 
+			Rating : 3
+			Specialization 
+				Tracked 
 		Biotechnology (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
 			Rating 
 			Specialization 
-				Gene Therapy 
+				Cloning 
 		Chemistry (( Logic )) 
 			Rating 
 			Specialization 
-				Physical 
-		Computer (( Logic )) : 1
+				Analytical 
+		Computer (( Logic )) : 4
 		Cybercombat (( Logic )) 
 			Rating 
 			Specialization (( f )) 
-				None 
+				By target type 
+					Personas 
 		Cybertechnology (( Logic. Maintain or repair or build cybernetics )) 
 			Rating 
 			Specialization 
-				Headware 
+				Cyberlimbs 
 		Demolitions (( Logic )) 
-			Rating : 2
+			Rating : 1
 			Specialization 
 				None 
 		Electronic Warfare 
 			Rating 
 			Specialization 
-				None 
-		First Aid (( Logic )) : 5
+				Communications 
+		First Aid (( Logic )) : 3
 		Forgery (( Logic )) 
 			Rating : 1
 			Specialization 
-				Counterfeiting 
+				False ID 
 		Hacking (( Logic )) 
 			Rating 
 			Specialization 
-				Devices 
-		Hardware (( Logic )) : 3
+				Hosts 
+		Hardware (( Logic )) : 1
 		Industrial Mechanic (( Logic )) 
 			Rating : 1
 			Specialization 
-				None 
+				Hydraulics 
 		Locksmith : 2
 		Medicine (( Logic )) 
 			Rating : 2
 			Specialization 
-				Organ Culture 
+				None 
 		Nautical Mechanic (( Logic )) 
 			Rating 
 			Specialization 
-				Motorbat 
+				None 
 		Navigation (( Intuition )) 
-			Rating : 1
+			Rating : 2
 			Specialization 
 				GPS 
 		Software (( Logic )) : 3
@@ -155,82 +157,80 @@ Duncan the Warrior
 			Specialization 
 				None 
 		Etiquette 
-			Rating : 4
-			Specialization 
-				By culture 
-					Media 
-		Impersonation 
 			Rating : 2
+			Specialization 
+				None 
+		Impersonation 
+			Rating : 1
 			Specialization 
 				By metatype 
 					Elf 
 		Instruction 
-			Rating : 2
-			Specialization 
-				By skill or knowledge 
-					Academic 
-		Intimidation 
-			Rating : 4
-			Specialization 
-				Mental 
-		Leadership 
 			Rating : 3
 			Specialization 
 				None 
-		Negotiation 
+		Intimidation 
+			Rating : 1
+			Specialization 
+				None 
+		Leadership 
 			Rating : 2
 			Specialization 
-				Bargaining 
+				Rally 
+		Negotiation 
+			Rating : 1
+			Specialization 
+				Contracts 
 		Performance 
 			Rating : 2
 			Specialization 
 				None 
 	Combat Skills 
 		Archery 
-			Rating : 4
+			Rating : 7
 			Specialization 
-				None 
+				Slingshot 
 		Automatics 
-			Rating : 4
-			Specialization 
-				Assault Rifles 
-		Blades 
-			Rating : 6
+			Rating : 1
 			Specialization 
 				None 
+		Blades 
+			Rating : 4
+			Specialization 
+				Parrying 
 		Clubs 
 			Rating : 3
 			Specialization 
-				None 
+				Parrying 
 		Heavy Weapons 
-			Rating : 5
+			Rating : 3
 			Specialization 
-				None 
+				Rocket Launchers 
 		Longarms 
-			Rating : 5
+			Rating : 3
 			Specialization 
 				None 
 		Pistols 
-			Rating : 5
-			Specialization 
-				None 
-		Throwing Weapons 
-			Rating : 5
-			Specialization 
-				Blades 
-		Unarmed Combat 
 			Rating : 4
 			Specialization 
-				Cyber Implants 
+				Revolvers 
+		Throwing Weapons 
+			Rating : 6
+			Specialization 
+				None 
+		Unarmed Combat 
+			Rating : 6
+			Specialization 
+				Blocking 
 	Vehicle Skills 
 		Gunnery 
-			Rating : 3
+			Rating : 5
 			Specialization 
 				Artillery 
 		Pilot Aerospace 
 			Rating 
 			Specialization 
-				Launch Craft 
+				None 
 		Pilot Aircraft 
 			Rating 
 			Specialization 
@@ -238,33 +238,61 @@ Duncan the Warrior
 		Pilot Walker 
 			Rating 
 			Specialization 
-				None 
+				Remote 
 		Pilot Ground Craft 
-			Rating : 2
+			Rating : 3
 			Specialization 
-				Hovercraft 
+				None 
 		Pilot Watercraft 
-			Rating : 1
+			Rating 
 			Specialization 
-				Ship 
+				None 
 	Weapons 
-		Melee Weapons 
-			Forearm snap-blades (( Acc4 Str+2P -2AP )) 
 		Shotguns 
-			Enfield AS-7 (( Forbidden. Acc4/5 13P -1AP SA/BF )) 
+			Defiance T-250 (( ACC4 10P AP-1 SS/SA )) 
+				Quick-draw holster (( -1 quick draw treshold )) 
+				Tripod (( Under mount. 6RC points. Wireless deploy as free )) 
+				Imaging Scope (( Top mount. Include micro camera and vision magnification, 3 capacity for vision enhancements. Wireless can share line of sight. )) 
+					Low-light vision 
+					Vision enhancement (( Improves limit on perception tests. Wireless adds to pool )) : 5
+		Heavy Pistols 
+			Remington Roomsweeper (( ACC4 7P -1AP SA )) 
+				Tripod (( Under mount. 6RC points. Wireless deploy as free )) 
+				Concealable Holster (( -1 conceal. Wireless -1 color camouflage conceal )) 
 				Bipod (( +2 RC. Wireless folding or deploying bipod is free action. )) 
-				Spare clip 
-				Airburst link (( Smartgun accessory reduces scatter )) 
-				Periscope (( Top mount. -3 to -2 penalty to target around corners. One vision enhancement. Wireless penalty is -1 )) 
+		Melee Weapons 
+			Staff (( Acc6 Reach2 STR+3P )) 
+			Extendable Baton (( Acc5 Reach1 STR+2P )) 
 	Augmentations 
+		Grade 
+			Standard 
+		Headware 
+			Data Lock (( It makes user a walking data safe. It is not wireless )) : 4
 		Cyberlimb 
-			Synthetic 
-				Hand 
-					Armor Enhancement : 3
-				Torso 
-					Agility Enhancement : 2
-					Heavy Cyber pistol (( 8P AP-1 )) 
-		Bodyware 
-			Dermal Plating (( Hard plastic and ceramic fiber plates are bonded to skin, clearly visible. Give bons armor. )) : 3
-		Eyeware 
-			Low Light vision 
+			Obvious 
+				Lower leg 
+					Strength Enhancement : 2
+	Commlink 
+		Sim module 
+			Cold-sim 
+		Model 
+			Transys Avalon (( DR6 )) 
+	Imaging device 
+		Vision enhancements 
+			Low-light vision 
+			Vision enhancement (( Improves limit on perception tests. Wireless adds to pool )) : 2
+			Image link (( AROs viewer, AR linker )) 
+			Flare compensation (( mitigates modifiers for glare and penalty from flash paks )) 
+		Periscope 
+	Armor 
+		Set 
+			Armor vest (( AR9 )) 
+		Mods 
+			Thermal Damping (( +rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection )) : 4
+			Shock Frills (( 10 charches, unarmed response electricity damage. Wireless active deactivate as free )) 
+	Electronic Accessories 
+		Trodes 
+		Biometric reader (( allows to lock devices with your biometric information )) 
+	Vehicle 
+		Bike 
+			Yamaha Growler (( Durable off-road bike. HND4/5 SPD3/4 ACC1 BOD5 ARM5 PIL1 SENS1 SEAT1 )) 

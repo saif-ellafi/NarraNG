@@ -15,7 +15,7 @@ class Common:
     PROJECTS_FOLDER = 'projects'
     OUTPUT_FOLDER = 'output'
 
-    LOG_LEVEL = logging.WARN
+    LOG_LEVEL = logging.DEBUG
 
     temp_entry = None
 
