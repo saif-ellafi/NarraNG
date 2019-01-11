@@ -15,7 +15,7 @@
     {
       "name": "Medkit",
       "weight": 3.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0
@@ -24,7 +24,7 @@
     {
       "name": "Antidote patch",
       "weight": 0.7,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -34,7 +34,7 @@
       "name": "Stim patch",
       "weight": 1.0,
       "description": "Removes stun boxes to rating temporarily",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0
@@ -44,7 +44,7 @@
       "name": "Tranq patch",
       "weight": 0.8,
       "description": "Inflict stun damage. Resist with body",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0

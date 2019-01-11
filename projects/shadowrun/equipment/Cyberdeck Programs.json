@@ -42,7 +42,7 @@
       "name": "Agent",
       "weight": 1.0,
       "description": "Agent",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2

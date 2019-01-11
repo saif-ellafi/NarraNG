@@ -32,7 +32,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -41,7 +41,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -50,7 +50,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -112,7 +112,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -121,7 +121,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -130,7 +130,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -140,7 +140,7 @@
               "name": "Hydraulic jacks",
               "weight": 1.0,
               "description": "Adds to limit of jumping and sprinting, and two percent jump distance. Wireless +1 dice including lifting",
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 6,
                 "mode": 2.0
@@ -186,7 +186,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -195,7 +195,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -204,7 +204,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -225,7 +225,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -234,7 +234,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -243,7 +243,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -264,7 +264,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -273,7 +273,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -282,7 +282,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -303,7 +303,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -312,7 +312,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -321,7 +321,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -342,7 +342,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -351,7 +351,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -360,7 +360,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -406,7 +406,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -415,7 +415,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -424,7 +424,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -457,7 +457,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -466,7 +466,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -475,7 +475,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -537,7 +537,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -546,7 +546,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -555,7 +555,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -565,7 +565,7 @@
               "name": "Hydraulic jacks",
               "weight": 1.0,
               "description": "Adds to limit of jumping and sprinting, and two percent jump distance. Wireless +1 dice including lifting",
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 6,
                 "mode": 2.0
@@ -611,7 +611,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -620,7 +620,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -629,7 +629,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -650,7 +650,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -659,7 +659,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -668,7 +668,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -689,7 +689,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -698,7 +698,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -707,7 +707,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -728,7 +728,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -737,7 +737,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -746,7 +746,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -767,7 +767,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -776,7 +776,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -785,7 +785,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -831,7 +831,7 @@
             {
               "name": "Agility Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -840,7 +840,7 @@
             {
               "name": "Strength Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0
@@ -849,7 +849,7 @@
             {
               "name": "Armor Enhancement",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 3,
                 "mode": 1.0

@@ -75,6 +75,61 @@ class Generator:
         return qrange_minv, qrange_maxv, qrange_mode
 
     @staticmethod
+    def input_vrange():
+        while True:
+            a = input('Node has value range? y/n (n)\n>> ')
+            if not a or a == 'n':
+                return None, None, None
+            elif a == 'y':
+                break
+        vrange_minv = None
+        while not vrange_minv and not isinstance(vrange_minv, int):
+            a = input("vrange min (1)\n>> ")
+            if not a:
+                vrange_minv = 1
+            elif a == '#':
+                vrange_minv = '#'
+            else:
+                try:
+                    vrange_minv = int(a)
+                except ValueError:
+                    vrange_minv = None
+                    continue
+        if vrange_minv == '#':
+            return '#', '#', '#'
+        vrange_maxv = None
+        while not vrange_maxv:
+            a = input("vrange max (1)\n>> ")
+            if not a:
+                vrange_maxv = 1
+            elif a == '#':
+                vrange_maxv = '#'
+            else:
+                try:
+                    vrange_maxv = int(a)
+                except ValueError:
+                    vrange_maxv = None
+                    continue
+        if vrange_maxv == '#':
+            return '#', '#', '#'
+        vrange_mode = None
+        while not vrange_mode:
+            input_mode = input('vrange mode (%f)\n>> ' % ((vrange_minv+vrange_maxv)/2))
+            if input_mode == '#':
+                return '#', '#', '#'
+            if not vrange_mode:
+                vrange_mode = (vrange_minv+vrange_maxv)/2
+            try:
+                input_mode = float(input_mode)
+                if vrange_minv <= vrange_mode <= vrange_maxv:
+                    vrange_mode = input_mode
+                else:
+                    continue
+            except ValueError:
+                continue
+        return vrange_minv, vrange_maxv, vrange_mode
+
+    @staticmethod
     def input_weight(root_node):
         if root_node and root_node.bound == 'all':
             weight = 1.0
@@ -140,6 +195,9 @@ class Generator:
         qrange_minv, qrange_maxv, qrange_mode = Generator.input_qrange(bound)
         if not qrange_minv or not qrange_maxv or not qrange_mode:
             return
+        vrange_minv, vrange_maxv, vrange_mode = Generator.input_vrange()
+        if vrange_minv == '#':
+            return
         description = input('LinkNode description (none)\n>> ')
         if description == '#':
             return
@@ -148,7 +206,9 @@ class Generator:
         node = LinkNode(root_node, name, description)
         node.set_bound(bound)
         node.set_weight(weight)
-        node.set_qrange(QRange(qrange_minv, qrange_maxv, qrange_mode))
+        node.set_qrange(NRange(qrange_minv, qrange_maxv, qrange_mode))
+        if isinstance(vrange_minv, int) and isinstance(vrange_maxv, int) and isinstance(vrange_mode, float):
+            node.set_vrange(NRange(vrange_minv, vrange_maxv, vrange_mode))
         node.set_must(must)
         return node
 
@@ -166,6 +226,9 @@ class Generator:
             weight = Generator.input_weight(root_node)
             if weight == '#':
                 return
+        vrange_minv, vrange_maxv, vrange_mode = Generator.input_vrange()
+        if vrange_minv == '#':
+            return
         description = input('LeafNode description (none)\n>> ')
         if description == '#':
             return
@@ -173,6 +236,9 @@ class Generator:
             description = None
         node = LeafNode(root_node, name, description)
         node.set_weight(weight)
+        print(vrange_minv, vrange_maxv, vrange_mode)
+        if isinstance(vrange_minv, int) and isinstance(vrange_maxv, int) and isinstance(vrange_mode, float):
+            node.set_vrange(NRange(vrange_minv, vrange_maxv, vrange_mode))
         node.set_must(must)
         return node
 
@@ -274,7 +340,7 @@ class Generator:
             return self.menu(node)
         elif answer == 'q':
             name = input("Quick name input\n>> ")
-            bound, weight, qrange, description = ('m', 1.0, QRange(minv=1, maxv=1, mode='u'), None)
+            bound, weight, qrange, description = ('m', 1.0, NRange(minv=1, maxv=1, mode='u'), None)
             if name == '#' or bound == '#':
                 return self.menu(node)
             link_node = LinkNode(node, name, description)

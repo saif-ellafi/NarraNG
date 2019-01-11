@@ -9,11 +9,11 @@ logging.getLogger().setLevel(Common.LOG_LEVEL)
 class NodeEncoder(json.JSONEncoder):
 
     @staticmethod
-    def encode_qrange(qr):
+    def encode_nrange(nr):
         return {
-            'minv': qr.minv,
-            'maxv': qr.maxv,
-            'mode': qr.mode
+            'minv': nr.minv,
+            'maxv': nr.maxv,
+            'mode': nr.mode
         }
 
     def default(self, o):
@@ -25,6 +25,8 @@ class NodeEncoder(json.JSONEncoder):
             base['description'] = o.description
         if o.must:
             base['must'] = o.must
+        if o.vrange:
+            base['vrange'] = NodeEncoder.encode_nrange(o.vrange)
         if isinstance(o, ExternalNode):
             base['link'] = o.link
             return base
@@ -32,9 +34,7 @@ class NodeEncoder(json.JSONEncoder):
             if o.project:
                 base['project'] = o.project
             base['bound'] = o.bound
-            base['qrange'] = NodeEncoder.encode_qrange(o.qrange)
-            if o.vrange:
-                base['vrange'] = NodeEncoder.encode_qrange(o.vrange)
+            base['qrange'] = NodeEncoder.encode_nrange(o.qrange)
             base['links'] = o.links
             return base
         elif isinstance(o, LeafNode):
@@ -77,7 +77,7 @@ class NodeDecoder:
 
     @staticmethod
     def decode_qrange(content):
-        return QRange(content['minv'], content['maxv'], content['mode'])
+        return NRange(content['minv'], content['maxv'], content['mode'])
 
     @staticmethod
     def decode_listlinks(links, root):
@@ -211,14 +211,14 @@ class OutputNodeDecoder:
         return root
 
 
-class QRange:
+class NRange:
     def __init__(self, minv, maxv, mode):
         self.minv = minv
         self.maxv = maxv
         try:
             int_mode = int(mode)
         except ValueError:
-            raise Exception('Created QRange with invalid mode. Must be a number %s' % mode)
+            raise Exception('Created Node Range with invalid mode. Must be a number %s' % mode)
         if minv <= int_mode <= maxv:
             self.mode = mode
         else:
@@ -269,7 +269,7 @@ class Node:
             raise Exception("Attempted to set non int value to node")
 
     def set_vrange(self, vrange):
-        if isinstance(vrange, QRange):
+        if isinstance(vrange, NRange):
             self.vrange = vrange
         else:
             raise Exception("Attempted to set non QRange object as vrange")
@@ -300,7 +300,7 @@ class LinkNode(Node):
         self.bound = LinkNode.MAPPER[lb] if lb in LinkNode.MAPPER.keys() else lb
 
     def set_qrange(self, qrange):
-        if not isinstance(qrange, QRange):
+        if not isinstance(qrange, NRange):
             raise Exception("received invalid qrange. not QRange object.")
         self.qrange = qrange
 

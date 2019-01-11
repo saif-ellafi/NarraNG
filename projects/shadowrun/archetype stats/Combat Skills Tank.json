@@ -2,7 +2,7 @@
   "name": "Combat Skills Tank",
   "bound": "all",
   "weight": 1.0,
-  "qrange": {
+  "vrange": {
     "minv": 1,
     "maxv": 1,
     "mode": 1

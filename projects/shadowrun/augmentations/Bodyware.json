@@ -40,7 +40,7 @@
       "name": "Dermal Plating",
       "weight": 1.0,
       "description": "Hard plastic and ceramic fiber plates are bonded to skin, clearly visible. Give bons armor.",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0
@@ -58,7 +58,7 @@
       "name": "Internal Air Tank",
       "weight": 1.0,
       "description": "Can hold breath for rating hours. Wireless can use as free action",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0
@@ -68,7 +68,7 @@
       "name": "Muscle Replacement",
       "weight": 1.0,
       "description": "Vat grown synthetic muslces replace your own or augment. Increases Strength and Agility by rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.0
@@ -78,7 +78,7 @@
       "name": "Reaction Enhancers",
       "weight": 1.0,
       "description": "Improve Reaction by rating. Wireless can exceed +4 limit",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0
@@ -88,7 +88,7 @@
       "name": "Skillwires",
       "weight": 1.0,
       "description": "Allow usage of active skillsofts",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -102,7 +102,7 @@
       "name": "Wired Reflexes",
       "weight": 1.0,
       "description": "+1 reaction and +1d6 for initiative. If wireless, can exceed limit",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 2.0

@@ -12,7 +12,7 @@
       "name": "Adrenaline Pump",
       "weight": 1.0,
       "description": "Rating to STR AGI REA and WILL for 1d6 turns. Ignore damage penalty",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0
@@ -22,7 +22,7 @@
       "name": "Bone density augmentation",
       "weight": 1.0,
       "description": "Increase Body by rating for damage resistance tests. Physical in unarmed damage increases",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 1.0
@@ -42,7 +42,7 @@
       "name": "Muscle Augmentation",
       "weight": 1.0,
       "description": "Adds to strength",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 1.0
@@ -52,7 +52,7 @@
       "name": "Muscle toner",
       "weight": 1.0,
       "description": "Adds to agility",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.0
@@ -62,7 +62,7 @@
       "name": "Orthoskin",
       "weight": 1.0,
       "description": "Adds to armor",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.0
@@ -72,7 +72,7 @@
       "name": "Pathogenic defense",
       "weight": 1.0,
       "description": "Adds to disease rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.5
@@ -96,7 +96,7 @@
       "name": "Symbiotes",
       "weight": 1.0,
       "description": "Adds to healing tests and higher cost for food",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.5
@@ -106,7 +106,7 @@
       "name": "Synthacardium",
       "weight": 1.0,
       "description": "Increase social limit by rating. Add rating to test skills in acting and influence if comfortable",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 2.0
@@ -116,7 +116,7 @@
       "name": "Toxin extractor",
       "weight": 1.0,
       "description": "Adds rating to toxin resistance",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -126,7 +126,7 @@
       "name": "Tracheal filter",
       "weight": 1.0,
       "description": "Implanted on trachea, can absorb airborne impurities. Adds rating to toxin resistance vs inhalation",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0

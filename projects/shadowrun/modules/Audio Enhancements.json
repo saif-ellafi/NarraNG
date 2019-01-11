@@ -17,7 +17,7 @@
       "name": "Audio enhancement",
       "weight": 1.0,
       "description": "Adds limit to filter background noise. Wireless ads pool.",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0
@@ -27,7 +27,7 @@
       "name": "Select sound filter",
       "weight": 1.0,
       "description": "Eliminate specific background noise by group on each rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0

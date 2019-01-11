@@ -11,7 +11,7 @@
     {
       "name": "Cyberears",
       "weight": 6.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.0
@@ -20,7 +20,7 @@
     {
       "name": "Audio Enhancement",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 1.0
@@ -40,7 +40,7 @@
       "name": "Select Sound Filter",
       "weight": 1.0,
       "description": "Selected noises are blocked when enabled",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0

@@ -12,7 +12,7 @@
       "name": "Cerebral booster",
       "weight": 1.0,
       "description": "Adds Logic attribute by rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 2.0
@@ -22,7 +22,7 @@
       "name": "Damage compensators",
       "weight": 1.0,
       "description": "Ignore damage boxes by rating before modifiers",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 12,
         "mode": 4.0
@@ -32,7 +32,7 @@
       "name": "Mnemonic enhancer",
       "weight": 1.0,
       "description": "Improves memory adds to knowledge language and memory tests as well to mental limit",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 2.0
@@ -42,7 +42,7 @@
       "name": "Synaptic booster",
       "weight": 1.0,
       "description": "+1 REACTION and +1d6 dice on initiative",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 3,
         "mode": 2.0

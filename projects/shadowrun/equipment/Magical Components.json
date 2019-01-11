@@ -12,7 +12,7 @@
       "name": "Reagents",
       "weight": 3.0,
       "description": "Reagents are used in all schools toreplacae limits with orichalcum drams, reduce drain or create foci",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 30,
         "mode": 6.0
@@ -43,7 +43,7 @@
             {
               "name": "Force",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 6,
                 "mode": 2.0
@@ -128,7 +128,7 @@
             {
               "name": "Force",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 7,
                 "mode": 2.0
@@ -176,7 +176,7 @@
           "name": "Power Foci",
           "weight": 1.0,
           "description": "Temporarily adds force to rating in any Magic involved test. Usually amulet or ring",
-          "qrange": {
+          "vrange": {
             "minv": 1,
             "maxv": 7,
             "mode": 2.0
@@ -227,7 +227,7 @@
             {
               "name": "Force",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 7,
                 "mode": 2.0
@@ -249,7 +249,7 @@
             {
               "name": "Force",
               "weight": 1.0,
-              "qrange": {
+              "vrange": {
                 "minv": 1,
                 "maxv": 7,
                 "mode": 2.0

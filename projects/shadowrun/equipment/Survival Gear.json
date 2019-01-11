@@ -12,7 +12,7 @@
       "name": "Chemsuit",
       "weight": 0.8,
       "description": "Chemical protection to rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 4.0
@@ -67,7 +67,7 @@
     {
       "name": "Respirator",
       "weight": 0.65,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0

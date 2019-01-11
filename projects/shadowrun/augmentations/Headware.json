@@ -10,17 +10,13 @@
   "links": [
     {
       "name": "Commlink",
-      "weight": 1.0
+      "weight": 1.0,
+      "description": "Go to commlink device description"
     },
     {
       "name": "Control Rig",
       "weight": 1.0,
-      "description": "Rigger control implant with built in sim module to use for DNI with other devices",
-      "qrange": {
-        "minv": 1,
-        "maxv": 3,
-        "mode": 1.5
-      }
+      "description": "Go to Control Rig device description"
     },
     {
       "name": "Cyberdeck",
@@ -36,7 +32,7 @@
       "name": "Data Lock",
       "weight": 1.0,
       "description": "It makes user a walking data safe. It is not wireless",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 12,
         "mode": 4.0
@@ -46,7 +42,7 @@
       "name": "Olfactory Booster",
       "weight": 1.0,
       "description": "Records smells and plays them back later.",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -61,7 +57,7 @@
       "name": "Skilljack",
       "weight": 0.8,
       "description": "Skill headware to interpret knowsoft and linguasofts to be used later as your own. Also runs activesofts but needs skillwires. If wireless bosts rating limit to rating x 3",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0
@@ -71,7 +67,7 @@
       "name": "Taste booster",
       "weight": 1.0,
       "description": "Gustatory data in AR and VR. Applies to perception tests",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -85,7 +81,7 @@
       "name": "Ultrasound Sensor",
       "weight": 1.0,
       "description": "When active replaces normal vision. Switch betwen  active sonar and passive sonar or off with Free action",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -95,7 +91,7 @@
       "name": "Voice Modulator",
       "weight": 1.0,
       "description": "Adds rating to impersionation skill tests. Forbidden",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0

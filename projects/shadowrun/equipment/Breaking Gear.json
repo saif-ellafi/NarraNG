@@ -12,7 +12,7 @@
       "name": "Autopicker",
       "weight": 1.0,
       "description": "Bypass mechanical locks adds to your limit.. Wireless add rating as dice pool",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -22,7 +22,7 @@
       "name": "Cellular glove molder",
       "weight": 0.6,
       "description": "Fool biometric maglocks",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 1,
         "mode": 1.0
@@ -36,7 +36,7 @@
     {
       "name": "Keycard copier",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -50,7 +50,7 @@
       "name": "Maglock passkey",
       "weight": 1.0,
       "description": "Skeleton key to be inserted in cardreader. Wireless +1 rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 4,
         "mode": 2.0
@@ -65,7 +65,7 @@
       "name": "Sequencer",
       "weight": 1.0,
       "description": "Defeat keypad maglocks. Wireless +1 to rating",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 3.0

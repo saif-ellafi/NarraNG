@@ -11,7 +11,7 @@
     {
       "name": "Chemical Protection",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -20,7 +20,7 @@
     {
       "name": "Fire resistance",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -29,7 +29,7 @@
     {
       "name": "Insulation",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -38,7 +38,7 @@
     {
       "name": "Nonconductivity",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
@@ -53,7 +53,7 @@
       "name": "Thermal Damping",
       "weight": 0.8,
       "description": "+rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
