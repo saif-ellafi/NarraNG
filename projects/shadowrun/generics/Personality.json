@@ -1,45 +1,17 @@
 {
   "name": "Personality",
-  "bound": "many",
   "weight": 1.0,
+  "bound": "all",
   "qrange": {
     "minv": 1,
-    "maxv": 3,
+    "maxv": 1,
     "mode": 1
   },
   "links": [
     {
-      "name": "Hair-trigger temper",
-      "weight": 1.0
-    },
-    {
-      "name": "Very easily distracted",
-      "weight": 1.0
-    },
-    {
-      "name": "Racist",
-      "weight": 1.0
-    },
-    {
-      "name": "Chuckles constantly",
-      "weight": 1.0
-    },
-    {
-      "name": "Regularly high",
-      "weight": 1.0
-    },
-    {
-      "name": "Drunk",
-      "weight": 1.0
-    },
-    {
-      "name": "Flirtatious with anyone or everyone",
-      "weight": 1.0
-    },
-    {
       "name": "Way he talks",
-      "bound": "many",
       "weight": 1.0,
+      "bound": "many",
       "qrange": {
         "minv": 1,
         "maxv": 2,
@@ -73,21 +45,281 @@
       ]
     },
     {
-      "name": "Hates something",
-      "weight": 1.0
-    },
-    {
-      "name": "Afraid of something",
-      "weight": 1.0
-    },
-    {
-      "name": "Swetting",
-      "weight": 1.0
-    },
-    {
-      "name": "Motivations",
-      "bound": "all",
+      "name": "Psychology",
       "weight": 1.0,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Practical",
+          "weight": 1.0
+        },
+        {
+          "name": "Does not understand cause and effect",
+          "weight": 1.0
+        },
+        {
+          "name": "Ingenious and Bright",
+          "weight": 1.0
+        },
+        {
+          "name": "Observant",
+          "weight": 1.0
+        },
+        {
+          "name": "Practical",
+          "weight": 1.0
+        },
+        {
+          "name": "Creative",
+          "weight": 1.0
+        },
+        {
+          "name": "Dislikes abstraction",
+          "weight": 1.0
+        },
+        {
+          "name": "Curious",
+          "weight": 1.0
+        },
+        {
+          "name": "Ingenious and Alert",
+          "weight": 1.0
+        },
+        {
+          "name": "Intelligent",
+          "weight": 1.0
+        },
+        {
+          "name": "Artistic",
+          "weight": 1.0
+        },
+        {
+          "name": "Perceptive",
+          "weight": 1.0
+        },
+        {
+          "name": "Intense",
+          "weight": 1.0
+        },
+        {
+          "name": "Critical",
+          "weight": 1.0
+        },
+        {
+          "name": "Rely on others for decisions",
+          "weight": 1.0
+        },
+        {
+          "name": "Serious",
+          "weight": 1.0
+        },
+        {
+          "name": "Quick to judge",
+          "weight": 1.0
+        },
+        {
+          "name": "Competent",
+          "weight": 1.0
+        },
+        {
+          "name": "Rational",
+          "weight": 1.0
+        },
+        {
+          "name": "Logical",
+          "weight": 1.0
+        },
+        {
+          "name": "Dramatic",
+          "weight": 1.0
+        },
+        {
+          "name": "Suspicious of other people",
+          "weight": 1.0
+        },
+        {
+          "name": "Quick thinking",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Lifestyle",
+      "weight": 1.0,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Diverse",
+          "weight": 1.0
+        },
+        {
+          "name": "Fun loving",
+          "weight": 1.0
+        },
+        {
+          "name": "Needs time alone",
+          "weight": 1.0
+        },
+        {
+          "name": "Traditional",
+          "weight": 1.0
+        },
+        {
+          "name": "Unadventurous",
+          "weight": 1.0
+        },
+        {
+          "name": "Law-abiding",
+          "weight": 1.0
+        },
+        {
+          "name": "Flexible",
+          "weight": 1.0
+        },
+        {
+          "name": "Perfectionist",
+          "weight": 1.0
+        },
+        {
+          "name": "High standards",
+          "weight": 1.0
+        },
+        {
+          "name": "Adaptable",
+          "weight": 1.0
+        },
+        {
+          "name": "Self confident",
+          "weight": 1.0
+        },
+        {
+          "name": "Easily bored",
+          "weight": 1.0
+        },
+        {
+          "name": "Organised",
+          "weight": 1.0
+        },
+        {
+          "name": "Thrill seeker",
+          "weight": 1.0
+        },
+        {
+          "name": "Adventurous",
+          "weight": 1.0
+        },
+        {
+          "name": "Bound by the book",
+          "weight": 1.0
+        },
+        {
+          "name": "Methodical",
+          "weight": 1.0
+        },
+        {
+          "name": "Enthusiastic",
+          "weight": 1.0
+        },
+        {
+          "name": "Strict",
+          "weight": 1.0
+        },
+        {
+          "name": "Action oriented",
+          "weight": 1.0
+        },
+        {
+          "name": "Independent",
+          "weight": 1.0
+        },
+        {
+          "name": "Dependent",
+          "weight": 1.0
+        },
+        {
+          "name": "Athletic",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Social",
+      "weight": 1.0,
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 3,
+        "mode": 1.0
+      },
+      "links": [
+        {
+          "name": "Center of attention",
+          "weight": 1.0
+        },
+        {
+          "name": "People oriented",
+          "weight": 1.0
+        },
+        {
+          "name": "Quiet",
+          "weight": 1.0
+        },
+        {
+          "name": "Extroverted",
+          "weight": 1.0
+        },
+        {
+          "name": "Poor team worker",
+          "weight": 1.0
+        },
+        {
+          "name": "Agressive",
+          "weight": 1.0
+        },
+        {
+          "name": "Likes to be in charge",
+          "weight": 1.0
+        },
+        {
+          "name": "Intimidating",
+          "weight": 1.0
+        },
+        {
+          "name": "Strong value system",
+          "weight": 1.0
+        },
+        {
+          "name": "Motivating",
+          "weight": 1.0
+        },
+        {
+          "name": "Understanding",
+          "weight": 1.0
+        },
+        {
+          "name": "Playful",
+          "weight": 1.0
+        },
+        {
+          "name": "Selfless",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Status",
+      "weight": 1.0,
+      "bound": "single",
       "qrange": {
         "minv": 1,
         "maxv": 1,
@@ -95,11 +327,243 @@
       },
       "links": [
         {
-          "name": "What",
+          "name": "Hair-trigger temper",
           "weight": 1.0
         },
         {
-          "name": "Why",
+          "name": "Very easily distracted",
+          "weight": 1.0
+        },
+        {
+          "name": "Racist",
+          "weight": 1.0
+        },
+        {
+          "name": "Chuckles constantly",
+          "weight": 1.0
+        },
+        {
+          "name": "Regularly high",
+          "weight": 1.0
+        },
+        {
+          "name": "Drunk",
+          "weight": 1.0
+        },
+        {
+          "name": "Flirtatious with anyone or everyone",
+          "weight": 1.0
+        },
+        {
+          "name": "Hates something",
+          "weight": 1.0
+        },
+        {
+          "name": "Afraid of something",
+          "weight": 1.0
+        },
+        {
+          "name": "Swetting",
+          "weight": 1.0
+        },
+        {
+          "name": "Greedy",
+          "weight": 1.0
+        },
+        {
+          "name": "Loathsome",
+          "weight": 1.0
+        },
+        {
+          "name": "Blissful",
+          "weight": 1.0
+        },
+        {
+          "name": "Enraged",
+          "weight": 1.0
+        },
+        {
+          "name": "Cold",
+          "weight": 1.0
+        },
+        {
+          "name": "Provoked",
+          "weight": 1.0
+        },
+        {
+          "name": "Overwhelmed",
+          "weight": 1.0
+        },
+        {
+          "name": "Loyal",
+          "weight": 1.0
+        },
+        {
+          "name": "Embarrased",
+          "weight": 1.0
+        },
+        {
+          "name": "Emotional",
+          "weight": 1.0
+        },
+        {
+          "name": "Fascinated",
+          "weight": 1.0
+        },
+        {
+          "name": "Eager",
+          "weight": 1.0
+        },
+        {
+          "name": "Astonished",
+          "weight": 1.0
+        },
+        {
+          "name": "Fearful",
+          "weight": 1.0
+        },
+        {
+          "name": "Troubled",
+          "weight": 1.0
+        },
+        {
+          "name": "Hopeful",
+          "weight": 1.0
+        },
+        {
+          "name": "Obsessed",
+          "weight": 1.0
+        },
+        {
+          "name": "Alert",
+          "weight": 1.0
+        },
+        {
+          "name": "Horrified",
+          "weight": 1.0
+        },
+        {
+          "name": "Awed",
+          "weight": 1.0
+        },
+        {
+          "name": "Comfortable",
+          "weight": 1.0
+        },
+        {
+          "name": "Hopeless",
+          "weight": 1.0
+        },
+        {
+          "name": "Merciful",
+          "weight": 1.0
+        },
+        {
+          "name": "Amused",
+          "weight": 1.0
+        },
+        {
+          "name": "Insecure",
+          "weight": 1.0
+        },
+        {
+          "name": "Empty",
+          "weight": 1.0
+        },
+        {
+          "name": "Remorseful",
+          "weight": 1.0
+        },
+        {
+          "name": "Pathetic",
+          "weight": 1.0
+        },
+        {
+          "name": "Sensual",
+          "weight": 1.0
+        },
+        {
+          "name": "Concerned",
+          "weight": 1.0
+        },
+        {
+          "name": "Pained",
+          "weight": 1.0
+        },
+        {
+          "name": "Strong",
+          "weight": 1.0
+        },
+        {
+          "name": "Hysterical",
+          "weight": 1.0
+        },
+        {
+          "name": "Innocent",
+          "weight": 1.0
+        },
+        {
+          "name": "Confused",
+          "weight": 1.0
+        },
+        {
+          "name": "Insane",
+          "weight": 1.0
+        },
+        {
+          "name": "Tired",
+          "weight": 1.0
+        },
+        {
+          "name": "Sorry",
+          "weight": 1.0
+        },
+        {
+          "name": "Loving",
+          "weight": 1.0
+        },
+        {
+          "name": "Satisfied",
+          "weight": 1.0
+        },
+        {
+          "name": "Annoyed",
+          "weight": 1.0
+        },
+        {
+          "name": "Foolish",
+          "weight": 1.0
+        },
+        {
+          "name": "Peaceful",
+          "weight": 1.0
+        },
+        {
+          "name": "Heartbroken",
+          "weight": 1.0
+        },
+        {
+          "name": "Lazy",
+          "weight": 1.0
+        },
+        {
+          "name": "Sympathetic",
+          "weight": 1.0
+        },
+        {
+          "name": "In denial",
+          "weight": 1.0
+        },
+        {
+          "name": "Enigmatic",
+          "weight": 1.0
+        },
+        {
+          "name": "Playful",
+          "weight": 1.0
+        },
+        {
+          "name": "Curious",
           "weight": 1.0
         }
       ]

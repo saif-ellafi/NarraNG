@@ -1,0 +1,186 @@
+Thomas Larson (( Character Generator ))  
+	Gunslinger adept  
+		Metatype  
+			Elf  
+		Personality  
+			Way he talks  
+				Shouting  
+				Gross  
+			Psychology  
+				Rational  
+				Does not understand cause and effect  
+			Lifestyle  
+				Organised  
+				Needs time alone  
+			Social  
+				Intimidating  
+			Status  
+				Strong  
+		Appearance  
+			Unique hair style  
+			Tatoos  
+		Attributes  
+			Body: 5  
+			Agility: 6  
+			Reaction: 5  
+			Strength: 4  
+			Willpower: 3  
+			Logic: 2  
+			Intuition: 5  
+			Charisma: 2  
+			Edge: 5  
+			Magic: 0  
+		Qualities  
+			Positive  
+				Blandness  (( Difficult to remember him, locate or track him. Does not apply on matrix or astral. )) 
+				Astral Chameleon  (( -2 when trying to assense this )) 
+				Natural Hardening  (( Filters 1 biofeedback damage )) 
+			Negative  
+				Codeblock  (( -2 dice on some matrix action )) 
+		Physical Skills  
+			Disguise: 2  (( Intuition )) 
+				None  
+			Diving: 1  (( Body )) 
+				by breathing apparatus  (( Liquid system, mixed gas, oxygen extraction, scuba, etc )) 
+			Escape Artist: 6  (( Agility )) 
+				None  
+			Free-Fall: 2  (( Body )) 
+				Zipline  
+			Gymnastics: 4  (( Agility )) 
+				Parkour  
+			Palming: 3  (( Agility )) 
+				None  
+			Perception: 1  (( Intuition )) 
+				Taste  
+			Running: 4  (( Strength )) 
+				By terrain  (( Desert, Urban, Wilderness, etc )) 
+			Sneaking: 3  (( Agility )) 
+				None  
+			Survival: 5  (( Willpower )) 
+				None  
+			Swimming: 3  (( Strength )) 
+				Dash  
+			Tracking: 4  (( Intuition )) 
+				Jungle  
+		Technical Skills  
+			Aeronautics Mechanic: 0  (( Logic. Repair aerospace vehicles. )) 
+				LTA blimp  
+			Animal Handling: 0  (( Charisma )) 
+				Herding  
+			Armorer: 4  (( Logic. Build and maintain weapons and armors. )) 
+				Heavy Weapons  
+			Artisan: 0  (( Intuition )) 
+				Sculpting  
+			Automotive Mechanic: 0  (( Logic. Ground vehicles )) 
+				Hover  
+			Biotechnology: 0  (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
+				None  
+			Chemistry: 0  (( Logic )) 
+				None  
+			Computer: 2  (( Logic )) 
+			Cybercombat: 4  (( Logic )) 
+				None  
+			Cybertechnology: 1  (( Logic. Maintain or repair or build cybernetics )) 
+				Repair  
+			Demolitions: 4  (( Logic )) 
+				None  
+			Electronic Warfare: 0  
+				Sensor operations  
+			First Aid: 3  (( Logic )) 
+			Forgery: 0  (( Logic )) 
+				None  
+			Hacking: 0  (( Logic )) 
+				None  
+			Hardware: 0  (( Logic )) 
+			Industrial Mechanic: 0  (( Logic )) 
+				None  
+			Locksmith: 2  
+			Medicine: 1  (( Logic )) 
+				Cosmetic Surgery  
+			Nautical Mechanic: 0  (( Logic )) 
+				None  
+			Navigation: 2  (( Intuition )) 
+				AR Markers  
+			Software: 5  (( Logic )) 
+		Social Skills  
+			Con: 3  
+				None  
+			Etiquette: 2  
+				None  
+			Impersonation: 1  
+				None  
+			Instruction: 3  
+				None  
+			Intimidation: 3  
+				None  
+			Leadership: 5  
+				Inspire  
+			Negotiation: 1  
+				Diplomacy  
+			Performance: 2  
+				None  
+		Combat Skills  
+			Archery: 0  
+				None  
+			Automatics: 3  
+				None  
+			Blades: 0  
+				None  
+			Clubs: 0  
+				None  
+			Heavy Weapons: 5  
+				Assault Cannons  
+			Longarms: 2  
+				None  
+			Pistols: 3  
+				None  
+			Throwing Weapons: 2  
+				Non-Aerodynamic  
+			Unarmed Combat: 0  
+				Blocking  
+		Vehicle Skills  
+			Gunnery: 4  
+				None  
+			Pilot Aerospace: 4  
+				Semiballistic  
+			Pilot Aircraft: 5  
+				None  
+			Pilot Walker: 2  
+				None  
+			Pilot Ground Craft: 3  
+				None  
+			Pilot Watercraft: 1  
+				Ship  
+		Adept Powers  
+			Natural Immunity  (( +die to resist toxins and sisease )) 
+			Spell Resistance  (( +dice per level on defense against magic )) 
+		Adept Foci  
+			Weapon Focus: 4  
+		Weapons  
+			Projectile Weapons  
+				Throwing shuriken  (( ACC-PLimit STR+1P -1AP )) 
+		Commlink  
+			Sim module  
+				Cold-sim  
+			Model  
+				Fairlight Caliban  (( DR7 )) 
+		Imaging device  
+			Vision enhancements  
+				Smartlink  (( Smartgun system receiver )) 
+				Vision enhancement  (( Improves limit on perception tests. Wireless adds to pool )) 
+			Glasses  
+		Audio device  
+			Audio enhancements  
+				Spatial recognizer  (( +2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source. )) 
+			Headphones  
+		Armor  
+			Set  
+				Actioneer Business Clothes  (( AR8 )) 
+			Mods  
+				Nonconductivity: 2  
+				Chemical Protection: 2  
+		Electronic Accessories  
+			Satellite link  
+		Vehicle  
+			Truck  
+				Rover Model 2072  (( Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6 )) 

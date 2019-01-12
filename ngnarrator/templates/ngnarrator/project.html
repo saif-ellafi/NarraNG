@@ -19,20 +19,19 @@
 {% if project_entries %}
 <ul>
     {% for entry in project_entries %}
-    <li><a href="/ngnarrator/{{ project.pid }}/{{ entry.eid }}/">{{ entry.node.name }}</a></li>
+    <li><a href="{% url 'entry' project.pid entry.eid %}">{{ entry.node.name }}</a></li>
     {% endfor %}
 </ul>
 {% else %}
 <p>No entries are available.</p>
 {% endif %}
-<form action="{% url 'create_entry' project.name project.pid  %}" method="get">
+<form action="{% url 'new_entry' project.pid  %}">
     <div class="row">
         <div class="col-lg-2">
             <div class="input-group">
                 <span class="input-group-btn">
-                <input class="btn btn-danger" type="submit" value="Create">
+                <input class="btn btn-danger btn-lg" type="submit" value="Create">
                 </span>
-                <input class="form-control" type="text" name="target">
             </div>
         </div>
     </div>

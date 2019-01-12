@@ -11,7 +11,7 @@
     {
       "name": "Body",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 2,
         "maxv": 5,
         "mode": 2.5
@@ -20,7 +20,7 @@
     {
       "name": "Agility",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 2,
         "maxv": 5,
         "mode": 3
@@ -29,7 +29,7 @@
     {
       "name": "Reaction",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 2,
         "maxv": 6,
         "mode": 3
@@ -38,7 +38,7 @@
     {
       "name": "Strength",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 5,
         "mode": 2
@@ -47,7 +47,7 @@
     {
       "name": "Willpower",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 3,
         "maxv": 7,
         "mode": 4
@@ -56,7 +56,7 @@
     {
       "name": "Logic",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 7,
         "mode": 2.5
@@ -65,7 +65,7 @@
     {
       "name": "Intuition",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 2,
         "maxv": 6,
         "mode": 3.5
@@ -74,7 +74,7 @@
     {
       "name": "Charisma",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 5,
         "mode": 2
@@ -83,7 +83,7 @@
     {
       "name": "Edge",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 0,
         "maxv": 7,
         "mode": 2
@@ -92,7 +92,7 @@
     {
       "name": "Magic",
       "weight": 1.0,
-      "qrange": {
+      "vrange": {
         "minv": 3,
         "maxv": 7,
         "mode": 5

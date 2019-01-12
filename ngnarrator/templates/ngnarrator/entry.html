@@ -26,7 +26,7 @@
                        title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}"
                        for="group-1">
                     <span class="fa fa-angle-right"></span>
-                    {% if entry_node.name|lower == entry_node.project|lower%} {{ entry_node.name }}
+                    {% if not entry_node.name %} {{ project.name }}
                     {% else %}  {{ entry_node.name }}  ({{ entry_node.project }})
                     {% endif %}
                 </label>

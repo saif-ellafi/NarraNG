@@ -1,4 +1,13 @@
 {% include "ngnarrator/entry.html" %}
-<form action="{% url 'save_entry' project_id %}" method="get">
-    <input class="btn btn-primary btn-warning btn-lg" type="submit" value="Save">
+<form action="{% url 'save_entry' project.pid %}" method="get">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="input-group">
+                <span class="input-group-btn">
+                <input class="btn btn-primary btn-danger" type="submit" value="Save">
+                </span>
+                <input class="form-control" type="text" name="target">
+            </div>
+        </div>
+    </div>
 </form>

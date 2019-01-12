@@ -139,6 +139,7 @@ class NodeDecoder:
 
     @staticmethod
     def decode(file):
+        logging.debug("decoding %s" % file)
         root_node = json.load(file)
         name = root_node['name']
         bound = root_node['bound']
@@ -246,7 +247,7 @@ class Node:
         return sel_str
 
     def tostr(self, node, sel_str, i=1):
-        sel_str += node.name + ((': %i' % node.value) if isinstance(node.value, int) else '') + (' (( ' + node.description + ' )) ' if node.description else ' ')
+        sel_str += node.name + ((': %i' % node.value) if isinstance(node.value, int) else '') + (' (( ' + node.project + ' )) ' if isinstance(node, LinkNode) and node.project else ' ') + (' (( ' + node.description + ' )) ' if node.description else ' ')
         if isinstance(node, LinkNode):
             for subnode in node.links:
                 sel_str = self.tostr(subnode, sel_str + '\n' + '\t'*i, i+1)

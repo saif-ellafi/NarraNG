@@ -1,0 +1,852 @@
+{
+  "name": "Thomas Larson",
+  "project": "Character Generator",
+  "links": [
+    {
+      "name": "Gunslinger adept",
+      "links": [
+        {
+          "name": "Metatype",
+          "links": [
+            {
+              "name": "Elf"
+            }
+          ]
+        },
+        {
+          "name": "Personality",
+          "links": [
+            {
+              "name": "Way he talks",
+              "links": [
+                {
+                  "name": "Shouting"
+                },
+                {
+                  "name": "Gross"
+                }
+              ]
+            },
+            {
+              "name": "Psychology",
+              "links": [
+                {
+                  "name": "Rational"
+                },
+                {
+                  "name": "Does not understand cause and effect"
+                }
+              ]
+            },
+            {
+              "name": "Lifestyle",
+              "links": [
+                {
+                  "name": "Organised"
+                },
+                {
+                  "name": "Needs time alone"
+                }
+              ]
+            },
+            {
+              "name": "Social",
+              "links": [
+                {
+                  "name": "Intimidating"
+                }
+              ]
+            },
+            {
+              "name": "Status",
+              "links": [
+                {
+                  "name": "Strong"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Appearance",
+          "links": [
+            {
+              "name": "Unique hair style"
+            },
+            {
+              "name": "Tatoos"
+            }
+          ]
+        },
+        {
+          "name": "Attributes",
+          "links": [
+            {
+              "name": "Body",
+              "value": 5
+            },
+            {
+              "name": "Agility",
+              "value": 6
+            },
+            {
+              "name": "Reaction",
+              "value": 5
+            },
+            {
+              "name": "Strength",
+              "value": 4
+            },
+            {
+              "name": "Willpower",
+              "value": 3
+            },
+            {
+              "name": "Logic",
+              "value": 2
+            },
+            {
+              "name": "Intuition",
+              "value": 5
+            },
+            {
+              "name": "Charisma",
+              "value": 2
+            },
+            {
+              "name": "Edge",
+              "value": 5
+            },
+            {
+              "name": "Magic",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "Qualities",
+          "links": [
+            {
+              "name": "Positive",
+              "links": [
+                {
+                  "name": "Blandness",
+                  "description": "Difficult to remember him, locate or track him. Does not apply on matrix or astral."
+                },
+                {
+                  "name": "Astral Chameleon",
+                  "description": "-2 when trying to assense this"
+                },
+                {
+                  "name": "Natural Hardening",
+                  "description": "Filters 1 biofeedback damage"
+                }
+              ]
+            },
+            {
+              "name": "Negative",
+              "links": [
+                {
+                  "name": "Codeblock",
+                  "description": "-2 dice on some matrix action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Physical Skills",
+          "links": [
+            {
+              "name": "Disguise",
+              "description": "Intuition",
+              "value": 2,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Diving",
+              "description": "Body",
+              "value": 1,
+              "links": [
+                {
+                  "name": "by breathing apparatus",
+                  "description": "Liquid system, mixed gas, oxygen extraction, scuba, etc"
+                }
+              ]
+            },
+            {
+              "name": "Escape Artist",
+              "description": "Agility",
+              "value": 6,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Free-Fall",
+              "description": "Body",
+              "value": 2,
+              "links": [
+                {
+                  "name": "Zipline"
+                }
+              ]
+            },
+            {
+              "name": "Gymnastics",
+              "description": "Agility",
+              "value": 4,
+              "links": [
+                {
+                  "name": "Parkour"
+                }
+              ]
+            },
+            {
+              "name": "Palming",
+              "description": "Agility",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Perception",
+              "description": "Intuition",
+              "value": 1,
+              "links": [
+                {
+                  "name": "Taste"
+                }
+              ]
+            },
+            {
+              "name": "Running",
+              "description": "Strength",
+              "value": 4,
+              "links": [
+                {
+                  "name": "By terrain",
+                  "description": "Desert, Urban, Wilderness, etc"
+                }
+              ]
+            },
+            {
+              "name": "Sneaking",
+              "description": "Agility",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Survival",
+              "description": "Willpower",
+              "value": 5,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Swimming",
+              "description": "Strength",
+              "value": 3,
+              "links": [
+                {
+                  "name": "Dash"
+                }
+              ]
+            },
+            {
+              "name": "Tracking",
+              "description": "Intuition",
+              "value": 4,
+              "links": [
+                {
+                  "name": "Jungle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Technical Skills",
+          "links": [
+            {
+              "name": "Aeronautics Mechanic",
+              "description": "Logic. Repair aerospace vehicles.",
+              "value": 0,
+              "links": [
+                {
+                  "name": "LTA blimp"
+                }
+              ]
+            },
+            {
+              "name": "Animal Handling",
+              "description": "Charisma",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Herding"
+                }
+              ]
+            },
+            {
+              "name": "Armorer",
+              "description": "Logic. Build and maintain weapons and armors.",
+              "value": 4,
+              "links": [
+                {
+                  "name": "Heavy Weapons"
+                }
+              ]
+            },
+            {
+              "name": "Artisan",
+              "description": "Intuition",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Sculpting"
+                }
+              ]
+            },
+            {
+              "name": "Automotive Mechanic",
+              "description": "Logic. Ground vehicles",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Hover"
+                }
+              ]
+            },
+            {
+              "name": "Biotechnology",
+              "description": "Logic. Doctors and scientists for growing organic body parts on bioware",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Chemistry",
+              "description": "Logic",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Computer",
+              "description": "Logic",
+              "value": 2
+            },
+            {
+              "name": "Cybercombat",
+              "description": "Logic",
+              "value": 4,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Cybertechnology",
+              "description": "Logic. Maintain or repair or build cybernetics",
+              "value": 1,
+              "links": [
+                {
+                  "name": "Repair"
+                }
+              ]
+            },
+            {
+              "name": "Demolitions",
+              "description": "Logic",
+              "value": 4,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Electronic Warfare",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Sensor operations"
+                }
+              ]
+            },
+            {
+              "name": "First Aid",
+              "description": "Logic",
+              "value": 3
+            },
+            {
+              "name": "Forgery",
+              "description": "Logic",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Hacking",
+              "description": "Logic",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Hardware",
+              "description": "Logic",
+              "value": 0
+            },
+            {
+              "name": "Industrial Mechanic",
+              "description": "Logic",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Locksmith",
+              "value": 2
+            },
+            {
+              "name": "Medicine",
+              "description": "Logic",
+              "value": 1,
+              "links": [
+                {
+                  "name": "Cosmetic Surgery"
+                }
+              ]
+            },
+            {
+              "name": "Nautical Mechanic",
+              "description": "Logic",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Navigation",
+              "description": "Intuition",
+              "value": 2,
+              "links": [
+                {
+                  "name": "AR Markers"
+                }
+              ]
+            },
+            {
+              "name": "Software",
+              "description": "Logic",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "Social Skills",
+          "links": [
+            {
+              "name": "Con",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Etiquette",
+              "value": 2,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Impersonation",
+              "value": 1,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Instruction",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Intimidation",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Leadership",
+              "value": 5,
+              "links": [
+                {
+                  "name": "Inspire"
+                }
+              ]
+            },
+            {
+              "name": "Negotiation",
+              "value": 1,
+              "links": [
+                {
+                  "name": "Diplomacy"
+                }
+              ]
+            },
+            {
+              "name": "Performance",
+              "value": 2,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Combat Skills",
+          "links": [
+            {
+              "name": "Archery",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Automatics",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Blades",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Clubs",
+              "value": 0,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Heavy Weapons",
+              "value": 5,
+              "links": [
+                {
+                  "name": "Assault Cannons"
+                }
+              ]
+            },
+            {
+              "name": "Longarms",
+              "value": 2,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Pistols",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Throwing Weapons",
+              "value": 2,
+              "links": [
+                {
+                  "name": "Non-Aerodynamic"
+                }
+              ]
+            },
+            {
+              "name": "Unarmed Combat",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Blocking"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vehicle Skills",
+          "links": [
+            {
+              "name": "Gunnery",
+              "value": 4,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Pilot Aerospace",
+              "value": 4,
+              "links": [
+                {
+                  "name": "Semiballistic"
+                }
+              ]
+            },
+            {
+              "name": "Pilot Aircraft",
+              "value": 5,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Pilot Walker",
+              "value": 2,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Pilot Ground Craft",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Pilot Watercraft",
+              "value": 1,
+              "links": [
+                {
+                  "name": "Ship"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Adept Powers",
+          "links": [
+            {
+              "name": "Natural Immunity",
+              "description": "+die to resist toxins and sisease"
+            },
+            {
+              "name": "Spell Resistance",
+              "description": "+dice per level on defense against magic"
+            }
+          ]
+        },
+        {
+          "name": "Adept Foci",
+          "links": [
+            {
+              "name": "Weapon Focus",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "Weapons",
+          "links": [
+            {
+              "name": "Projectile Weapons",
+              "links": [
+                {
+                  "name": "Throwing shuriken",
+                  "description": "ACC-PLimit STR+1P -1AP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Commlink",
+          "links": [
+            {
+              "name": "Sim module",
+              "links": [
+                {
+                  "name": "Cold-sim"
+                }
+              ]
+            },
+            {
+              "name": "Model",
+              "links": [
+                {
+                  "name": "Fairlight Caliban",
+                  "description": "DR7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Imaging device",
+          "links": [
+            {
+              "name": "Vision enhancements",
+              "links": [
+                {
+                  "name": "Smartlink",
+                  "description": "Smartgun system receiver"
+                },
+                {
+                  "name": "Vision enhancement",
+                  "description": "Improves limit on perception tests. Wireless adds to pool"
+                }
+              ]
+            },
+            {
+              "name": "Glasses"
+            }
+          ]
+        },
+        {
+          "name": "Audio device",
+          "links": [
+            {
+              "name": "Audio enhancements",
+              "links": [
+                {
+                  "name": "Spatial recognizer",
+                  "description": "+2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source."
+                }
+              ]
+            },
+            {
+              "name": "Headphones"
+            }
+          ]
+        },
+        {
+          "name": "Armor",
+          "links": [
+            {
+              "name": "Set",
+              "links": [
+                {
+                  "name": "Actioneer Business Clothes",
+                  "description": "AR8"
+                }
+              ]
+            },
+            {
+              "name": "Mods",
+              "links": [
+                {
+                  "name": "Nonconductivity",
+                  "value": 2
+                },
+                {
+                  "name": "Chemical Protection",
+                  "value": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Electronic Accessories",
+          "links": [
+            {
+              "name": "Satellite link"
+            }
+          ]
+        },
+        {
+          "name": "Vehicle",
+          "links": [
+            {
+              "name": "Truck",
+              "links": [
+                {
+                  "name": "Rover Model 2072",
+                  "description": "Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

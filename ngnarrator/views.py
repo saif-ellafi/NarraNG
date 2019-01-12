@@ -6,6 +6,7 @@ from narrator import Narrator
 from common import Common
 from components import LinkNode
 
+from collections import OrderedDict as OrdD
 import os
 
 
@@ -20,7 +21,7 @@ def index(request):
         else:
             sourced_projects[source] = [p]
     context = {
-        'projects_list': sourced_projects,
+        'projects_list': OrdD(sorted(sourced_projects.items(), key=lambda t: t[0])),
     }
     return HttpResponse(template.render(context, request))
 
@@ -42,26 +43,24 @@ def entry(request, project_id, entry_id):
     return HttpResponse(template.render(context, request))
 
 
-def create_entry(request, project_name, project_id):
-    content = request.GET['target']
-    return HttpResponseRedirect(reverse('new_entry', args=(project_id, content if content else project_name)))
-
-
-def new_entry(request, project_id, entry_name):
+def new_entry(request, project_id):
     template = loader.get_template('ngnarrator/new_entry.html')
     loaded_project = Common.load_projects()[project_id]
-    new_node = Narrator(loaded_project.source, name=entry_name)
+    new_node = Narrator(loaded_project.source)
     new_node._gen(auto=True)
     Common.temp_entry = new_node.output_node_root
+    Common.temp_entry.name = None
     context = {
-        'project_id': project_id,
-        'entry_node': new_node.output_node_root
+        'project': loaded_project,
+        'entry_node': Common.temp_entry
     }
     return HttpResponse(template.render(context, request))
 
 
 def save_entry(request, project_id):
+    content = request.GET['target']
     if isinstance(Common.temp_entry, LinkNode):
+        Common.temp_entry.name = content
         Common.temp_entry.save()
         Common.temp_entry = None
     return HttpResponseRedirect(reverse('project', args=[project_id]))
