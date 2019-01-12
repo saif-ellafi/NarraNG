@@ -16,7 +16,9 @@
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-<a href="{% url 'index' %}" class="btn btn-warning">Go back</a>
+<a href="{% url 'project' project_id %}" class="btn btn-warning">Go back</a>
+<a href="{% url 'index' %}" class="btn btn-danger">Index</a>
+<a href="{% url 'new_entry' project_id %}" class="btn btn-success">Get new</a>
 <header role="banner">
     <nav class="nav" role="navigation">
         <ul class="nav__list">

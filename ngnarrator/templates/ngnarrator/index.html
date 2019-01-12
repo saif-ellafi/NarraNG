@@ -5,16 +5,25 @@
     <title>NarraNG</title>
 
     {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <script src="{% static 'jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
     <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
 </head>
 <body>
 <h1>NarraNG Projects</h1>{% if projects_list %}
 <ul>
     {% for source, projects in projects_list.items %}
-        <li style="font-size:30px;color:white">{{ source }}</li>
-        <ul>
+    <li onclick="deployPlist({{ forloop.counter }})" style="font-size:30px;color:lightgrey">{{ source }}</li>
+        <ul id="hideable-plist-{{ forloop.counter }}" style="display:none">
         {% for project in projects %}
-            <li><a href="/ngnarrator/{{ project.pid }}/">{{ project.name }}</a></li>
+            <li>
+                <a href="/ngnarrator/{{ project.pid }}/">{{ project.name }}</a>
+                <a href="{% url 'new_entry' project.pid  %}" class="btn btn-success btn-xs">new</a>
+            </li>
         {% endfor %}
         </ul>
     {% endfor %}
@@ -23,4 +32,15 @@
 <p>No projects are available.</p>
 {% endif %}
 </body>
+<script>
+    function deployPlist(pid) {
+        var project = document.getElementById("hideable-plist-"+pid);
+
+        if (project.style.display == "none"){
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+    }
+}
+</script>
 </html>

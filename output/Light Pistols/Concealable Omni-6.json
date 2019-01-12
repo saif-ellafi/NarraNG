@@ -1,0 +1,16 @@
+{
+  "name": "Concealable Omni-6",
+  "project": "Light Pistols",
+  "links": [
+    {
+      "name": "Taurus Omni-6",
+      "description": "ACC5/SG6 6/7P AP0/-1 SA/SS",
+      "links": [
+        {
+          "name": "Concealable Holster",
+          "description": "-1 conceal. Wireless -1 color camouflage conceal"
+        }
+      ]
+    }
+  ]
+}

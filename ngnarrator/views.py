@@ -38,6 +38,7 @@ def project(request, project_id):
 def entry(request, project_id, entry_id):
     template = loader.get_template('ngnarrator/entry.html')
     context = {
+        'project_id': project_id,
         'entry_node': Narrator.load_output_entries(project_id)[entry_id].node
     }
     return HttpResponse(template.render(context, request))
@@ -51,6 +52,7 @@ def new_entry(request, project_id):
     Common.temp_entry = new_node.output_node_root
     Common.temp_entry.name = None
     context = {
+        'project_id': project_id,
         'project': loaded_project,
         'entry_node': Common.temp_entry
     }
