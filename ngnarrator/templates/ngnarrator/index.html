@@ -17,7 +17,7 @@
 <h1>NarraNG Projects</h1>{% if projects_list %}
 <ul>
     {% for source, projects in projects_list.items %}
-    <li onclick="deployPlist({{ forloop.counter }})" style="font-size:30px;color:lightgrey">{{ source }}</li>
+    <li onclick="deployPlist(this, {{ forloop.counter }})" style="font-size:30px;color:lightgrey">{{ source }} >> </li>
         <ul id="hideable-plist-{{ forloop.counter }}" style="display:none">
         {% for project in projects %}
             <li>
@@ -33,13 +33,15 @@
 {% endif %}
 </body>
 <script>
-    function deployPlist(pid) {
+    function deployPlist(t, pid) {
         var project = document.getElementById("hideable-plist-"+pid);
 
         if (project.style.display == "none"){
             project.style.display = "block";
+            t.textContent = t.textContent.replace(">>", "<<");
         } else {
             project.style.display = "none";
+            t.textContent = t.textContent.replace("<<", ">>")
     }
 }
 </script>
