@@ -15,7 +15,7 @@
       "qrange": {
         "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -23,10 +23,7 @@
         "mode": 0
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Bow",
           "weight": 1.0
@@ -60,10 +57,7 @@
         "mode": 1
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Assault Rifles",
           "weight": 1.0
@@ -87,9 +81,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -97,10 +91,7 @@
         "mode": 0
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Axes",
           "weight": 1.0
@@ -120,9 +111,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -130,10 +121,7 @@
         "mode": 0
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Batons",
           "weight": 1.0
@@ -161,9 +149,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -171,10 +159,7 @@
         "mode": 0
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Assault Cannons",
           "weight": 1.0
@@ -212,10 +197,7 @@
         "mode": 1
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Extended-Range shots",
           "weight": 1.0
@@ -253,10 +235,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Holdouts",
           "weight": 1.0
@@ -290,10 +269,7 @@
         "mode": 1
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Aerodynamic",
           "weight": 1.0
@@ -323,10 +299,7 @@
         "mode": 1
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Blocking",
           "weight": 1.0
@@ -344,9 +317,9 @@
           "bound": "single",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
+            "minv": 0,
             "maxv": 1,
-            "mode": 1
+            "mode": 0
           },
           "links": [
             {

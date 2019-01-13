@@ -3,13 +3,13 @@
   "project": "Character Generator",
   "links": [
     {
-      "name": "Gunslinger adept",
+      "name": "Smuggler",
       "links": [
         {
           "name": "Metatype",
           "links": [
             {
-              "name": "Elf"
+              "name": "Ork"
             }
           ]
         },
@@ -20,10 +20,7 @@
               "name": "Way he talks",
               "links": [
                 {
-                  "name": "Shouting"
-                },
-                {
-                  "name": "Gross"
+                  "name": "Delicate, subtle"
                 }
               ]
             },
@@ -34,7 +31,7 @@
                   "name": "Rational"
                 },
                 {
-                  "name": "Does not understand cause and effect"
+                  "name": "Dramatic"
                 }
               ]
             },
@@ -42,10 +39,7 @@
               "name": "Lifestyle",
               "links": [
                 {
-                  "name": "Organised"
-                },
-                {
-                  "name": "Needs time alone"
+                  "name": "Strict"
                 }
               ]
             },
@@ -53,7 +47,7 @@
               "name": "Social",
               "links": [
                 {
-                  "name": "Intimidating"
+                  "name": "Quiet"
                 }
               ]
             },
@@ -61,7 +55,7 @@
               "name": "Status",
               "links": [
                 {
-                  "name": "Strong"
+                  "name": "Merciful"
                 }
               ]
             }
@@ -71,10 +65,7 @@
           "name": "Appearance",
           "links": [
             {
-              "name": "Unique hair style"
-            },
-            {
-              "name": "Tatoos"
+              "name": "Obvious or distinctive cybernetics"
             }
           ]
         },
@@ -83,31 +74,31 @@
           "links": [
             {
               "name": "Body",
-              "value": 5
-            },
-            {
-              "name": "Agility",
-              "value": 6
-            },
-            {
-              "name": "Reaction",
-              "value": 5
-            },
-            {
-              "name": "Strength",
-              "value": 4
-            },
-            {
-              "name": "Willpower",
-              "value": 3
-            },
-            {
-              "name": "Logic",
               "value": 2
             },
             {
-              "name": "Intuition",
+              "name": "Agility",
+              "value": 2
+            },
+            {
+              "name": "Reaction",
+              "value": 4
+            },
+            {
+              "name": "Strength",
+              "value": 3
+            },
+            {
+              "name": "Willpower",
               "value": 5
+            },
+            {
+              "name": "Logic",
+              "value": 6
+            },
+            {
+              "name": "Intuition",
+              "value": 4
             },
             {
               "name": "Charisma",
@@ -115,7 +106,7 @@
             },
             {
               "name": "Edge",
-              "value": 5
+              "value": 2
             },
             {
               "name": "Magic",
@@ -130,16 +121,12 @@
               "name": "Positive",
               "links": [
                 {
-                  "name": "Blandness",
-                  "description": "Difficult to remember him, locate or track him. Does not apply on matrix or astral."
-                },
-                {
                   "name": "Astral Chameleon",
                   "description": "-2 when trying to assense this"
                 },
                 {
-                  "name": "Natural Hardening",
-                  "description": "Filters 1 biofeedback damage"
+                  "name": "Guts",
+                  "description": "+2 to resist fear and intimidation"
                 }
               ]
             },
@@ -147,8 +134,7 @@
               "name": "Negative",
               "links": [
                 {
-                  "name": "Codeblock",
-                  "description": "-2 dice on some matrix action"
+                  "name": "Ork Poser"
                 }
               ]
             }
@@ -160,6 +146,16 @@
             {
               "name": "Disguise",
               "description": "Intuition",
+              "value": 0,
+              "links": [
+                {
+                  "name": "Cosmetic"
+                }
+              ]
+            },
+            {
+              "name": "Diving",
+              "description": "Body",
               "value": 2,
               "links": [
                 {
@@ -168,20 +164,9 @@
               ]
             },
             {
-              "name": "Diving",
-              "description": "Body",
-              "value": 1,
-              "links": [
-                {
-                  "name": "by breathing apparatus",
-                  "description": "Liquid system, mixed gas, oxygen extraction, scuba, etc"
-                }
-              ]
-            },
-            {
               "name": "Escape Artist",
               "description": "Agility",
-              "value": 6,
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -191,25 +176,15 @@
             {
               "name": "Free-Fall",
               "description": "Body",
-              "value": 2,
+              "value": 3,
               "links": [
                 {
-                  "name": "Zipline"
+                  "name": "Wingsuit"
                 }
               ]
             },
             {
               "name": "Gymnastics",
-              "description": "Agility",
-              "value": 4,
-              "links": [
-                {
-                  "name": "Parkour"
-                }
-              ]
-            },
-            {
-              "name": "Palming",
               "description": "Agility",
               "value": 3,
               "links": [
@@ -219,19 +194,29 @@
               ]
             },
             {
-              "name": "Perception",
-              "description": "Intuition",
-              "value": 1,
+              "name": "Palming",
+              "description": "Agility",
+              "value": 3,
               "links": [
                 {
-                  "name": "Taste"
+                  "name": "Pickpocket"
+                }
+              ]
+            },
+            {
+              "name": "Perception",
+              "description": "Intuition",
+              "value": 3,
+              "links": [
+                {
+                  "name": "None"
                 }
               ]
             },
             {
               "name": "Running",
               "description": "Strength",
-              "value": 4,
+              "value": 2,
               "links": [
                 {
                   "name": "By terrain",
@@ -242,7 +227,7 @@
             {
               "name": "Sneaking",
               "description": "Agility",
-              "value": 3,
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -252,7 +237,17 @@
             {
               "name": "Survival",
               "description": "Willpower",
-              "value": 5,
+              "value": 3,
+              "links": [
+                {
+                  "name": "Mountain"
+                }
+              ]
+            },
+            {
+              "name": "Swimming",
+              "description": "Strength",
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -260,22 +255,12 @@
               ]
             },
             {
-              "name": "Swimming",
-              "description": "Strength",
-              "value": 3,
-              "links": [
-                {
-                  "name": "Dash"
-                }
-              ]
-            },
-            {
               "name": "Tracking",
               "description": "Intuition",
-              "value": 4,
+              "value": 1,
               "links": [
                 {
-                  "name": "Jungle"
+                  "name": "Urban"
                 }
               ]
             }
@@ -287,10 +272,10 @@
             {
               "name": "Aeronautics Mechanic",
               "description": "Logic. Repair aerospace vehicles.",
-              "value": 0,
+              "value": 4,
               "links": [
                 {
-                  "name": "LTA blimp"
+                  "name": "Vector Thrust"
                 }
               ]
             },
@@ -300,7 +285,7 @@
               "value": 0,
               "links": [
                 {
-                  "name": "Herding"
+                  "name": "Riding"
                 }
               ]
             },
@@ -310,27 +295,27 @@
               "value": 4,
               "links": [
                 {
-                  "name": "Heavy Weapons"
+                  "name": "Weapon Accessories"
                 }
               ]
             },
             {
               "name": "Artisan",
               "description": "Intuition",
-              "value": 0,
+              "value": 5,
               "links": [
                 {
-                  "name": "Sculpting"
+                  "name": "Carpentry"
                 }
               ]
             },
             {
               "name": "Automotive Mechanic",
               "description": "Logic. Ground vehicles",
-              "value": 0,
+              "value": 4,
               "links": [
                 {
-                  "name": "Hover"
+                  "name": "None"
                 }
               ]
             },
@@ -340,7 +325,7 @@
               "value": 0,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Bioinformatics"
                 }
               ]
             },
@@ -350,7 +335,7 @@
               "value": 0,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Physical"
                 }
               ]
             },
@@ -362,7 +347,7 @@
             {
               "name": "Cybercombat",
               "description": "Logic",
-              "value": 4,
+              "value": 3,
               "links": [
                 {
                   "name": "None"
@@ -375,14 +360,14 @@
               "value": 1,
               "links": [
                 {
-                  "name": "Repair"
+                  "name": "None"
                 }
               ]
             },
             {
               "name": "Demolitions",
               "description": "Logic",
-              "value": 4,
+              "value": 0,
               "links": [
                 {
                   "name": "None"
@@ -391,22 +376,22 @@
             },
             {
               "name": "Electronic Warfare",
-              "value": 0,
+              "value": 6,
               "links": [
                 {
-                  "name": "Sensor operations"
+                  "name": "Encryption"
                 }
               ]
             },
             {
               "name": "First Aid",
               "description": "Logic",
-              "value": 3
+              "value": 0
             },
             {
               "name": "Forgery",
               "description": "Logic",
-              "value": 0,
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -416,7 +401,7 @@
             {
               "name": "Hacking",
               "description": "Logic",
-              "value": 0,
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -426,10 +411,24 @@
             {
               "name": "Hardware",
               "description": "Logic",
-              "value": 0
+              "value": 3
             },
             {
               "name": "Industrial Mechanic",
+              "description": "Logic",
+              "value": 5,
+              "links": [
+                {
+                  "name": "None"
+                }
+              ]
+            },
+            {
+              "name": "Locksmith",
+              "value": 3
+            },
+            {
+              "name": "Medicine",
               "description": "Logic",
               "value": 0,
               "links": [
@@ -439,23 +438,9 @@
               ]
             },
             {
-              "name": "Locksmith",
-              "value": 2
-            },
-            {
-              "name": "Medicine",
-              "description": "Logic",
-              "value": 1,
-              "links": [
-                {
-                  "name": "Cosmetic Surgery"
-                }
-              ]
-            },
-            {
               "name": "Nautical Mechanic",
               "description": "Logic",
-              "value": 0,
+              "value": 6,
               "links": [
                 {
                   "name": "None"
@@ -465,17 +450,17 @@
             {
               "name": "Navigation",
               "description": "Intuition",
-              "value": 2,
+              "value": 6,
               "links": [
                 {
-                  "name": "AR Markers"
+                  "name": "GPS"
                 }
               ]
             },
             {
               "name": "Software",
               "description": "Logic",
-              "value": 5
+              "value": 0
             }
           ]
         },
@@ -484,10 +469,10 @@
           "links": [
             {
               "name": "Con",
-              "value": 3,
+              "value": 2,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Seduction"
                 }
               ]
             },
@@ -502,7 +487,7 @@
             },
             {
               "name": "Impersonation",
-              "value": 1,
+              "value": 2,
               "links": [
                 {
                   "name": "None"
@@ -511,7 +496,7 @@
             },
             {
               "name": "Instruction",
-              "value": 3,
+              "value": 5,
               "links": [
                 {
                   "name": "None"
@@ -520,28 +505,28 @@
             },
             {
               "name": "Intimidation",
-              "value": 3,
+              "value": 4,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Interrogation"
                 }
               ]
             },
             {
               "name": "Leadership",
-              "value": 5,
+              "value": 4,
               "links": [
                 {
-                  "name": "Inspire"
+                  "name": "Direct"
                 }
               ]
             },
             {
               "name": "Negotiation",
-              "value": 1,
+              "value": 2,
               "links": [
                 {
-                  "name": "Diplomacy"
+                  "name": "Contracts"
                 }
               ]
             },
@@ -550,7 +535,12 @@
               "value": 2,
               "links": [
                 {
-                  "name": "None"
+                  "name": "By performance art",
+                  "links": [
+                    {
+                      "name": "Comedy"
+                    }
+                  ]
                 }
               ]
             }
@@ -573,16 +563,16 @@
               "value": 3,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Submachine Guns"
                 }
               ]
             },
             {
               "name": "Blades",
-              "value": 0,
+              "value": 2,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Swords"
                 }
               ]
             },
@@ -597,7 +587,7 @@
             },
             {
               "name": "Heavy Weapons",
-              "value": 5,
+              "value": 3,
               "links": [
                 {
                   "name": "Assault Cannons"
@@ -618,16 +608,16 @@
               "value": 3,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Tasers"
                 }
               ]
             },
             {
               "name": "Throwing Weapons",
-              "value": 2,
+              "value": 5,
               "links": [
                 {
-                  "name": "Non-Aerodynamic"
+                  "name": "Aerodynamic"
                 }
               ]
             },
@@ -636,7 +626,7 @@
               "value": 0,
               "links": [
                 {
-                  "name": "Blocking"
+                  "name": "Cyber Implants"
                 }
               ]
             }
@@ -650,7 +640,7 @@
               "value": 4,
               "links": [
                 {
-                  "name": "None"
+                  "name": "Energy"
                 }
               ]
             },
@@ -659,21 +649,12 @@
               "value": 4,
               "links": [
                 {
-                  "name": "Semiballistic"
+                  "name": "Deep Space"
                 }
               ]
             },
             {
               "name": "Pilot Aircraft",
-              "value": 5,
-              "links": [
-                {
-                  "name": "None"
-                }
-              ]
-            },
-            {
-              "name": "Pilot Walker",
               "value": 2,
               "links": [
                 {
@@ -682,8 +663,17 @@
               ]
             },
             {
+              "name": "Pilot Walker",
+              "value": 6,
+              "links": [
+                {
+                  "name": "Biped"
+                }
+              ]
+            },
+            {
               "name": "Pilot Ground Craft",
-              "value": 3,
+              "value": 4,
               "links": [
                 {
                   "name": "None"
@@ -692,34 +682,12 @@
             },
             {
               "name": "Pilot Watercraft",
-              "value": 1,
+              "value": 5,
               "links": [
                 {
-                  "name": "Ship"
+                  "name": "Motorboat"
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "Adept Powers",
-          "links": [
-            {
-              "name": "Natural Immunity",
-              "description": "+die to resist toxins and sisease"
-            },
-            {
-              "name": "Spell Resistance",
-              "description": "+dice per level on defense against magic"
-            }
-          ]
-        },
-        {
-          "name": "Adept Foci",
-          "links": [
-            {
-              "name": "Weapon Focus",
-              "value": 4
             }
           ]
         },
@@ -727,33 +695,39 @@
           "name": "Weapons",
           "links": [
             {
-              "name": "Projectile Weapons",
+              "name": "Ammunition",
               "links": [
                 {
-                  "name": "Throwing shuriken",
-                  "description": "ACC-PLimit STR+1P -1AP"
+                  "name": "Hollow points",
+                  "description": "Forbidden. DV+1 AP+2"
                 }
               ]
             }
           ]
         },
         {
-          "name": "Commlink",
+          "name": "Augmentations",
           "links": [
             {
-              "name": "Sim module",
+              "name": "Grade",
               "links": [
                 {
-                  "name": "Cold-sim"
+                  "name": "Standard"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "name": "RCC",
+          "links": [
             {
-              "name": "Model",
+              "name": "Scratch-Built Junk",
+              "description": "DR 1, DP 3, FW 2, SH 1, NR 0",
               "links": [
                 {
-                  "name": "Fairlight Caliban",
-                  "description": "DR7"
+                  "name": "Sneak",
+                  "description": "+2 dice pool to defend against trace user actions. GOD converge don't get physical location"
                 }
               ]
             }
@@ -766,17 +740,23 @@
               "name": "Vision enhancements",
               "links": [
                 {
-                  "name": "Smartlink",
-                  "description": "Smartgun system receiver"
+                  "name": "Image link",
+                  "description": "AROs viewer, AR linker"
                 },
                 {
-                  "name": "Vision enhancement",
-                  "description": "Improves limit on perception tests. Wireless adds to pool"
+                  "name": "Thermographic vision"
+                },
+                {
+                  "name": "Vision magnification",
+                  "description": "Reduce one category of visibility penalty"
                 }
               ]
             },
             {
-              "name": "Glasses"
+              "name": "Endoscope"
+            },
+            {
+              "name": "Periscope"
             }
           ]
         },
@@ -791,9 +771,6 @@
                   "description": "+2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source."
                 }
               ]
-            },
-            {
-              "name": "Headphones"
             }
           ]
         },
@@ -804,8 +781,8 @@
               "name": "Set",
               "links": [
                 {
-                  "name": "Actioneer Business Clothes",
-                  "description": "AR8"
+                  "name": "Lined Coat",
+                  "description": "AR9"
                 }
               ]
             },
@@ -814,11 +791,11 @@
               "links": [
                 {
                   "name": "Nonconductivity",
-                  "value": 2
+                  "value": 4
                 },
                 {
-                  "name": "Chemical Protection",
-                  "value": 2
+                  "name": "Shock Frills",
+                  "description": "10 charches, unarmed response electricity damage. Wireless active deactivate as free"
                 }
               ]
             }
@@ -828,7 +805,22 @@
           "name": "Electronic Accessories",
           "links": [
             {
-              "name": "Satellite link"
+              "name": "Trodes"
+            },
+            {
+              "name": "Trid projector"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Warfare",
+          "links": [
+            {
+              "name": "Bug scanner",
+              "description": "EW + Logic to operate it to find devices within 20 meters. Wireless substitute with your own skill"
+            },
+            {
+              "name": "Micro-transceiver"
             }
           ]
         },
@@ -836,11 +828,11 @@
           "name": "Vehicle",
           "links": [
             {
-              "name": "Truck",
+              "name": "Bike",
               "links": [
                 {
-                  "name": "Rover Model 2072",
-                  "description": "Luxury van top of the line status symbol. HND5/5 SPD4 ACC2 BOD15 ARM12 PIL2 SENS4 SEATS6"
+                  "name": "Evo Falcon",
+                  "description": "Durable off-road bike. HND4/5 SPD3/4 ACC1 BOD5 ARM5 PIL1 SENS1 SEAT1"
                 }
               ]
             }

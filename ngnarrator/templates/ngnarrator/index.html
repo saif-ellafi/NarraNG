@@ -22,7 +22,7 @@
         {% for project in projects %}
             <li>
                 <a href="/ngnarrator/{{ project.pid }}/">{{ project.name }}</a>
-                <a href="{% url 'new_entry' project.pid  %}" class="btn btn-success btn-xs">new</a>
+                <a href="{% url 'new_entry' project.pid  %}" class="btn btn-primary btn-xs">create</a>
             </li>
         {% endfor %}
         </ul>

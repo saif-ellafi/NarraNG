@@ -220,8 +220,13 @@ class Narrator:
                 for qnode in user_choice:
                     self.handle_choice(qnode, output_node, auto)
             else:
-                logging.info("node with empty selections. deleting root %s" % output_node.root.name)
-                del output_node.root.links[output_node.root.links.index(output_node)]
+                logging.info("node with empty selections. replacing with LeafNode %s" % output_node.root.name)
+                link_node_index = output_node.root.links.index(output_node)
+                link_node = output_node.root.links[link_node_index]
+                leaf_node = LeafNode(link_node.root, link_node.name, link_node.description)
+                if link_node.value:
+                    leaf_node.set_value(link_node.value)
+                output_node.root.links[link_node_index] = leaf_node
         elif isinstance(user_choice, Node):
             self.handle_choice(user_choice, output_node, auto)
         elif str(user_choice) == '#':

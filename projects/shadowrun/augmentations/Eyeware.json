@@ -7,16 +7,12 @@
     "maxv": 1,
     "mode": 1
   },
+  "vrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 3.0
+  },
   "links": [
-    {
-      "name": "Cybereyes",
-      "weight": 6.0,
-      "vrange": {
-        "minv": 1,
-        "maxv": 4,
-        "mode": 3.0
-      }
-    },
     {
       "name": "Flare compensation",
       "weight": 1.0

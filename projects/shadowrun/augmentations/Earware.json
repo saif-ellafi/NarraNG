@@ -7,16 +7,12 @@
     "maxv": 1,
     "mode": 1
   },
+  "vrange": {
+    "minv": 1,
+    "maxv": 4,
+    "mode": 2.0
+  },
   "links": [
-    {
-      "name": "Cyberears",
-      "weight": 6.0,
-      "vrange": {
-        "minv": 1,
-        "maxv": 4,
-        "mode": 2.0
-      }
-    },
     {
       "name": "Audio Enhancement",
       "weight": 1.0,

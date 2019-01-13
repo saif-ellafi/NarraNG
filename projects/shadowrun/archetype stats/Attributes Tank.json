@@ -76,7 +76,7 @@
       "weight": 1.0,
       "vrange": {
         "minv": 0,
-        "maxv": 7,
+        "maxv": 4,
         "mode": 1
       }
     },

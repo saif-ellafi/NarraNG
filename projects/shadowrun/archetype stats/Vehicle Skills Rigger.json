@@ -13,9 +13,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -23,10 +23,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Artillery",
           "weight": 1.0
@@ -54,9 +51,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -64,10 +61,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Deep Space",
           "weight": 1.0
@@ -95,9 +89,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -105,10 +99,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Fixed-Wing",
           "weight": 1.0
@@ -140,9 +131,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -150,10 +141,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Biped",
           "weight": 1.0
@@ -177,9 +165,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -187,10 +175,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Bike",
           "weight": 1.0
@@ -218,9 +203,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -228,10 +213,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+        
         {
           "name": "Hydrofoil",
           "weight": 1.0

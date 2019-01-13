@@ -24,10 +24,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Camouflage",
           "weight": 1.0
@@ -52,9 +49,9 @@
       "weight": 1.0,
       "description": "Body",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -62,10 +59,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "by breathing apparatus",
           "weight": 1.0,
@@ -84,9 +78,9 @@
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -94,10 +88,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By restraint",
           "weight": 1.0,
@@ -115,9 +106,9 @@
       "weight": 1.0,
       "description": "Body",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -125,10 +116,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Jumping",
           "weight": 1.0
@@ -177,9 +165,9 @@
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -187,10 +175,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Balance",
           "weight": 1.0
@@ -223,9 +208,9 @@
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -233,10 +218,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Legerdemain",
           "weight": 1.0,
@@ -258,9 +240,9 @@
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -268,10 +250,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Hearing",
           "weight": 1.0
@@ -304,9 +283,9 @@
       "weight": 1.0,
       "description": "Strength",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -314,10 +293,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Distance",
           "weight": 1.0
@@ -339,9 +315,9 @@
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -349,10 +325,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By location",
           "weight": 1.0,
@@ -366,9 +339,9 @@
       "weight": 1.0,
       "description": "Willpower",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -376,10 +349,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Desert",
           "weight": 1.0
@@ -412,9 +382,9 @@
       "weight": 1.0,
       "description": "Strength",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -422,10 +392,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Dash",
           "weight": 1.0
@@ -442,9 +409,9 @@
       "description": "Intuition",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -452,10 +419,7 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Desert",
           "weight": 1.0

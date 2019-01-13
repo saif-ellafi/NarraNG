@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Erika MCD-1",
-      "weight": 10.0,
+      "weight": 8.0,
       "description": "DR1. 4321. Progs 1",
 	  "qrange": {
 		"minv": 1,
@@ -21,7 +21,7 @@
     },
     {
       "name": "Microdeck Summit",
-      "weight": 10.0,
+      "weight": 8.0,
       "description": "DR1, 4331, Progs 1",
 	  "qrange": {
 		"minv": 1,
@@ -32,7 +32,7 @@
     },
     {
       "name": "Microtronica Azteca 200",
-      "weight": 14.0,
+      "weight": 12.0,
       "description": "DR 2. 5432. Progs 2",
 	  "qrange": {
 		"minv": 2,
@@ -43,7 +43,7 @@
     },
     {
       "name": "Hermes Chariot",
-      "weight": 14.0,
+      "weight": 12.0,
       "description": "DR 2. 5442. Progs 2",
 	  "qrange": {
 		"minv": 2,
@@ -54,7 +54,7 @@
     },
     {
       "name": "Novatech Navigator",
-      "weight": 14.0,
+      "weight": 16.0,
       "description": "DR3. 6543. Progs 3",
 	  "qrange": {
 		"minv": 3,
@@ -65,7 +65,7 @@
     },
     {
       "name": "Renraku Tsurugi",
-      "weight": 11.0,
+      "weight": 16.0,
       "description": "DR 3. 6553. Progs 3",
 	  "qrange": {
 		"minv": 3,
@@ -76,7 +76,7 @@
     },
     {
       "name": "Sony CIY-720",
-      "weight": 8.0,
+      "weight": 10.0,
 	  "qrange": {
 		"minv": 4,
 		"maxv": 4,
@@ -87,7 +87,7 @@
     },
     {
       "name": "Shiawase Cyber-5",
-      "weight": 5.0,
+      "weight": 7.0,
       "description": "DR 5. 8765. Progs 5",
 	  "qrange": {
 		"minv": 5,
@@ -98,7 +98,7 @@
     },
     {
       "name": "Fairlight Excalibur",
-      "weight": 2.0,
+      "weight": 5.0,
       "description": "DR 6. 9876. Progs 6.",
 	  "qrange": {
 		"minv": 6,

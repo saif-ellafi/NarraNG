@@ -13,9 +13,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -23,10 +23,7 @@
         "mode": 1.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Fast Talking",
           "weight": 1.0
@@ -42,9 +39,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -52,19 +49,16 @@
         "mode": 1.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By culture",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Corporate",
@@ -99,9 +93,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -109,19 +103,16 @@
         "mode": 1.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By metatype",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Human",
@@ -152,9 +143,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -162,19 +153,16 @@
         "mode": 2.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By skill or knowledge",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Combat",
@@ -209,9 +197,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -219,10 +207,7 @@
         "mode": 2.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Interrogation",
           "weight": 1.0
@@ -246,9 +231,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -256,10 +241,7 @@
         "mode": 1
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Command",
           "weight": 1.0
@@ -283,9 +265,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -293,10 +275,7 @@
         "mode": 1.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "Bargaining",
           "weight": 1.0
@@ -316,9 +295,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -326,19 +305,16 @@
         "mode": 1.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
+
         {
           "name": "By performance art",
           "bound": "single",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Presentation",

@@ -40,7 +40,7 @@
       "name": "Vision enhancement",
       "weight": 1.0,
       "description": "Improves limit on perception tests. Wireless adds to pool",
-      "qrange": {
+      "vrange": {
         "minv": 1,
         "maxv": 6,
         "mode": 2.0
