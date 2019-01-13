@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Gunnery",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -48,7 +48,7 @@
     },
     {
       "name": "Pilot Aerospace",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -86,7 +86,7 @@
     },
     {
       "name": "Pilot Aircraft",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -128,7 +128,7 @@
     },
     {
       "name": "Pilot Walker",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -162,7 +162,7 @@
     },
     {
       "name": "Pilot Ground Craft",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -200,7 +200,7 @@
     },
     {
       "name": "Pilot Watercraft",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,

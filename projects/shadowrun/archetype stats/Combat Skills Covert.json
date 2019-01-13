@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Archery",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -44,12 +44,12 @@
     },
     {
       "name": "Automatics",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -78,12 +78,12 @@
     },
     {
       "name": "Blades",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -91,7 +91,6 @@
         "mode": 1
       },
       "links": [
-
         {
           "name": "Axes",
           "weight": 1.0
@@ -108,7 +107,7 @@
     },
     {
       "name": "Clubs",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -146,7 +145,7 @@
     },
     {
       "name": "Heavy Weapons",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -184,12 +183,12 @@
     },
     {
       "name": "Longarms",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -222,12 +221,12 @@
     },
     {
       "name": "Pistols",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -256,12 +255,12 @@
     },
     {
       "name": "Throwing Weapons",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -286,12 +285,12 @@
     },
     {
       "name": "Unarmed Combat",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 0,
@@ -314,13 +313,13 @@
         },
         {
           "name": "Martial Artist",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "52 Blocks",

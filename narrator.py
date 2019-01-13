@@ -220,13 +220,11 @@ class Narrator:
                 for qnode in user_choice:
                     self.handle_choice(qnode, output_node, auto)
             else:
-                logging.info("node with empty selections. replacing with LeafNode %s" % output_node.root.name)
-                link_node_index = output_node.root.links.index(output_node)
-                link_node = output_node.root.links[link_node_index]
-                leaf_node = LeafNode(link_node.root, link_node.name, link_node.description)
-                if link_node.value:
-                    leaf_node.set_value(link_node.value)
-                output_node.root.links[link_node_index] = leaf_node
+                logging.info("node with empty selections. transforming into LeafNode")
+                new_leaf = LeafNode(output_node.root, output_node.name, output_node.description)
+                if output_node.value:
+                    new_leaf.set_value(output_node.value)
+                output_node.root.links[output_node.root.links.index(output_node)] = new_leaf
         elif isinstance(user_choice, Node):
             self.handle_choice(user_choice, output_node, auto)
         elif str(user_choice) == '#':

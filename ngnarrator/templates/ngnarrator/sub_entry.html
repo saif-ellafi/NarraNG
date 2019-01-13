@@ -5,7 +5,7 @@
         <label for="group-{{link.name|slugify}}-{{forloop.counter}}-{{forloop.parentloop.counter}}-{{link.root.name|slugify}}"
                data-toggle="tooltip"
                data-placement="top"
-               title="{% if link.description %} {{ link.description }} {% endif %}"><span class="fa fa-angle-right"></span>{{ link.name }}{% if link|is_value_node%} : {{ link.value  }} {% endif %}</label>
+               title="{% if link.description %} {{ link.description }} {% endif %}"><span class="fa fa-angle-right">></span>{{ link.name }}{% if link|is_value_node%} : {{ link.value  }} {% endif %}</label>
         <ul class="s{{prefix}}-group-list">
         {% with prefix=prefix|add:1 %}
             {% for sublink in link.links %}

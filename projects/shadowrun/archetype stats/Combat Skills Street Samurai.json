@@ -305,13 +305,13 @@
         },
         {
           "name": "Martial Artist",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "52 Blocks",

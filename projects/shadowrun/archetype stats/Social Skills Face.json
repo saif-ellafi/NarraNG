@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Con",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -35,7 +35,7 @@
     },
     {
       "name": "Etiquette",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -51,7 +51,7 @@
 
         {
           "name": "By culture",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
         "minv": 0,
@@ -89,7 +89,7 @@
     },
     {
       "name": "Impersonation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -105,7 +105,7 @@
 
         {
           "name": "By metatype",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
         "minv": 0,
@@ -139,7 +139,7 @@
     },
     {
       "name": "Instruction",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -155,7 +155,7 @@
 
         {
           "name": "By skill or knowledge",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
         "minv": 0,
@@ -193,7 +193,7 @@
     },
     {
       "name": "Intimidation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -227,7 +227,7 @@
     },
     {
       "name": "Leadership",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -260,7 +260,7 @@
     },
     {
       "name": "Negotiation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -289,7 +289,7 @@
     },
     {
       "name": "Performance",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -305,7 +305,7 @@
 
         {
           "name": "By performance art",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
         "minv": 0,

@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Aeronautics Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Repair aerospace vehicles.",
       "qrange": {
@@ -53,7 +53,7 @@
     },
     {
       "name": "Animal Handling",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Charisma",
       "qrange": {
@@ -88,7 +88,7 @@
     },
     {
       "name": "Armorer",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Build and maintain weapons and armors.",
       "qrange": {
@@ -135,7 +135,7 @@
     },
     {
       "name": "Artisan",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
@@ -170,7 +170,7 @@
     },
     {
       "name": "Automotive Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Ground vehicles",
       "qrange": {
@@ -205,7 +205,7 @@
     },
     {
       "name": "Biotechnology",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Doctors and scientists for growing organic body parts on bioware",
       "qrange": {
@@ -244,7 +244,7 @@
     },
     {
       "name": "Chemistry",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -298,7 +298,7 @@
     },
     {
       "name": "Cybercombat",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -315,7 +315,7 @@
 
         {
           "name": "By target type",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
         "minv": 0,
@@ -349,7 +349,7 @@
     },
     {
       "name": "Cybertechnology",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Maintain or repair or build cybernetics",
       "qrange": {
@@ -384,7 +384,7 @@
     },
     {
       "name": "Demolitions",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -419,7 +419,7 @@
     },
     {
       "name": "Electronic Warfare",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
         "minv": 0,
@@ -468,7 +468,7 @@
     },
     {
       "name": "Forgery",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -507,7 +507,7 @@
     },
     {
       "name": "Hacking",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -557,7 +557,7 @@
     },
     {
       "name": "Industrial Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -614,7 +614,7 @@
     },
     {
       "name": "Medicine",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -657,7 +657,7 @@
     },
     {
       "name": "Nautical Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
@@ -692,7 +692,7 @@
     },
     {
       "name": "Navigation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {

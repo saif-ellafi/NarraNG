@@ -10,13 +10,13 @@
   "links": [
     {
       "name": "Aeronautics Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Repair aerospace vehicles.",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -24,10 +24,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Aerospace",
           "weight": 1.0
@@ -56,13 +52,13 @@
     },
     {
       "name": "Animal Handling",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Charisma",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -70,10 +66,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Specific Animal",
           "weight": 1.0
@@ -94,13 +86,13 @@
     },
     {
       "name": "Armorer",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Build and maintain weapons and armors.",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -108,10 +100,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Armor",
           "weight": 1.0
@@ -144,13 +132,13 @@
     },
     {
       "name": "Artisan",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -158,10 +146,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Cooking",
           "weight": 1.0
@@ -182,13 +166,13 @@
     },
     {
       "name": "Automotive Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Ground vehicles",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -196,10 +180,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Walker",
           "weight": 1.0
@@ -220,13 +200,13 @@
     },
     {
       "name": "Biotechnology",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Doctors and scientists for growing organic body parts on bioware",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -234,10 +214,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Bioinformatics",
           "weight": 1.0
@@ -262,13 +238,13 @@
     },
     {
       "name": "Chemistry",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -276,10 +252,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Analytical",
           "weight": 1.0
@@ -319,13 +291,13 @@
     },
     {
       "name": "Cybercombat",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -334,18 +306,14 @@
       },
       "links": [
         {
-          "name": "None",
-          "weight": 3.0
-        },
-        {
           "name": "By target type",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Devices",
@@ -373,13 +341,13 @@
     },
     {
       "name": "Cybertechnology",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic. Maintain or repair or build cybernetics",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -387,10 +355,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Bodyware",
           "weight": 1.0
@@ -411,13 +375,13 @@
     },
     {
       "name": "Demolitions",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -425,10 +389,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Commercial explosives",
           "weight": 1.0
@@ -449,12 +409,12 @@
     },
     {
       "name": "Electronic Warfare",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -462,10 +422,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Communications",
           "weight": 1.0
@@ -501,13 +457,13 @@
     },
     {
       "name": "Forgery",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -515,10 +471,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Counterfeiting",
           "weight": 1.0
@@ -543,13 +495,13 @@
     },
     {
       "name": "Hacking",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -557,10 +509,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Devices",
           "weight": 1.0
@@ -596,13 +544,13 @@
     },
     {
       "name": "Industrial Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -610,10 +558,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Electrical Power Systems",
           "weight": 1.0
@@ -656,13 +600,13 @@
     },
     {
       "name": "Medicine",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -670,10 +614,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Cosmetic Surgery",
           "weight": 1.0
@@ -702,13 +642,13 @@
     },
     {
       "name": "Nautical Mechanic",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Logic",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -716,10 +656,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Motorbat",
           "weight": 1.0
@@ -740,13 +676,13 @@
     },
     {
       "name": "Navigation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -754,10 +690,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "AR Markers",
           "weight": 1.0

@@ -6,9 +6,7 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/collapsible.css' %}">
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/multilevel.css' %}">
 
@@ -27,7 +25,7 @@
                 <label data-toggle="tooltip" data-placement="left"
                        title="{% if entry_node.description %} {{ entry_node.description }} {% endif %}"
                        for="group-1">
-                    <span class="fa fa-angle-right"></span>
+                    <span class="fa fa-angle-right">></span>
                     {% if not entry_node.name %} {{ project.name }}
                     {% else %}  {{ entry_node.name }}  ({{ entry_node.project }})
                     {% endif %}

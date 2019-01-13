@@ -10,12 +10,12 @@
   "links": [
     {
       "name": "Con",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -23,10 +23,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Fast Talking",
           "weight": 1.0
@@ -39,12 +35,12 @@
     },
     {
       "name": "Etiquette",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -53,18 +49,14 @@
       },
       "links": [
         {
-          "name": "None",
-          "weight": 3.0
-        },
-        {
           "name": "By culture",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Corporate",
@@ -96,12 +88,12 @@
     },
     {
       "name": "Impersonation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -110,18 +102,14 @@
       },
       "links": [
         {
-          "name": "None",
-          "weight": 3.0
-        },
-        {
           "name": "By metatype",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Human",
@@ -149,12 +137,12 @@
     },
     {
       "name": "Instruction",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -163,18 +151,14 @@
       },
       "links": [
         {
-          "name": "None",
-          "weight": 3.0
-        },
-        {
           "name": "By skill or knowledge",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Combat",
@@ -206,12 +190,12 @@
     },
     {
       "name": "Intimidation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -219,10 +203,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Interrogation",
           "weight": 1.0
@@ -243,12 +223,12 @@
     },
     {
       "name": "Leadership",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -256,10 +236,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Command",
           "weight": 1.0
@@ -280,12 +256,12 @@
     },
     {
       "name": "Negotiation",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -293,10 +269,6 @@
         "mode": 3.5
       },
       "links": [
-        {
-          "name": "None",
-          "weight": 3.0
-        },
         {
           "name": "Bargaining",
           "weight": 1.0
@@ -313,12 +285,12 @@
     },
     {
       "name": "Performance",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "vrange": {
         "minv": 1,
@@ -327,18 +299,14 @@
       },
       "links": [
         {
-          "name": "None",
-          "weight": 3.0
-        },
-        {
           "name": "By performance art",
-          "bound": "single",
+          "bound": "many",
           "weight": 1.0,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Presentation",

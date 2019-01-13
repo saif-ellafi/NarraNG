@@ -13,9 +13,9 @@
       "bound": "single",
       "weight": 1.0,
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 1,
-        "mode": 1
+        "mode": 0
       },
       "links": [
         {
@@ -619,10 +619,10 @@
           "bound": "all",
           "weight": 0.4,
           "qrange": {
-            "minv": 1,
-            "maxv": 1,
-            "mode": 1
-          },
+        "minv": 0,
+        "maxv": 1,
+        "mode": 0
+      },
           "links": [
             {
               "name": "Spell Defense",

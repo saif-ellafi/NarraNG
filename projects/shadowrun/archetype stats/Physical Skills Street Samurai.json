@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Disguise",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
@@ -45,7 +45,7 @@
     },
     {
       "name": "Diving",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Body",
       "qrange": {
@@ -74,7 +74,7 @@
     },
     {
       "name": "Escape Artist",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
@@ -102,7 +102,7 @@
     },
     {
       "name": "Free-Fall",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Body",
       "qrange": {
@@ -161,7 +161,7 @@
     },
     {
       "name": "Gymnastics",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
@@ -204,7 +204,7 @@
     },
     {
       "name": "Palming",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
@@ -236,7 +236,7 @@
     },
     {
       "name": "Perception",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Intuition",
       "qrange": {
@@ -279,7 +279,7 @@
     },
     {
       "name": "Running",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Strength",
       "qrange": {
@@ -311,7 +311,7 @@
     },
     {
       "name": "Sneaking",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Agility",
       "qrange": {
@@ -335,7 +335,7 @@
     },
     {
       "name": "Survival",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Willpower",
       "qrange": {
@@ -378,7 +378,7 @@
     },
     {
       "name": "Swimming",
-      "bound": "single",
+      "bound": "many",
       "weight": 1.0,
       "description": "Strength",
       "qrange": {
@@ -405,7 +405,7 @@
     },
     {
       "name": "Tracking",
-      "bound": "single",
+      "bound": "many",
       "description": "Intuition",
       "weight": 1.0,
       "qrange": {
