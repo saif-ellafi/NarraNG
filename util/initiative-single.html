@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SR5 Initiative</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: #3a0f1a;
+        margin-left:20px;
+    }
+
+    h1 {
+        color: #6a7ea0;
+    }
+
+    a {
+        font-size: 25px;
+        color: white;
+    }
+
+    #rectangle {
+        width:200px;
+        height:100px;
+        background:blue;
+    }
+</style>
+<script>
+    function reSort() {
+        $("#characters").hide();
+
+        $.each($("#characters").find('li').sort(byBadge), function(index, value) {
+                $(value).removeClass('active');
+                if (index == 0) {
+                    $(value).addClass('active')
+                };
+                if (getNumber($(value).find('.init').first().text()) < 0) {
+                    $(value).css("background-color", "darkred");
+                };
+                $("#characters").append($(value))
+            })
+
+        $("#characters").show();
+    }
+
+    function addCharacter() {
+        var name = $("#inputName").val();
+        var id = name.replace(' ', '').toLowerCase()
+        var initiative = $("#inputInitiative").val();
+        prefix = "<li id=\"" + id + "\" class=\"list-group-item\">";
+        span = "<span class=\"badge init\">" + initiative + "</span>";
+        subfive = "<button type=\"button\" class=\"btn btn-danger btn-xs\" style=\"margin-left:5px\" onclick=\"lowerInit('" + id + "', 5)\">-5</button>"
+        subten = "<button type=\"button\" class=\"btn btn-danger btn-xs\" style=\"margin-left:5px\" onclick=\"lowerInit('" + id + "', 10)\">-10</button>"
+        pass = "<button type=\"button\" class=\"btn btn-success btn-xs\" style=\"margin-left:5px\" onclick=\"passTurn('" + id + "')\">pass</button>"
+        suffix =  "</li>"
+
+        var group = "<div class='input-group' style='display:inline-flex;margin-left:10px'>" +
+                    "<input id='reset_" + id + "' type='text' class='form-control' placeholder='init' style='width:20%;height:25px'>" +
+                    "<span class='input-group-btn'>" +
+                    "<button class='btn btn-default' type='button' style='height:25px;padding-top:3px;' onclick='reSet(" + id + ")'>Set!</button>" +
+                    "</span>" +
+                    "</div>"
+
+        $("#characters").append( prefix + span + name + subfive + subten + pass + group + suffix);
+
+        reSort();
+
+        $("#inputName").val('');
+        $("#inputInitiative").val('');
+        $("#inputCondition").val('');
+    };
+
+    function getNumber(target) {
+        return Number(target.replace(/[^0-9.-]+/g,""));
+    }
+
+    function byBadge(a, b) {
+        apasses = $('#' + a.id + ' .passes').length;
+        bpasses = $('#' + b.id + ' .passes').length;
+        anum = getNumber($(a).find('.init').first().text());
+        bnum = getNumber($(b).find('.init').first().text());
+        if (anum >0 && bnum >0 && bpasses != apasses) {
+            return apasses > bpasses
+        } else {
+            return anum < bnum
+        }
+    }
+
+    function lowerInit(target, value) {
+        var elem = $("#"+target).find('.init').first();
+        elem.text(getNumber(elem.text()) - value);
+
+        reSort();
+    }
+
+    function setInit(target, value) {
+        var elem = $("#"+target).find('.init').first();
+        elem.text(value);
+
+        reSort();
+    }
+
+    function passTurn(target) {
+        $("#"+target).prepend("<span class=\"badge passes\" style='color:green;background-color:black'>X</span>");
+        lowerInit(target, 10);
+    }
+
+    function reSet(target) {
+        setInit(target.id, getNumber($("#reset_"+target.id).val()));
+        $("#reset_"+target.id).val('')
+    }
+
+    function resetAll() {
+        $.each($("#characters").find('li'), function(index, value) {
+            $(value).find('.init').first().text('0');
+        })
+    }
+
+</script>
+<body>
+
+<h1 style='color:white'>Initiative Manager</h1>
+
+<div class="row" style="margin-top:30px">
+    <div class="col-xs-4">
+        <ul id="characters" class="list-group">
+            <!--li class="list-group-item active"><span class="badge">14</span>Cras justo odio</li>
+            <li-- class="list-group-item"><span class="badge">14</span>Dapibus ac facilisis in</li-->
+        </ul>
+    </div>
+</div>
+
+<div class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputInitiative">Initiative</label>
+        <input type="text" class="form-control" id="inputInitiative" placeholder="Initiative">
+    </div>
+    <!--div class="checkbox">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+    </div-->
+    <button class="btn btn-default" onclick="addCharacter()">Add</button>
+    <button class="btn btn-warning" onclick="resetAll()">Reset</button>
+</div>
+
+<div style="margin-top:50px">
+    <textarea placeholder="Personal notes..." rows="8" cols="60"></textarea>
+</div>
+
+</body>
+</html>

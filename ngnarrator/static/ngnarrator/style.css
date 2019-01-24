@@ -1,5 +1,6 @@
 body {
     background-color: #3a0f1a;
+    margin-left:20px;
 }
 
 h1 {
@@ -9,4 +10,10 @@ h1 {
 a {
     font-size: 25px;
     color: white;
+}
+
+#rectangle {
+    width:200px;
+    height:100px;
+    background:blue;
 }

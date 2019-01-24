@@ -15,6 +15,7 @@
 </head>
 <body>
 <h1>NarraNG Projects</h1>{% if projects_list %}
+
 <ul>
     {% for source, projects in projects_list.items %}
     <li onclick="deployPlist(this, {{ forloop.counter }})" style="font-size:30px;color:lightgrey">{{ source }} >> </li>
