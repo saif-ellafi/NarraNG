@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SR5 Initiative</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <script src="{% static 'jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'shadowrun/js/initiative.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
+</head>
+<body>
+<div class="row" style="margin-top:30px">
+    <div class="col-xs-4">
+    <ul id="characters" class="list-group">
+        <!--li class="list-group-item active"><span class="badge">14</span>Cras justo odio</li>
+        <li-- class="list-group-item"><span class="badge">14</span>Dapibus ac facilisis in</li-->
+    </ul>
+    </div>
+</div>
+
+<div class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputInitiative">Initiative</label>
+        <input type="text" class="form-control" id="inputInitiative" placeholder="Initiative">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputCondition">Condition Monitor</label>
+        <input type="text" class="form-control" id="inputCondition" placeholder="Condition Monitor">
+    </div>
+    <!--div class="checkbox">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+    </div-->
+    <button class="btn btn-default" onclick="addCharacter()">Add</button>
+</div>
+
+</body>
+</html>
