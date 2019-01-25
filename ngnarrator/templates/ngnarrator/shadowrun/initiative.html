@@ -14,6 +14,21 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'ngnarrator/style.css' %}">
 </head>
+<style>
+    .no-turns {
+        background-color:darkred !important;
+    }
+
+    .no-spin::-webkit-inner-spin-button, .no-spin::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance:textfield !important;
+    }
+
+    .no-spin {
+        -moz-appearance:textfield !important;
+    }
+</style>
 <body>
 
 <h1 style='color:white'>Initiative Manager</h1>
@@ -34,7 +49,11 @@
     </div>
     <div class="form-group">
         <label class="sr-only" for="inputInitiative">Initiative</label>
-        <input type="text" class="form-control" id="inputInitiative" placeholder="Initiative">
+        <input type="number" class="form-control" id="inputInitiative" placeholder="Initiative" style="width:100px">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputDice">Initiative</label>
+        <input type="number" class="form-control" id="inputDice" placeholder="Dice" style="width:100px">
     </div>
     <!--div class="checkbox">
         <label>
@@ -42,7 +61,14 @@
         </label>
     </div-->
     <button class="btn btn-default" onclick="addCharacter()">Add</button>
-    <button class="btn btn-warning" onclick="resetAll()">Reset</button>
+</div>
+
+<div style="margin-top:30px">
+    <button class="btn btn-primary" onclick="resetAll()">New round</button>
+</div>
+
+<div style="margin-top:30px">
+    <button class="btn btn-warning" onclick="clearAll()">Clear all</button>
 </div>
 
 <div style="margin-top:50px">
