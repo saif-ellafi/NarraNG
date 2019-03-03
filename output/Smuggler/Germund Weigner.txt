@@ -1,0 +1,161 @@
+Germund Weigner (( Smuggler ))  
+	Metatype  
+		Troll  
+	Personality  
+		Way he talks  
+			Gross  
+		Psychology  
+			Intense  
+			Serious  
+		Lifestyle  
+			Adaptable  
+			Athletic  
+		Social  
+			Quiet  
+			Selfless  
+		Status  
+			Sympathetic  
+	Appearance  
+		Obvious or distinctive cybernetics  
+	Attributes  
+		Body: 2  
+		Agility: 1  
+		Reaction: 5  
+		Strength: 3  
+		Willpower: 3  
+		Logic: 5  
+		Intuition: 4  
+		Charisma: 4  
+		Edge: 2  
+		Magic: 0  
+	Qualities  
+		Positive  
+			Blandness  (( Difficult to remember him, locate or track him. Does not apply on matrix or astral. )) 
+			Natural Athlete  (( +2 dice for Running and Gymnastics )) 
+		Negative  
+			Loss of confidence  (( A skill suffers -2 due a bad glitch sometime )) 
+			Simsense Vertigo  (( Disorientation when working in VR -2 dice for AR or VR )) 
+	Physical Skills  
+		Disguise: 1  (( Intuition )) 
+		Diving: 1  (( Body )) 
+			By condition  (( Arctic, cave, commercial, etc )) 
+		Escape Artist: 3  (( Agility )) 
+		Free-Fall: 2  (( Body )) 
+		Gymnastics: 2  (( Agility )) 
+			Balance  
+		Palming: 2  (( Agility )) 
+		Perception: 6  (( Intuition )) 
+		Running: 3  (( Strength )) 
+			Sprinting  
+		Sneaking: 1  (( Agility )) 
+		Survival: 2  (( Willpower )) 
+			Desert  
+		Swimming: 7  (( Strength )) 
+		Tracking: 1  (( Intuition )) 
+	Technical Skills  
+		Aeronautics Mechanic: 5  (( Logic. Repair aerospace vehicles. )) 
+		Animal Handling  (( Charisma )) 
+		Armorer: 4  (( Logic. Build and maintain weapons and armors. )) 
+		Artisan: 3  (( Intuition )) 
+		Automotive Mechanic: 6  (( Logic. Ground vehicles )) 
+		Biotechnology  (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
+		Chemistry: 0  (( Logic )) 
+			Analytical  
+		Computer: 5  (( Logic )) 
+		Cybercombat: 3  (( Logic )) 
+			By target type  
+		Cybertechnology: 3  (( Logic. Maintain or repair or build cybernetics )) 
+		Demolitions  (( Logic )) 
+		Electronic Warfare: 4  
+		First Aid: 0  (( Logic )) 
+		Forgery: 4  (( Logic )) 
+		Hacking: 1  (( Logic )) 
+		Hardware: 5  (( Logic )) 
+		Industrial Mechanic: 6  (( Logic )) 
+		Locksmith: 5  
+		Medicine: 0  (( Logic )) 
+			Extendede Care  
+		Nautical Mechanic: 3  (( Logic )) 
+		Navigation: 4  (( Intuition )) 
+		Software: 0  (( Logic )) 
+	Social Skills  
+		Con: 2  
+		Etiquette: 3  
+			By culture  
+				Corporate  
+		Impersonation: 3  
+			By metatype  
+		Instruction: 4  
+		Intimidation: 2  
+		Leadership: 1  
+		Negotiation: 3  
+		Performance: 2  
+	Combat Skills  
+		Archery  
+		Automatics: 1  
+		Blades: 2  
+		Clubs: 0  
+			Saps  
+		Heavy Weapons: 4  
+		Longarms: 2  
+			Shots  
+		Pistols: 5  
+		Throwing Weapons: 1  
+			Aerodynamic  
+		Unarmed Combat: 0  
+			Subduing  
+	Vehicle Skills  
+		Gunnery: 4  
+		Pilot Aerospace: 7  
+		Pilot Aircraft: 5  
+		Pilot Walker: 4  
+			Multiped  
+		Pilot Ground Craft: 2  
+		Pilot Watercraft: 3  
+	Weapons  
+		Grenades  
+			High Explosive  (( 16P AP-2 -2/m )) 
+		Ammunition  
+			Stick-n-Shock  (( DV-2Se -5AP )) 
+		Melee Weapons  
+			Shock Gloves  (( Acc-PLimit 8S electric, AP -5 )) 
+	Augmentations  
+		Grade  
+			Standard  
+		Cyberlimb  
+			Obvious  
+				Torso  
+					Light Cyber pistol  (( 7P )) 
+		Bodyware  
+			Fingertip Compartment  
+	RCC  
+		Radio Shack Remote Controller  (( DR 2, DP 3, FW 3, SH 2, NR 0 )) 
+			Guard  (( Reduces extra damage by 1 per mark )) 
+			Targeting  (( Gunnery skill for the drone )) 
+	Imaging device  
+		Vision enhancements  
+			Low-light vision  
+			Image link  (( AROs viewer, AR linker )) 
+		Imaging Scope  
+	Audio device  
+		Audio enhancements  
+			Spatial recognizer  (( +2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source. )) 
+			Audio enhancement: 2  (( Adds limit to filter background noise. Wireless ads pool. )) 
+		Directional microphone  
+		Earbuds  
+	Armor  
+		Set  
+			Armor Jacket  (( AR12 )) 
+		Mods  
+			Thermal Damping: 2  (( +rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection )) 
+			Shock Frills  (( 10 charches, unarmed response electricity damage. Wireless active deactivate as free )) 
+			Chemical Protection: 6  
+	Electronic Accessories  
+		Printer  
+		Biometric reader  (( allows to lock devices with your biometric information )) 
+	Electronic Warfare  
+		Micro-transceiver  
+		Tag eraser  
+	Vehicle  
+		Bike  
+			Evo Falcon  (( Durable off-road bike. HND4/5 SPD3/4 ACC1 BOD5 ARM5 PIL1 SENS1 SEAT1 )) 

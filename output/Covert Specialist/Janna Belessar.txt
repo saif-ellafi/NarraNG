@@ -1,0 +1,169 @@
+Janna Belessar (( Covert Specialist ))  
+	Metatype
+		Troll
+	Personality
+		Way he talks
+			Delicate, subtle
+		Psychology
+			Ingenious and Bright
+		Lifestyle
+			Self confident
+		Social
+			Poor team worker
+			People oriented
+		Status
+			Horrified
+	Appearance
+		Dramatically high or low weight and or height for metatype
+	Attributes
+		Body: 5
+		Agility: 4
+		Reaction: 6
+		Strength: 4
+		Willpower: 3
+		Logic: 4
+		Intuition: 5
+		Charisma: 1
+		Edge: 5
+		Magic: 0
+	Qualities
+		Positive
+			Spirit Affinity  (( +1 dice for binding or summoning ))
+			Mentor spirit  (( Has some sort of mentor spirit ))
+		Negative
+			Allergy
+			Sensitive System  (( Higher essence loss due to impalants ))
+			Weak Ummune System  (( +2 disease power by test. ))
+	Physical Skills
+		Disguise: 5  (( Intuition ))
+		Diving: 5  (( Body ))
+		Escape Artist: 7  (( Agility ))
+		Free-Fall: 5  (( Body ))
+		Gymnastics: 3  (( Agility ))
+		Palming: 5  (( Agility ))
+		Perception: 3  (( Intuition ))
+		Running: 5  (( Strength ))
+			Distance
+		Sneaking: 4  (( Agility ))
+		Survival: 2  (( Willpower ))
+			Forest
+		Swimming: 5  (( Strength ))
+			Long Distance
+		Tracking: 5  (( Intuition ))
+	Technical Skills
+		Aeronautics Mechanic: 1  (( Logic. Repair aerospace vehicles. ))
+		Animal Handling  (( Charisma ))
+		Armorer: 1  (( Logic. Build and maintain weapons and armors. ))
+		Artisan  (( Intuition ))
+		Automotive Mechanic: 1  (( Logic. Ground vehicles ))
+		Biotechnology: 2  (( Logic. Doctors and scientists for growing organic body parts on bioware ))
+		Chemistry: 2  (( Logic ))
+		Computer: 5  (( Logic ))
+		Cybercombat: 1  (( Logic ))
+		Cybertechnology  (( Logic. Maintain or repair or build cybernetics ))
+		Demolitions: 2  (( Logic ))
+		Electronic Warfare: 3
+			Communications
+		First Aid: 2  (( Logic ))
+		Forgery: 2  (( Logic ))
+		Hacking: 1  (( Logic ))
+			Devices
+		Hardware: 3  (( Logic ))
+		Industrial Mechanic: 5  (( Logic ))
+			Welding
+		Locksmith: 5
+		Medicine: 3  (( Logic ))
+			Implant Surgery
+		Nautical Mechanic: 2  (( Logic ))
+		Navigation: 2  (( Intuition ))
+		Software: 1  (( Logic ))
+	Social Skills
+		Con: 2
+		Etiquette: 2
+		Impersonation: 2
+		Instruction: 2
+			By skill or knowledge
+		Intimidation: 4
+		Leadership: 1
+			Command
+		Negotiation: 3
+		Performance: 2
+			By performance art
+	Combat Skills
+		Archery: 4
+			Non-Standard ammunition
+		Automatics: 2
+		Blades: 6
+		Clubs
+		Heavy Weapons: 0
+			Rocket Launchers
+		Longarms: 6
+		Pistols: 5
+		Throwing Weapons: 4
+		Unarmed Combat: 3
+	Vehicle Skills
+		Gunnery: 4
+		Pilot Aerospace: 3
+		Pilot Aircraft: 3
+		Pilot Walker: 5
+		Pilot Ground Craft: 4
+		Pilot Watercraft: 2
+			Sail
+	Weapons
+		Heavy Pistols
+			Colt Government 2066  (( ACC6 7P -1AP SA ))
+				Periscope  (( Top mount. -3 to -2 penalty to target around corners. One vision enhancement. Wireless penalty is -1 ))
+				Laser Sight  (( Top or under mount. Laser beam to project do. Accuracy +1. Wireless +1 dice. Activate and deactivate as free. ))
+				Imaging Scope  (( Top mount. Include micro camera and vision magnification, 3 capacity for vision enhancements. Wireless can share line of sight. ))
+					Vision enhancement: 2  (( Improves limit on perception tests. Wireless adds to pool ))
+					Low-light vision
+					Image link  (( AROs viewer, AR linker ))
+					Vision magnification  (( Reduce one category of visibility penalty ))
+				Quick-draw holster  (( -1 quick draw treshold ))
+		Projectile Weapons
+			Medium Crossbow  (( Acc6 Dmg7P AP-2 ))
+			Light Crossbow  (( Acc7 Dmg5P -1AP ))
+			Heavy Crossbow  (( Acc 5 Dmg 10P AP-3 ))
+			Throwing shuriken  (( ACC-PLimit STR+1P -1AP ))
+		Melee Weapons
+			Staff  (( Acc6 Reach2 STR+3P ))
+	Augmentations
+		Cyberlimb
+			Obvious
+				Lower leg
+					Armor Enhancement: 2
+		Grade
+			Standard
+	Commlink
+		Sim module
+			None
+		Model
+			Sony Emperor  (( DR2 ))
+	Imaging device
+		Vision enhancements
+			Low-light vision
+			Image link  (( AROs viewer, AR linker ))
+		Goggles
+		Mage Sight Goggles
+	Audio device
+		Audio enhancements
+			Spatial recognizer  (( +2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source. ))
+			Audio enhancement: 2  (( Adds limit to filter background noise. Wireless ads pool. ))
+		Omni-directional microphone
+	Armor
+		Set
+			Chameleon suit  (( AR9. +2 limit on sneak. Wireless +2 dice on sneak ))
+		Mods
+			Thermal Damping: 4  (( +rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection ))
+			Chemical Protection: 3
+	Electronic Accessories
+		Satellite link
+		AR Gloves
+	Breaking Gear
+		Keycard copier: 4
+		Sequencer: 5  (( Defeat keypad maglocks. Wireless +1 to rating ))
+	RFID Tags
+		Sensor tags
+	Vehicle
+		Car
+			Chrysler-Nissan Jackrabbit  (( Electric subcompact. HND4/3 SPD3 ACC2 BOD8 ARM4 PIL1 SENS2 SEATS2 ))

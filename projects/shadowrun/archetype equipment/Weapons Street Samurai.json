@@ -25,7 +25,7 @@
     },
     {
       "name": "Projectile Weapons",
-      "weight": 0.6,
+      "weight": 0.4,
       "link": "projects/shadowrun/weapons/Projectile Weapons.json"
     },
     {

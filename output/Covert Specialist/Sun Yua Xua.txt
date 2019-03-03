@@ -1,0 +1,152 @@
+Sun Yua Xua (( Covert Specialist ))  
+	Metatype  
+		Human  
+	Personality  
+		Way he talks  
+			Delicate, subtle  
+		Psychology  
+			Suspicious of other people  
+		Lifestyle  
+			Law-abiding  
+		Social  
+			Likes to be in charge  
+			People oriented  
+		Status  
+			Heartbroken  
+	Appearance  
+		Obvious or distinctive cybernetics  
+	Attributes  
+		Body: 4  
+		Agility: 4  
+		Reaction: 6  
+		Strength: 4  
+		Willpower: 2  
+		Logic: 2  
+		Intuition: 4  
+		Charisma: 4  
+		Edge: 3  
+		Magic: 0  
+	Qualities  
+		Positive  
+			Bilingual  
+			Codeslinger  (( +2 to some matrix action )) 
+			Blandness  (( Difficult to remember him, locate or track him. Does not apply on matrix or astral. )) 
+		Negative  
+			Bad Rep  (( Notorious for doing something wrong )) 
+			Simsense Vertigo  (( Disorientation when working in VR -2 dice for AR or VR )) 
+	Physical Skills  
+		Disguise: 3  (( Intuition )) 
+			Trideo & Video  
+		Diving: 6  (( Body )) 
+		Escape Artist: 3  (( Agility )) 
+			By restraint  (( Cuffs, ropes, zip ties, etc )) 
+		Free-Fall: 4  (( Body )) 
+		Gymnastics: 3  (( Agility )) 
+		Palming: 3  (( Agility )) 
+		Perception: 4  (( Intuition )) 
+		Running: 5  (( Strength )) 
+		Sneaking: 2  (( Agility )) 
+		Survival: 3  (( Willpower )) 
+			Desert  
+		Swimming: 4  (( Strength )) 
+		Tracking: 5  (( Intuition )) 
+	Technical Skills  
+		Aeronautics Mechanic: 2  (( Logic. Repair aerospace vehicles. )) 
+			Vector Thrust  
+		Animal Handling  (( Charisma )) 
+		Armorer: 1  (( Logic. Build and maintain weapons and armors. )) 
+		Artisan  (( Intuition )) 
+		Automotive Mechanic: 1  (( Logic. Ground vehicles )) 
+		Biotechnology: 4  (( Logic. Doctors and scientists for growing organic body parts on bioware )) 
+		Chemistry: 2  (( Logic )) 
+		Computer: 6  (( Logic )) 
+		Cybercombat: 1  (( Logic )) 
+		Cybertechnology  (( Logic. Maintain or repair or build cybernetics )) 
+		Demolitions: 4  (( Logic )) 
+		Electronic Warfare: 2  
+		First Aid: 1  (( Logic )) 
+		Forgery: 4  (( Logic )) 
+		Hacking: 2  (( Logic )) 
+		Hardware: 2  (( Logic )) 
+		Industrial Mechanic: 3  (( Logic )) 
+		Locksmith: 6  
+		Medicine: 6  (( Logic )) 
+			Trauma Surgery  
+		Nautical Mechanic: 2  (( Logic )) 
+		Navigation: 2  (( Intuition )) 
+		Software: 1  (( Logic )) 
+	Social Skills  
+		Con: 1  
+			Fast Talking  
+		Etiquette: 2  
+			By culture  
+				Mercenary  
+		Impersonation: 2  
+		Instruction: 6  
+		Intimidation: 6  
+			Torture  
+		Leadership: 4  
+		Negotiation: 3  
+		Performance: 3  
+	Combat Skills  
+		Archery: 6  
+		Automatics: 2  
+			Machine Pistols  
+		Blades: 3  
+		Clubs  
+		Heavy Weapons  
+		Longarms: 3  
+		Pistols: 2  
+			Revolvers  
+		Throwing Weapons: 3  
+		Unarmed Combat: 1  
+	Vehicle Skills  
+		Gunnery: 4  
+		Pilot Aerospace: 4  
+		Pilot Aircraft: 6  
+			Fixed-Wing  
+		Pilot Walker: 4  
+		Pilot Ground Craft: 1  
+		Pilot Watercraft: 3  
+	Weapons  
+		Melee Weapons  
+			Knucks  (( Acc-PLimit STR+1P )) 
+		Ammunition  
+			APDS  (( Forbidden. AP-4 )) 
+	Augmentations  
+		Bodyware  
+			Wired Reflexes: 2  (( +1 reaction and +1d6 for initiative. If wireless, can exceed limit )) 
+		Grade  
+			Standard  
+	Commlink  
+		Sim module  
+			Cold-sim  
+		Model  
+			Hermes Ikon  (( DR5 )) 
+	Imaging device  
+		Vision enhancements  
+			Image link  (( AROs viewer, AR linker )) 
+		Glasses  
+		Mage Sight Goggles  
+	Audio device  
+		Audio enhancements  
+			Audio enhancement: 2  (( Adds limit to filter background noise. Wireless ads pool. )) 
+			Select sound filter: 1  (( Eliminate specific background noise by group on each rating )) 
+		Directional microphone  
+		Laser Microphone  
+	Armor  
+		Set  
+			Armor clothing  (( AR6 )) 
+		Mods  
+			Fire resistance: 4  
+			Chemical Protection: 2  
+	Electronic Accessories  
+		Simrig  (( Requires DNI. records sensory )) 
+		Printer  
+	Breaking Gear  
+		Autopicker: 3  (( Bypass mechanical locks adds to your limit.. Wireless add rating as dice pool )) 
+	RFID Tags  
+		Security tags  
+	Vehicle  
+		Car  
+			Ford Americar  (( Four door sedan capacious storage not fast or sexy. HND4/3 SPD3 ACC2 BOD11 ARM6 PIL1 SENS2 SEATS4 )) 

@@ -1,0 +1,714 @@
+{
+  "name": "Germund Weigner",
+  "project": "Smuggler",
+  "links": [
+    {
+      "name": "Metatype",
+      "links": [
+        {
+          "name": "Troll"
+        }
+      ]
+    },
+    {
+      "name": "Personality",
+      "links": [
+        {
+          "name": "Way he talks",
+          "links": [
+            {
+              "name": "Gross"
+            }
+          ]
+        },
+        {
+          "name": "Psychology",
+          "links": [
+            {
+              "name": "Intense"
+            },
+            {
+              "name": "Serious"
+            }
+          ]
+        },
+        {
+          "name": "Lifestyle",
+          "links": [
+            {
+              "name": "Adaptable"
+            },
+            {
+              "name": "Athletic"
+            }
+          ]
+        },
+        {
+          "name": "Social",
+          "links": [
+            {
+              "name": "Quiet"
+            },
+            {
+              "name": "Selfless"
+            }
+          ]
+        },
+        {
+          "name": "Status",
+          "links": [
+            {
+              "name": "Sympathetic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Appearance",
+      "links": [
+        {
+          "name": "Obvious or distinctive cybernetics"
+        }
+      ]
+    },
+    {
+      "name": "Attributes",
+      "links": [
+        {
+          "name": "Body",
+          "value": 2
+        },
+        {
+          "name": "Agility",
+          "value": 1
+        },
+        {
+          "name": "Reaction",
+          "value": 5
+        },
+        {
+          "name": "Strength",
+          "value": 3
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Logic",
+          "value": 5
+        },
+        {
+          "name": "Intuition",
+          "value": 4
+        },
+        {
+          "name": "Charisma",
+          "value": 4
+        },
+        {
+          "name": "Edge",
+          "value": 2
+        },
+        {
+          "name": "Magic",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Qualities",
+      "links": [
+        {
+          "name": "Positive",
+          "links": [
+            {
+              "name": "Blandness",
+              "description": "Difficult to remember him, locate or track him. Does not apply on matrix or astral."
+            },
+            {
+              "name": "Natural Athlete",
+              "description": "+2 dice for Running and Gymnastics"
+            }
+          ]
+        },
+        {
+          "name": "Negative",
+          "links": [
+            {
+              "name": "Loss of confidence",
+              "description": "A skill suffers -2 due a bad glitch sometime"
+            },
+            {
+              "name": "Simsense Vertigo",
+              "description": "Disorientation when working in VR -2 dice for AR or VR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physical Skills",
+      "links": [
+        {
+          "name": "Disguise",
+          "description": "Intuition",
+          "value": 1
+        },
+        {
+          "name": "Diving",
+          "description": "Body",
+          "value": 1,
+          "links": [
+            {
+              "name": "By condition",
+              "description": "Arctic, cave, commercial, etc"
+            }
+          ]
+        },
+        {
+          "name": "Escape Artist",
+          "description": "Agility",
+          "value": 3
+        },
+        {
+          "name": "Free-Fall",
+          "description": "Body",
+          "value": 2
+        },
+        {
+          "name": "Gymnastics",
+          "description": "Agility",
+          "value": 2,
+          "links": [
+            {
+              "name": "Balance"
+            }
+          ]
+        },
+        {
+          "name": "Palming",
+          "description": "Agility",
+          "value": 2
+        },
+        {
+          "name": "Perception",
+          "description": "Intuition",
+          "value": 6
+        },
+        {
+          "name": "Running",
+          "description": "Strength",
+          "value": 3,
+          "links": [
+            {
+              "name": "Sprinting"
+            }
+          ]
+        },
+        {
+          "name": "Sneaking",
+          "description": "Agility",
+          "value": 1
+        },
+        {
+          "name": "Survival",
+          "description": "Willpower",
+          "value": 2,
+          "links": [
+            {
+              "name": "Desert"
+            }
+          ]
+        },
+        {
+          "name": "Swimming",
+          "description": "Strength",
+          "value": 7
+        },
+        {
+          "name": "Tracking",
+          "description": "Intuition",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Technical Skills",
+      "links": [
+        {
+          "name": "Aeronautics Mechanic",
+          "description": "Logic. Repair aerospace vehicles.",
+          "value": 5
+        },
+        {
+          "name": "Animal Handling",
+          "description": "Charisma"
+        },
+        {
+          "name": "Armorer",
+          "description": "Logic. Build and maintain weapons and armors.",
+          "value": 4
+        },
+        {
+          "name": "Artisan",
+          "description": "Intuition",
+          "value": 3
+        },
+        {
+          "name": "Automotive Mechanic",
+          "description": "Logic. Ground vehicles",
+          "value": 6
+        },
+        {
+          "name": "Biotechnology",
+          "description": "Logic. Doctors and scientists for growing organic body parts on bioware"
+        },
+        {
+          "name": "Chemistry",
+          "description": "Logic",
+          "value": 0,
+          "links": [
+            {
+              "name": "Analytical"
+            }
+          ]
+        },
+        {
+          "name": "Computer",
+          "description": "Logic",
+          "value": 5
+        },
+        {
+          "name": "Cybercombat",
+          "description": "Logic",
+          "value": 3,
+          "links": [
+            {
+              "name": "By target type"
+            }
+          ]
+        },
+        {
+          "name": "Cybertechnology",
+          "description": "Logic. Maintain or repair or build cybernetics",
+          "value": 3
+        },
+        {
+          "name": "Demolitions",
+          "description": "Logic"
+        },
+        {
+          "name": "Electronic Warfare",
+          "value": 4
+        },
+        {
+          "name": "First Aid",
+          "description": "Logic",
+          "value": 0
+        },
+        {
+          "name": "Forgery",
+          "description": "Logic",
+          "value": 4
+        },
+        {
+          "name": "Hacking",
+          "description": "Logic",
+          "value": 1
+        },
+        {
+          "name": "Hardware",
+          "description": "Logic",
+          "value": 5
+        },
+        {
+          "name": "Industrial Mechanic",
+          "description": "Logic",
+          "value": 6
+        },
+        {
+          "name": "Locksmith",
+          "value": 5
+        },
+        {
+          "name": "Medicine",
+          "description": "Logic",
+          "value": 0,
+          "links": [
+            {
+              "name": "Extendede Care"
+            }
+          ]
+        },
+        {
+          "name": "Nautical Mechanic",
+          "description": "Logic",
+          "value": 3
+        },
+        {
+          "name": "Navigation",
+          "description": "Intuition",
+          "value": 4
+        },
+        {
+          "name": "Software",
+          "description": "Logic",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Social Skills",
+      "links": [
+        {
+          "name": "Con",
+          "value": 2
+        },
+        {
+          "name": "Etiquette",
+          "value": 3,
+          "links": [
+            {
+              "name": "By culture",
+              "links": [
+                {
+                  "name": "Corporate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Impersonation",
+          "value": 3,
+          "links": [
+            {
+              "name": "By metatype"
+            }
+          ]
+        },
+        {
+          "name": "Instruction",
+          "value": 4
+        },
+        {
+          "name": "Intimidation",
+          "value": 2
+        },
+        {
+          "name": "Leadership",
+          "value": 1
+        },
+        {
+          "name": "Negotiation",
+          "value": 3
+        },
+        {
+          "name": "Performance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Combat Skills",
+      "links": [
+        {
+          "name": "Archery"
+        },
+        {
+          "name": "Automatics",
+          "value": 1
+        },
+        {
+          "name": "Blades",
+          "value": 2
+        },
+        {
+          "name": "Clubs",
+          "value": 0,
+          "links": [
+            {
+              "name": "Saps"
+            }
+          ]
+        },
+        {
+          "name": "Heavy Weapons",
+          "value": 4
+        },
+        {
+          "name": "Longarms",
+          "value": 2,
+          "links": [
+            {
+              "name": "Shots"
+            }
+          ]
+        },
+        {
+          "name": "Pistols",
+          "value": 5
+        },
+        {
+          "name": "Throwing Weapons",
+          "value": 1,
+          "links": [
+            {
+              "name": "Aerodynamic"
+            }
+          ]
+        },
+        {
+          "name": "Unarmed Combat",
+          "value": 0,
+          "links": [
+            {
+              "name": "Subduing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vehicle Skills",
+      "links": [
+        {
+          "name": "Gunnery",
+          "value": 4
+        },
+        {
+          "name": "Pilot Aerospace",
+          "value": 7
+        },
+        {
+          "name": "Pilot Aircraft",
+          "value": 5
+        },
+        {
+          "name": "Pilot Walker",
+          "value": 4,
+          "links": [
+            {
+              "name": "Multiped"
+            }
+          ]
+        },
+        {
+          "name": "Pilot Ground Craft",
+          "value": 2
+        },
+        {
+          "name": "Pilot Watercraft",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Weapons",
+      "links": [
+        {
+          "name": "Grenades",
+          "links": [
+            {
+              "name": "High Explosive",
+              "description": "16P AP-2 -2/m"
+            }
+          ]
+        },
+        {
+          "name": "Ammunition",
+          "links": [
+            {
+              "name": "Stick-n-Shock",
+              "description": "DV-2Se -5AP"
+            }
+          ]
+        },
+        {
+          "name": "Melee Weapons",
+          "links": [
+            {
+              "name": "Shock Gloves",
+              "description": "Acc-PLimit 8S electric, AP -5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Augmentations",
+      "links": [
+        {
+          "name": "Grade",
+          "links": [
+            {
+              "name": "Standard"
+            }
+          ]
+        },
+        {
+          "name": "Cyberlimb",
+          "links": [
+            {
+              "name": "Obvious",
+              "links": [
+                {
+                  "name": "Torso",
+                  "links": [
+                    {
+                      "name": "Light Cyber pistol",
+                      "description": "7P"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodyware",
+          "links": [
+            {
+              "name": "Fingertip Compartment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RCC",
+      "links": [
+        {
+          "name": "Radio Shack Remote Controller",
+          "description": "DR 2, DP 3, FW 3, SH 2, NR 0",
+          "links": [
+            {
+              "name": "Guard",
+              "description": "Reduces extra damage by 1 per mark"
+            },
+            {
+              "name": "Targeting",
+              "description": "Gunnery skill for the drone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Imaging device",
+      "links": [
+        {
+          "name": "Vision enhancements",
+          "links": [
+            {
+              "name": "Low-light vision"
+            },
+            {
+              "name": "Image link",
+              "description": "AROs viewer, AR linker"
+            }
+          ]
+        },
+        {
+          "name": "Imaging Scope"
+        }
+      ]
+    },
+    {
+      "name": "Audio device",
+      "links": [
+        {
+          "name": "Audio enhancements",
+          "links": [
+            {
+              "name": "Spatial recognizer",
+              "description": "+2 on limit for perception test of specific sound type. Wireless +2 dice pool to detect sound source."
+            },
+            {
+              "name": "Audio enhancement",
+              "description": "Adds limit to filter background noise. Wireless ads pool.",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "Directional microphone"
+        },
+        {
+          "name": "Earbuds"
+        }
+      ]
+    },
+    {
+      "name": "Armor",
+      "links": [
+        {
+          "name": "Set",
+          "links": [
+            {
+              "name": "Armor Jacket",
+              "description": "AR12"
+            }
+          ]
+        },
+        {
+          "name": "Mods",
+          "links": [
+            {
+              "name": "Thermal Damping",
+              "description": "+rating to sneak vs thermographic vision. Wireless gives extra info on heat-based detection",
+              "value": 2
+            },
+            {
+              "name": "Shock Frills",
+              "description": "10 charches, unarmed response electricity damage. Wireless active deactivate as free"
+            },
+            {
+              "name": "Chemical Protection",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Electronic Accessories",
+      "links": [
+        {
+          "name": "Printer"
+        },
+        {
+          "name": "Biometric reader",
+          "description": "allows to lock devices with your biometric information"
+        }
+      ]
+    },
+    {
+      "name": "Electronic Warfare",
+      "links": [
+        {
+          "name": "Micro-transceiver"
+        },
+        {
+          "name": "Tag eraser"
+        }
+      ]
+    },
+    {
+      "name": "Vehicle",
+      "links": [
+        {
+          "name": "Bike",
+          "links": [
+            {
+              "name": "Evo Falcon",
+              "description": "Durable off-road bike. HND4/5 SPD3/4 ACC1 BOD5 ARM5 PIL1 SENS1 SEAT1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

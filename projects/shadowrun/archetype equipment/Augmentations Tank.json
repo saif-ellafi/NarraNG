@@ -4,7 +4,7 @@
   "weight": 1.0,
   "qrange": {
     "minv": 2,
-    "maxv": 7,
+    "maxv": 12,
     "mode": 3
   },
   "links": [

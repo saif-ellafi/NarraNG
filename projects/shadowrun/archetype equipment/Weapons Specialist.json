@@ -10,7 +10,7 @@
   "links": [
     {
       "name": "Heavy Pistols",
-      "weight": 1.0,
+      "weight": 0.7,
       "link": "projects/shadowrun/weapons/Heavy Pistols.json"
     },
     {
@@ -18,10 +18,20 @@
       "weight": 0.8,
       "link": "projects/shadowrun/weapons/Shotguns.json"
     },
+	{
+      "name": "Machine Guns",
+      "weight": 1.0,
+      "link": "projects/shadowrun/weapons/Machine Guns.json"
+    },
+	{
+      "name": "Machine Guns",
+      "weight": 1.2,
+      "link": "projects/shadowrun/weapons/Assault Rifles.json"
+    },
     {
-      "name": "Projectile Weapons",
-      "weight": 0.6,
-      "link": "projects/shadowrun/weapons/Projectile Weapons.json"
+      "name": "Melee Weapons",
+      "weight": 1.4,
+      "link": "projects/shadowrun/weapons/Melee Weapons.json"
     },
     {
       "name": "Grenades",
@@ -30,7 +40,7 @@
     },
     {
       "name": "Ammunition",
-      "weight": 1.6,
+      "weight": 0.6,
       "link": "projects/shadowrun/weapons/Ammunition.json"
     }
   ]
