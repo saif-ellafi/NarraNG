@@ -1,0 +1,47 @@
+{
+  "name": "Throwing weapons",
+  "bound": "single",
+  "weight": 1,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Throwing knife",
+      "weight": 10.0,
+      "description": "Acc-PLimit STR+1P -1AP"
+    },
+    {
+      "name": "Throwing shuriken",
+      "weight": 8.0,
+      "description": "ACC-PLimit STR+1P -1AP"
+    },
+    {
+      "name": "Boomerang",
+      "weight": 2.0,
+      "description": "Acc-PLimit-1 STR+2P"
+    },
+    {
+      "name": "Net",
+      "weight": 6.0,
+      "description": "Acc PLimit-2 subdue with Agility"
+    },
+    {
+      "name": "Urban tribe Tomahawak",
+      "weight": 6.0,
+      "description": "Modern composite throwing axe. ACC-PLimit+1 STR+2P -1AP"
+    },
+    {
+      "name": "Harpoon",
+      "weight": 2.0,
+      "description": "Acc Plimit STR+3P AP-1"
+    },
+    {
+      "name": "Javeline",
+      "weight": 4.0,
+      "description": "Acc Plimit STR+3P AP-1"
+    }
+]
+}

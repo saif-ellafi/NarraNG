@@ -1,0 +1,56 @@
+{
+  "name": "Arrowheads",
+  "bound": "single",
+  "weight": 1.0,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1.0
+  },
+  "links": [
+    {
+      "name": "Standard",
+      "weight": 20.0
+    },
+    {
+      "name": "Barbed head",
+      "weight": 15.0,
+      "description": "DV+1. Damage in, damage out. Needs medical skill to pull out."
+    },
+    {
+      "name": "Explosive head",
+      "weight": 11.0,
+      "description": "Acc-1 DV+2 AP-1."
+    },
+    {
+      "name": "Hammerhead",
+      "weight": 15.0,
+      "description": "Acc-1 +1S +2 AP"
+    },
+    {
+      "name": "Injection",
+      "weight": 12.0,
+      "link": "projects/shadowrun/modules/Toxins.json"
+    },
+    {
+      "name": "Incendiary head",
+      "weight": 8.0,
+      "description": "ACC-1 DV phosphorous fire DV 8P -6AP for 3 combat turns in 6P-4AP"
+    },
+    {
+      "name": "Screamer head",
+      "weight": 16.0,
+      "description": "Acc-2 -2S +6AP. Sounding arrwhoead. Wireless reset as free action otherwise Simle Logic + Intuition(1)"
+    },
+    {
+      "name": "Stick n Shock",
+      "weight": 14.0,
+      "description": "ACC -1 8Se -5AP"
+    },
+    {
+      "name": "Static shaft",
+      "weight": 14.0,
+      "description": "+4Se"
+    }
+  ]
+}

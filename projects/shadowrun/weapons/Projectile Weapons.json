@@ -33,14 +33,19 @@
       "description": "Acc 5 Dmg 10P AP-3"
     },
     {
-      "name": "Throwing knife",
-      "weight": 10.0,
-      "description": "Acc-PLimit STR+1P -1AP"
+      "name": "AquaDyne Shark-XS harpoon gun",
+      "weight": 2.0,
+      "description": "Acc5 9P AP-2 SS"
     },
     {
-      "name": "Throwing shuriken",
-      "weight": 6.0,
-      "description": "ACC-PLimit STR+1P -1AP"
+      "name": "Pistol crossbow",
+      "weight": 14.0,
+      "description": "Acc7, 4P ss"
+    },
+    {
+      "name": "Slingshot",
+      "weight": 10.0,
+      "description": "Acc7 2PSS"
     }
   ]
 }

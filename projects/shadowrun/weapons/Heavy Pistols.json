@@ -79,6 +79,54 @@
         "mode": 2.0
       },
       "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Cavalier Deputy",
+      "weight": 8.0,
+      "description": "Acc6 7P -1AP SA 7Ammo",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Onotari Arms Violator",
+      "weight": 6.0,
+      "description": "ACC5 7P -1AP RC1 10Ammo",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "PSK-3 Collapsible Heavy Pistol",
+      "weight": 2.0,
+      "description": "ACC4 8P AP-1 SA 10ammo Forbidden",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Savalette Guardian",
+      "weight": 5.0,
+      "description": "ACC5(7) 8P AP-1 SA/BF RC1 12Ammo",
+      "bound": "many",
+      "qrange": {
+        "minv": 1,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
     }
   ]
 }

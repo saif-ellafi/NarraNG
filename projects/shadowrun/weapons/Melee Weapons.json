@@ -71,12 +71,42 @@
     {
       "name": "Knucks",
       "weight": 18.0,
-      "description": "Acc-PLimit STR+1P"
+      "description": "Acc-PLimit STR+1P Unarmed Skill"
     },
     {
       "name": "Shock Gloves",
       "weight": 14.0,
       "description": "Acc-PLimit 8S electric, AP -5"
+    },
+    {
+      "name": "Highland Forge Claymore",
+      "weight": 6.0,
+      "description": "Acc5, Reach2, DV STR+5P, AP-5. RG."
+    },
+    {
+      "name": "Horizon-Flynn Rapier",
+      "weight": 11.0,
+      "description": "Acc7 Reach1 STR+2P AP-3 RG"
+    },
+    {
+      "name": "Victorinox Memory Blade",
+      "weight": 6.0,
+      "description": "ACC5 Reach0/1 DV STR+1/2P -2AP. RG. Dagger or sword"
+    },
+    {
+      "name": "Ares 'One' Monosword",
+      "weight": 12.0,
+      "description": "Acc5 R1 STR+3P AP-3"
+    },
+    {
+      "name": "Cougar Fineblades",
+      "weight": 14.0,
+      "description": "ACC6 STR+2P AP-1. Long blade or short blade."
+    },
+    {
+      "name": "Nemesis Arms Maul Stun Staff",
+      "weight": 12.0,
+      "description": "Acc6 Reach2 DV9Se -5AP"
     }
   ]
 }

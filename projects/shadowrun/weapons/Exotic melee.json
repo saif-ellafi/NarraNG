@@ -1,0 +1,61 @@
+{
+  "name": "Exotic melee",
+  "bound": "single",
+  "weight": 1,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Monofilament whip",
+      "weight": 8,
+      "description": "Forbidden. Acc5(7wifi) Reach2 12P AP-8. Exotic"
+    },
+    {
+      "name": "Ballistic shield",
+      "weight": 12,
+      "description": "Acc4 STR+2S"
+    },
+    {
+      "name": "Riot shield",
+      "weight": 12,
+      "description": "Acc4 9Se AP-5"
+    },
+    {
+      "name": "Monofilament chainsaw",
+      "weight": 7,
+      "description": "Acc3 Reach1 8P AP-6"
+    },
+    {
+      "name": "Grapple gun",
+      "weight": 10,
+      "description": "Acc3 Reach1 8P AP-6"
+    },
+    {
+      "name": "Micro flare launcher",
+      "weight": 10
+    },
+    {
+      "name": "Garrote 'queen of hearts'",
+      "weight": 6,
+      "description": "Acc5 STR+4/+6 monofilament AP-6/-8 Subdue using called shot with TR1"
+    },
+    {
+      "name": "Bullwhip",
+      "weight": 6,
+      "description": "Acc6, Reach2, STR+1P AP+3. Called shot to snare handheld objects or trip opponent. 2 meters."
+    },
+    {
+      "name": "Ash Arms Combat Chainsaw",
+      "weight": 6,
+      "description": "ACC5 Reach1 DV8(12 monofilament) AP-4(-8)"
+    },
+    {
+      "name": "Improvised weapons",
+      "weight": 4,
+      "description": "Acc3/4 STR+1/+3"
+    }
+  ]
+}

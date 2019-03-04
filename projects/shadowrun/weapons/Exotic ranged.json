@@ -1,0 +1,49 @@
+{
+  "name": "Exotic ranged",
+  "bound": "single",
+  "weight": 1,
+  "qrange": {
+    "minv": 1,
+    "maxv": 1,
+    "mode": 1
+  },
+  "links": [
+    {
+      "name": "Ares S-III Super Squirt",
+      "weight": 13,
+      "description": "Acc3 Chemical SA. Contact vector toxin. Light Pistol ranges.",
+      "bound": "many",
+      "qrange": {
+        "minv": 0,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "links": [
+        "projects/shadowrun/weapons/Firearm Accessories.json",
+        "projects/shadowrun/modules/Toxins.json"
+        ]
+    },
+    {
+      "name": "Fichetti Pain inducer",
+      "weight": 9,
+      "description": "ACC3 SS. Toxin Power 8, immediate. Resists with Body + Willpower. If mod power > target mental limit spend next action phase to run away. Can hold with complex action until dodged. Otherwise pain. Wireless charges in 1 hour."
+    },
+    {
+      "name": "Parashield Dart Pistol",
+      "weight": 16,
+      "description": "ACC5 SA Darts with toxin. Wireless reports success.",
+      "link": "projects/shadowrun/modules/Toxins.json"
+    },
+    {
+      "name": "Parashield Dart Rifle",
+      "weight": 14,
+      "description": "ACC6 SA Darts with toxin. Wireless reports success.",
+      "link": "projects/shadowrun/modules/Toxins.json"
+    },
+    {
+      "name": "Ares screech sonic rifle",
+      "weight": 4,
+      "description": "Acc6 7S SS. Resisted wit willpower and damper wear. Nausea and disorientation."
+    }
+  ]
+}

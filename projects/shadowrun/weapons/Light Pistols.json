@@ -14,7 +14,7 @@
       "description": "ACC6/SG8 6P SA",
       "bound": "many",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 6,
         "mode": 2.0
       },
@@ -26,7 +26,7 @@
       "description": "7ACC 6P SA",
       "bound": "many",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 6,
         "mode": 2.0
       },
@@ -38,7 +38,7 @@
       "description": "ACC6 6P SA/BF RC1",
       "bound": "many",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 6,
         "mode": 2.0
       },
@@ -50,7 +50,7 @@
       "description": "Acc7 7P SA",
       "bound": "many",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
         "maxv": 6,
         "mode": 2.0
       },
@@ -62,7 +62,43 @@
       "description": "ACC5/SG6 6/7P AP0/-1 SA/SS",
       "bound": "many",
       "qrange": {
-        "minv": 1,
+        "minv": 0,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Fichetti Executive Action",
+      "weight": 6,
+      "description": "ACC6 7P SA/BF 18Ammo",
+      "bound": "many",
+      "qrange": {
+        "minv": 0,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Nitama Sporter",
+      "weight": 8.0,
+      "description": "ACC6(7) 6P SA RC1",
+      "bound": "many",
+      "qrange": {
+        "minv": 0,
+        "maxv": 6,
+        "mode": 2.0
+      },
+      "link": "projects/shadowrun/weapons/Firearm Accessories.json"
+    },
+    {
+      "name": "Shiawase Armaments Puzzler",
+      "weight": 7.0,
+      "description": "ACC4 6P SA 12Ammo",
+      "bound": "many",
+      "qrange": {
+        "minv": 0,
         "maxv": 6,
         "mode": 2.0
       },

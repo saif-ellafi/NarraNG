@@ -17,6 +17,16 @@
       "name": "Yamaha Pulsar",
       "weight": 1.0,
       "description": "ACC5, 7Se, -5AP, SA"
+    },
+    {
+      "name": "Cavalier SafeGuard",
+      "weight": 1.0,
+      "description": "Acc5(6) 6Se -5AP"
+    },
+    {
+      "name": "Tiffani-Defiance Protector",
+      "weight": 1.0,
+      "description": "Acc5(6) 6Se -5AP"
     }
   ]
 }
